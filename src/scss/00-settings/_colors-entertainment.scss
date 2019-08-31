@@ -1,0 +1,10 @@
+/* ==========================================================================
+  COLORS ENTERTAINMENT
+========================================================================== */
+
+$color-main-light: $color-entertainment-magenta-light;
+$color-main-dark:  $color-entertainment-magenta-dark;
+$color-gradient-1: $color-entertainment-gradient-1;
+$color-gradient-2: $color-entertainment-gradient-2;
+$color-linear-gradient: linear-gradient(225deg, $color-gradient-1 0%, $color-gradient-2 100%);
+$color-linear-gradient-inverted: linear-gradient(225deg, $color-gradient-2 0%, $color-gradient-1 100%);

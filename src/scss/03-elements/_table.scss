@@ -1,0 +1,17 @@
+/* ==========================================================================
+  TABLE
+========================================================================== */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  padding-right: $sp_space-xl;
+}
+
+tr {
+  border-bottom: 1px solid $color-medium-light-1;
+}

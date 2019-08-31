@@ -1,0 +1,349 @@
+/* ==========================================================================
+  HEADINGS
+========================================================================== */
+
+/* ------------------
+  Headings maps
+------------------ */
+
+// XXL
+
+$map-heading-xxl: (
+  mobile: (
+    fontsize:   rem(32),
+    lineheight: rem(36),
+  ),
+  tablet: (
+    fontsize:   rem(32),
+    lineheight: rem(36),
+  ),
+  desktop: (
+    fontsize:   rem(46),
+    lineheight: rem(52),
+  ),
+  wide: (
+    fontsize:   rem(62),
+    lineheight: rem(72),
+  ),
+);
+
+// XL
+
+$map-heading-xl: (
+  mobile: (
+    fontsize:   rem(32),
+    lineheight: rem(36),
+  ),
+  tablet: (
+    fontsize:   rem(32),
+    lineheight: rem(36),
+  ),
+  desktop: (
+    fontsize:   rem(34),
+    lineheight: rem(38),
+  ),
+  wide: (
+    fontsize:   rem(44),
+    lineheight: rem(52),
+  ),
+);
+
+// L
+
+$map-heading-l: (
+  mobile: (
+    fontsize:   rem(28),
+    lineheight: rem(32),
+  ),
+  tablet: (
+    fontsize:   rem(28),
+    lineheight: rem(32),
+  ),
+  desktop: (
+    fontsize:   rem(26),
+    lineheight: rem(28),
+  ),
+  wide: (
+    fontsize:   rem(28),
+    lineheight: rem(32),
+  ),
+);
+
+// M
+
+$map-heading-m: (
+  mobile: (
+    fontsize:   rem(22),
+    lineheight: rem(26),
+  ),
+  tablet: (
+    fontsize:   rem(22),
+    lineheight: rem(26),
+  ),
+  desktop: (
+    fontsize:   rem(22),
+    lineheight: rem(26),
+  ),
+);
+
+// M custom
+
+$map-heading-m-custom: (
+  tablet: (
+    fontsize:   rem(20),
+    lineheight: rem(22),
+  ),
+);
+
+// S
+
+$map-heading-s: (
+  mobile: (
+    fontsize:   rem(16),
+    lineheight: rem(18),
+  ),
+  tablet: (
+    fontsize:   rem(16),
+    lineheight: rem(18),
+  ),
+  desktop: (
+    fontsize:   rem(16),
+    lineheight: rem(18),
+  ),
+);
+
+/* ------------------
+  Headings rules
+------------------ */
+
+/* ------------------
+  Headings - XXL
+------------------ */
+
+@mixin t-heading--xxl-mobile {
+  font-size: map-deep-get($map-heading-xxl, 'mobile', 'fontsize');
+  font-weight: $font-sans-weight-medium;
+  line-height: map-deep-get($map-heading-xxl, 'mobile', 'lineheight');
+}
+
+@mixin t-heading--xxl-tablet {
+  font-size: map-deep-get($map-heading-xxl, 'tablet', 'fontsize');
+  font-weight: $font-sans-weight-medium;
+  line-height: map-deep-get($map-heading-xxl, 'tablet', 'lineheight');
+}
+
+@mixin t-heading--xxl-desktop {
+  font-size: map-deep-get($map-heading-xxl, 'desktop', 'fontsize');
+  font-weight: $font-sans-weight-medium;
+  line-height: map-deep-get($map-heading-xxl, 'desktop', 'lineheight');
+}
+
+@mixin t-heading--xxl {
+  @include t-heading--xxl-mobile;
+
+  @include mq(tablet) {
+    @include t-heading--xxl-tablet;
+  }
+
+  @include mq(desktop) {
+    @include t-heading--xxl-desktop;
+  }
+}
+
+@mixin t-heading-serif--xxl {
+  @include t-heading--xxl;
+  @include t-serif--bold;
+}
+
+/* ------------------
+  Headings - XL
+------------------ */
+
+@mixin t-heading--xl-mobile {
+  font-size: map-deep-get($map-heading-xl, 'mobile', 'fontsize');
+  font-weight: $font-sans-weight-medium;
+  line-height: map-deep-get($map-heading-xl, 'mobile', 'lineheight');
+}
+
+@mixin t-heading--xl-tablet {
+  font-size: map-deep-get($map-heading-xl, 'tablet', 'fontsize');
+  font-weight: $font-sans-weight-medium;
+  line-height: map-deep-get($map-heading-xl, 'tablet', 'lineheight');
+}
+
+@mixin t-heading--xl-desktop {
+  font-size: map-deep-get($map-heading-xl, 'desktop', 'fontsize');
+  font-weight: $font-sans-weight-medium;
+  line-height: map-deep-get($map-heading-xl, 'desktop', 'lineheight');
+}
+
+@mixin t-heading--xl {
+  @include t-heading--xl-mobile;
+
+  @include mq(tablet) {
+    @include t-heading--xl-tablet;
+  }
+
+  @include mq(desktop) {
+    @include t-heading--xl-desktop;
+  }
+}
+
+@mixin t-heading-serif--xl {
+  @include t-heading--xl;
+  @include t-serif--bold;
+}
+
+/* ------------------
+  Headings - L
+------------------ */
+
+@mixin t-heading--l-mobile {
+  font-size: map-deep-get($map-heading-l, 'mobile', 'fontsize');
+  font-weight: $font-sans-weight-medium;
+  line-height: map-deep-get($map-heading-l, 'mobile', 'lineheight');
+}
+
+@mixin t-heading--l-tablet {
+  font-size: map-deep-get($map-heading-l, 'tablet', 'fontsize');
+  font-weight: $font-sans-weight-medium;
+  line-height: map-deep-get($map-heading-l, 'tablet', 'lineheight');
+}
+
+@mixin t-heading--l-desktop {
+  font-size: map-deep-get($map-heading-l, 'desktop', 'fontsize');
+  font-weight: $font-sans-weight-medium;
+  line-height: map-deep-get($map-heading-l, 'desktop', 'lineheight');
+}
+
+@mixin t-heading--l {
+  @include t-heading--l-mobile;
+
+  @include mq(tablet) {
+    @include t-heading--l-tablet;
+  }
+
+  @include mq(desktop) {
+    @include t-heading--l-desktop;
+  }
+}
+
+@mixin t-heading-serif--l {
+  @include t-heading--l;
+  @include t-serif--bold;
+}
+
+/* ------------------
+  Headings - M
+------------------ */
+
+@mixin t-heading--m-mobile {
+  font-size: map-deep-get($map-heading-m, 'mobile', 'fontsize');
+  font-weight: $font-sans-weight-medium;
+  line-height: map-deep-get($map-heading-m, 'mobile', 'lineheight');
+}
+
+@mixin t-heading--m-tablet {
+  font-size: map-deep-get($map-heading-m, 'tablet', 'fontsize');
+  font-weight: $font-sans-weight-medium;
+  line-height: map-deep-get($map-heading-m, 'tablet', 'lineheight');
+}
+
+@mixin t-heading--m-desktop {
+  font-size: map-deep-get($map-heading-m, 'desktop', 'fontsize');
+  font-weight: $font-sans-weight-medium;
+  line-height: map-deep-get($map-heading-m, 'desktop', 'lineheight');
+}
+
+@mixin t-heading--m {
+  @include t-heading--m-mobile;
+
+  @include mq(tablet) {
+    @include t-heading--m-tablet;
+  }
+
+  @include mq(desktop) {
+    @include t-heading--m-desktop;
+  }
+}
+
+@mixin t-heading-serif--m {
+  @include t-heading--m;
+  @include t-serif--bold;
+}
+
+/* ------------------
+  Headings - S
+------------------ */
+
+@mixin t-heading--s-mobile {
+  font-size: map-deep-get($map-heading-s, 'mobile', 'fontsize');
+  font-weight: $font-sans-weight-medium;
+  line-height: map-deep-get($map-heading-s, 'mobile', 'lineheight');
+}
+
+@mixin t-heading--s-tablet {
+  font-size: map-deep-get($map-heading-s, 'tablet', 'fontsize');
+  font-weight: $font-sans-weight-medium;
+  line-height: map-deep-get($map-heading-s, 'tablet', 'lineheight');
+}
+
+@mixin t-heading--s-desktop {
+  font-size: map-deep-get($map-heading-s, 'desktop', 'fontsize');
+  font-weight: $font-sans-weight-medium;
+  line-height: map-deep-get($map-heading-s, 'desktop', 'lineheight');
+}
+
+@mixin t-heading--s {
+  @include t-heading--s-mobile;
+
+  @include mq(tablet) {
+    @include t-heading--s-tablet;
+  }
+
+  @include mq(desktop) {
+    @include t-heading--s-desktop;
+  }
+}
+
+@mixin t-heading-serif--s {
+  @include t-heading--s;
+  @include t-serif--bold;
+}
+
+/* ------------------
+  Headings - M custom
+
+  (must be declared after M and S declarations because it uses mobile S and desktop M)
+------------------ */
+
+@mixin t-heading--m-custom-mobile {
+  @include t-heading--s-mobile;
+}
+
+@mixin t-heading--m-custom-tablet {
+  font-size: map-deep-get($map-heading-m, 'tablet', 'fontsize');
+  font-weight: $font-sans-weight-medium;
+  line-height: map-deep-get($map-heading-m, 'tablet', 'lineheight');
+}
+
+@mixin t-heading--m-custom-desktop {
+  @include t-heading--m-desktop;
+}
+
+@mixin t-heading--m-custom {
+  @include t-heading--s-mobile; // S on mobile
+
+  @include mq(tablet) {
+    @include t-heading--m-custom-tablet; // custom on tablet
+  }
+
+  @include mq(desktop) {
+    @include t-heading--m-desktop; // M on desktop
+  }
+}
+
+@mixin t-heading-serif--m-custom {
+  @include t-heading--m-custom;
+  @include t-serif--bold;
+}

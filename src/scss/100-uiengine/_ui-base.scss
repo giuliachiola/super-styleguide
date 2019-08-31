@@ -1,0 +1,27 @@
+/* ==========================================================================
+  UIENGINE - BASE
+========================================================================== */
+
+// $base-font-size: 18px;
+
+html {
+  // font-size: $base-font-size;
+}
+
+body.ui-body {
+  // font-size: $base-font-size;
+
+  // TODO: check why there was a weird margin-bottom
+
+  // margin-bottom: rem(18);
+
+  // &.ui-body--external-preview {
+  //   margin-bottom: 0;
+  // }
+
+  &.ui-body--internal-preview {
+    .c-gallery-item { // fix to prevent huge scroll due to min-height: 100vh
+      min-height: auto;
+    }
+  }
+}

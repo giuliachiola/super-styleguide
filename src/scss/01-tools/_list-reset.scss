@@ -1,0 +1,26 @@
+/* ==========================================================================
+  LIST RESET
+========================================================================== */
+
+/* ------------------
+  Usage
+
+  <ul> @include list-reset;
+------------------ */
+
+@mixin list-reset {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+/* ------------------
+  Usage
+
+  <li> @include list-item-reset;
+------------------ */
+
+@mixin list-item-reset {
+  margin-bottom: 0;
+  padding-left: 0;
+}

@@ -1,0 +1,9 @@
+.ui-component {
+  > * {
+    margin: rem(10);
+  }
+}
+
+span.ui-component {
+  display: inline-block;
+}

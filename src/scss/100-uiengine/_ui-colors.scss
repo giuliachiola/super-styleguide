@@ -1,0 +1,92 @@
+@import '../00-settings/colors';
+
+/* ------------------
+  Colors mapping
+------------------ */
+
+:root {
+  // Neutral palette;
+  --color-solid-dark: #{$color-solid-dark};
+  --color-dark-2: #{$color-dark-2};
+  --color-dark-1: #{$color-dark-1};
+  --color-medium: #{$color-medium};
+  --color-medium-light-1: #{$color-medium-light-1};
+  --color-medium-light-2: #{$color-medium-light-2};
+  --color-medium-light-3: #{$color-medium-light-3};
+  --color-light: #{$color-light};
+
+  // Sky gradient
+  --sky-global-gradient-1: $color-global-gradient-1;
+  --sky-global-gradient-2: $color-global-gradient-2;
+  --sky-global-gradient-3: $color-global-gradient-3;
+  --sky-global-gradient-4: $color-global-gradient-4;
+  --sky-global-gradient-5: $color-global-gradient-5;
+
+  // Main colors for theme labels
+  --skytg24-red-light: #{$color-tg24-red-light};
+  --skysport-blue: #{$color-sport-blue};
+  --skyentertainment-magenta-light: #{$color-entertainment-magenta-light};
+}
+
+/* ------------------
+  Theme colors for
+  Swatches component
+------------------ */
+
+:root .ui--tg24 {
+  --color-main-light: #{$color-tg24-red-light};
+  --color-main-dark: #{$color-tg24-red-dark};
+  --color-gradient-1: #{$color-tg24-gradient-1};
+  --color-gradient-2: #{$color-tg24-gradient-2};
+  --color-red-old-brick: #{$color-tg24-red-old-brick};
+
+  /* ------------------
+    Components
+  ------------------ */
+
+  // Playlist
+  --color-playlist: #{$color-tg24-mine-shaft};
+
+  // Shadow
+  --color-shadow-horizontal: #{$color-tg24-red-old-brick};
+  --color-shadow-vertical: #{$color-tg24-red-light};
+  --color-shadow-player: #{$color-tg24-mine-shaft};
+}
+
+:root .ui--sport {
+  --color-main-light: #{$color-sport-red-light};
+  --color-main-dark: #{$color-sport-red-dark};
+  --color-red-cinnabar: #{$color-sport-red-cinnabar};
+  --color-accent: #{$color-sport-blue};
+  --color-gradient-1: #{$color-sport-gradient-1};
+  --color-gradient-2: #{$color-sport-gradient-2};
+
+  /* ------------------
+    Components
+  ------------------ */
+
+  // Playlist
+  --color-playlist: #{$color-sport-blue};
+  // Shadow
+  --color-shadow-horizontal: #{$color-sport-red-cinnabar};
+  --color-shadow-vertical: #{$color-sport-red-cinnabar};
+  --color-shadow-player: #{$color-sport-blue};
+}
+
+:root .ui--entertainment {
+  --color-main-light: #{$color-entertainment-magenta-light};
+  --color-main-dark: #{$color-entertainment-magenta-dark};
+  --color-gradient-1: #{$color-entertainment-gradient-1};
+  --color-gradient-2: #{$color-entertainment-gradient-2};
+
+  /* ------------------
+    Components
+  ------------------ */
+
+  // Playlist
+  --color-playlist: #{$color-solid-dark};
+  // Shadow
+  --color-shadow-horizontal: #{$color-entertainment-magenta-light};
+  --color-shadow-vertical: #{$color-entertainment-magenta-dark};
+  --color-shadow-player: #{$color-solid-dark};
+}

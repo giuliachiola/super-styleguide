@@ -1,0 +1,20 @@
+/* ==========================================================================
+  DEBUG
+========================================================================== */
+
+@mixin debug-borders($color) {
+  box-shadow: 0 0 1px 1px $color inset;
+}
+
+.debug-danger,
+.debug-warning,
+.debug-ok {
+  border-radius: rem(6);
+  color: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.debug-danger { background: #ea2027; }
+.debug-warning { background: #ffc312; }
+.debug-ok { background: #a3cb38; }

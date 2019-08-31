@@ -1,0 +1,363 @@
+/* ==========================================================================
+  TYPOGRAPHY - BODY
+========================================================================== */
+
+/* ------------------
+  Body maps
+------------------ */
+
+// L
+
+$map-body-l: (
+  mobile: (
+    fontsize:   rem(18),
+    lineheight: rem(26),
+    letterspacing: rem(0.2)
+  ),
+  tablet: (
+    fontsize:   rem(18),
+    lineheight: rem(26),
+    letterspacing: rem(0.2)
+  ),
+  desktop: (
+    fontsize:   rem(18),
+    lineheight: rem(26),
+    letterspacing: rem(0.2)
+  ),
+);
+
+// M
+
+$map-body-m: (
+  mobile: (
+    fontsize:   rem(16),
+    lineheight: rem(22),
+    letterspacing: rem(0.2)
+  ),
+  tablet: (
+    fontsize:   rem(16),
+    lineheight: rem(22),
+    letterspacing: rem(0.2)
+  ),
+  desktop: (
+    fontsize:   rem(16),
+    lineheight: rem(22),
+    letterspacing: rem(0.2)
+  ),
+);
+
+// S
+
+$map-body-s: (
+  mobile: (
+    fontsize:   rem(14),
+    lineheight: rem(18),
+    letterspacing: rem(0.2),
+  ),
+  tablet: (
+    fontsize:   rem(14),
+    lineheight: rem(18),
+    letterspacing: rem(0.2),
+  ),
+  desktop: (
+    fontsize:   rem(14),
+    lineheight: rem(18),
+    letterspacing: rem(0.2),
+  ),
+);
+
+// XS
+
+$map-body-xs: (
+  mobile: (
+    fontsize:   rem(12),
+    lineheight: rem(14),
+    letterspacing: rem(0.2)
+  ),
+  tablet: (
+    fontsize:   rem(12),
+    lineheight: rem(14),
+    letterspacing: rem(0.2)
+  ),
+  desktop: (
+    fontsize:   rem(12),
+    lineheight: rem(14),
+    letterspacing: rem(0.2)
+  ),
+);
+
+// XXS
+
+$map-body-xxs: (
+  mobile: (
+    fontsize:   rem(10),
+    lineheight: rem(12)
+  ),
+  tablet: (
+    fontsize:   rem(10),
+    lineheight: rem(12)
+  ),
+  desktop: (
+    fontsize:   rem(10),
+    lineheight: rem(12)
+  ),
+);
+
+/* ------------------
+  Body rules
+------------------ */
+
+/* ------------------
+  Body - L
+------------------ */
+
+@mixin t-body--l-mobile {
+  @include t-weight--regular;
+
+  font-size: map-deep-get($map-body-l, 'mobile', 'fontsize');
+  letter-spacing: map-deep-get($map-body-l, 'mobile', 'letterspacing');
+  line-height: map-deep-get($map-body-l, 'mobile', 'lineheight');
+}
+
+@mixin t-body--l-tablet {
+  @include t-weight--regular;
+
+  font-size: map-deep-get($map-body-l, 'tablet', 'fontsize');
+  letter-spacing: map-deep-get($map-body-l, 'tablet', 'letterspacing');
+  line-height: map-deep-get($map-body-l, 'tablet', 'lineheight');
+}
+
+@mixin t-body--l-desktop {
+  @include t-weight--regular;
+
+  font-size: map-deep-get($map-body-l, 'desktop', 'fontsize');
+  letter-spacing: map-deep-get($map-body-l, 'desktop', 'letterspacing');
+  line-height: map-deep-get($map-body-l, 'desktop', 'lineheight');
+}
+
+@mixin t-body--l {
+  @include t-body--l-mobile;
+
+  @include mq(tablet) {
+    @include t-body--l-tablet;
+  }
+
+  @include mq(desktop) {
+    @include t-body--l-desktop;
+  }
+}
+
+/* ------------------
+  Body - M
+------------------ */
+
+@mixin t-body--m-mobile {
+  @include t-weight--regular;
+
+  font-size: map-deep-get($map-body-m, 'mobile', 'fontsize');
+  letter-spacing: map-deep-get($map-body-m, 'mobile', 'letterspacing');
+  line-height: map-deep-get($map-body-m, 'mobile', 'lineheight');
+}
+
+@mixin t-body--m-tablet {
+  @include t-weight--regular;
+
+  font-size: map-deep-get($map-body-m, 'tablet', 'fontsize');
+  letter-spacing: map-deep-get($map-body-m, 'tablet', 'letterspacing');
+  line-height: map-deep-get($map-body-m, 'tablet', 'lineheight');
+}
+
+@mixin t-body--m-desktop {
+  @include t-weight--regular;
+
+  font-size: map-deep-get($map-body-m, 'desktop', 'fontsize');
+  letter-spacing: map-deep-get($map-body-m, 'desktop', 'letterspacing');
+  line-height: map-deep-get($map-body-m, 'desktop', 'lineheight');
+}
+
+@mixin t-body--m {
+  @include t-body--m-mobile;
+
+  @include mq(tablet) {
+    @include t-body--m-tablet;
+  }
+
+  @include mq(desktop) {
+    @include t-body--m-desktop;
+  }
+}
+
+/* ------------------
+  Body - S
+------------------ */
+
+@mixin t-body--s-mobile {
+  @include t-weight--regular;
+
+  font-size: map-deep-get($map-body-s, 'mobile', 'fontsize');
+  letter-spacing: map-deep-get($map-body-s, 'mobile', 'letterspacing');
+  line-height: map-deep-get($map-body-s, 'mobile', 'lineheight');
+}
+
+@mixin t-body--s-tablet {
+  @include t-weight--regular;
+
+  font-size: map-deep-get($map-body-s, 'tablet', 'fontsize');
+  letter-spacing: map-deep-get($map-body-s, 'tablet', 'letterspacing');
+  line-height: map-deep-get($map-body-s, 'tablet', 'lineheight');
+}
+
+@mixin t-body--s-desktop {
+  @include t-weight--regular;
+
+  font-size: map-deep-get($map-body-s, 'desktop', 'fontsize');
+  letter-spacing: map-deep-get($map-body-s, 'desktop', 'letterspacing');
+  line-height: map-deep-get($map-body-s, 'desktop', 'lineheight');
+}
+
+@mixin t-body--s {
+  @include t-body--s-mobile;
+
+  @include mq(tablet) {
+    @include t-body--s-tablet;
+  }
+
+  @include mq(desktop) {
+    @include t-body--s-desktop;
+  }
+}
+
+/* ------------------
+  Body - XS
+------------------ */
+
+@mixin t-body--xs-mobile {
+  @include t-weight--regular;
+
+  font-size: map-deep-get($map-body-xs, 'mobile', 'fontsize');
+  letter-spacing: map-deep-get($map-body-xs, 'mobile', 'letterspacing');
+  line-height: map-deep-get($map-body-xs, 'mobile', 'lineheight');
+}
+
+@mixin t-body--xs-tablet {
+  @include t-weight--regular;
+
+  font-size: map-deep-get($map-body-xs, 'tablet', 'fontsize');
+  letter-spacing: map-deep-get($map-body-xs, 'tablet', 'letterspacing');
+  line-height: map-deep-get($map-body-xs, 'tablet', 'lineheight');
+}
+
+@mixin t-body--xs-desktop {
+  @include t-weight--regular;
+
+  font-size: map-deep-get($map-body-xs, 'desktop', 'fontsize');
+  letter-spacing: map-deep-get($map-body-xs, 'desktop', 'letterspacing');
+  line-height: map-deep-get($map-body-xs, 'desktop', 'lineheight');
+}
+
+@mixin t-body--xs {
+  @include t-body--xs-mobile;
+
+  @include mq(tablet) {
+    @include t-body--xs-tablet;
+  }
+
+  @include mq(desktop) {
+    @include t-body--xs-desktop;
+  }
+}
+
+// XS font weight medium
+
+@mixin t-body--xs-medium-mobile {
+  @include t-body--xs-mobile;
+  @include t-weight--medium;
+}
+
+@mixin t-body--xs-medium-tablet {
+  @include t-body--xs-tablet;
+  @include t-weight--medium;
+}
+
+@mixin t-body--xs-medium-desktop {
+  @include t-body--xs-mobile;
+  @include t-weight--medium;
+}
+
+@mixin t-body--xs-medium {
+  @include t-body--xs-medium-mobile;
+
+  @include mq(tablet) {
+    @include t-body--xs-medium-tablet;
+  }
+
+  @include mq(desktop) {
+    @include t-body--xs-medium-desktop;
+  }
+}
+
+/* ------------------
+  Body - XXS
+------------------ */
+
+@mixin t-body--xxs-mobile {
+  @include t-weight--regular;
+
+  font-size: map-deep-get($map-body-xxs, 'mobile', 'fontsize');
+  line-height: map-deep-get($map-body-xxs, 'mobile', 'lineheight');
+}
+
+@mixin t-body--xxs-tablet {
+  @include t-weight--regular;
+
+  font-size: map-deep-get($map-body-xxs, 'tablet', 'fontsize');
+  line-height: map-deep-get($map-body-xxs, 'tablet', 'lineheight');
+}
+
+@mixin t-body--xxs-desktop {
+  @include t-weight--regular;
+
+  font-size: map-deep-get($map-body-xxs, 'desktop', 'fontsize');
+  line-height: map-deep-get($map-body-xxs, 'desktop', 'lineheight');
+}
+
+@mixin t-body--xxs {
+  @include t-body--xxs-mobile;
+
+  @include mq(tablet) {
+    @include t-body--xxs-tablet;
+  }
+
+  @include mq(desktop) {
+    @include t-body--xxs-desktop;
+  }
+}
+
+// XXS font weight medium
+
+@mixin t-body--xxs-medium-mobile {
+  @include t-body--xxs-mobile;
+  @include t-weight--medium;
+}
+
+@mixin t-body--xxs-medium-tablet {
+  @include t-body--xxs-tablet;
+  @include t-weight--medium;
+}
+
+@mixin t-body--xxs-medium-desktop {
+  @include t-body--xxs-mobile;
+  @include t-weight--medium;
+}
+
+@mixin t-body--xxs-medium {
+  @include t-body--xxs-medium-mobile;
+
+  @include mq(tablet) {
+    @include t-body--xxs-medium-tablet;
+  }
+
+  @include mq(desktop) {
+    @include t-body--xxs-medium-desktop;
+  }
+}

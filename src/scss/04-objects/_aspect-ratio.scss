@@ -1,0 +1,79 @@
+/* ==========================================================================
+  ASPECT RATIO
+
+  more info: https://andy-bell.design/wrote/creating-an-aspect-ratio-css-utility/
+========================================================================== */
+
+/// Calcs image padding based on image aspect ratio
+///
+/// @param {number} $width
+///   Width of the image or its proportion
+/// @param {number} $height
+///   Height of the image or its proportion
+/// @return {number} padding top percentage based on apsect ratio
+
+@mixin image-padding($width, $height) {
+  padding-top: calc(calc(#{$height} / #{$width}) * 100%);
+}
+
+.o-aspect-ratio {
+  display: block;
+  overflow: hidden;
+  position: relative;
+
+  /* ------------------
+    ratio ~ 1.6
+  ------------------ */
+
+  &--16-10 {
+    @include image-padding(16, 10);
+  }
+
+  /* ------------------
+    ratio ~ 1.8
+  ------------------ */
+
+  &--16-9 {
+    @include image-padding(16, 9);
+  }
+
+  /* ------------------
+    ratio = 1
+  ------------------ */
+
+  &--square {
+    @include image-padding(1, 1);
+  }
+
+  /* ------------------
+    ratio = 0.72
+  ------------------ */
+
+  &--topic-card {
+    @include image-padding(286, 393);
+  }
+
+  /* ------------------
+    ratio = 0.75
+  ------------------ */
+
+  &--gallery-item-vertical {
+    @include image-padding(315, 417);
+  }
+
+  /* ------------------
+    Intro img migrated template photogallery or placeholder img
+  ------------------ */
+
+  &--intro-shorter {
+    @include image-padding(1040, 450); // placeholder and migrated
+  }
+
+  img {
+    left: 0;
+    max-width: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+  }
+}

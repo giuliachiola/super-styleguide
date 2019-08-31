@@ -1,0 +1,30 @@
+/* ==========================================================================
+  UIENGINE - GRID WIREFRAME
+========================================================================== */
+
+$c-grid-wireframe: #ff7675;
+
+.ui-grid-wireframe {
+  background-color: rgba($c-grid-wireframe, 0.2);
+  border: 1px solid rgba($c-grid-wireframe, 1);
+
+  &__modifier {
+    color: $c-grid-wireframe;
+  }
+
+  &__num {
+    text-align: center;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin-bottom: $sp_space-xxs;
+    margin-top: 0;
+  }
+
+  .ui-wrapper--set-of-cards-template & { // for test purpose only
+    margin-bottom: rem(20);
+  }
+}

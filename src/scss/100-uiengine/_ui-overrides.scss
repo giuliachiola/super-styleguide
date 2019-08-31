@@ -1,0 +1,287 @@
+/* ==========================================================================
+  UIENGINE - OVERRIDES
+========================================================================== */
+
+@mixin chevron($chevron-width: 2px, $size: 7px) {
+  display: inline-block;
+  height: em($size + $chevron-width);
+  position: relative;
+  width: em($size + $chevron-width);
+
+  &::before {
+    border-color: var(--color-light);
+    border-style: solid;
+    border-width: $chevron-width $chevron-width 0px 0px;
+    box-sizing: border-box;
+    content: '';
+    display: inline-block;
+    font-size: 16px;
+    height: $size + $chevron-width;
+    position: absolute;
+    right: rem(10);
+    top: calc(50% - 6px);
+    transform: rotate(135deg) translateY(-50%);
+    vertical-align: top;
+    width: $size + $chevron-width;
+    z-index: 1;
+  }
+}
+
+:root {
+  --uie-font-family-fallback: 'SkyText', Arial, Tahoma, Verdana, sans-serif;
+  --uie-font-family-code: 'Fira Code', Hasklig, 'Source Code Pro', 'DejaVu Sans Mono', Hack, Meslo, Menlo, Inconsolata, Consolas, 'Liberation Mono', Courier, monospace;
+  --uie-font-family-bold: var(--uie-font-family-fallback);
+  --uie-font-family-light: var(--uie-font-family-fallback);
+  --uie-font-family-regular: var(--uie-font-family-fallback);
+  --uie-font-family-bolditalic: var(--uie-font-family-fallback);
+  --uie-font-family-lightitalic: var(--uie-font-family-fallback);
+  --uie-font-weight-bold: 700;
+  --uie-font-weight-medium: 500;
+  --uie-font-weight-regular: 400;
+  --uie-font-weight-italic: 400;
+  --uie-font-style-italic: italic;
+  --uie-base-font-size-s: 14px;
+  --uie-base-font-size-m: 15px;
+  --uie-base-font-size-l: 16px;
+  --uie-font-size-xs: 0.75rem;
+  --uie-font-size-s: 0.875rem;
+  --uie-font-size-m: 1rem;
+  --uie-font-size-l: 1.125rem;
+  --uie-font-size-xl: 1.5rem;
+  --uie-font-size-xxl: 2.25rem;
+  --uie-line-height: 1.5;
+  --uie-line-height-heading: 1.25;
+  --uie-space-xxs: 0.125rem;
+  --uie-space-xs: 0.25rem;
+  --uie-space-s: 0.5rem;
+  --uie-space-m: 0.75rem;
+  --uie-space-l: 1.125rem;
+  --uie-space-xl: 1.75rem;
+  --uie-space-xxl: 2.5rem;
+  --uie-space-xxxl: 4rem;
+  --uie-transition-duration-fast: 0.15s;
+  --uie-transition-duration-medium: 0.25s;
+  --uie-color-neutral-0: #fff;
+  --uie-color-neutral-10: #eee;
+  --uie-color-neutral-20: #ccc;
+  --uie-color-neutral-50: #aaa;
+  --uie-color-neutral-70: #555;
+  --uie-color-neutral-80: #333;
+  --uie-color-neutral-90: #222;
+  --uie-color-neutral-100: #000;
+  --uie-color-accent-extralight: #84e5ff;
+  --uie-color-accent-light: #68b4c8;
+  --uie-color-accent-medium: #4d759a;
+  --uie-color-accent-middark: #344554;
+  --uie-color-accent-dark: #243646;
+  --uie-color-accent-extradark: #1b2935;
+  // Colors
+  --uie-color-border-light: var(--uie-color-neutral-10);
+  --uie-color-border-medium: var(--uie-color-neutral-20);
+  --uie-color-bg-light: var(--uie-color-neutral-10);
+  --uie-color-bg-medium: var(--uie-color-neutral-20);
+  --uie-color-topbar-bg: var(--color-medium-light-2);
+  --uie-color-topbar-text: var(--color-solid-dark);
+  --uie-color-topbar-text-hover: var(--color-medium);
+  --uie-color-navigation-bg: var(--color-medium-light-3);
+  --uie-color-navigation-text: var(--color-solid-dark);
+  --uie-color-navigation-bg-subnav: var(--uie-color-accent-middark);
+  --uie-color-navigation-text-subnav: var(--color-solid-dark);
+  --uie-color-navigation-text-hover: var(--color-solid-dark);
+  --uie-color-navigation-bg-current: var(--uie-color-neutral-0);
+  --uie-color-navigation-text-current: var(--color-solid-dark);
+  --uie-color-navigation-border-current: var(--color-medium-light-2);
+  --uie-color-contentheader-link: var(--uie-color-accent-medium);
+  --uie-color-contentheader-link-hover: var(--uie-color-accent-middark);
+  --uie-color-contentheader-link-current: var(--uie-color-accent-dark);
+  --uie-color-contentheader-label-bg: var(--uie-color-neutral-50);
+  --uie-color-contentheader-label-text: var(--uie-color-neutral-0);
+  --uie-color-contentheader-tag-bg: var(--uie-color-neutral-0);
+  --uie-color-contentheader-tag-text: var(--uie-color-neutral-50);
+  --uie-color-main-bg: var(--uie-color-neutral-0);
+  --uie-color-main-text: var(--color-solid-dark);
+  --uie-color-main-link: var(--color-medium);
+  --uie-color-main-link-hover: var(--color-medium-light-2);
+  --uie-color-secondary-text: var(--uie-color-neutral-70);
+  --uie-color-secondary-link: var(--uie-color-neutral-80);
+  --uie-color-secondary-link-hover: var(--uie-color-neutral-90);
+  --uie-color-modal-bg: var(--uie-color-neutral-0);
+  --uie-color-modal-bg-hover: var(--uie-color-bg-light);
+  --uie-color-modal-text: var(--uie-color-secondary-text);
+  --uie-color-modal-text-hover: var(--uie-color-secondary-text);
+  --uie-color-modal-border-outer: var(--uie-color-border-medium);
+  --uie-color-code-bg: var(--uie-color-accent-dark);
+  --uie-color-code-text: var(--uie-color-neutral-10);
+  --uie-color-code-header: var(--uie-color-accent-medium);
+  --uie-color-code-header-hover: var(--uie-color-accent-middark);
+  --uie-color-code-header-current: var(--uie-color-accent-dark);
+  --uie-color-modal-border-inner: var(--uie-color-border-light);
+  --uie-color-footer-bg: var(--color-medium-light-2);
+  --uie-color-footer-text: var(--uie-color-secondary-text);
+  --uie-color-footer-link: var(--uie-color-secondary-link);
+  --uie-color-footer-link-hover: var(--uie-color-secondary-link-hover);
+  --uie-preview-border-width: 3px;
+  --uie-color-border-preview: var(--uie-color-neutral-10);
+}
+
+label[for= 'locale'] {
+  display: none;
+
+  & ~ select {
+    display: none;
+  }
+}
+
+ul.navigation__tree--level-0 {
+  ul.navigation__tree--level-1 {
+    padding-left: 30px;
+  }
+}
+
+button.navigation__itemtoggle:focus {
+  outline: 0;
+}
+
+.navigation__item[data-v-b83fb81c]:not(.navigation__item--level-0) {
+  font-size: var(--uie-base-font-size-s);
+}
+
+.navigation__item--level-1 {
+  .navigation__link {
+    background-color: transparent !important;
+  }
+}
+
+.navigation__item--level-3 {
+  padding-left: 15px;
+}
+
+.navigation[hidden= 'hidden'] {
+  display: none;
+}
+
+.content { // documentation max width
+  max-width: none;
+}
+
+.content a:not([class]),
+.content a[class= ''] {
+  // text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.uie {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong {
+    font-weight: var(--uie-font-weight-medium);
+  }
+
+  strong {
+    font-style: normal;
+  }
+}
+
+.navigation__item--current > .navigation__link[data-v-b83fb81c] {
+  font-weight: var(--uie-font-weight-medium);
+}
+
+.preview__iframe {
+  resize: both;
+}
+
+.preview__iframe-container {
+  border-radius: 0 !important;
+  border-width: 3px !important;
+}
+
+.preview__iframe + .preview__iframe {
+  border-width: 3px !important;
+}
+
+button.topbar__theme-toggle {
+  background-color: var(--skytg24-red-light);
+  border-radius: 2px;
+  color: var(--color-light) !important;
+  font-size: rem(12);
+  font-weight: 500;
+  letter-spacing: 0.86px;
+  padding: rem(4 25 4 10) !important;
+  position: relative;
+
+  &:hover {
+    color: var(--color-light) !important;
+    cursor: pointer;
+  }
+}
+
+.topbar__theme {
+  @include chevron($chevron-width: 1px, $size: 5px);
+
+  font-size: 16px;
+}
+
+.topbar__theme-options {
+  left: 0 !important;
+}
+
+html[data-theme= 'tg24'] {
+  button.topbar__theme-toggle {
+    background-color: var(--skytg24-red-light);
+  }
+}
+
+html[data-theme= 'sport'] {
+  button.topbar__theme-toggle {
+    background-color: var(--skysport-blue);
+  }
+}
+
+html[data-theme= 'entertainment'] {
+  button.topbar__theme-toggle {
+    background-color: var(--skyentertainment-magenta-light);
+  }
+}
+
+html[data-theme= '_all'] {
+  button.topbar__theme-toggle {
+    background-color: var(--color-medium);
+  }
+}
+
+.content img:not([class]) {
+  vertical-align: middle;
+}
+
+// component label (es. TY)
+
+.contentheader .label {
+  border-radius: 2px !important;
+  line-height: 18px;
+  padding: rem(4 15) !important;
+}
+
+//Hide pug and data tabs
+
+article {
+  .uie-sot-xl {
+    .code {
+      .code__segment:nth-child(1),
+      .code__segment:nth-child(2) {
+        display: none;
+      }
+
+      .code__header {
+        border: 1px solid var(--uie-color-border-medium) !important;
+      }
+    }
+  }
+}

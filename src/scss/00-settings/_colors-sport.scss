@@ -1,0 +1,11 @@
+/* ==========================================================================
+  COLORS SPORT
+========================================================================== */
+
+$color-main-light: $color-sport-red-light;
+$color-main-dark: $color-sport-red-dark;
+$color-gradient-1: $color-sport-gradient-1;
+$color-gradient-2: $color-sport-gradient-2;
+$color-accent: $color-sport-blue;
+$color-linear-gradient: linear-gradient(225deg, $color-gradient-1 0%, $color-gradient-2 100%);
+$color-linear-gradient-inverted: linear-gradient(225deg, $color-gradient-2 0%, $color-gradient-1 100%);

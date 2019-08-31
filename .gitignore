@@ -1,0 +1,16 @@
+# Folders and Files to ignore
+node_modules/
+dist
+production
+
+# CSS temp build file (not yet processed by postcss)
+src/css/*.css
+
+# User config
+src/config/local.js
+uiengine.config.js
+
+# windows
+ui.apps/
+.project
+.settings

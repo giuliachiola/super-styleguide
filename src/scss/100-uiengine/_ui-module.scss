@@ -1,0 +1,24 @@
+/* ==========================================================================
+  UIENGINE - MODULE
+========================================================================== */
+
+.ui-module,
+%ui-module {
+  margin-bottom: rem(100);
+}
+
+.ui-module--small,
+%ui-module--small {
+  margin-bottom: rem(50);
+}
+
+.ui-module--xsmall,
+%ui-module--xsmall {
+  margin-bottom: rem(20);
+}
+
+.ui-table {
+  @extend %ui-module;
+
+  text-align: left;
+}

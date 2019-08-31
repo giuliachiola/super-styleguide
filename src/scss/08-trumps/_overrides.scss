@@ -1,0 +1,14 @@
+/* ==========================================================================
+  OVERRIDES
+========================================================================== */
+
+.is-hidden { display: none !important; }
+.is-vhidden { visibility: hidden !important; }
+
+.is-transparent {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+
+.u-hidden-s { @include mq($until: desktop) { display: none !important; } }
+.u-hidden-l { @include mq($from: desktop) { display: none !important; } }

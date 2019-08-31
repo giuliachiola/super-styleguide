@@ -1,0 +1,23 @@
+/* ==========================================================================
+  VARIANTS
+========================================================================== */
+
+$variants: null !default;
+
+/* Define variant:
+  - if $variants array contains variant passed as argument, output the class content declaration
+  - it must be declared in component files, when initialize a variant (example in card.scss)
+*/
+
+@mixin defineVariant($variant) {
+  @if ((index($variants, $variant) != null) or (index($variants, 'all') != null)) {
+    @content;
+  }
+}
+
+/* Add variant:
+  - used in style-[theme].scss, append to $variants array the variant passed as argument
+*/
+@mixin addVariant($variant) {
+  $variants: append($variants, $variant) !global;
+}

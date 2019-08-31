@@ -1,0 +1,113 @@
+/* ==========================================================================
+  BASE
+========================================================================== */
+
+* {
+  box-sizing: border-box;
+  font-family: inherit;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: inherit;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: $base-font-size;
+  scroll-behavior: smooth;
+}
+
+body {
+  @include t-body--l;
+
+  color: $color-dark-2;
+  font-family: $font-family-default;
+  height: 100%;
+  margin: 0;
+  min-width: 375px; // $mq-breakpoints: mobile
+  padding: 0;
+
+  &.is-global-nav-open {
+    @include mq($until: tablet) {
+      overflow-y: hidden;
+    }
+  }
+
+  &.is-body-fixed {
+    overflow: hidden;
+    position: fixed; // on iphone XR does not work well without this
+  }
+}
+
+p {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a {
+  color: $color-main-light;
+  -webkit-tap-highlight-color: transparent; //Chrome on Android: remove blue highlight on all the clickable area
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $color-main-dark;
+  }
+}
+
+strong,
+b {
+  @include t-weight--medium;
+}
+
+em {
+  @include t-style--italic;
+}
+
+small {
+  @include t-body--xxs;
+
+  display: inline-block; // needed to fix wrong line-height due to <small> inline
+}
+
+code {
+  font-family: monospace;
+}
+
+ol,
+ul {
+  margin-top: rem(10);
+}
+
+ol {
+  list-style: decimal;
+  padding-left: rem(32);
+
+  li {
+    margin-bottom: rem(10);
+    padding-left: rem(10);
+  }
+}
+
+ul {
+  list-style: disc;
+  padding-left: rem(36);
+
+  li {
+    margin-bottom: rem(10);
+    padding-left: rem(5);
+  }
+}
+
+/* ------------------
+  Image reset
+------------------ */
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
