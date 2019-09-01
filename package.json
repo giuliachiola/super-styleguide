@@ -13,14 +13,7 @@
     "css-to-postcss-dev": "postcss src/css --dir dist/css",
     "css-to-postcss-prod": "postcss src/css --dir production/css",
     "styles-dev": "npm run stylelint && npm run scss-to-css-dev && npm run css-to-postcss-dev",
-    "styles-prod": "npm run stylelint && npm run scss-to-css-prod && npm run css-to-postcss-prod && npm run css-to-postcss-dev",
-    "_____________________________UIengine enviroment_____________________________": "",
-    "watcher": "nodemon -e scss -x \"npm run styles-dev\"",
-    "serve": "npm-run-all -l cleanup-dev --parallel build-serve watcher",
-    "build-serve": "npx uiengine build --watch --serve",
-    "local": "cross-env NODE_ENV=local     npm run serve",
-    "dev": "cross-env NODE_ENV=development npm run serve",
-    "prod": "cross-env NODE_ENV=production npm run serve"
+    "styles-prod": "npm run stylelint && npm run scss-to-css-prod && npm run css-to-postcss-prod && npm run css-to-postcss-dev"
   },
   "repository": {
     "type": "git",
