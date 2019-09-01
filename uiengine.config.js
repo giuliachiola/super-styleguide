@@ -3,7 +3,7 @@ module.exports = {
   // Here you can overwrite it and add more custom properties.
   // For a detailed documentation of all the options in here see
   // https://uiengine.uix.space/basics/config/
-  name: 'Super Styleguide 1',
+  name: 'Super Styleguide',
 
   // Base directories for the input, your raw source files:
   // - components is the root of the directory containing the components

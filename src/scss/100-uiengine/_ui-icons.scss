@@ -161,42 +161,42 @@
 // Adding background color for media icons preview (some icons have bg color white)
 
 .ui--tg24 .ui-icons--media-wrapper,
-.ui--entertainment .ui-icons--media-wrapper,
+.ui--light .ui-icons--media-wrapper,
 .ui--tg24 .ui-icons--arrow-player-container,
-.ui--sport .ui-icons--arrow-player-container {
+.ui--dark .ui-icons--arrow-player-container {
   background-color: #dadada;
 }
 
-// Hiding arrow navigation link for tg and entertainment
-// Hiding arrow navigation for tg and entertainment
+// Hiding arrow navigation link for tg and light
+// Hiding arrow navigation for tg and light
 
 .ui--tg24 .ui-icons__arrow-container--secondary-arrow,
-.ui--entertainment .ui-icons__arrow-container--secondary-arrow {
+.ui--light .ui-icons__arrow-container--secondary-arrow {
   display: none;
 }
 
-// Hiding arrow player light-regular for tg and entertainment
+// Hiding arrow player light-regular for tg and light
 
 .ui--tg24 .ui-icons__arrow-player--light-regular,
-.ui--entertainment .ui-icons__arrow-player--light-regular {
+.ui--light .ui-icons__arrow-player--light-regular {
   display: none;
 }
 
-// Hiding arrow player primary for tg and sport
+// Hiding arrow player primary for tg and dark
 
 .ui--tg24 .ui-icons__arrow-player--primary,
-.ui--sport .ui-icons__arrow-player--primary {
+.ui--dark .ui-icons__arrow-player--primary {
   display: none;
 }
 
-// Hiding arrow player dark for sport
+// Hiding arrow player dark for dark
 
-.ui--sport .ui-icons__arrow-player--dark {
+.ui--dark .ui-icons__arrow-player--dark {
   display: none;
 }
 
-// Hiding arrow player light for entertainment
+// Hiding arrow player light for light
 
-.ui--entertainment .ui-icons__arrow-player--light {
+.ui--light .ui-icons__arrow-player--light {
   display: none;
 }

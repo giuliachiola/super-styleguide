@@ -18,12 +18,12 @@
     background-color: var(--skytg24-red-light);
   }
 
-  .ui--sport & {
-    background-color: var(--skysport-blue);
+  .ui--dark & {
+    background-color: var(--skydark-blue);
   }
 
-  .ui--entertainment & {
-    background-color: var(--skyentertainment-magenta-light);
+  .ui--light & {
+    background-color: var(--skylight-magenta-light);
   }
 
   .ui--all & {

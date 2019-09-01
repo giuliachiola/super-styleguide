@@ -24,8 +24,8 @@
 
   // Main colors for theme labels
   --skytg24-red-light: #{$color-tg24-red-light};
-  --skysport-blue: #{$color-sport-blue};
-  --skyentertainment-magenta-light: #{$color-entertainment-magenta-light};
+  --skydark-blue: #{$color-dark-blue};
+  --skylight-magenta-light: #{$color-light-magenta-light};
 }
 
 /* ------------------
@@ -53,31 +53,31 @@
   --color-shadow-player: #{$color-tg24-mine-shaft};
 }
 
-:root .ui--sport {
-  --color-main-light: #{$color-sport-red-light};
-  --color-main-dark: #{$color-sport-red-dark};
-  --color-red-cinnabar: #{$color-sport-red-cinnabar};
-  --color-accent: #{$color-sport-blue};
-  --color-gradient-1: #{$color-sport-gradient-1};
-  --color-gradient-2: #{$color-sport-gradient-2};
+:root .ui--dark {
+  --color-main-light: #{$color-dark-red-light};
+  --color-main-dark: #{$color-dark-red-dark};
+  --color-red-cinnabar: #{$color-dark-red-cinnabar};
+  --color-accent: #{$color-dark-blue};
+  --color-gradient-1: #{$color-dark-gradient-1};
+  --color-gradient-2: #{$color-dark-gradient-2};
 
   /* ------------------
     Components
   ------------------ */
 
   // Playlist
-  --color-playlist: #{$color-sport-blue};
+  --color-playlist: #{$color-dark-blue};
   // Shadow
-  --color-shadow-horizontal: #{$color-sport-red-cinnabar};
-  --color-shadow-vertical: #{$color-sport-red-cinnabar};
-  --color-shadow-player: #{$color-sport-blue};
+  --color-shadow-horizontal: #{$color-dark-red-cinnabar};
+  --color-shadow-vertical: #{$color-dark-red-cinnabar};
+  --color-shadow-player: #{$color-dark-blue};
 }
 
-:root .ui--entertainment {
-  --color-main-light: #{$color-entertainment-magenta-light};
-  --color-main-dark: #{$color-entertainment-magenta-dark};
-  --color-gradient-1: #{$color-entertainment-gradient-1};
-  --color-gradient-2: #{$color-entertainment-gradient-2};
+:root .ui--light {
+  --color-main-light: #{$color-light-magenta-light};
+  --color-main-dark: #{$color-light-magenta-dark};
+  --color-gradient-1: #{$color-light-gradient-1};
+  --color-gradient-2: #{$color-light-gradient-2};
 
   /* ------------------
     Components
@@ -86,7 +86,7 @@
   // Playlist
   --color-playlist: #{$color-solid-dark};
   // Shadow
-  --color-shadow-horizontal: #{$color-entertainment-magenta-light};
-  --color-shadow-vertical: #{$color-entertainment-magenta-dark};
+  --color-shadow-horizontal: #{$color-light-magenta-light};
+  --color-shadow-vertical: #{$color-light-magenta-dark};
   --color-shadow-player: #{$color-solid-dark};
 }

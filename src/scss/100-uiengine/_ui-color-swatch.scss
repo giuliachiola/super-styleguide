@@ -30,7 +30,7 @@ article[id^= 'color-palette'] {
   &--accent {
     display: none;
 
-    .ui--sport & {
+    .ui--dark & {
       display: block;
     }
   }
@@ -119,14 +119,14 @@ article[id^= 'color-palette'] {
       }
     }
 
-    &--sport {
-      .ui--sport & {
+    &--dark {
+      .ui--dark & {
         display: block;
       }
     }
 
-    &--entertainment {
-      .ui--entertainment & {
+    &--light {
+      .ui--light & {
         display: block;
       }
     }

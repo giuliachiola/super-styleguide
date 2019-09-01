@@ -1,10 +1,11 @@
 /* ==========================================================================
-  COLORS ENTERTAINMENT
+  COLORS dark
 ========================================================================== */
 
-$color-main-light: $color-entertainment-magenta-light;
-$color-main-dark:  $color-entertainment-magenta-dark;
-$color-gradient-1: $color-entertainment-gradient-1;
-$color-gradient-2: $color-entertainment-gradient-2;
+$color-main-light: $color-dark-red-light;
+$color-main-dark: $color-dark-red-dark;
+$color-gradient-1: $color-dark-gradient-1;
+$color-gradient-2: $color-dark-gradient-2;
+$color-accent: $color-dark-blue;
 $color-linear-gradient: linear-gradient(225deg, $color-gradient-1 0%, $color-gradient-2 100%);
 $color-linear-gradient-inverted: linear-gradient(225deg, $color-gradient-2 0%, $color-gradient-1 100%);

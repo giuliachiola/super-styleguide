@@ -239,15 +239,15 @@ html[data-theme= 'tg24'] {
   }
 }
 
-html[data-theme= 'sport'] {
+html[data-theme= 'dark'] {
   button.topbar__theme-toggle {
-    background-color: var(--skysport-blue);
+    background-color: var(--skydark-blue);
   }
 }
 
-html[data-theme= 'entertainment'] {
+html[data-theme= 'light'] {
   button.topbar__theme-toggle {
-    background-color: var(--skyentertainment-magenta-light);
+    background-color: var(--skylight-magenta-light);
   }
 }
 
