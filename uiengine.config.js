@@ -3,7 +3,7 @@ module.exports = {
   // Here you can overwrite it and add more custom properties.
   // For a detailed documentation of all the options in here see
   // https://uiengine.uix.space/basics/config/
-  name: 'Super Styleguide',
+  name: 'Super Styleguide 1',
 
   // Base directories for the input, your raw source files:
   // - components is the root of the directory containing the components
@@ -12,7 +12,7 @@ module.exports = {
   source: {
     components: './src/components',
     templates: './src/templates',
-    pages: './uiengine/pages'
+    pages: './uiengine'
   },
 
   // Destination paths for the generated output.
@@ -29,18 +29,18 @@ module.exports = {
 
   themes: [
     {
-      id: 'sport',
-      title: 'Sky sport'
+      id: 'light',
+      title: 'Light'
     },
     {
-      id: 'entertainment',
-      title: 'Sky spettacolo'
+      id: 'dark',
+      title: 'Dark'
     }
   ],
 
   ui: {
     lang: 'en',
-    hljs: 'atom-one-dark',
+    // hljs: 'atom-one-dark',
     customStylesFile: '/css/uiengine.css',
     viewports: {
       Phone: {
@@ -60,10 +60,5 @@ module.exports = {
       L: 960,
       XL: 1280
     }
-  },
-
-  debug: 99,
-  browserSync: {
-    browser: ["google chrome canary"]
   },
 }

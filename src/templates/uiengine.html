@@ -4,16 +4,27 @@
     <title><!-- uiengine:title --></title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="/static/styles.css" rel="stylesheet">
-    <!-- add your custom styles here:
-    <link href="/styles/my.css" rel="stylesheet">
-    -->
-  </head>
-  <body>
-    <!-- uiengine:content -->
 
-    <!-- add your custom scripts here:
-    <script src="/scripts/my.js" defer></script>
-    -->
+    <!-- style-dev have all the styles needed for the componens - no UIengine styles -->
+    <link href="/css/dev-<!-- uiengine:theme -->.css" rel="stylesheet">
+
+  </head>
+  <body class="ui-body">
+    <div class="ui--<!-- uiengine:theme -->">
+      <p class="ui-frame-label"><!-- uiengine:theme --></p>
+      <!-- uiengine:content -->
+    </div>
+
+    <!-- add your custom scripts here: -->
+    <!-- <script src="/scripts/uiengine.js" defer></script> -->
+
+    <script>
+      // External preview
+      if (self.location.href === top.location.href) {
+        document.querySelector('.ui-body').classList.add('ui-body--external-preview')
+      } else {
+        document.querySelector('.ui-body').classList.add('ui-body--internal-preview')
+      }
+    </script>
   </body>
 </html>
