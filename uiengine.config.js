@@ -21,27 +21,22 @@ module.exports = {
   // Adapters are used for templating/rendering. Each adapter is a module that gets required
   // and needs to provide functions for setup and rendering. For details see the adapters docs.
   adapters: {
-    html: '@uiengine/adapter-html'
+    html: '@uiengine/adapter-html',
+    ejs: {
+      module: '@uiengine/adapter-ejs',
+      options: {
+        debug: true
+      }
+    }
   },
 
   // Here you can configure the template that the variant preview gets embeded in.
   template: 'uiengine.html',
 
-  themes: [
-    {
-      id: 'light',
-      title: 'Light'
-    },
-    {
-      id: 'dark',
-      title: 'Dark'
-    }
-  ],
-
   ui: {
     lang: 'en',
     // hljs: 'atom-one-dark',
-    customStylesFile: '/css/uiengine.css',
+    customStylesFile: 'css/uiengine.css',
     viewports: {
       Phone: {
         width: 320
@@ -60,5 +55,5 @@ module.exports = {
       L: 960,
       XL: 1280
     }
-  },
+  }
 }

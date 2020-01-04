@@ -1,4 +1,4 @@
-# Super Styleguide
+# Super Styleguide 2
 
 Hey! It looks like you have just set up this project.
 Here are some first tips to get started.
