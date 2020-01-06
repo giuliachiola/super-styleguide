@@ -2,9 +2,9 @@
   BASE
 ========================================================================== */
 
-$base-font-size: 16px;
-$font-family-default: 'Montserrat', sans-serif;
-$font-family-code: 'Fira Code', monospace;
+$ty_base-font-size: 16px;
+$ty_font-family-default: 'Montserrat', sans-serif;
+$ty_font-family-code: 'Fira Code', monospace;
 
 * {
   box-sizing: border-box;
@@ -20,30 +20,30 @@ $font-family-code: 'Fira Code', monospace;
 }
 
 html {
-  font-size: $base-font-size;
+  font-size: $ty_base-font-size;
   scroll-behavior: smooth;
 }
 
 body {
   // color: $color-dark-2;
-  font-family: $font-family-default;
+  font-family: $ty_font-family-default;
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
 p {
-  font-size: $base-font-size;
+  font-size: $ty_base-font-size;
 }
 
 a {
-  color: $color-main;
+  color: $co_color-main;
   // -webkit-tap-highlight-color: transparent; // Chrome on Android: remove blue highlight on all the clickable area
   text-decoration: none;
 
   &:hover,
   &:focus {
-    color: $color-main-tint-10;
+    color: $co_color-main-tint-10;
   }
 }
 
@@ -63,7 +63,7 @@ small {
 }
 
 code {
-  font-family: $font-family-code;
+  font-family: $ty_font-family-code;
 }
 
 // ol,

@@ -1,3 +1,3 @@
 module.exports = {
-  components: ['teaser']
+  components: ['card']
 }

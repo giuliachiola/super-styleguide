@@ -5,15 +5,15 @@
 .c-button {
   @include button-reset;
 
-  background: $color-main;
+  background: $co_color-main;
   border-radius: $sp_main-border-radius;
-  color: $color-light;
-  font-size: $base-font-size;
+  color: $co_color-light;
+  font-size: $ty_base-font-size;
   min-width: 150px;
   padding: 10px;
 
   &:hover {
-    background: $color-main-tint-10;
+    background: $co_color-main-tint-10;
   }
 }
 
@@ -22,6 +22,11 @@
 --------------- */
 
 .c-button--secondary {
-  background: $color-light;
-  color: $color-main;
+  background: $co_color-light;
+  color: $co_color-main;
+
+  &:hover {
+    background: $co_color-light;
+    // color: $co_color-light;
+  }
 }

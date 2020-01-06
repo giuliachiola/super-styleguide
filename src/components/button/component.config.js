@@ -2,7 +2,7 @@ module.exports = {
   label: 'BU',
   variants: [
     {
-      file: 'default.html',
+      file: 'default.ejs',
       title: 'Default',
       description: 'For call to action type situations. Use only once per page.',
       label: 'BU-1',
@@ -14,7 +14,7 @@ module.exports = {
       }
     },
     {
-      file: 'default.html',
+      file: 'default.ejs',
       title: 'Secondary',
       description: 'The default button.',
       label: 'BU-2',

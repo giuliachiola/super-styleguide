@@ -16,6 +16,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@uiengine/adapter-ejs": "^2.5.9",
     "@uiengine/adapter-html": "^2.5.9",
     "@uiengine/core": "^2.5.9",
     "node-sass": "^4.13.0",
@@ -29,7 +30,5 @@
     "stylelint-order": "^4.0.0",
     "stylelint-scss": "^3.13.0"
   },
-  "dependencies": {
-    "@uiengine/adapter-ejs": "^2.5.9"
-  }
+  "dependencies": {}
 }
