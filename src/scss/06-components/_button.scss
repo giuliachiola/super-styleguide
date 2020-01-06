@@ -1,0 +1,27 @@
+/* ==========================================================================
+  BUTTON
+========================================================================== */
+
+.c-button {
+  @include button-reset;
+
+  background: $color-main;
+  border-radius: $sp_main-border-radius;
+  color: $color-light;
+  font-size: $base-font-size;
+  min-width: 150px;
+  padding: 10px;
+
+  &:hover {
+    background: $color-main-tint-10;
+  }
+}
+
+/* ---------------
+  Secondary
+--------------- */
+
+.c-button--secondary {
+  background: $color-light;
+  color: $color-main;
+}

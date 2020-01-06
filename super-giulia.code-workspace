@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "/Users/giulia/Sites/giulia/super-giulia"
+		},
+		{
+			"path": "/Users/giulia/Sites/giulia/super-blog"
+		}
+	],
+	"settings": {
+    "workbench.colorCustomizations": {
+      "titleBar.activeBackground": "#0984e3",
+      "titleBar.inactiveBackground": "#0984e3"
+    }
+  }
+}

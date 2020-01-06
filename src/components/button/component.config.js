@@ -1,23 +1,27 @@
 module.exports = {
-  label: 'A3',
+  label: 'BU',
   variants: [
     {
-      file: 'primary.html',
+      file: 'default.html',
+      title: 'Default',
       description: 'For call to action type situations. Use only once per page.',
+      label: 'BU-1',
       context: {
         button: {
-          text: 'Call to Action',
-          type: 'primary'
+          text: 'Click me',
+          modifier: ''
         }
       }
     },
     {
-      file: 'secondary.html',
+      file: 'default.html',
+      title: 'Secondary',
       description: 'The default button.',
+      label: 'BU-2',
       context: {
         button: {
-          text: 'Click me!',
-          type: 'secondary'
+          text: 'Click me',
+          modifier: 'secondary'
         }
       }
     }

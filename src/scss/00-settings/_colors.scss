@@ -1,0 +1,23 @@
+/* ==========================================================================
+  COLORS
+========================================================================== */
+
+// Main colors
+
+$color-malachite: #04e762;
+$color-orange: #f5b700;
+$color-red-purple: #dc0073;
+$color-azure: #008bf8;
+$color-lawn-green: #89fc00;
+
+// Neutrals
+
+$color-light: #fff;
+$color-solid-black: #000;
+
+// ==========================
+
+$color-main: $color-azure;
+
+$color-main-tint-10: tint($color-main, 10%);
+$color-main-shade-10: shade($color-main, 10%);

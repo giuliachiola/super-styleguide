@@ -1,0 +1,103 @@
+/* ==========================================================================
+  BASE
+========================================================================== */
+
+$base-font-size: 16px;
+$font-family-default: 'Montserrat', sans-serif;
+$font-family-code: 'Fira Code', monospace;
+
+* {
+  box-sizing: border-box;
+  font-family: inherit;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: inherit;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: $base-font-size;
+  scroll-behavior: smooth;
+}
+
+body {
+  // color: $color-dark-2;
+  font-family: $font-family-default;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: $base-font-size;
+}
+
+a {
+  color: $color-main;
+  // -webkit-tap-highlight-color: transparent; // Chrome on Android: remove blue highlight on all the clickable area
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $color-main-tint-10;
+  }
+}
+
+strong,
+b {
+  // @include ty-weight--medium;
+}
+
+em {
+  // @include ty-style--italic;
+}
+
+small {
+  // @include ty-body--xxs;
+
+  // display: inline-block; // needed to fix wrong line-height due to <small> inline
+}
+
+code {
+  font-family: $font-family-code;
+}
+
+// ol,
+// ul {
+//   margin-top: rem(10);
+// }
+
+// ol {
+//   list-style: decimal;
+//   padding-left: rem(32);
+
+//   li {
+//     margin-bottom: rem(10);
+//     padding-left: rem(10);
+//   }
+// }
+
+// ul {
+//   list-style: disc;
+//   padding-left: rem(36);
+
+//   li {
+//     margin-bottom: rem(10);
+//     padding-left: rem(5);
+//   }
+// }
+
+/* ------------------
+  Image reset
+------------------ */
+
+img,
+amp-img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}

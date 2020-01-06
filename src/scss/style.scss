@@ -1,3 +1,12 @@
-body {
-  background: red;
-}
+/* ==========================================================================
+  STYLE
+========================================================================== */
+
+// Import fonts from Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Code&display=swap');
+// Import folders
+@import '00-settings/_settings';
+@import '01-tools/_tools';
+@import '03-elements/_elements';
+@import '06-components/_components';

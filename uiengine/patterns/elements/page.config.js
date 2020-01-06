@@ -1,3 +1,3 @@
 module.exports = {
-  components: ['heading', 'copytext', 'button', 'image']
+  components: ['button']
 }

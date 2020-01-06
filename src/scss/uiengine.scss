@@ -1,3 +1,10 @@
+/* ==========================================================================
+  UIENGINE
+========================================================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Code&display=swap');
+
 :root {
   // Neutral palette;
   --color-solid-dark: #000;
@@ -8,8 +15,8 @@
   --color-medium-light-2: #d6d6d6;
   --color-medium-light-3: #f2f2f2;
   --color-light: #fff;
-  --uie-font-family-fallback: 'SkyText', Arial, Tahoma, Verdana, sans-serif;
-  --uie-font-family-code: 'Fira Code', Hasklig, 'Source Code Pro', 'DejaVu Sans Mono', Hack, Meslo, Menlo, Inconsolata, Consolas, 'Liberation Mono', Courier, monospace;
+  --uie-font-family-fallback: 'Montserrat', sans-serif;
+  --uie-font-family-code: 'Fira Code', monospace;
   --uie-font-family-bold: var(--uie-font-family-fallback);
   --uie-font-family-light: var(--uie-font-family-fallback);
   --uie-font-family-regular: var(--uie-font-family-fallback);
