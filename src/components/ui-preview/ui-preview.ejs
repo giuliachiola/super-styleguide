@@ -4,6 +4,8 @@
   HOW TO USE: extend this .pug file in the template you want to use it
 -->
 
+<%-blocks.header%>
+
 <% var uimodifiers = '' %>
 <% uiContext.containerModifiers.forEach(function(el){ %>
   <% uimodifiers = uimodifiers + ' ' + el %>

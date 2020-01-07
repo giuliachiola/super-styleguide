@@ -19,6 +19,7 @@
     "@uiengine/adapter-ejs": "^2.5.9",
     "@uiengine/adapter-html": "^2.5.9",
     "@uiengine/core": "^2.5.9",
+    "ejs-blocks": "^0.1.4",
     "node-sass": "^4.13.0",
     "normalize-scss": "^7.0.1",
     "postcss": "^7.0.26",
