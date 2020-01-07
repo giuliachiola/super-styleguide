@@ -1,10 +1,14 @@
 module.exports = {
-  label: 'A5',
+  label: 'CA',
   variants: ['default.ejs'],
   context: {
-    button: {
-      text: 'Book your shuttle now!',
-      modifier: 'primary'
-    },
+    card: {
+      title: 'This is the post title',
+      subtitle: 'lorem ipsum',
+      button: {
+        text: 'Read more',
+        modifier: 'secondary'
+      },
+    }
   }
 }

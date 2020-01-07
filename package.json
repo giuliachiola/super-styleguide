@@ -7,8 +7,8 @@
     "_____________________________Styles_____________________________": "",
     "stylelint": "stylelint 'src/scss/**/*.scss' || echo \"Stylelint failed for some file(s).\"",
     "cleanup:dev": "rimraf dist src/css/*.css",
-    "scss:to:css:dev": "node-sass --output-style expanded src/scss/ -o src/css/",
-    "css:to:postcss:dev": "postcss src/css --dir dist/css",
+    "scss:to:css:dev": "node-sass --output-style expanded src/scss/ -o src/css/ --watch",
+    "css:to:postcss:dev": "postcss src/css --dir dist/css --watch",
     "styles:dev": "npm run stylelint && npm run scss:to:css:dev && npm run css:to:postcss:dev",
     "_____________________________Dev_______________________________": "",
     "dev": "npx uiengine build --serve --watch & npm run styles:dev"

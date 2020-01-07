@@ -1,3 +1,6 @@
 <div class="c-card">
-  <%- include('../button/button.ejs', { button: button }); %>
+  <img src="http://placekitten.com/200/300" alt=<%= card.title %>>
+  <h2 class="c-card__title"><%= card.title %></h2>
+  <p class="c-card__subtitle"><%= card.subtitle %></p>
+  <%- include('../button/button.ejs', { button: card.button }); %>
 </div>

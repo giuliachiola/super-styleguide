@@ -1,6 +1,8 @@
 /* ==========================================================================
-  06 - COMPONENTS
+  CARD
 ========================================================================== */
 
-@import 'button';
-@import 'card';
+.c-card {
+  border-radius: $sp_main-border-radius;
+  overflow: hidden;
+}

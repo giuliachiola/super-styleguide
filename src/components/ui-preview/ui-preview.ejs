@@ -1,0 +1,23 @@
+<!--
+  This component is only used to extend the classes that gives extra styles to
+  components for readability
+  HOW TO USE: extend this .pug file in the template you want to use it
+-->
+
+<% var uimodifiers = '' %>
+<% uiContext.containerModifiers.forEach(function(el){ %>
+  <% uimodifiers = uimodifiers + ' ' + el %>
+<% }); %>
+
+<% var uicomponentmodifiers = '' %>
+<% uiContext.componentModifiers.forEach(function(el){ %>
+  <% uicomponentmodifiers = uicomponentmodifiers + ' ' + el %>
+<% }); %>
+
+
+<div class="ui-container <%uimodifiers%>">
+  <div class="">
+    BLOCK COMPONENT
+  </div>
+</div>
+
