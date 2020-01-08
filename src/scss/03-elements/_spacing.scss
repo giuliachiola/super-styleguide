@@ -2,9 +2,28 @@
   SPACING
 ========================================================================== */
 
+$sp_variable-xxs: 3px;
 $sp_variable-xs: 5px;
 $sp_variable-s: 10px;
 $sp_variable-m: 20px;
 $sp_variable-l: 40px;
 
 $sp_main-border-radius: 2px;
+
+// Spacing classes
+
+.l-spacing-xs {
+  margin-bottom: $sp_variable-xs;
+}
+
+.l-spacing-s {
+  margin-bottom: $sp_variable-s;
+}
+
+.l-spacing-m {
+  margin-bottom: $sp_variable-m;
+}
+
+.l-spacing-l {
+  margin-bottom: $sp_variable-l;
+}

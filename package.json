@@ -6,12 +6,12 @@
   "scripts": {
     "_____________________________Styles_____________________________": "",
     "stylelint": "stylelint 'src/scss/**/*.scss' || echo \"Stylelint failed for some file(s).\"",
-    "cleanup:dev": "rimraf dist src/css/*.css",
-    "scss:to:css:dev": "node-sass --output-style expanded src/scss/ -o src/css/ --watch",
-    "css:to:postcss:dev": "postcss src/css --dir dist/css --watch",
+    "clean:dev": "rimraf dist src/css/*.css",
+    "scss:to:css:dev": "node-sass --output-style expanded src/scss/ -o src/css/",
+    "css:to:postcss:dev": "postcss src/css --dir dist/css",
     "styles:dev": "npm run stylelint && npm run scss:to:css:dev && npm run css:to:postcss:dev",
     "_____________________________Dev_______________________________": "",
-    "dev": "npx uiengine build --serve --watch & npm run styles:dev"
+    "dev": "npm run clean:dev && npx uiengine build --serve --watch & npm run styles:dev"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +19,7 @@
     "@uiengine/adapter-ejs": "^2.5.9",
     "@uiengine/adapter-html": "^2.5.9",
     "@uiengine/core": "^2.5.9",
+    "module-alias": "^2.2.2",
     "node-sass": "^4.13.0",
     "normalize-scss": "^7.0.1",
     "postcss": "^7.0.26",

@@ -1,6 +1,20 @@
+<%
+  const truncate = (input) => input.length > 200 ? `${input.substring(0, 200)}...` : input;
+  const abstract = truncate(card.abstract)
+%>
+
+
 <div class="c-card">
-  <img src="http://placekitten.com/200/300" alt=<%= card.title %>>
-  <h2 class="c-card__title"><%= card.title %></h2>
-  <p class="c-card__subtitle"><%= card.subtitle %></p>
-  <%- include('../button/button.ejs', { button: card.button }); %>
+  <div class="o-aspect-ratio o-aspect-ratio--16-10">
+    <img class="c-card__img" src="/static/tags/<%= card.mainTag %>" alt="<%= card.mainTag %>">
+  </div>
+  <div class="c-card__content">
+    <a class="c-card__title" href="#">
+      <h2 class="c-card__title-heading"><%= card.title %></h2>
+    </a>
+    <p class="c-card__abstract"><%= abstract %></p>
+    <div class="c-card__tags">
+      <% card.tags.forEach(function(tag){ %><a class="c-card__tag" href="#"><%= tag %></a><% }); %>
+    </div>
+  </div>
 </div>

@@ -24,9 +24,9 @@ module.exports = {
     html: '@uiengine/adapter-html',
     ejs: {
       module: '@uiengine/adapter-ejs',
-      options: {
-        debug: true
-      }
+      // options: {
+      //   debug: true
+      // }
     }
   },
 

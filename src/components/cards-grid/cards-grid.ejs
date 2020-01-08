@@ -1,0 +1,5 @@
+<div class="o-cards-grid">
+  <% cardsGrid.cards.forEach(function(card){ %>
+    <%- include('../card/card.ejs', { card: card }); %>
+  <% }) %>
+</div>

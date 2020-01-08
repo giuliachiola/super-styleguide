@@ -3,6 +3,54 @@
 ========================================================================== */
 
 .c-card {
-  border-radius: $sp_main-border-radius;
+  // background: tint($co_color-city-lights, 50%);
+  border-radius: 8px;
+  box-shadow: 0 10px 45px -9px rgba(0,0,0,.1);
   overflow: hidden;
+  position: relative;
+}
+
+.c-card__img {
+  min-width: 100%;
+}
+
+.c-card__content {
+  // display: flex;
+  // flex-direction: column;
+  padding: $sp_variable-m;
+}
+
+// .c-card__title {}
+
+.c-card__title-heading {
+  margin-bottom: $sp_variable-s;
+  margin-top: 0;
+}
+
+.c-card__abstract {
+  margin-bottom: $sp_variable-l;
+  margin-top: 0;
+}
+
+.c-card__tags {
+  // align-self: flex-end;
+  // margin-bottom: $sp_variable-m;
+  position: absolute;
+  bottom: $sp_variable-m;
+  right: $sp_variable-m;
+}
+
+.c-card__tag {
+  background: rgba($co_color-main, 0.1);
+  border-radius: $sp_main-border-radius;
+  // color: $co_color-main;
+  font-size: 12px;
+  // padding: $sp_variable-xxs;
+  padding: 2px 8px;
+  border-radius: 100px;
+  text-transform: uppercase;
+
+  .c-card__tag + & {
+    margin-left: $sp_variable-xs;
+  }
 }

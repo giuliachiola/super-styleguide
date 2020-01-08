@@ -16,6 +16,8 @@ module.exports = {
       containerModifiers: ['ui-container--medium-bg'],
       componentModifiers: ['ui-card'],
     },
-    card: cards[0],
+    cardsGrid: {
+      cards,
+    },
   }
 }

@@ -1,7 +1,7 @@
 // Debug to run it in nodeJS
 const moduleAlias = require('module-alias')
 moduleAlias.addAlias('@content', process.cwd() + '/content')
-// Config
+// // Config
 // const path = require('path')
 // const RenderDocs = require('@scripts/render-docs.js')
 // const variant = new RenderDocs(path.dirname(__filename))
@@ -16,6 +16,8 @@ module.exports = {
       containerModifiers: ['ui-container--medium-bg'],
       componentModifiers: ['ui-card'],
     },
-    card: cards[0],
+    cardsGrid: {
+      cards,
+    },
   }
 }

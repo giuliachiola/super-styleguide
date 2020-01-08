@@ -1,3 +1,3 @@
 module.exports = {
-  components: ['card']
+  components: ['card', 'cards-grid', 'template-homepage']
 }

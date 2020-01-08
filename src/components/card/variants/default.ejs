@@ -1,2 +1,19 @@
-<!--# include file="../card.html" -->
-<%- include('../card.ejs'); %>
+<%
+  let uimodifiers = '';
+  uiContext.containerModifiers.forEach(function(el){
+    uimodifiers = `${uimodifiers} ${el}`
+  })
+
+  let uicomponentmodifiers = '';
+  uiContext.componentModifiers.forEach(function(el){
+    uicomponentmodifiers = `${uicomponentmodifiers} ${el}`
+  })
+%>
+
+<div class="ui-container <%=uimodifiers%>">
+  <div class="<%=uicomponentmodifiers%>">
+    <!-- COMPONENT start -->
+    <%- include('../card'); %>
+    <!-- COMPONENT enb -->
+  </div>
+</div>

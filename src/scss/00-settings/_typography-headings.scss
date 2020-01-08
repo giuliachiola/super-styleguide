@@ -1,0 +1,247 @@
+/* ==========================================================================
+  HEADINGS
+========================================================================== */
+
+/* ------------------
+  Headings maps
+------------------ */
+
+// XXL
+
+$map-heading-xxl: (
+  mobile: (
+    fontsize:   rem(32),
+    lineheight: rem(36),
+  ),
+  tablet: (
+    fontsize:   rem(32),
+    lineheight: rem(36),
+  ),
+  desktop: (
+    fontsize:   rem(46),
+    lineheight: rem(52),
+  ),
+  wide: (
+    fontsize:   rem(62),
+    lineheight: rem(72),
+  ),
+);
+
+// XL
+
+$map-heading-xl: (
+  mobile: (
+    fontsize:   rem(32),
+    lineheight: rem(36),
+  ),
+  tablet: (
+    fontsize:   rem(32),
+    lineheight: rem(36),
+  ),
+  desktop: (
+    fontsize:   rem(34),
+    lineheight: rem(38),
+  ),
+  wide: (
+    fontsize:   rem(44),
+    lineheight: rem(52),
+  ),
+);
+
+// L
+
+$map-heading-l: (
+  mobile: (
+    fontsize:   rem(28),
+    lineheight: rem(32),
+  ),
+  tablet: (
+    fontsize:   rem(28),
+    lineheight: rem(32),
+  ),
+  desktop: (
+    fontsize:   rem(26),
+    lineheight: rem(28),
+  ),
+  wide: (
+    fontsize:   rem(28),
+    lineheight: rem(32),
+  ),
+);
+
+// M
+
+$map-heading-m: (
+  mobile: (
+    fontsize:   rem(22),
+    lineheight: rem(26),
+  ),
+  tablet: (
+    fontsize:   rem(22),
+    lineheight: rem(26),
+  ),
+  desktop: (
+    fontsize:   rem(22),
+    lineheight: rem(26),
+  ),
+);
+
+// M custom
+
+$map-heading-m-custom: (
+  tablet: (
+    fontsize:   rem(20),
+    lineheight: rem(22),
+  ),
+);
+
+// S
+
+$map-heading-s: (
+  mobile: (
+    fontsize:   rem(16),
+    lineheight: rem(18),
+  ),
+  tablet: (
+    fontsize:   rem(16),
+    lineheight: rem(18),
+  ),
+  desktop: (
+    fontsize:   rem(16),
+    lineheight: rem(18),
+  ),
+);
+
+/* ------------------
+  Headings rules
+------------------ */
+
+/* ------------------
+  Headings - XXL
+------------------ */
+
+// @mixin ty-heading--xxl {
+//   font-size: map-deep-get($map-heading-xxl, 'mobile', 'fontsize');
+//   font-weight: $font-sans-weight-medium;
+//   line-height: map-deep-get($map-heading-xxl, 'mobile', 'lineheight');
+
+//   @include mq(tablet) {
+//     font-size: map-deep-get($map-heading-xxl, 'tablet', 'fontsize');
+//     font-weight: $font-sans-weight-medium;
+//     line-height: map-deep-get($map-heading-xxl, 'tablet', 'lineheight');
+//   }
+
+//   @include mq(desktop) {
+//     font-size: map-deep-get($map-heading-xxl, 'desktop', 'fontsize');
+//     font-weight: $font-sans-weight-medium;
+//     line-height: map-deep-get($map-heading-xxl, 'desktop', 'lineheight');
+//   }
+// }
+
+/* ------------------
+  Headings - XL
+------------------ */
+
+@mixin ty-heading--xl {
+  font-size: map-deep-get($map-heading-xl, 'mobile', 'fontsize');
+  font-weight: $font-sans-weight-medium;
+  line-height: map-deep-get($map-heading-xl, 'mobile', 'lineheight');
+
+  @include mq(tablet) {
+    font-size: map-deep-get($map-heading-xl, 'tablet', 'fontsize');
+    font-weight: $font-sans-weight-medium;
+    line-height: map-deep-get($map-heading-xl, 'tablet', 'lineheight');
+  }
+
+  @include mq(desktop) {
+    font-size: map-deep-get($map-heading-xl, 'desktop', 'fontsize');
+    font-weight: $font-sans-weight-medium;
+    line-height: map-deep-get($map-heading-xl, 'desktop', 'lineheight');
+  }
+}
+
+/* ------------------
+  Headings - L
+------------------ */
+
+@mixin ty-heading--l {
+  font-size: map-deep-get($map-heading-l, 'mobile', 'fontsize');
+  font-weight: $font-sans-weight-medium;
+  line-height: map-deep-get($map-heading-l, 'mobile', 'lineheight');
+
+  @include mq(tablet) {
+    font-size: map-deep-get($map-heading-l, 'tablet', 'fontsize');
+    font-weight: $font-sans-weight-medium;
+    line-height: map-deep-get($map-heading-l, 'tablet', 'lineheight');
+  }
+
+  @include mq(desktop) {
+    font-size: map-deep-get($map-heading-l, 'desktop', 'fontsize');
+    font-weight: $font-sans-weight-medium;
+    line-height: map-deep-get($map-heading-l, 'desktop', 'lineheight');
+  }
+}
+
+/* ------------------
+  Headings - M
+------------------ */
+
+@mixin ty-heading--m {
+  font-size: map-deep-get($map-heading-m, 'mobile', 'fontsize');
+  font-weight: $font-sans-weight-medium;
+  line-height: map-deep-get($map-heading-m, 'mobile', 'lineheight');
+
+  @include mq(tablet) {
+    font-size: map-deep-get($map-heading-m, 'tablet', 'fontsize');
+    font-weight: $font-sans-weight-medium;
+    line-height: map-deep-get($map-heading-m, 'tablet', 'lineheight');
+  }
+
+  @include mq(desktop) {
+    font-size: map-deep-get($map-heading-m, 'desktop', 'fontsize');
+    font-weight: $font-sans-weight-medium;
+    line-height: map-deep-get($map-heading-m, 'desktop', 'lineheight');
+  }
+}
+
+/* ------------------
+  Headings - S
+------------------ */
+
+@mixin ty-heading--s {
+  font-size: map-deep-get($map-heading-s, 'mobile', 'fontsize');
+  font-weight: $font-sans-weight-medium;
+  line-height: map-deep-get($map-heading-s, 'mobile', 'lineheight');
+
+  @include mq(tablet) {
+    font-size: map-deep-get($map-heading-s, 'tablet', 'fontsize');
+    font-weight: $font-sans-weight-medium;
+    line-height: map-deep-get($map-heading-s, 'tablet', 'lineheight');
+  }
+
+  @include mq(desktop) {
+    font-size: map-deep-get($map-heading-s, 'desktop', 'fontsize');
+    font-weight: $font-sans-weight-medium;
+    line-height: map-deep-get($map-heading-s, 'desktop', 'lineheight');
+  }
+}
+
+// =====================
+
+h1 {
+  @include ty-heading--xl;
+}
+
+h2 {
+  @include ty-heading--l;
+}
+
+h3 {
+  @include ty-heading--m;
+}
+
+h4,
+h5,
+h6 {
+  @include ty-heading--s;
+}

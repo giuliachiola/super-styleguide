@@ -1,5 +1,6 @@
 module.exports = {
   label: 'BU',
+  variants: ['default.ejs'],
   variants: [
     {
       file: 'default.ejs',
@@ -7,8 +8,12 @@ module.exports = {
       description: 'For call to action type situations. Use only once per page.',
       label: 'BU-1',
       context: {
+        uiContext: {
+          containerModifiers: ['ui-container--medium-bg'],
+          componentModifiers: [],
+        },
         button: {
-          text: 'Click me',
+          text: 'Default button',
           modifier: ''
         }
       }
@@ -19,8 +24,12 @@ module.exports = {
       description: 'The default button.',
       label: 'BU-2',
       context: {
+        uiContext: {
+          containerModifiers: ['ui-container--medium-bg'],
+          componentModifiers: [],
+        },
         button: {
-          text: 'Click me',
+          text: 'Secondary button',
           modifier: 'secondary'
         }
       }
