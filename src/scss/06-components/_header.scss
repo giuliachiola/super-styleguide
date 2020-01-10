@@ -1,0 +1,27 @@
+/* ==========================================================================
+  HEADER
+========================================================================== */
+
+// .c-header {}
+
+.c-header__list {
+  @include list-reset;
+
+  padding: $sp_variable-m 0;
+  text-align: right;
+}
+
+.c-header__item {
+  @include list-item-reset;
+
+  display: inline-block;
+
+  &::before {
+    color: $co_color-main;
+    content: '•';
+  }
+
+  .c-header__item + & {
+    margin-left: $sp_variable-m;
+  }
+}

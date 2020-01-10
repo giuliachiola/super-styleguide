@@ -3,51 +3,93 @@
 ========================================================================== */
 
 .c-card {
-  // background: tint($co_color-city-lights, 50%);
-  border-radius: 2px;
-  box-shadow: 0 10px 45px -9px rgba(0,0,0,.1);
+  border-radius: rem(2);
+  box-shadow: 0 rem(10) rem(45) rem(-9) rgba(0, 0, 0, 0.1);
   overflow: hidden;
   position: relative;
 }
 
-.c-card__img {
-  min-width: 100%;
+.c-card__img-wrapper {
+  @include aspect-ratio;
+  @include image-padding(20, 6); // shorter
+
+  @include mq(tablet) {
+    @include image-padding(1, 1); // square
+  }
+
+  &::before {
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    .c-card--git & {
+      background: linear-gradient(to right, #eb3349, #f45c43);
+    }
+
+    .c-card--visual-studio-code & {
+      background: linear-gradient(to right, #1a2980, #26d0ce);
+    }
+
+    .c-card--vuejs & {
+      background: linear-gradient(to right, #11998e, #38ef7d);
+    }
+
+    .c-card--javascript & {
+      background: linear-gradient(to right, #f2994a, #f2c94c);
+    }
+  }
+
+  .icon {
+    bottom: $sp_variable-m;
+    color:$co_color-light;
+    height: auto;
+    opacity: 0.5;
+    position: absolute;
+    right: $sp_variable-m;
+    width: rem(100);
+  }
 }
 
 .c-card__content {
-  // display: flex;
-  // flex-direction: column;
   padding: $sp_variable-m;
 }
 
 // .c-card__title {}
 
 .c-card__title-heading {
+  @include ty-heading--m;
+
   margin-bottom: $sp_variable-s;
   margin-top: 0;
 }
 
 .c-card__abstract {
-  margin-bottom: $sp_variable-l;
+  margin-bottom: rem(60);
   margin-top: 0;
 }
 
-.c-card__tags {
-  // align-self: flex-end;
-  // margin-bottom: $sp_variable-m;
-  position: absolute;
+.c-card__bottom {
   bottom: $sp_variable-m;
+  position: absolute;
   right: $sp_variable-m;
+  text-align: right;
+}
+
+.c-card__date {
+  color: $co_color-light-gray;
+  display: block;
+  font-size: $ty_font-size-small;
+  margin-bottom: $sp_variable-xs;
 }
 
 .c-card__tag {
   background: rgba($co_color-main, 0.1);
   border-radius: $sp_main-border-radius;
-  // color: $co_color-main;
-  font-size: 12px;
-  // padding: $sp_variable-xxs;
-  padding: 2px 8px;
-  border-radius: 100px;
+  border-radius: rem(100);
+  font-size: $ty_font-size-small;
+  padding: rem(2 8);
   text-transform: uppercase;
 
   .c-card__tag + & {

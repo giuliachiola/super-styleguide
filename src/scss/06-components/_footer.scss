@@ -1,0 +1,20 @@
+/* ==========================================================================
+  FOOTER
+========================================================================== */
+
+.c-footer {
+  background-color: $co_color-city-lights;
+}
+
+.c-footer__content {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  padding: $sp_variable-m 0;
+
+  .icon--twitter {
+    margin-left: $sp_variable-s;
+    width: rem(20);
+  }
+}

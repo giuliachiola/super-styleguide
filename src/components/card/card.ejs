@@ -4,17 +4,20 @@
 %>
 
 
-<div class="c-card">
-  <div class="o-aspect-ratio o-aspect-ratio--16-10">
-    <img class="c-card__img" src="/static/tags/<%= card.mainTag %>" alt="<%= card.mainTag %>">
+<div class="c-card c-card--<%= card.mainTag %>">
+  <div class="c-card__img-wrapper">
+    <%- include('../../svg/'+card.mainTag+'.svg') %>
   </div>
   <div class="c-card__content">
     <a class="c-card__title" href="#">
       <h2 class="c-card__title-heading"><%= card.title %></h2>
     </a>
     <p class="c-card__abstract"><%= abstract %></p>
-    <div class="c-card__tags">
-      <% card.tags.forEach(function(tag){ %><a class="c-card__tag" href="#"><%= tag %></a><% }); %>
+    <div class="c-card__bottom">
+      <time class="c-card__date" time="20:00"><%= card.date %></time>
+      <div class="c-card__tags">
+        <% card.tags.forEach(function(tag){ %><a class="c-card__tag" href="#"><%= tag %></a><% }); %>
+      </div>
     </div>
   </div>
 </div>

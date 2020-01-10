@@ -9,12 +9,14 @@
   border-radius: $sp_main-border-radius;
   color: $co_color-light;
   display: inline-block;
-  font-size: $ty_base-font-size;
+  font-size: $ty_font-size-base;
   min-width: 150px;
   padding: 10px 20px;
 
   &:hover {
     background: $co_color-main-tint-10;
+    color: $co_color-light; // override <a> hover color
+    text-decoration: none; // override <a> hover decoration
   }
 }
 
@@ -28,6 +30,5 @@
 
   &:hover {
     background: $co_color-light;
-    // color: $co_color-light;
   }
 }

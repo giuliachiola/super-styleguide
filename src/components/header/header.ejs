@@ -1,0 +1,15 @@
+<%
+  var navList = ['blog', 'today I learned', 'useful resources', 'projects', 'about']
+%>
+
+<header class="c-header">
+  <nav class="c-header__nav l-main">
+    <ul class="c-header__list">
+      <% navList.forEach(function(item){ %>
+        <li class="c-header__item">
+          <a class="c-header__link" href="#"><%=item%></a>
+        </li>
+      <% }); %>
+    </ul>
+  </nav>
+</header>

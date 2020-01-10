@@ -9,6 +9,7 @@ const cards = Array(15).fill(0).map(card => ({
   abstract: randItem('abstracts'),
   tags: Array.from({length: getRandom(4, 1)}, () => randItem('tags').label),
   mainTag: randItem('tags').img,
+  date: randItem('dates'),
   link: 'Read more',
 }))
 

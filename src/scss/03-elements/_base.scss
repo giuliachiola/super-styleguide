@@ -16,7 +16,7 @@
 }
 
 html {
-  font-size: $ty_base-font-size;
+  font-size: $ty_font-size-base;
   scroll-behavior: smooth;
 }
 
@@ -29,7 +29,8 @@ body {
 }
 
 p {
-  font-size: $ty_base-font-size;
+  // font-size: $ty_font-size-base;
+  // font-size: rem($ty_font-size-base);
 }
 
 a {

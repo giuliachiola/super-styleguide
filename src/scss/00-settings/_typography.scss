@@ -2,7 +2,9 @@
   TYPOGRAPHY
 ========================================================================== */
 
-$ty_base-font-size: 16px;
+$ty_font-size-base: rem(16);
 $ty_font-family-default: 'Montserrat', sans-serif;
 $ty_font-family-code: 'Fira Code', monospace;
 $font-sans-weight-medium: 500;
+
+$ty_font-size-small: rem(12);

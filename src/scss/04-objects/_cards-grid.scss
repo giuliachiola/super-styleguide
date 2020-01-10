@@ -3,9 +3,10 @@
 ========================================================================== */
 
 .o-cards-grid {
+  display: grid;
+  grid-gap: $sp_variable-m;
+
   @include mq(tablet) {
-    display: grid;
-    grid-gap: $sp_variable-m;
     grid-template-columns: repeat(2, 1fr);
   }
 

@@ -18,3 +18,11 @@
   width: 100%;
   z-index: -1;
 }
+
+.c-hero__subtitle {
+  @include ty-heading--s;
+}
+
+.c-hero__scroll-down {
+  color: $co_color-light;
+}

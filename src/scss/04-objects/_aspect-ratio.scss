@@ -16,10 +16,14 @@
   padding-top: calc(calc(#{$height} / #{$width}) * 100%);
 }
 
-.o-aspect-ratio {
+@mixin aspect-ratio {
   display: block;
   overflow: hidden;
   position: relative;
+}
+
+.o-aspect-ratio {
+  @include aspect-ratio;
 
   /* ------------------
     ratio = 1
