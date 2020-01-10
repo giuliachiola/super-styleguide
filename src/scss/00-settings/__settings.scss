@@ -2,9 +2,17 @@
   00 - SETTINGS
 ========================================================================== */
 
+// functions
+@import 'map-deep-get';
+
+// colors
 @import 'colors-fn'; // should be before 'colors'
 @import 'colors';
 
 // media queries
 @import 'node_modules/sass-mq/_mq.scss';
 @import 'mq-config';
+
+// typography
+@import 'typography';
+@import 'typography-headings';
