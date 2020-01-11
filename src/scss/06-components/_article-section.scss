@@ -1,0 +1,26 @@
+/* ==========================================================================
+  ARTICLE SECTION
+========================================================================== */
+
+.c-article-section {
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  p {
+    font-size: rem(20);
+    line-height: 1.4;
+  }
+}
+
+.c-article-section__img--small {
+  max-width: 50%;
+}
+
+.c-article-section__date {
+  color: $co_color-light-gray;
+  display: block;
+  font-size: $ty_font-size-small;
+  margin-bottom: $sp_variable-xs;
+}

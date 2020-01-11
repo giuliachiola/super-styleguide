@@ -1,10 +1,9 @@
 <section class="c-hero">
   <img class="c-hero__img" src="https://images.unsplash.com/photo-1504237111663-37d6094bec09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3150&q=80" alt="">
-  <div class="l-main">
-    <h1>My awesome blog 🚀</h1>
-    <h2 class="c-hero__subtitle">This is where I write everything I think it'd be helpful to someone else<br>or - you know - the future me.</h2>
-    <a class="c-hero__scroll-down" href="#">
-      <%- include('../../svg/chevron.svg') %>
-    </a>
-  </div>
+  <% if (hero.title && hero.subtitle) { %>
+    <div class="l-main">
+      <h1><%= hero.title %></h1>
+      <h2 class="c-hero__subtitle"><%= hero.subtitle %></h2>
+    </div>
+  <% } %>
 </section>

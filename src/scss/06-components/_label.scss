@@ -1,0 +1,16 @@
+/* ==========================================================================
+  LABEL
+========================================================================== */
+
+.c-label {
+  background: rgba($co_color-main, 0.1);
+  border-radius: $sp_main-border-radius;
+  border-radius: rem(100);
+  font-size: $ty_font-size-small;
+  padding: rem(2 8);
+  text-transform: uppercase;
+
+  .c-label + & {
+    margin-left: $sp_variable-xs;
+  }
+}

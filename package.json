@@ -21,6 +21,7 @@
     "@uiengine/adapter-html": "^2.5.9",
     "@uiengine/core": "^2.5.9",
     "install": "^0.13.0",
+    "lodash": "^4.17.15",
     "module-alias": "^2.2.2",
     "node-sass": "^4.13.0",
     "nodemon": "^2.0.2",

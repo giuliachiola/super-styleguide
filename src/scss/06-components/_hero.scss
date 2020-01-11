@@ -4,7 +4,8 @@
 
 .c-hero {
   color: $co_color-light;
-  padding: 150px 0;
+  min-height: rem(500);
+  padding: rem(150) 0;
   position: relative;
   text-align: center;
 }

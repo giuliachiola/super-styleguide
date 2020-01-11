@@ -3,12 +3,16 @@
   <%- include('../header/header.ejs'); %>
   <!-- hero -->
   <div class="l-spacing-m">
-    <%- include('../hero/hero.ejs'); %>
+    <%- include('../hero/hero.ejs'), { hero: hero }; %>
   </div>
   <!-- content -->
   <main class="l-main">
     <div class="l-spacing-l">
-      <%- include('../cards-grid/cards-grid.ejs', { cardsGrid: cardsGrid }); %>
+      <% cards.forEach(function(card){ %>
+        <div class="l-spacing-m">
+          <%- include('../card/card.ejs', { card: card, mod: 'l-spacing-m' }); %>
+        </div>
+      <% }) %>
     </div>
     <div class="o-distributed o-distributed--center l-spacing-l">
       <a class="c-button" href="#">Load more post...</a>

@@ -10,12 +10,7 @@
 }
 
 .c-card__img-wrapper {
-  @include aspect-ratio;
-  @include image-padding(20, 6); // shorter
-
-  @include mq(tablet) {
-    @include image-padding(1, 1); // square
-  }
+  position: relative;
 
   &::before {
     content: '';
@@ -50,6 +45,23 @@
     right: $sp_variable-m;
     width: rem(100);
   }
+
+  .c-card--squared-image & {
+    @include aspect-ratio;
+    @include image-padding(20, 6); // shorter
+
+    @include mq(tablet) {
+      @include image-padding(1, 1); // square
+    }
+  }
+
+  .c-card--short-image & {
+    height: rem(10);
+
+    .icon {
+      display: none;
+    }
+  }
 }
 
 .c-card__content {
@@ -82,17 +94,4 @@
   display: block;
   font-size: $ty_font-size-small;
   margin-bottom: $sp_variable-xs;
-}
-
-.c-card__tag {
-  background: rgba($co_color-main, 0.1);
-  border-radius: $sp_main-border-radius;
-  border-radius: rem(100);
-  font-size: $ty_font-size-small;
-  padding: rem(2 8);
-  text-transform: uppercase;
-
-  .c-card__tag + & {
-    margin-left: $sp_variable-xs;
-  }
 }

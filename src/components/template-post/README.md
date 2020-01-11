@@ -1,4 +1,4 @@
-# Template Homepage
+# Template Post
 
 ## What problem does it solve?
 

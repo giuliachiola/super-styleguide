@@ -1,13 +1,25 @@
 <%
   const truncate = (input) => input.length > 200 ? `${input.substring(0, 200)}...` : input;
   const abstract = truncate(card.abstract)
+
+  let modifiers = ''
+  if (card.mainTag) {
+    modifiers = `${modifiers} c-card--${card.mainTag}`
+  }
+  if (card.modifiers) {
+    card.modifiers.forEach((mod) => {
+      modifiers = `${modifiers} c-card--${mod}`
+    })
+  }
 %>
 
 
-<div class="c-card c-card--<%= card.mainTag %>">
-  <div class="c-card__img-wrapper">
-    <%- include('../../svg/'+card.mainTag+'.svg') %>
-  </div>
+<article class="c-card <%=modifiers%>">
+  <% if (card.hasImg) { %>
+    <div class="c-card__img-wrapper">
+      <%- include('../../svg/'+card.mainTag+'.svg') %>
+    </div>
+  <% }; %>
   <div class="c-card__content">
     <a class="c-card__title" href="#">
       <h2 class="c-card__title-heading"><%= card.title %></h2>
@@ -16,8 +28,8 @@
     <div class="c-card__bottom">
       <time class="c-card__date" time="20:00"><%= card.date %></time>
       <div class="c-card__tags">
-        <% card.tags.forEach(function(tag){ %><a class="c-card__tag" href="#"><%= tag %></a><% }); %>
+        <% card.tags.forEach(function(tag){ %><a class="c-label" href="#"><%= tag %></a><% }); %>
       </div>
     </div>
   </div>
-</div>
+</article>

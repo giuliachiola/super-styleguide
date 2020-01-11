@@ -1,0 +1,16 @@
+<div class="l-wrapper">
+  <!-- header -->
+  <%- include('../header/header.ejs'); %>
+  <!-- hero -->
+  <div class="l-spacing-m">
+    <%- include('../hero/hero.ejs'), { hero: hero }; %>
+  </div>
+  <!-- content -->
+  <main class="l-main">
+    <div class="l-spacing-l">
+      <%- include('../article-section/article-section.ejs'); %>
+    </div>
+  </main>
+  <!-- footer -->
+  <%- include('../footer/footer.ejs'); %>
+</div>
