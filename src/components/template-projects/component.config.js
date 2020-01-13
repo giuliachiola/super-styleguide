@@ -23,14 +23,17 @@ module.exports = {
       {},
       card,
       {
-        modifiers: ['highlight-top'],
+        modifiers: ['highlight-left'],
         hasImg: false,
+        table: {
+
+        }
       }
     )),
     hero: {
-      title: `Today I learned`,
-      subtitle: `Useful snippet I learned daily`,
-      img: `https://images.unsplash.com/photo-1553830591-42e4fd7035ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80`,
+      title: `Projects`,
+      subtitle: `Side projects I built during the last years`,
+      img: `https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80`,
     }
   }
 }

@@ -1,0 +1,36 @@
+/* ==========================================================================
+  FILTER
+========================================================================== */
+
+// .c-filter {}
+
+.c-filter__legend {
+  margin-bottom: $sp_variable-s;
+}
+
+.c-filter__list {
+  @include list-reset;
+}
+
+.c-filter__item {
+  @include list-item-reset;
+
+  display: inline-block;
+
+  // Label
+
+  .c-label {
+    color: $co_color-main;
+  }
+}
+
+.c-filter__input { // TODO: check accessibility on this
+  margin: 0;
+  max-width: rem(1);
+  opacity: 0;
+  padding: 0;
+
+  &:checked + .c-label {
+    @include label-state-active;
+  }
+}

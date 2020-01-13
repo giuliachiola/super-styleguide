@@ -23,14 +23,15 @@ module.exports = {
       {},
       card,
       {
-        modifiers: ['highlight-top'],
+        modifiers: ['highlight-left'],
         hasImg: false,
+        date: false, // note: date is not visibile in resources page
       }
     )),
     hero: {
-      title: `Today I learned`,
-      subtitle: `Useful snippet I learned daily`,
-      img: `https://images.unsplash.com/photo-1553830591-42e4fd7035ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80`,
+      title: `Useful resources`,
+      subtitle: `Things I found around the web during years`,
+      img: `https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80`,
     }
   }
 }

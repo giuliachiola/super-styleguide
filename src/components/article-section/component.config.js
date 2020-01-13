@@ -6,7 +6,7 @@ moduleAlias.addAlias('@content', process.cwd() + '/content')
 // const RenderDocs = require('@scripts/render-docs.js')
 // const variant = new RenderDocs(path.dirname(__filename))
 // Components
-const { randItem } = require('@content/dynamic-content.js')
+const { randItem, getRandom } = require('@content/dynamic-content.js')
 
 module.exports = {
   label: 'CA',
@@ -22,6 +22,7 @@ module.exports = {
         },
         articleSection: {
           date: randItem('dates'),
+          tags: Array.from({length: getRandom(4, 1)}, () => randItem('tags').label),
         }
       }
     },

@@ -55,5 +55,10 @@ module.exports = {
       L: 960,
       XL: 1280
     }
-  }
+  },
+
+  debug: 99,
+  browserSync: {
+    browser: ["firefox nightly"]
+  },
 }

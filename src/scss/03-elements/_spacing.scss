@@ -2,11 +2,11 @@
   SPACING
 ========================================================================== */
 
-$sp_variable-xxs: 3px;
-$sp_variable-xs: 5px;
-$sp_variable-s: 10px;
-$sp_variable-m: 20px;
-$sp_variable-l: 40px;
+$sp_variable-xxs: rem(3);
+$sp_variable-xs: rem(5);
+$sp_variable-s: rem(10);
+$sp_variable-m: rem(20);
+$sp_variable-l: rem(40);
 
 $sp_main-border-radius: 2px;
 

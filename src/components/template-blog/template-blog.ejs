@@ -7,6 +7,10 @@
   </div>
   <!-- content -->
   <main class="l-main">
+    <!-- tags -->
+    <div class="l-spacing-m">
+      <%- include('../filter/filter.ejs'); %>
+    </div>
     <div class="l-spacing-l">
       <%- include('../cards-grid/cards-grid.ejs', { cardsGrid: cardsGrid }); %>
     </div>

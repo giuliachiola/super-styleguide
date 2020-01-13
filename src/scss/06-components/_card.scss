@@ -2,6 +2,32 @@
   CARD
 ========================================================================== */
 
+$sp_card-content-padding: $sp_variable-m;
+$sp_card-highlight: rem(10);
+
+$co_card-gradient-git: #eb3349, #f45c43;
+$co_card-gradient-vuejs: #11998e, #38ef7d;
+$co_card-gradient-javascript: #f2994a, #f2c94c;
+$co_card-gradient-visual-studio-code: #1a2980, #26d0ce;
+
+@mixin card-gradient($dir, $tag) {
+  @if $tag == 'git' {
+    background: linear-gradient($dir, $co_card-gradient-git);
+  }
+
+  @else if $tag == 'vuejs' {
+    background: linear-gradient($dir, $co_card-gradient-vuejs);
+  }
+
+  @else if $tag == 'javascript' {
+    background: linear-gradient($dir, $co_card-gradient-javascript);
+  }
+
+  @else if $tag == 'visual-studio-code' {
+    background: linear-gradient($dir, $co_card-gradient-visual-studio-code);
+  }
+}
+
 .c-card {
   border-radius: rem(2);
   box-shadow: 0 rem(10) rem(45) rem(-9) rgba(0, 0, 0, 0.1);
@@ -20,19 +46,19 @@
     width: 100%;
 
     .c-card--git & {
-      background: linear-gradient(to right, #eb3349, #f45c43);
+      @include card-gradient(to right, 'git');
     }
 
     .c-card--visual-studio-code & {
-      background: linear-gradient(to right, #1a2980, #26d0ce);
+      @include card-gradient(to right, 'visual-studio-code');
     }
 
     .c-card--vuejs & {
-      background: linear-gradient(to right, #11998e, #38ef7d);
+      @include card-gradient(to right, 'vuejs');
     }
 
     .c-card--javascript & {
-      background: linear-gradient(to right, #f2994a, #f2c94c);
+      @include card-gradient(to right, 'javascript');
     }
   }
 
@@ -54,18 +80,70 @@
       @include image-padding(1, 1); // square
     }
   }
-
-  .c-card--short-image & {
-    height: rem(10);
-
-    .icon {
-      display: none;
-    }
-  }
 }
 
 .c-card__content {
-  padding: $sp_variable-m;
+  padding: $sp_card-content-padding;
+
+  .c-card--highlight-left & {
+    padding-left: $sp_card-content-padding + $sp_card-highlight;
+
+    &::before {
+      content: '';
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: $sp_card-highlight;
+    }
+  }
+
+  .c-card--highlight-top & {
+    padding-top: $sp_card-content-padding + $sp_card-highlight;
+
+    &::before {
+      content: '';
+      height: $sp_card-highlight;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  // colors by category
+
+  .c-card--highlight-left.c-card--git &::before {
+    @include card-gradient(to bottom, 'git');
+  }
+
+  .c-card--highlight-top.c-card--git &::before {
+    @include card-gradient(to right, 'git');
+  }
+
+  .c-card--highlight-left.c-card--visual-studio-code &::before {
+    @include card-gradient(to bottom, 'visual-studio-code');
+  }
+
+  .c-card--highlight-top.c-card--visual-studio-code &::before {
+    @include card-gradient(to right, 'visual-studio-code');
+  }
+
+  .c-card--highlight-left.c-card--javascript &::before {
+    @include card-gradient(to bottom, 'javascript');
+  }
+
+  .c-card--highlight-top.c-card--javascript &::before {
+    @include card-gradient(to right, 'javascript');
+  }
+
+  .c-card--highlight-left.c-card--vuejs &::before {
+    @include card-gradient(to bottom, 'vuejs');
+  }
+
+  .c-card--highlight-top.c-card--vuejs &::before {
+    @include card-gradient(to right, 'vuejs');
+  }
 }
 
 // .c-card__title {}

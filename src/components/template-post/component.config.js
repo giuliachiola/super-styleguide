@@ -6,7 +6,7 @@ moduleAlias.addAlias('@content', process.cwd() + '/content')
 // const RenderDocs = require('@scripts/render-docs.js')
 // const variant = new RenderDocs(path.dirname(__filename))
 // Components
-const { randItem } = require('@content/dynamic-content.js')
+const { randItem, getRandom } = require('@content/dynamic-content.js')
 
 module.exports = {
   label: 'CA',
@@ -22,9 +22,11 @@ module.exports = {
         },
         hero: {
           title: false,
+          img: `https://images.unsplash.com/photo-1474377207190-a7d8b3334068?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80`,
         },
         articleSection: {
           date: randItem('dates'),
+          tags: Array.from({length: getRandom(4, 1)}, () => randItem('tags').label),
         }
       }
     },

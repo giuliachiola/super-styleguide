@@ -50,9 +50,9 @@ module.exports = {
         )
       }
     },
-    // Horizontal
+    // Highlight left
     {
-      title: 'Horizontal',
+      title: 'Highlight left',
       file: 'default.ejs',
       context: {
         uiContext: {
@@ -63,7 +63,25 @@ module.exports = {
           {},
           card,
           {
-            modifiers: ['short-image'],
+            modifiers: ['highlight-left'],
+          }
+        )
+      }
+    },
+    // Highlight top
+    {
+      title: 'Highlight top',
+      file: 'default.ejs',
+      context: {
+        uiContext: {
+          containerModifiers: ['ui-container--medium-bg'],
+          componentModifiers: [],
+        },
+        card: _.merge(
+          {},
+          card,
+          {
+            modifiers: ['highlight-top'],
           }
         )
       }

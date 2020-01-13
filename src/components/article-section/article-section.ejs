@@ -1,12 +1,8 @@
-<%
-  const labels = ['test', 'ciao', 'hei']
-%>
-
 <article class="c-article-section">
   <h1>This is the post title</h1>
   <time class="c-article-section__date" datetime="2019-03-01">31st Aug 2019</time>
-  <div class="c-card__tags">
-    <% labels.forEach(function(label){ %><a class="c-label" href="#"><%= label %></a><% }); %>
+  <div class="l-spacing-l">
+    <% articleSection.tags.forEach(function(tag){ %><a class="c-label" href="#"><%= tag %></a><% }); %>
   </div>
   <p>
     The standard Lorem Ipsum passage, used since the 1500s

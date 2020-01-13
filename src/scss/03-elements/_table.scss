@@ -1,0 +1,17 @@
+/* ==========================================================================
+  TABLE
+========================================================================== */
+
+.c-table {
+  border-collapse: collapse; // to show border bottom in <tr>
+  text-align: left;
+
+  tr {
+    border-bottom: rem(1) solid $co_color-city-lights;
+  }
+
+  th,
+  td {
+    padding: rem(10);
+  }
+}

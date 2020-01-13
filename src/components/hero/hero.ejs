@@ -1,8 +1,8 @@
 <section class="c-hero">
-  <img class="c-hero__img" src="https://images.unsplash.com/photo-1504237111663-37d6094bec09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3150&q=80" alt="">
+  <img class="c-hero__img" src="<%= hero.img %>" alt="">
   <% if (hero.title && hero.subtitle) { %>
     <div class="l-main">
-      <h1><%= hero.title %></h1>
+      <h1><%- hero.title %></h1>
       <h2 class="c-hero__subtitle"><%= hero.subtitle %></h2>
     </div>
   <% } %>
