@@ -1,0 +1,1089 @@
+@charset "UTF-8";
+/* ==========================================================================
+  STYLE
+========================================================================== */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fira+Code&display=swap");
+/* ==========================================================================
+  00 - SETTINGS
+========================================================================== */
+/* ==========================================================================
+  MAP DEEP GET
+========================================================================== */
+/* ==========================================================================
+  COLORS
+========================================================================== */
+/* ==========================================================================
+  MQ CONFIG
+========================================================================== */
+/* ==========================================================================
+  Functions
+========================================================================== */
+/* ==========================================================================
+  Strip unit
+========================================================================== */
+/* ==========================================================================
+  Convert PX to REM
+========================================================================== */
+/* ==========================================================================
+  TYPOGRAPHY
+========================================================================== */
+/* ==========================================================================
+  HEADINGS
+========================================================================== */
+/* ------------------
+  Headings maps
+------------------ */
+/* ------------------
+  Headings rules
+------------------ */
+/* ------------------
+  Headings - XXL
+------------------ */
+/* ------------------
+  Headings - XL
+------------------ */
+/* ------------------
+  Headings - L
+------------------ */
+/* ------------------
+  Headings - M
+------------------ */
+/* ------------------
+  Headings - S
+------------------ */
+h1 {
+  font-size: 2.125rem;
+  font-weight: 500;
+}
+
+@media (min-width: 48em) {
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 64em) {
+  h1 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+@media (min-width: 48em) {
+  h2 {
+    font-size: 1.9375rem;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 64em) {
+  h2 {
+    font-size: 2.375rem;
+    font-weight: 500;
+  }
+}
+
+h3 {
+  font-size: 1.4375rem;
+  font-weight: 500;
+}
+
+@media (min-width: 48em) {
+  h3 {
+    font-size: 1.5625rem;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 64em) {
+  h3 {
+    font-size: 1.75rem;
+    font-weight: 500;
+  }
+}
+
+h4,
+h5,
+h6 {
+  font-size: 1.1875rem;
+  font-weight: 500;
+}
+
+@media (min-width: 48em) {
+  h4,
+  h5,
+  h6 {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 64em) {
+  h4,
+  h5,
+  h6 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+}
+
+/* ==========================================================================
+  01 - TOOLS
+========================================================================== */
+/* ==========================================================================
+  BUTTON RESET
+========================================================================== */
+/* ==========================================================================
+  FIELDSET RESET
+========================================================================== */
+legend {
+  display: table;
+  padding: 0;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  min-width: 0;
+  padding: 0.01em 0 0 0;
+}
+
+body:not(:-moz-handler-blocked) fieldset {
+  display: table-cell;
+}
+
+/* ==========================================================================
+  LIST RESET
+========================================================================== */
+/* ------------------
+  Usage
+
+  <ul> @include list-reset;
+------------------ */
+/* ------------------
+  Usage
+
+  <li> @include list-item-reset;
+------------------ */
+/* ==========================================================================
+  03 - ELEMENTS
+========================================================================== */
+/* ==========================================================================
+  BASE
+========================================================================== */
+* {
+  box-sizing: border-box;
+  font-family: inherit;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: inherit;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #50596c;
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  line-height: 1.4;
+}
+
+a {
+  color: #008bf8;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #1a97f9;
+  text-decoration: underline;
+}
+
+code {
+  font-family: "Fira Code", monospace;
+}
+
+/* ------------------
+  Image reset
+------------------ */
+img,
+amp-img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/* ==========================================================================
+  SPACING
+========================================================================== */
+.l-spacing-xs {
+  margin-bottom: 0.3125rem;
+}
+
+.l-spacing-s {
+  margin-bottom: 0.625rem;
+}
+
+.l-spacing-m {
+  margin-bottom: 1.25rem;
+}
+
+.l-spacing-l {
+  margin-bottom: 2.5rem;
+}
+
+/* ==========================================================================
+  TABLE
+========================================================================== */
+.c-table {
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.c-table tr {
+  border-bottom: 0.0625rem solid #e8e8e8;
+}
+
+.c-table th,
+.c-table td {
+  padding: 0.625rem;
+}
+
+/* ==========================================================================
+  04 - OBJECTS
+========================================================================== */
+/* ==========================================================================
+  ASPECT RATIO
+
+  more info: https://andy-bell.design/wrote/creating-an-aspect-ratio-css-utility/
+========================================================================== */
+.o-aspect-ratio {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  /* ------------------
+    ratio = 1
+  ------------------ */
+  /* ------------------
+    ratio = 16:10
+  ------------------ */
+  /* ------------------
+    img
+  ------------------ */
+}
+
+.o-aspect-ratio--square {
+  padding-top: calc(calc(1 / 1) * 100%);
+}
+
+.o-aspect-ratio--16-10 {
+  padding-top: calc(calc(10 / 16) * 100%);
+}
+
+.o-aspect-ratio img {
+  left: 0;
+  max-width: 100%;
+  min-width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+/* ==========================================================================
+  CARDS GRID
+========================================================================== */
+.o-cards-grid {
+  display: grid;
+  grid-gap: 1.25rem;
+}
+
+@media (min-width: 48em) {
+  .o-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 64em) {
+  .o-cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ==========================================================================
+  DISTRIBUTED
+========================================================================== */
+.o-distributed {
+  display: flex;
+}
+
+.o-distributed--center {
+  justify-content: center;
+}
+
+/* ==========================================================================
+  ICON
+========================================================================== */
+.icon {
+  height: 30px;
+  width: 30px;
+}
+
+/* ==========================================================================
+  LAYOUT
+========================================================================== */
+.l-main {
+  margin: 20px;
+}
+
+@media (min-width: 64em) {
+  .l-main {
+    margin: 0 auto;
+    max-width: 1024px;
+  }
+}
+
+/* ==========================================================================
+  06 - COMPONENTS
+========================================================================== */
+/* ==========================================================================
+  ARTICLE SECTION
+========================================================================== */
+.c-article-section img {
+  display: block;
+  margin: 0 auto;
+}
+
+.c-article-section p {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.c-article-section__img--small {
+  max-width: 50%;
+}
+
+.c-article-section__date {
+  color: #acb3c2;
+  display: block;
+  font-size: 0.75rem;
+  margin-bottom: 0.3125rem;
+}
+
+/* ==========================================================================
+  BUTTON
+========================================================================== */
+.c-button {
+  background: transparent;
+  border: none;
+  background: #008bf8;
+  border-radius: 2px;
+  color: #fff;
+  display: inline-block;
+  font-size: 1rem;
+  min-width: 150px;
+  padding: 10px 20px;
+}
+
+.c-button:hover {
+  background: #1a97f9;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ---------------
+  Secondary
+--------------- */
+.c-button--secondary {
+  background: #fff;
+  color: #008bf8;
+}
+
+.c-button--secondary:hover {
+  background: #fff;
+}
+
+/* ==========================================================================
+  CARD
+========================================================================== */
+.c-card {
+  border-radius: 0.125rem;
+  box-shadow: 0 0.625rem 2.8125rem -0.5625rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+.c-card__img-wrapper {
+  position: relative;
+}
+
+.c-card__img-wrapper::before {
+  content: '';
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.c-card--git .c-card__img-wrapper::before {
+  background: linear-gradient(to right, #eb3349, #f45c43);
+}
+
+.c-card--visual-studio-code .c-card__img-wrapper::before {
+  background: linear-gradient(to right, #1a2980, #26d0ce);
+}
+
+.c-card--vuejs .c-card__img-wrapper::before {
+  background: linear-gradient(to right, #11998e, #38ef7d);
+}
+
+.c-card--javascript .c-card__img-wrapper::before {
+  background: linear-gradient(to right, #f2994a, #f2c94c);
+}
+
+.c-card__img-wrapper .icon {
+  bottom: 1.25rem;
+  color: #fff;
+  height: auto;
+  opacity: 0.5;
+  position: absolute;
+  right: 1.25rem;
+  width: 6.25rem;
+}
+
+.c-card--squared-image .c-card__img-wrapper {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  padding-top: calc(calc(6 / 20) * 100%);
+}
+
+@media (min-width: 48em) {
+  .c-card--squared-image .c-card__img-wrapper {
+    padding-top: calc(calc(1 / 1) * 100%);
+  }
+}
+
+.c-card__content {
+  padding: 1.25rem;
+}
+
+.c-card--highlight-left .c-card__content {
+  padding-left: 1.875rem;
+}
+
+.c-card--highlight-left .c-card__content::before {
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 0.625rem;
+}
+
+.c-card--highlight-top .c-card__content {
+  padding-top: 1.875rem;
+}
+
+.c-card--highlight-top .c-card__content::before {
+  content: '';
+  height: 0.625rem;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.c-card--highlight-left.c-card--git .c-card__content::before {
+  background: linear-gradient(to bottom, #eb3349, #f45c43);
+}
+
+.c-card--highlight-top.c-card--git .c-card__content::before {
+  background: linear-gradient(to right, #eb3349, #f45c43);
+}
+
+.c-card--highlight-left.c-card--visual-studio-code .c-card__content::before {
+  background: linear-gradient(to bottom, #1a2980, #26d0ce);
+}
+
+.c-card--highlight-top.c-card--visual-studio-code .c-card__content::before {
+  background: linear-gradient(to right, #1a2980, #26d0ce);
+}
+
+.c-card--highlight-left.c-card--javascript .c-card__content::before {
+  background: linear-gradient(to bottom, #f2994a, #f2c94c);
+}
+
+.c-card--highlight-top.c-card--javascript .c-card__content::before {
+  background: linear-gradient(to right, #f2994a, #f2c94c);
+}
+
+.c-card--highlight-left.c-card--vuejs .c-card__content::before {
+  background: linear-gradient(to bottom, #11998e, #38ef7d);
+}
+
+.c-card--highlight-top.c-card--vuejs .c-card__content::before {
+  background: linear-gradient(to right, #11998e, #38ef7d);
+}
+
+.c-card__title-heading {
+  font-size: 1.4375rem;
+  font-weight: 500;
+  margin-bottom: 0.625rem;
+  margin-top: 0;
+}
+
+@media (min-width: 48em) {
+  .c-card__title-heading {
+    font-size: 1.5625rem;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 64em) {
+  .c-card__title-heading {
+    font-size: 1.75rem;
+    font-weight: 500;
+  }
+}
+
+.c-card__abstract {
+  margin-bottom: 3.75rem;
+  margin-top: 0;
+}
+
+.c-card__bottom {
+  bottom: 1.25rem;
+  position: absolute;
+  right: 1.25rem;
+  text-align: right;
+}
+
+.c-card__date {
+  color: #acb3c2;
+  display: block;
+  font-size: 0.75rem;
+  margin-bottom: 0.3125rem;
+}
+
+/* ==========================================================================
+  FOOTER
+========================================================================== */
+.c-footer {
+  background-color: #e8e8e8;
+}
+
+.c-footer__content {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  padding: 1.25rem 0;
+}
+
+.c-footer__content .icon--twitter {
+  margin-left: 0.625rem;
+  width: 1.25rem;
+}
+
+/* ==========================================================================
+  HEADER
+========================================================================== */
+.c-header__list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  padding: 1.25rem 0;
+  text-align: right;
+}
+
+.c-header__item {
+  margin-bottom: 0;
+  padding-left: 0;
+  display: inline-block;
+}
+
+.c-header__item::before {
+  color: #008bf8;
+  content: '•';
+}
+
+.c-header__item + .c-header__item {
+  margin-left: 1.25rem;
+}
+
+/* ==========================================================================
+  HERO
+========================================================================== */
+.c-hero {
+  color: #fff;
+  min-height: 31.25rem;
+  padding: 9.375rem 0;
+  position: relative;
+  text-align: center;
+}
+
+.c-hero__img {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.c-hero__subtitle {
+  font-size: 1.1875rem;
+  font-weight: 500;
+}
+
+@media (min-width: 48em) {
+  .c-hero__subtitle {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 64em) {
+  .c-hero__subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+}
+
+.c-hero__scroll-down {
+  color: #fff;
+}
+
+/* ==========================================================================
+  LABEL
+========================================================================== */
+.c-label {
+  background: rgba(0, 139, 248, 0.1);
+  border-radius: 2px;
+  border-radius: 6.25rem;
+  font-size: 0.75rem;
+  padding: 0.125rem 0.5rem;
+  text-transform: uppercase;
+}
+
+.c-label + .c-label {
+  margin-left: 0.3125rem;
+}
+
+/* ==========================================================================
+  FILTER
+========================================================================== */
+.c-filter__legend {
+  margin-bottom: 0.625rem;
+}
+
+.c-filter__list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.c-filter__item {
+  margin-bottom: 0;
+  padding-left: 0;
+  display: inline-block;
+}
+
+.c-filter__item .c-label {
+  color: #008bf8;
+}
+
+.c-filter__input {
+  margin: 0;
+  max-width: 0.0625rem;
+  opacity: 0;
+  padding: 0;
+}
+
+.c-filter__input:checked + .c-label {
+  background: rgba(0, 139, 248, 0.7);
+  color: #fff;
+}
+
+/* ==========================================================================
+  06 - COMPONENTS
+========================================================================== */
+/* ==========================================================================
+  ARTICLE SECTION
+========================================================================== */
+.c-article-section img {
+  display: block;
+  margin: 0 auto;
+}
+
+.c-article-section p {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.c-article-section__img--small {
+  max-width: 50%;
+}
+
+.c-article-section__date {
+  color: #acb3c2;
+  display: block;
+  font-size: 0.75rem;
+  margin-bottom: 0.3125rem;
+}
+
+/* ==========================================================================
+  BUTTON
+========================================================================== */
+.c-button {
+  background: transparent;
+  border: none;
+  background: #008bf8;
+  border-radius: 2px;
+  color: #fff;
+  display: inline-block;
+  font-size: 1rem;
+  min-width: 150px;
+  padding: 10px 20px;
+}
+
+.c-button:hover {
+  background: #1a97f9;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ---------------
+  Secondary
+--------------- */
+.c-button--secondary {
+  background: #fff;
+  color: #008bf8;
+}
+
+.c-button--secondary:hover {
+  background: #fff;
+}
+
+/* ==========================================================================
+  CARD
+========================================================================== */
+.c-card {
+  border-radius: 0.125rem;
+  box-shadow: 0 0.625rem 2.8125rem -0.5625rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+.c-card__img-wrapper {
+  position: relative;
+}
+
+.c-card__img-wrapper::before {
+  content: '';
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.c-card--git .c-card__img-wrapper::before {
+  background: linear-gradient(to right, #eb3349, #f45c43);
+}
+
+.c-card--visual-studio-code .c-card__img-wrapper::before {
+  background: linear-gradient(to right, #1a2980, #26d0ce);
+}
+
+.c-card--vuejs .c-card__img-wrapper::before {
+  background: linear-gradient(to right, #11998e, #38ef7d);
+}
+
+.c-card--javascript .c-card__img-wrapper::before {
+  background: linear-gradient(to right, #f2994a, #f2c94c);
+}
+
+.c-card__img-wrapper .icon {
+  bottom: 1.25rem;
+  color: #fff;
+  height: auto;
+  opacity: 0.5;
+  position: absolute;
+  right: 1.25rem;
+  width: 6.25rem;
+}
+
+.c-card--squared-image .c-card__img-wrapper {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  padding-top: calc(calc(6 / 20) * 100%);
+}
+
+@media (min-width: 48em) {
+  .c-card--squared-image .c-card__img-wrapper {
+    padding-top: calc(calc(1 / 1) * 100%);
+  }
+}
+
+.c-card__content {
+  padding: 1.25rem;
+}
+
+.c-card--highlight-left .c-card__content {
+  padding-left: 1.875rem;
+}
+
+.c-card--highlight-left .c-card__content::before {
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 0.625rem;
+}
+
+.c-card--highlight-top .c-card__content {
+  padding-top: 1.875rem;
+}
+
+.c-card--highlight-top .c-card__content::before {
+  content: '';
+  height: 0.625rem;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.c-card--highlight-left.c-card--git .c-card__content::before {
+  background: linear-gradient(to bottom, #eb3349, #f45c43);
+}
+
+.c-card--highlight-top.c-card--git .c-card__content::before {
+  background: linear-gradient(to right, #eb3349, #f45c43);
+}
+
+.c-card--highlight-left.c-card--visual-studio-code .c-card__content::before {
+  background: linear-gradient(to bottom, #1a2980, #26d0ce);
+}
+
+.c-card--highlight-top.c-card--visual-studio-code .c-card__content::before {
+  background: linear-gradient(to right, #1a2980, #26d0ce);
+}
+
+.c-card--highlight-left.c-card--javascript .c-card__content::before {
+  background: linear-gradient(to bottom, #f2994a, #f2c94c);
+}
+
+.c-card--highlight-top.c-card--javascript .c-card__content::before {
+  background: linear-gradient(to right, #f2994a, #f2c94c);
+}
+
+.c-card--highlight-left.c-card--vuejs .c-card__content::before {
+  background: linear-gradient(to bottom, #11998e, #38ef7d);
+}
+
+.c-card--highlight-top.c-card--vuejs .c-card__content::before {
+  background: linear-gradient(to right, #11998e, #38ef7d);
+}
+
+.c-card__title-heading {
+  font-size: 1.4375rem;
+  font-weight: 500;
+  margin-bottom: 0.625rem;
+  margin-top: 0;
+}
+
+@media (min-width: 48em) {
+  .c-card__title-heading {
+    font-size: 1.5625rem;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 64em) {
+  .c-card__title-heading {
+    font-size: 1.75rem;
+    font-weight: 500;
+  }
+}
+
+.c-card__abstract {
+  margin-bottom: 3.75rem;
+  margin-top: 0;
+}
+
+.c-card__bottom {
+  bottom: 1.25rem;
+  position: absolute;
+  right: 1.25rem;
+  text-align: right;
+}
+
+.c-card__date {
+  color: #acb3c2;
+  display: block;
+  font-size: 0.75rem;
+  margin-bottom: 0.3125rem;
+}
+
+/* ==========================================================================
+  FOOTER
+========================================================================== */
+.c-footer {
+  background-color: #e8e8e8;
+}
+
+.c-footer__content {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  padding: 1.25rem 0;
+}
+
+.c-footer__content .icon--twitter {
+  margin-left: 0.625rem;
+  width: 1.25rem;
+}
+
+/* ==========================================================================
+  HEADER
+========================================================================== */
+.c-header__list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  padding: 1.25rem 0;
+  text-align: right;
+}
+
+.c-header__item {
+  margin-bottom: 0;
+  padding-left: 0;
+  display: inline-block;
+}
+
+.c-header__item::before {
+  color: #008bf8;
+  content: '•';
+}
+
+.c-header__item + .c-header__item {
+  margin-left: 1.25rem;
+}
+
+/* ==========================================================================
+  HERO
+========================================================================== */
+.c-hero {
+  color: #fff;
+  min-height: 31.25rem;
+  padding: 9.375rem 0;
+  position: relative;
+  text-align: center;
+}
+
+.c-hero__img {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.c-hero__subtitle {
+  font-size: 1.1875rem;
+  font-weight: 500;
+}
+
+@media (min-width: 48em) {
+  .c-hero__subtitle {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 64em) {
+  .c-hero__subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+}
+
+.c-hero__scroll-down {
+  color: #fff;
+}
+
+/* ==========================================================================
+  LABEL
+========================================================================== */
+.c-label {
+  background: rgba(0, 139, 248, 0.1);
+  border-radius: 2px;
+  border-radius: 6.25rem;
+  font-size: 0.75rem;
+  padding: 0.125rem 0.5rem;
+  text-transform: uppercase;
+}
+
+.c-label + .c-label {
+  margin-left: 0.3125rem;
+}
+
+/* ==========================================================================
+  FILTER
+========================================================================== */
+.c-filter__legend {
+  margin-bottom: 0.625rem;
+}
+
+.c-filter__list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.c-filter__item {
+  margin-bottom: 0;
+  padding-left: 0;
+  display: inline-block;
+}
+
+.c-filter__item .c-label {
+  color: #008bf8;
+}
+
+.c-filter__input {
+  margin: 0;
+  max-width: 0.0625rem;
+  opacity: 0;
+  padding: 0;
+}
+
+.c-filter__input:checked + .c-label {
+  background: rgba(0, 139, 248, 0.7);
+  color: #fff;
+}

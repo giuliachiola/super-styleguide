@@ -4,7 +4,7 @@ dist
 production
 
 # CSS temp build file (not yet processed by postcss)
-src/css/*.css
+# src/css/*.css
 
 # windows
 ui.apps/
