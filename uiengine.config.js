@@ -59,6 +59,6 @@ module.exports = {
 
   debug: 99,
   browserSync: {
-    browser: ["firefox nightly"]
+    browser: ["google chrome canary"]
   },
 }
