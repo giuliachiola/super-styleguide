@@ -29,6 +29,22 @@
   color: $co_color-main;
 
   &:hover {
-    background: $co_color-light;
+    background: $co_color-main;
+    color: $co_color-light;
+  }
+}
+
+/* ---------------
+  Border
+--------------- */
+
+.c-button--border {
+  background: $co_color-light;
+  border: 1px solid $co_color-main;
+  color: $co_color-main;
+
+  &:hover {
+    background: $co_color-main;
+    color: $co_color-light;
   }
 }

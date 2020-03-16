@@ -341,6 +341,10 @@ amp-img {
   justify-content: center;
 }
 
+.o-distributed--between {
+  justify-content: space-between;
+}
+
 /* ==========================================================================
   ICON
 ========================================================================== */
@@ -420,7 +424,22 @@ amp-img {
 }
 
 .c-button--secondary:hover {
+  background: #008bf8;
+  color: #fff;
+}
+
+/* ---------------
+  Border
+--------------- */
+.c-button--border {
   background: #fff;
+  border: 1px solid #008bf8;
+  color: #008bf8;
+}
+
+.c-button--border:hover {
+  background: #008bf8;
+  color: #fff;
 }
 
 /* ==========================================================================
@@ -784,7 +803,22 @@ amp-img {
 }
 
 .c-button--secondary:hover {
+  background: #008bf8;
+  color: #fff;
+}
+
+/* ---------------
+  Border
+--------------- */
+.c-button--border {
   background: #fff;
+  border: 1px solid #008bf8;
+  color: #008bf8;
+}
+
+.c-button--border:hover {
+  background: #008bf8;
+  color: #fff;
 }
 
 /* ==========================================================================

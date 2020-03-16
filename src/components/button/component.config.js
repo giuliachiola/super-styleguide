@@ -33,6 +33,22 @@ module.exports = {
           modifier: 'secondary'
         }
       }
+    },
+    {
+      file: 'default.ejs',
+      title: 'Border',
+      description: 'The default button.',
+      label: 'BU-2',
+      context: {
+        uiContext: {
+          containerModifiers: ['ui-container--medium-bg'],
+          componentModifiers: [],
+        },
+        button: {
+          text: 'Border button',
+          modifier: 'border'
+        }
+      }
     }
   ]
 }
