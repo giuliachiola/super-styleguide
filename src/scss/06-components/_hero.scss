@@ -8,6 +8,16 @@
   padding: rem(150) 0;
   position: relative;
   text-align: center;
+
+  &::before {
+    background: linear-gradient(to top, #000000d9, transparent);
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
 }
 
 .c-hero__img {
@@ -20,10 +30,25 @@
   z-index: -1;
 }
 
+.l-grid__main {
+  position: relative; // FIXME: necessary to have gradient below the text!
+}
+
 .c-hero__subtitle {
   @include ty-heading--s;
 }
 
 .c-hero__scroll-down {
   color: $co_color-light;
+}
+
+.c-hero__credits {
+  bottom: 20px;
+  font-size: $ty_font-size-small;
+  position: absolute;
+  right: 20px;
+
+  a {
+    color: inherit;
+  }
 }

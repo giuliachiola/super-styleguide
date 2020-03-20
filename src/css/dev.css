@@ -662,6 +662,16 @@ amp-img {
   text-align: center;
 }
 
+.c-hero::before {
+  background: linear-gradient(to top, #000000d9, transparent);
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 .c-hero__img {
   height: 100%;
   left: 0;
@@ -670,6 +680,10 @@ amp-img {
   top: 0;
   width: 100%;
   z-index: -1;
+}
+
+.l-grid__main {
+  position: relative;
 }
 
 .c-hero__subtitle {
@@ -693,6 +707,17 @@ amp-img {
 
 .c-hero__scroll-down {
   color: #fff;
+}
+
+.c-hero__credits {
+  font-size: 0.75rem;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.c-hero__credits a {
+  color: inherit;
 }
 
 /* ==========================================================================
@@ -1041,6 +1066,16 @@ amp-img {
   text-align: center;
 }
 
+.c-hero::before {
+  background: linear-gradient(to top, #000000d9, transparent);
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 .c-hero__img {
   height: 100%;
   left: 0;
@@ -1049,6 +1084,10 @@ amp-img {
   top: 0;
   width: 100%;
   z-index: -1;
+}
+
+.l-grid__main {
+  position: relative;
 }
 
 .c-hero__subtitle {
@@ -1072,6 +1111,17 @@ amp-img {
 
 .c-hero__scroll-down {
   color: #fff;
+}
+
+.c-hero__credits {
+  font-size: 0.75rem;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.c-hero__credits a {
+  color: inherit;
 }
 
 /* ==========================================================================
