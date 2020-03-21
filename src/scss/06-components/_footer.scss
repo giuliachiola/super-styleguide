@@ -15,19 +15,19 @@
 }
 
 .c-footer__item {
+  color: $co_color-medium-gray;
   padding: $sp_variable-s;
+
+  &:hover {
+    color: $co_color-dark-gray;
+  }
 
   .c-footer__item ~ & {
     margin-left: $sp_variable-s;
   }
 
   .icon {
-    color: $co_color-medium-gray;
     height: rem(35);
     width: rem(35);
-  }
-
-  &:hover .icon {
-    color: $co_color-dark-gray;
   }
 }
