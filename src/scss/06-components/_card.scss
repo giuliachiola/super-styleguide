@@ -89,7 +89,7 @@ $co_card-gradient-vsc: #1a2980, #26d0ce;
 }
 
 .c-card__content {
-  padding: $sp_card-content-padding;
+  padding: $sp_card-content-padding $sp_card-content-padding rem(60) $sp_card-content-padding; // bottom padding needed for date/tags position absolute
 
   .c-card--highlight-left & {
     padding-left: $sp_card-content-padding + $sp_card-highlight;
@@ -162,7 +162,6 @@ $co_card-gradient-vsc: #1a2980, #26d0ce;
 }
 
 .c-card__abstract {
-  margin-bottom: rem(60);
   margin-top: 0;
 }
 

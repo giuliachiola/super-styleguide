@@ -12,6 +12,10 @@
     font-size: rem(20);
     line-height: 1.4;
   }
+
+  table { // markdown table with external wrapper
+    @include table-styles;
+  }
 }
 
 .c-article-section__img--small {

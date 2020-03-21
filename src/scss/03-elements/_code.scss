@@ -1,8 +1,7 @@
 /* ==========================================================================
-  03 - ELEMENTS
+  CODE
 ========================================================================== */
 
-@import 'base';
-@import 'spacing';
-@import 'table';
-@import 'code';
+:not(pre) > code:not([class^= 'language-']) { // inline code
+  background: $co_color-concrete;
+}

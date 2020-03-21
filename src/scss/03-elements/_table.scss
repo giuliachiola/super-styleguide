@@ -2,7 +2,7 @@
   TABLE
 ========================================================================== */
 
-.c-table {
+@mixin table-styles {
   border-collapse: collapse; // to show border bottom in <tr>
   text-align: left;
 
@@ -14,4 +14,8 @@
   td {
     padding: rem(10);
   }
+}
+
+.c-table { // <table class="c-table">...</table>
+  @include table-styles;
 }

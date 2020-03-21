@@ -24,4 +24,9 @@
   .c-header__item + & {
     margin-left: $sp_variable-m;
   }
+
+  &[data-state= 'active'] {
+    border-bottom: rem(4) solid $co_color-main;
+    padding-bottom: rem(4);
+  }
 }

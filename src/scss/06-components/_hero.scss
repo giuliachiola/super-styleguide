@@ -13,6 +13,7 @@
 
   .l-main {
     position: relative; // FIXME: necessary to have gradient below the text!
+    text-shadow: $co_color-solid-black 0px 0px 10px; // text shadow for legibility
   }
 
   &::before {
@@ -60,9 +61,9 @@
   font-size: $ty_font-size-small;
   position: absolute;
   right: 20px;
-  text-decoration: underline;
 
-  &:hover {
+  a {
     color: inherit;
+    text-decoration: underline;
   }
 }

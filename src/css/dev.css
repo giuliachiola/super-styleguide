@@ -225,6 +225,10 @@ code {
   font-family: "Fira Code", monospace;
 }
 
+ul {
+  font-size: 1rem;
+}
+
 /* ------------------
   Image reset
 ------------------ */
@@ -269,6 +273,13 @@ amp-img {
 .c-table th,
 .c-table td {
   padding: 0.625rem;
+}
+
+/* ==========================================================================
+  CODE
+========================================================================== */
+:not(pre) > code:not([class^='language-']) {
+  background: #f3f3f3;
 }
 
 /* ==========================================================================
@@ -383,6 +394,20 @@ amp-img {
   line-height: 1.4;
 }
 
+.c-article-section table {
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.c-article-section table tr {
+  border-bottom: 0.0625rem solid #e8e8e8;
+}
+
+.c-article-section table th,
+.c-article-section table td {
+  padding: 0.625rem;
+}
+
 .c-article-section__img--small {
   max-width: 50%;
 }
@@ -504,7 +529,7 @@ amp-img {
 }
 
 .c-card__content {
-  padding: 1.25rem;
+  padding: 1.25rem 1.25rem 3.75rem 1.25rem;
 }
 
 .c-card--highlight-left .c-card__content {
@@ -587,7 +612,6 @@ amp-img {
 }
 
 .c-card__abstract {
-  margin-bottom: 3.75rem;
   margin-top: 0;
 }
 
@@ -661,6 +685,11 @@ amp-img {
   margin-left: 1.25rem;
 }
 
+.c-header__item[data-state='active'] {
+  border-bottom: 0.25rem solid #008bf8;
+  padding-bottom: 0.25rem;
+}
+
 /* ==========================================================================
   HERO
 ========================================================================== */
@@ -675,6 +704,7 @@ amp-img {
 
 .c-hero .l-main {
   position: relative;
+  text-shadow: #000 0px 0px 10px;
 }
 
 .c-hero::before {
@@ -736,11 +766,11 @@ amp-img {
   font-size: 0.75rem;
   position: absolute;
   right: 20px;
-  text-decoration: underline;
 }
 
-.c-hero__credits:hover {
+.c-hero__credits a {
   color: inherit;
+  text-decoration: underline;
 }
 
 /* ==========================================================================
@@ -810,6 +840,20 @@ amp-img {
   line-height: 1.4;
 }
 
+.c-article-section table {
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.c-article-section table tr {
+  border-bottom: 0.0625rem solid #e8e8e8;
+}
+
+.c-article-section table th,
+.c-article-section table td {
+  padding: 0.625rem;
+}
+
 .c-article-section__img--small {
   max-width: 50%;
 }
@@ -931,7 +975,7 @@ amp-img {
 }
 
 .c-card__content {
-  padding: 1.25rem;
+  padding: 1.25rem 1.25rem 3.75rem 1.25rem;
 }
 
 .c-card--highlight-left .c-card__content {
@@ -1014,7 +1058,6 @@ amp-img {
 }
 
 .c-card__abstract {
-  margin-bottom: 3.75rem;
   margin-top: 0;
 }
 
@@ -1088,6 +1131,11 @@ amp-img {
   margin-left: 1.25rem;
 }
 
+.c-header__item[data-state='active'] {
+  border-bottom: 0.25rem solid #008bf8;
+  padding-bottom: 0.25rem;
+}
+
 /* ==========================================================================
   HERO
 ========================================================================== */
@@ -1102,6 +1150,7 @@ amp-img {
 
 .c-hero .l-main {
   position: relative;
+  text-shadow: #000 0px 0px 10px;
 }
 
 .c-hero::before {
@@ -1163,11 +1212,11 @@ amp-img {
   font-size: 0.75rem;
   position: absolute;
   right: 20px;
-  text-decoration: underline;
 }
 
-.c-hero__credits:hover {
+.c-hero__credits a {
   color: inherit;
+  text-decoration: underline;
 }
 
 /* ==========================================================================
