@@ -6,15 +6,28 @@
   background-color: $co_color-city-lights;
 }
 
-.c-footer__content {
+.c-footer__group {
   align-items: center;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   margin-bottom: 0;
-  padding: $sp_variable-m 0;
+  // padding: $sp_variable-m 0;
+}
 
-  .icon--twitter {
+.c-footer__item {
+  padding: $sp_variable-s;
+
+  .c-footer__item ~ & {
     margin-left: $sp_variable-s;
-    width: rem(20);
+  }
+
+  .icon {
+    color: $co_color-medium-gray;
+    height: rem(35);
+    width: rem(35);
+  }
+
+  &:hover .icon {
+    color: $co_color-dark-gray;
   }
 }

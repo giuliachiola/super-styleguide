@@ -20,11 +20,11 @@ module.exports = {
     },
     {
       label: 'nodeJS',
-      img: 'javascript',
+      img: 'js',
     },
     {
       label: 'JS',
-      img: 'javascript',
+      img: 'js',
     },
     {
       label: 'CSS',
@@ -40,7 +40,7 @@ module.exports = {
     },
     {
       label: 'git',
-      img: 'visual-studio-code',
+      img: 'vsc',
     },
     {
       label: 'shell',
@@ -48,7 +48,7 @@ module.exports = {
     },
     {
       label: 'vsc',
-      img: 'visual-studio-code',
+      img: 'vsc',
     },
   ],
   dates: ['2 days ago', '31st Aug 2019', '2nd Jul 2019'],
