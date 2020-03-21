@@ -189,3 +189,10 @@ $co_card-gradient-vsc: #1a2980, #26d0ce;
   right: 20px;
   top: 30px;
 }
+
+.c-card__tags {
+  .c-label {
+    display: inline-block;
+    margin-top: rem(5);
+  }
+}
