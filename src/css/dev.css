@@ -446,8 +446,8 @@ amp-img {
   CARD
 ========================================================================== */
 .c-card {
-  border-radius: 0.125rem;
   box-shadow: 0 0.625rem 2.8125rem -0.5625rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.125rem;
   overflow: hidden;
   position: relative;
 }
@@ -468,7 +468,7 @@ amp-img {
   background: linear-gradient(to right, #eb3349, #f45c43);
 }
 
-.c-card--visual-studio-code .c-card__img-wrapper::before {
+.c-card--vsc .c-card__img-wrapper::before {
   background: linear-gradient(to right, #1a2980, #26d0ce);
 }
 
@@ -476,7 +476,7 @@ amp-img {
   background: linear-gradient(to right, #11998e, #38ef7d);
 }
 
-.c-card--javascript .c-card__img-wrapper::before {
+.c-card--js .c-card__img-wrapper::before {
   background: linear-gradient(to right, #f2994a, #f2c94c);
 }
 
@@ -541,19 +541,19 @@ amp-img {
   background: linear-gradient(to right, #eb3349, #f45c43);
 }
 
-.c-card--highlight-left.c-card--visual-studio-code .c-card__content::before {
+.c-card--highlight-left.c-card--vsc .c-card__content::before {
   background: linear-gradient(to bottom, #1a2980, #26d0ce);
 }
 
-.c-card--highlight-top.c-card--visual-studio-code .c-card__content::before {
+.c-card--highlight-top.c-card--vsc .c-card__content::before {
   background: linear-gradient(to right, #1a2980, #26d0ce);
 }
 
-.c-card--highlight-left.c-card--javascript .c-card__content::before {
+.c-card--highlight-left.c-card--js .c-card__content::before {
   background: linear-gradient(to bottom, #f2994a, #f2c94c);
 }
 
-.c-card--highlight-top.c-card--javascript .c-card__content::before {
+.c-card--highlight-top.c-card--js .c-card__content::before {
   background: linear-gradient(to right, #f2994a, #f2c94c);
 }
 
@@ -603,6 +603,16 @@ amp-img {
   display: block;
   font-size: 0.75rem;
   margin-bottom: 0.3125rem;
+}
+
+.c-card__number {
+  box-shadow: 0 0.625rem 2.8125rem -0.5625rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.125rem;
+  color: #3f3f3f;
+  padding: 10px 20px;
+  position: absolute;
+  right: 20px;
+  top: 30px;
 }
 
 /* ==========================================================================
@@ -655,21 +665,36 @@ amp-img {
   HERO
 ========================================================================== */
 .c-hero {
+  align-items: center;
   color: #fff;
+  display: flex;
   min-height: 31.25rem;
-  padding: 9.375rem 0;
   position: relative;
   text-align: center;
 }
 
+.c-hero .l-main {
+  position: relative;
+}
+
 .c-hero::before {
-  background: linear-gradient(to top, #000000d9, transparent);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent 50%);
   content: '';
   height: 100%;
   left: 0;
   position: absolute;
   top: 0;
   width: 100%;
+}
+
+.c-hero--bottom-text {
+  align-items: flex-end;
+  padding-bottom: 1.875rem;
+}
+
+.c-hero--top-text {
+  align-items: flex-start;
+  padding-top: 1.875rem;
 }
 
 .c-hero__img {
@@ -680,10 +705,6 @@ amp-img {
   top: 0;
   width: 100%;
   z-index: -1;
-}
-
-.l-grid__main {
-  position: relative;
 }
 
 .c-hero__subtitle {
@@ -710,13 +731,15 @@ amp-img {
 }
 
 .c-hero__credits {
+  bottom: 20px;
+  color: inherit;
   font-size: 0.75rem;
   position: absolute;
   right: 20px;
-  bottom: 20px;
+  text-decoration: underline;
 }
 
-.c-hero__credits a {
+.c-hero__credits:hover {
   color: inherit;
 }
 
@@ -850,8 +873,8 @@ amp-img {
   CARD
 ========================================================================== */
 .c-card {
-  border-radius: 0.125rem;
   box-shadow: 0 0.625rem 2.8125rem -0.5625rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.125rem;
   overflow: hidden;
   position: relative;
 }
@@ -872,7 +895,7 @@ amp-img {
   background: linear-gradient(to right, #eb3349, #f45c43);
 }
 
-.c-card--visual-studio-code .c-card__img-wrapper::before {
+.c-card--vsc .c-card__img-wrapper::before {
   background: linear-gradient(to right, #1a2980, #26d0ce);
 }
 
@@ -880,7 +903,7 @@ amp-img {
   background: linear-gradient(to right, #11998e, #38ef7d);
 }
 
-.c-card--javascript .c-card__img-wrapper::before {
+.c-card--js .c-card__img-wrapper::before {
   background: linear-gradient(to right, #f2994a, #f2c94c);
 }
 
@@ -945,19 +968,19 @@ amp-img {
   background: linear-gradient(to right, #eb3349, #f45c43);
 }
 
-.c-card--highlight-left.c-card--visual-studio-code .c-card__content::before {
+.c-card--highlight-left.c-card--vsc .c-card__content::before {
   background: linear-gradient(to bottom, #1a2980, #26d0ce);
 }
 
-.c-card--highlight-top.c-card--visual-studio-code .c-card__content::before {
+.c-card--highlight-top.c-card--vsc .c-card__content::before {
   background: linear-gradient(to right, #1a2980, #26d0ce);
 }
 
-.c-card--highlight-left.c-card--javascript .c-card__content::before {
+.c-card--highlight-left.c-card--js .c-card__content::before {
   background: linear-gradient(to bottom, #f2994a, #f2c94c);
 }
 
-.c-card--highlight-top.c-card--javascript .c-card__content::before {
+.c-card--highlight-top.c-card--js .c-card__content::before {
   background: linear-gradient(to right, #f2994a, #f2c94c);
 }
 
@@ -1007,6 +1030,16 @@ amp-img {
   display: block;
   font-size: 0.75rem;
   margin-bottom: 0.3125rem;
+}
+
+.c-card__number {
+  box-shadow: 0 0.625rem 2.8125rem -0.5625rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.125rem;
+  color: #3f3f3f;
+  padding: 10px 20px;
+  position: absolute;
+  right: 20px;
+  top: 30px;
 }
 
 /* ==========================================================================
@@ -1059,21 +1092,36 @@ amp-img {
   HERO
 ========================================================================== */
 .c-hero {
+  align-items: center;
   color: #fff;
+  display: flex;
   min-height: 31.25rem;
-  padding: 9.375rem 0;
   position: relative;
   text-align: center;
 }
 
+.c-hero .l-main {
+  position: relative;
+}
+
 .c-hero::before {
-  background: linear-gradient(to top, #000000d9, transparent);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent 50%);
   content: '';
   height: 100%;
   left: 0;
   position: absolute;
   top: 0;
   width: 100%;
+}
+
+.c-hero--bottom-text {
+  align-items: flex-end;
+  padding-bottom: 1.875rem;
+}
+
+.c-hero--top-text {
+  align-items: flex-start;
+  padding-top: 1.875rem;
 }
 
 .c-hero__img {
@@ -1084,10 +1132,6 @@ amp-img {
   top: 0;
   width: 100%;
   z-index: -1;
-}
-
-.l-grid__main {
-  position: relative;
 }
 
 .c-hero__subtitle {
@@ -1114,13 +1158,15 @@ amp-img {
 }
 
 .c-hero__credits {
+  bottom: 20px;
+  color: inherit;
   font-size: 0.75rem;
   position: absolute;
   right: 20px;
-  bottom: 20px;
+  text-decoration: underline;
 }
 
-.c-hero__credits a {
+.c-hero__credits:hover {
   color: inherit;
 }
 

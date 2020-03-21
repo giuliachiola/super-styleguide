@@ -3,14 +3,20 @@
 ========================================================================== */
 
 .c-hero {
+  // padding: rem(150) 0;
+  align-items: center;
   color: $co_color-light;
+  display: flex;
   min-height: rem(500);
-  padding: rem(150) 0;
   position: relative;
   text-align: center;
 
+  .l-main {
+    position: relative; // FIXME: necessary to have gradient below the text!
+  }
+
   &::before {
-    background: linear-gradient(to top, #000000d9, transparent);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent 50%);
     content: '';
     height: 100%;
     left: 0;
@@ -18,6 +24,16 @@
     top: 0;
     width: 100%;
   }
+}
+
+.c-hero--bottom-text {
+  align-items: flex-end;
+  padding-bottom: rem(30);
+}
+
+.c-hero--top-text {
+  align-items: flex-start;
+  padding-top: rem(30);
 }
 
 .c-hero__img {
@@ -30,10 +46,6 @@
   z-index: -1;
 }
 
-.l-grid__main {
-  position: relative; // FIXME: necessary to have gradient below the text!
-}
-
 .c-hero__subtitle {
   @include ty-heading--s;
 }
@@ -42,13 +54,15 @@
   color: $co_color-light;
 }
 
-.c-hero__credits {
+.c-hero__credits { // link to photo
   bottom: 20px;
+  color: inherit;
   font-size: $ty_font-size-small;
   position: absolute;
   right: 20px;
+  text-decoration: underline;
 
-  a {
+  &:hover {
     color: inherit;
   }
 }

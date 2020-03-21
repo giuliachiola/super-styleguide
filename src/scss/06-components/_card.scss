@@ -4,11 +4,12 @@
 
 $sp_card-content-padding: $sp_variable-m;
 $sp_card-highlight: rem(10);
+$sp_card-border-radius: rem(2);
 
 $co_card-gradient-git: #eb3349, #f45c43;
 $co_card-gradient-vuejs: #11998e, #38ef7d;
-$co_card-gradient-javascript: #f2994a, #f2c94c;
-$co_card-gradient-visual-studio-code: #1a2980, #26d0ce;
+$co_card-gradient-js: #f2994a, #f2c94c;
+$co_card-gradient-vsc: #1a2980, #26d0ce;
 
 @mixin card-gradient($dir, $tag) {
   @if $tag == 'git' {
@@ -19,18 +20,23 @@ $co_card-gradient-visual-studio-code: #1a2980, #26d0ce;
     background: linear-gradient($dir, $co_card-gradient-vuejs);
   }
 
-  @else if $tag == 'javascript' {
-    background: linear-gradient($dir, $co_card-gradient-javascript);
+  @else if $tag == 'js' {
+    background: linear-gradient($dir, $co_card-gradient-js);
   }
 
-  @else if $tag == 'visual-studio-code' {
-    background: linear-gradient($dir, $co_card-gradient-visual-studio-code);
+  @else if $tag == 'vsc' {
+    background: linear-gradient($dir, $co_card-gradient-vsc);
   }
 }
 
+@mixin card-shadow ($opacity: 0.1) {
+  box-shadow: 0 rem(10) rem(45) rem(-9) rgba(0, 0, 0, $opacity);
+}
+
 .c-card {
-  border-radius: rem(2);
-  box-shadow: 0 rem(10) rem(45) rem(-9) rgba(0, 0, 0, 0.1);
+  @include card-shadow;
+
+  border-radius: $sp_card-border-radius;
   overflow: hidden;
   position: relative;
 }
@@ -49,16 +55,16 @@ $co_card-gradient-visual-studio-code: #1a2980, #26d0ce;
       @include card-gradient(to right, 'git');
     }
 
-    .c-card--visual-studio-code & {
-      @include card-gradient(to right, 'visual-studio-code');
+    .c-card--vsc & {
+      @include card-gradient(to right, 'vsc');
     }
 
     .c-card--vuejs & {
       @include card-gradient(to right, 'vuejs');
     }
 
-    .c-card--javascript & {
-      @include card-gradient(to right, 'javascript');
+    .c-card--js & {
+      @include card-gradient(to right, 'js');
     }
   }
 
@@ -121,20 +127,20 @@ $co_card-gradient-visual-studio-code: #1a2980, #26d0ce;
     @include card-gradient(to right, 'git');
   }
 
-  .c-card--highlight-left.c-card--visual-studio-code &::before {
-    @include card-gradient(to bottom, 'visual-studio-code');
+  .c-card--highlight-left.c-card--vsc &::before {
+    @include card-gradient(to bottom, 'vsc');
   }
 
-  .c-card--highlight-top.c-card--visual-studio-code &::before {
-    @include card-gradient(to right, 'visual-studio-code');
+  .c-card--highlight-top.c-card--vsc &::before {
+    @include card-gradient(to right, 'vsc');
   }
 
-  .c-card--highlight-left.c-card--javascript &::before {
-    @include card-gradient(to bottom, 'javascript');
+  .c-card--highlight-left.c-card--js &::before {
+    @include card-gradient(to bottom, 'js');
   }
 
-  .c-card--highlight-top.c-card--javascript &::before {
-    @include card-gradient(to right, 'javascript');
+  .c-card--highlight-top.c-card--js &::before {
+    @include card-gradient(to right, 'js');
   }
 
   .c-card--highlight-left.c-card--vuejs &::before {
@@ -172,4 +178,15 @@ $co_card-gradient-visual-studio-code: #1a2980, #26d0ce;
   display: block;
   font-size: $ty_font-size-small;
   margin-bottom: $sp_variable-xs;
+}
+
+.c-card__number {
+  @include card-shadow(0.3);
+
+  border-radius: $sp_card-border-radius;
+  color: $co_color-dark-gray;
+  padding: 10px 20px;
+  position: absolute;
+  right: 20px;
+  top: 30px;
 }
