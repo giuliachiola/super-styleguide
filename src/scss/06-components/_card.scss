@@ -13,8 +13,10 @@ $co_card-gradient-vsc: #1a2980, #26d0ce;
 $co_card-gradient-css: #e84393, #fd79a8;
 $co_card-gradient-nodejs: #009432, #c4e538;
 $co_card-gradient-design-system: #ee0979, #ff6a00;
+$co_card-gradient-static-site-generator: #00353e, #387c88;
+$co_card-gradient-markdown: #6b34ff, #339ff7;
 
-$tags: git, vuejs, js, vsc, css, nodejs, design-system;
+$tags: git, vuejs, js, vsc, css, nodejs, design-system, static-site-generator, markdown;
 
 @mixin card-gradient($dir, $tag) {
   @if $tag == 'git' {
@@ -43,6 +45,14 @@ $tags: git, vuejs, js, vsc, css, nodejs, design-system;
 
   @else if $tag == 'design-system' {
     background: linear-gradient($dir, $co_card-gradient-design-system);
+  }
+
+  @else if $tag == 'static-site-generator' {
+    background: linear-gradient($dir, $co_card-gradient-static-site-generator);
+  }
+
+  @else if $tag == 'markdown' {
+    background: linear-gradient($dir, $co_card-gradient-markdown);
   }
 }
 
@@ -112,7 +122,7 @@ $tags: git, vuejs, js, vsc, css, nodejs, design-system;
 }
 
 .c-card__content {
-  padding: $sp_card-content-padding $sp_card-content-padding rem(60) $sp_card-content-padding; // bottom padding needed for date/tags position absolute
+  padding: $sp_card-content-padding $sp_card-content-padding rem(74) $sp_card-content-padding; // bottom padding needed for date/tags position absolute
 
   .c-card--highlight-left & {
     padding-left: $sp_card-content-padding + $sp_card-highlight;
@@ -205,11 +215,17 @@ $tags: git, vuejs, js, vsc, css, nodejs, design-system;
   @include card-shadow(0.3);
 
   border-radius: $sp_card-border-radius;
-  color: $co_color-dark-gray;
+  color: $co_color-light;
   padding: 10px 20px;
   position: absolute;
   right: 20px;
   top: 30px;
+
+  @each $tag in $tags {
+    .c-card--highlight-top & {
+      @include card-gradient(to right, $tag);
+    }
+  }
 }
 
 .c-card__tags {

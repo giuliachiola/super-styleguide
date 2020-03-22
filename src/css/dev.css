@@ -417,7 +417,13 @@ amp-img {
   padding: 0.625rem;
 }
 
+.c-article-section__img--medium {
+  margin: 0 auto;
+  max-width: 70%;
+}
+
 .c-article-section__img--small {
+  margin: 0 auto;
   max-width: 50%;
 }
 
@@ -526,6 +532,14 @@ amp-img {
   background: linear-gradient(to right, #ee0979, #ff6a00);
 }
 
+.c-card--static-site-generator .c-card__img-wrapper::before {
+  background: linear-gradient(to right, #00353e, #387c88);
+}
+
+.c-card--markdown .c-card__img-wrapper::before {
+  background: linear-gradient(to right, #6b34ff, #339ff7);
+}
+
 .c-card__img-wrapper .icon {
   bottom: 1.25rem;
   color: #fff;
@@ -558,7 +572,7 @@ amp-img {
 }
 
 .c-card__content {
-  padding: 1.25rem 1.25rem 3.75rem 1.25rem;
+  padding: 1.25rem 1.25rem 4.625rem 1.25rem;
   /* --------------
     Colors by category, output example:
 
@@ -654,6 +668,22 @@ amp-img {
   background: linear-gradient(to right, #ee0979, #ff6a00);
 }
 
+.c-card--highlight-left.c-card--static-site-generator .c-card__content::before {
+  background: linear-gradient(to bottom, #00353e, #387c88);
+}
+
+.c-card--highlight-top.c-card--static-site-generator .c-card__content::before {
+  background: linear-gradient(to right, #00353e, #387c88);
+}
+
+.c-card--highlight-left.c-card--markdown .c-card__content::before {
+  background: linear-gradient(to bottom, #6b34ff, #339ff7);
+}
+
+.c-card--highlight-top.c-card--markdown .c-card__content::before {
+  background: linear-gradient(to right, #6b34ff, #339ff7);
+}
+
 .c-card__title-heading {
   font-size: 1.4375rem;
   font-weight: 500;
@@ -710,11 +740,47 @@ amp-img {
 .c-card__number {
   box-shadow: 0 0.625rem 2.8125rem -0.5625rem rgba(0, 0, 0, 0.3);
   border-radius: 0.125rem;
-  color: #3f3f3f;
+  color: #fff;
   padding: 10px 20px;
   position: absolute;
   right: 20px;
   top: 30px;
+}
+
+.c-card--highlight-top .c-card__number {
+  background: linear-gradient(to right, #eb3349, #f45c43);
+}
+
+.c-card--highlight-top .c-card__number {
+  background: linear-gradient(to right, #11998e, #38ef7d);
+}
+
+.c-card--highlight-top .c-card__number {
+  background: linear-gradient(to right, #f2994a, #f2c94c);
+}
+
+.c-card--highlight-top .c-card__number {
+  background: linear-gradient(to right, #1a2980, #26d0ce);
+}
+
+.c-card--highlight-top .c-card__number {
+  background: linear-gradient(to right, #e84393, #fd79a8);
+}
+
+.c-card--highlight-top .c-card__number {
+  background: linear-gradient(to right, #009432, #c4e538);
+}
+
+.c-card--highlight-top .c-card__number {
+  background: linear-gradient(to right, #ee0979, #ff6a00);
+}
+
+.c-card--highlight-top .c-card__number {
+  background: linear-gradient(to right, #00353e, #387c88);
+}
+
+.c-card--highlight-top .c-card__number {
+  background: linear-gradient(to right, #6b34ff, #339ff7);
 }
 
 .c-card__tags .c-label {
