@@ -540,6 +540,10 @@ amp-img {
   width: 8.75rem;
 }
 
+.c-card__img-wrapper .icon-design-system {
+  width: 8.75rem;
+}
+
 .c-card--squared-image .c-card__img-wrapper {
   display: block;
   overflow: hidden;
@@ -1069,6 +1073,10 @@ amp-img {
 }
 
 .c-card__img-wrapper .icon-nodejs {
+  width: 8.75rem;
+}
+
+.c-card__img-wrapper .icon-design-system {
   width: 8.75rem;
 }
 

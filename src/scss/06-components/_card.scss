@@ -97,6 +97,10 @@ $tags: git, vuejs, js, vsc, css, nodejs, design-system;
     width: rem(140); // custom size
   }
 
+  .icon-design-system {
+    width: rem(140); // custom size
+  }
+
   .c-card--squared-image & {
     @include aspect-ratio;
     @include image-padding(20, 6); // shorter
