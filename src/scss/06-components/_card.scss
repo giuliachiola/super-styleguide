@@ -157,7 +157,7 @@ $tags: git, vuejs, js, vsc, css, nodejs, design-system;
       @include card-gradient(to bottom, $tag);
     }
 
-    .c-card--highlight-top.c-card--#{tag} &::before {
+    .c-card--highlight-top.c-card--#{$tag} &::before {
       @include card-gradient(to right, $tag);
     }
   }
@@ -168,8 +168,19 @@ $tags: git, vuejs, js, vsc, css, nodejs, design-system;
 .c-card__title-heading {
   @include ty-heading--m;
 
+  font-weight: $font-sans-weight-bold;
+
+  @include mq(tablet) { // TODO: check how override mixin without this terrible code!
+    font-weight: $font-sans-weight-bold;
+  }
+
+  @include mq(desktop) {
+    font-weight: $font-sans-weight-bold;
+  }
+
   margin-bottom: $sp_variable-s;
   margin-top: 0;
+  text-transform: uppercase;
 }
 
 .c-card__abstract {
