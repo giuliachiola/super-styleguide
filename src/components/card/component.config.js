@@ -223,5 +223,43 @@ module.exports = {
         )
       }
     },
+    // static site generator
+    {
+      title: 'static site generator',
+      file: 'default.ejs',
+      context: {
+        uiContext: {
+          containerModifiers: ['ui-container--medium-bg'],
+          componentModifiers: ['ui-card'],
+        },
+        card: _.merge(
+          {},
+          card,
+          {
+            modifiers: ['squared-image'],
+            mainTag: 'static-site-generator',
+          }
+        )
+      }
+    },
+    // markdown
+    {
+      title: 'markdown',
+      file: 'default.ejs',
+      context: {
+        uiContext: {
+          containerModifiers: ['ui-container--medium-bg'],
+          componentModifiers: ['ui-card'],
+        },
+        card: _.merge(
+          {},
+          card,
+          {
+            modifiers: ['squared-image'],
+            mainTag: 'markdown',
+          }
+        )
+      }
+    },
   ]
 }
