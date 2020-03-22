@@ -27,7 +27,21 @@
   table { // markdown table with external wrapper
     @include table-styles;
   }
+
+  a {
+    text-decoration: underline;
+  }
 }
+
+.c-article-section__top {
+  align-items: flex-end;
+  border-bottom: rem(1) solid $co_color-city-lights;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: rem(20);
+}
+
+// Content
 
 .c-article-section__img--medium {
   margin: 0 auto;

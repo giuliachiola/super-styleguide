@@ -1,9 +1,17 @@
 <article class="c-article-section">
   <h1>This is the post title</h1>
-  <time class="c-article-section__date" datetime="2019-03-01">31st Aug 2019</time>
-  <div class="l-spacing-l">
-    <% articleSection.tags.forEach(function(tag){ %><a class="c-label" href="#"><%= tag %></a><% }); %>
+
+  <div class="c-article-section__top l-spacing-m">
+    <div class="c-article-section__info">
+      <time class="c-article-section__date" datetime="2019-03-01">31st Aug 2019</time>
+      <% articleSection.tags.forEach(function(tag){ %><a class="c-label" href="#"><%= tag %></a><% }); %>
+    </div>
+
+    <a class="c-article-section__share" href="#">
+      <%- include('../../svg/codepen.svg') %>
+    </a>
   </div>
+
   <p>
     The standard Lorem Ipsum passage, used since the 1500s
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."

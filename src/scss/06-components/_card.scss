@@ -191,6 +191,11 @@ $tags: git, vuejs, js, vsc, css, nodejs, design-system, static-site-generator, m
   margin-bottom: $sp_variable-s;
   margin-top: 0;
   text-transform: uppercase;
+
+  .c-card--highlight-top &, // expanded version
+  .c-card--highlight-left & {
+    margin-bottom: $sp_variable-m;
+  }
 }
 
 .c-card__abstract {
@@ -232,5 +237,37 @@ $tags: git, vuejs, js, vsc, css, nodejs, design-system, static-site-generator, m
   .c-label {
     display: inline-block;
     margin-top: rem(5);
+  }
+}
+
+// Raw content
+
+.c-card__raw-content {
+  // heading styles
+
+  .c-card--highlight-top &, // expanded version
+  .c-card--highlight-left & {
+    h2 {
+      @include ty-heading--m;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+      @include ty-heading--s;
+    }
+  }
+
+  // table styles
+
+  table {
+    @include table-styles;
+  }
+
+  // link styles
+
+  a {
+    text-decoration: underline;
   }
 }
