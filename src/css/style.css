@@ -738,45 +738,45 @@ amp-img {
   box-shadow: 0 0.625rem 2.8125rem -0.5625rem rgba(0, 0, 0, 0.3);
   border-radius: 0.125rem;
   color: #fff;
-  padding: 10px 20px;
+  padding: 0.3125rem 0.625rem;
   position: absolute;
-  right: 20px;
-  top: 30px;
+  right: 1.25rem;
+  top: 1.25rem;
 }
 
-.c-card--highlight-top .c-card__number {
+.c-card--git .c-card__number {
   background: linear-gradient(to right, #eb3349, #f45c43);
 }
 
-.c-card--highlight-top .c-card__number {
+.c-card--vuejs .c-card__number {
   background: linear-gradient(to right, #11998e, #38ef7d);
 }
 
-.c-card--highlight-top .c-card__number {
+.c-card--js .c-card__number {
   background: linear-gradient(to right, #f2994a, #f2c94c);
 }
 
-.c-card--highlight-top .c-card__number {
+.c-card--vsc .c-card__number {
   background: linear-gradient(to right, #1a2980, #26d0ce);
 }
 
-.c-card--highlight-top .c-card__number {
+.c-card--css .c-card__number {
   background: linear-gradient(to right, #e84393, #fd79a8);
 }
 
-.c-card--highlight-top .c-card__number {
+.c-card--nodejs .c-card__number {
   background: linear-gradient(to right, #009432, #c4e538);
 }
 
-.c-card--highlight-top .c-card__number {
+.c-card--design-system .c-card__number {
   background: linear-gradient(to right, #ee0979, #ff6a00);
 }
 
-.c-card--highlight-top .c-card__number {
+.c-card--static-site-generator .c-card__number {
   background: linear-gradient(to right, #00353e, #387c88);
 }
 
-.c-card--highlight-top .c-card__number {
+.c-card--markdown .c-card__number {
   background: linear-gradient(to right, #6b34ff, #339ff7);
 }
 

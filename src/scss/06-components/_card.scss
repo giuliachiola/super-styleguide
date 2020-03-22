@@ -216,13 +216,13 @@ $tags: git, vuejs, js, vsc, css, nodejs, design-system, static-site-generator, m
 
   border-radius: $sp_card-border-radius;
   color: $co_color-light;
-  padding: 10px 20px;
+  padding: rem(5 10);
   position: absolute;
-  right: 20px;
-  top: 30px;
+  right: rem(20);
+  top: rem(20);
 
   @each $tag in $tags {
-    .c-card--highlight-top & {
+    .c-card--#{$tag} & {
       @include card-gradient(to right, $tag);
     }
   }
