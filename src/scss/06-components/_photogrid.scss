@@ -1,0 +1,67 @@
+/* ==========================================================================
+  PHOTOGRID
+========================================================================== */
+
+$sp_photogrid-zindex: 0;
+$sp_photogrid-zindex-overlay: $sp_photogrid-zindex + 1;
+$sp_photogrid-zindex-text: $sp_photogrid-zindex-overlay + 1;
+
+.c-photogrid {
+  display: grid;
+
+  @include mq(desktop) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    z-index: $sp_photogrid-zindex;
+  }
+}
+
+.c-photogrid__item {
+  max-height: calc(100vh / 2);
+  overflow: hidden; // needed for zoom on hover
+  position: relative;
+
+  @include mq(desktop) {
+    &::before {
+      background: rgba($co_color-solid-black, 0.5);
+      content: '';
+      height: 100%;
+      left: 0;
+      opacity: 1;
+      position: absolute;
+      top: 0;
+      transition: ease-in-out 1s;
+      width: 100%;
+      z-index: $sp_photogrid-zindex-overlay;
+    }
+
+    &:hover::before {
+      opacity: 0;
+      transition: ease-in-out 1s;
+    }
+  }
+}
+
+.c-photogrid__title {
+  color: $co_color-light;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  text-shadow: $co_color-solid-black 0px 0px 10px; // text shadow for legibility (same as hero)
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  @include mq(desktop) {
+    z-index: $sp_photogrid-zindex-text;
+  }
+}
+
+// .c-photogrid__img {
+//   transform: scale(1);
+//   transition: ease-in-out 1s;
+
+//   .c-photogrid__item:hover > & {
+//     transform: scale(1.2);
+//     transition: ease-in-out 1s;
+//   }
+// }
