@@ -82,6 +82,143 @@ module.exports = {
           card,
           {
             modifiers: ['highlight-top'],
+            number: 2,
+          }
+        )
+      }
+    },
+    /* --------
+      Tags
+    -------- */
+    // git
+    {
+      title: 'git',
+      file: 'default.ejs',
+      context: {
+        uiContext: {
+          containerModifiers: ['ui-container--medium-bg'],
+          componentModifiers: ['ui-card'],
+        },
+        card: _.merge(
+          {},
+          card,
+          {
+            modifiers: ['squared-image'],
+            mainTag: 'git',
+          }
+        )
+      }
+    },
+    // vsc
+    {
+      title: 'vsc',
+      file: 'default.ejs',
+      context: {
+        uiContext: {
+          containerModifiers: ['ui-container--medium-bg'],
+          componentModifiers: ['ui-card'],
+        },
+        card: _.merge(
+          {},
+          card,
+          {
+            modifiers: ['squared-image'],
+            mainTag: 'vsc',
+          }
+        )
+      }
+    },
+    // vuejs
+    {
+      title: 'vuejs',
+      file: 'default.ejs',
+      context: {
+        uiContext: {
+          containerModifiers: ['ui-container--medium-bg'],
+          componentModifiers: ['ui-card'],
+        },
+        card: _.merge(
+          {},
+          card,
+          {
+            modifiers: ['squared-image'],
+            mainTag: 'vuejs',
+          }
+        )
+      }
+    },
+    // js
+    {
+      title: 'js',
+      file: 'default.ejs',
+      context: {
+        uiContext: {
+          containerModifiers: ['ui-container--medium-bg'],
+          componentModifiers: ['ui-card'],
+        },
+        card: _.merge(
+          {},
+          card,
+          {
+            modifiers: ['squared-image'],
+            mainTag: 'js',
+          }
+        )
+      }
+    },
+    // css
+    {
+      title: 'css',
+      file: 'default.ejs',
+      context: {
+        uiContext: {
+          containerModifiers: ['ui-container--medium-bg'],
+          componentModifiers: ['ui-card'],
+        },
+        card: _.merge(
+          {},
+          card,
+          {
+            modifiers: ['squared-image'],
+            mainTag: 'css',
+          }
+        )
+      }
+    },
+    // nodejs
+    {
+      title: 'nodejs',
+      file: 'default.ejs',
+      context: {
+        uiContext: {
+          containerModifiers: ['ui-container--medium-bg'],
+          componentModifiers: ['ui-card'],
+        },
+        card: _.merge(
+          {},
+          card,
+          {
+            modifiers: ['squared-image'],
+            mainTag: 'nodejs',
+          }
+        )
+      }
+    },
+    // design system
+    {
+      title: 'design system',
+      file: 'default.ejs',
+      context: {
+        uiContext: {
+          containerModifiers: ['ui-container--medium-bg'],
+          componentModifiers: ['ui-card'],
+        },
+        card: _.merge(
+          {},
+          card,
+          {
+            modifiers: ['squared-image'],
+            mainTag: 'design-system',
           }
         )
       }

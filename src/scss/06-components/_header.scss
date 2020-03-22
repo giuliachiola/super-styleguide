@@ -24,9 +24,15 @@
   .c-header__item + & {
     margin-left: $sp_variable-m;
   }
+}
 
+.c-header__link {
   &[data-state= 'active'] {
     border-bottom: rem(4) solid $co_color-main;
     padding-bottom: rem(4);
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 }

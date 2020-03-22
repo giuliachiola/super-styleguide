@@ -10,6 +10,11 @@ $co_card-gradient-git: #eb3349, #f45c43;
 $co_card-gradient-vuejs: #11998e, #38ef7d;
 $co_card-gradient-js: #f2994a, #f2c94c;
 $co_card-gradient-vsc: #1a2980, #26d0ce;
+$co_card-gradient-css: #e84393, #fd79a8;
+$co_card-gradient-nodejs: #009432, #c4e538;
+$co_card-gradient-design-system: #ee0979, #ff6a00;
+
+$tags: git, vuejs, js, vsc, css, nodejs, design-system;
 
 @mixin card-gradient($dir, $tag) {
   @if $tag == 'git' {
@@ -26,6 +31,18 @@ $co_card-gradient-vsc: #1a2980, #26d0ce;
 
   @else if $tag == 'vsc' {
     background: linear-gradient($dir, $co_card-gradient-vsc);
+  }
+
+  @else if $tag == 'css' {
+    background: linear-gradient($dir, $co_card-gradient-css);
+  }
+
+  @else if $tag == 'nodejs' {
+    background: linear-gradient($dir, $co_card-gradient-nodejs);
+  }
+
+  @else if $tag == 'design-system' {
+    background: linear-gradient($dir, $co_card-gradient-design-system);
   }
 }
 
@@ -51,20 +68,18 @@ $co_card-gradient-vsc: #1a2980, #26d0ce;
     top: 0;
     width: 100%;
 
-    .c-card--git & {
-      @include card-gradient(to right, 'git');
-    }
+    /* --------------
+      Colors by category, output example:
 
-    .c-card--vsc & {
-      @include card-gradient(to right, 'vsc');
-    }
+      .c-card--nodejs & {
+        @include card-gradient(to right, 'nodejs');
+      }
+    -------------- */
 
-    .c-card--vuejs & {
-      @include card-gradient(to right, 'vuejs');
-    }
-
-    .c-card--js & {
-      @include card-gradient(to right, 'js');
+    @each $tag in $tags {
+      .c-card--#{$tag} & {
+        @include card-gradient(to right, $tag);
+      }
     }
   }
 
@@ -76,6 +91,10 @@ $co_card-gradient-vsc: #1a2980, #26d0ce;
     position: absolute;
     right: $sp_variable-m;
     width: rem(100);
+  }
+
+  .icon-nodejs {
+    width: rem(140); // custom size
   }
 
   .c-card--squared-image & {
@@ -117,38 +136,26 @@ $co_card-gradient-vsc: #1a2980, #26d0ce;
     }
   }
 
-  // colors by category
+  /* --------------
+    Colors by category, output example:
 
-  .c-card--highlight-left.c-card--git &::before {
-    @include card-gradient(to bottom, 'git');
-  }
+    .c-card--highlight-left.c-card--git &::before {
+      @include card-gradient(to bottom, 'git');
+    }
 
-  .c-card--highlight-top.c-card--git &::before {
-    @include card-gradient(to right, 'git');
-  }
+    .c-card--highlight-top.c-card--git &::before {
+      @include card-gradient(to right, 'git');
+    }
+  -------------- */
 
-  .c-card--highlight-left.c-card--vsc &::before {
-    @include card-gradient(to bottom, 'vsc');
-  }
+  @each $tag in $tags {
+    .c-card--highlight-left.c-card--#{$tag} &::before {
+      @include card-gradient(to bottom, $tag);
+    }
 
-  .c-card--highlight-top.c-card--vsc &::before {
-    @include card-gradient(to right, 'vsc');
-  }
-
-  .c-card--highlight-left.c-card--js &::before {
-    @include card-gradient(to bottom, 'js');
-  }
-
-  .c-card--highlight-top.c-card--js &::before {
-    @include card-gradient(to right, 'js');
-  }
-
-  .c-card--highlight-left.c-card--vuejs &::before {
-    @include card-gradient(to bottom, 'vuejs');
-  }
-
-  .c-card--highlight-top.c-card--vuejs &::before {
-    @include card-gradient(to right, 'vuejs');
+    .c-card--highlight-top.c-card--#{tag} &::before {
+      @include card-gradient(to right, $tag);
+    }
   }
 }
 
@@ -188,4 +195,11 @@ $co_card-gradient-vsc: #1a2980, #26d0ce;
   position: absolute;
   right: 20px;
   top: 30px;
+}
+
+.c-card__tags {
+  .c-label {
+    display: inline-block;
+    margin-top: rem(5);
+  }
 }

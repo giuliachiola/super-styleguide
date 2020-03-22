@@ -21,7 +21,9 @@
     </div>
   <% }; %>
   <div class="c-card__content">
-    <span class="c-card__number">#1</span>
+    <% if (card.number) { %>
+      <span class="c-card__number"><%= card.number %></span>
+      <% }; %>
     <a class="c-card__title" href="#">
       <h2 class="c-card__title-heading"><%= card.title %></h2>
     </a>
