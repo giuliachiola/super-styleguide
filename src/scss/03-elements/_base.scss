@@ -46,20 +46,20 @@ a {
   }
 }
 
-strong,
-b {
-  // @include ty-weight--medium;
-}
+// strong,
+// b {
+//   // @include ty-weight--medium;
+// }
 
-em {
-  // @include ty-style--italic;
-}
+// em {
+//   // @include ty-style--italic;
+// }
 
-small {
-  // @include ty-body--xxs;
+// small {
+//   // @include ty-body--xxs;
 
-  // display: inline-block; // needed to fix wrong line-height due to <small> inline
-}
+//   // display: inline-block; // needed to fix wrong line-height due to <small> inline
+// }
 
 code {
   font-family: $ty_font-family-code;
@@ -103,4 +103,39 @@ amp-img {
   height: auto;
   max-width: 100%;
   vertical-align: middle;
+}
+
+/* ------------------
+  <hr>
+------------------ */
+
+hr {
+  background-color: $co_color-city-lights;
+  border: none;
+  color: $co_color-city-lights;
+  height: rem(1);
+}
+
+/* ------------------
+  Footer at the bottom trick
+------------------ */
+
+html,
+body {
+  height:100%;
+  margin:0;
+}
+
+.l-wrapper {
+  @include mq(desktop) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+.c-footer {
+  @include mq(desktop) {
+    margin-top:auto;
+  }
 }

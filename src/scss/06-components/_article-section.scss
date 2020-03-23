@@ -34,11 +34,26 @@
 }
 
 .c-article-section__top {
+  @include main-border('bottom');
+
   align-items: flex-end;
-  border-bottom: rem(1) solid $co_color-city-lights;
   display: flex;
   justify-content: space-between;
-  padding-bottom: rem(20);
+
+  .c-article-section--custom & {
+    margin-bottom: rem(40); // same as <h1> margin-bottom
+    padding-bottom: 0;
+  }
+}
+
+// Twitter share button
+
+.c-article-section__share {
+  height: rem(20); // hotfix because embedded <iframe> for sharing is not perfectly aligne
+
+  .btn { // twitter class
+    background-color: $co_color-main;
+  }
 }
 
 // Content
@@ -51,4 +66,12 @@
 .c-article-section__img--small {
   margin: 0 auto;
   max-width: 50%;
+}
+
+// Bottom
+
+.c-article-section__bottom {
+  @include main-border('top');
+
+  margin-top: $sp_variable-m;
 }

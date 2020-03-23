@@ -14,6 +14,7 @@
   .l-main {
     position: relative; // FIXME: necessary to have gradient below the text!
     text-shadow: $co_color-solid-black 0px 0px 10px; // text shadow for legibility
+    width: 100%; // center text on mobile
   }
 
   &::before {
@@ -35,6 +36,25 @@
 .c-hero--top-text {
   align-items: flex-start;
   padding-top: rem(30);
+}
+
+.c-hero__title-custom { // ex. Tagged post "git" --> git has custom styles
+  border-bottom: rem(1) dashed $co_color-light;
+  text-transform: uppercase;
+
+  /* stylelint-disable */
+  @include ty-heading--m;
+
+  font-weight: $font-sans-weight-bold;
+
+  @include mq(tablet) { // TODO: check how override mixin without this terrible code!
+    font-weight: $font-sans-weight-bold;
+  }
+
+  @include mq(desktop) {
+    font-weight: $font-sans-weight-bold;
+  }
+  /* stylelint-enable */
 }
 
 .c-hero__img {

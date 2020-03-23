@@ -1,0 +1,15 @@
+/* ==========================================================================
+  MAIN BORDER
+========================================================================== */
+
+@mixin main-border($dir, $color: $co_color-city-lights, $spacing: 'medium') {
+  @if $dir == 'top' and $spacing == 'medium' {
+    border-top: rem(1) solid $color;
+    padding-top: $sp_variable-m;
+  }
+
+  @else if $dir == 'bottom' and $spacing == 'medium' {
+    border-bottom: rem(1) solid $color;
+    padding-bottom: $sp_variable-m;
+  }
+}

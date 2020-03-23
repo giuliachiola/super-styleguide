@@ -12,6 +12,7 @@ $sp_photogrid-zindex-text: $sp_photogrid-zindex-overlay + 1;
   @include mq(desktop) {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    max-height: calc(100vh - 113px); // TODO: use another way to do this! 113 = 54px header + 59px footer
     z-index: $sp_photogrid-zindex;
   }
 }
@@ -56,12 +57,8 @@ $sp_photogrid-zindex-text: $sp_photogrid-zindex-overlay + 1;
   }
 }
 
-// .c-photogrid__img {
-//   transform: scale(1);
-//   transition: ease-in-out 1s;
-
-//   .c-photogrid__item:hover > & {
-//     transform: scale(1.2);
-//     transition: ease-in-out 1s;
-//   }
-// }
+.c-photogrid__img {
+  max-width: none; // override default <img>
+  object-fit: cover;
+  width: 100%;
+}

@@ -18,4 +18,8 @@
   .c-label + & {
     margin-left: $sp_variable-xs;
   }
+
+  &[data-state= 'active'] {
+    @include label-state-active;
+  }
 }
