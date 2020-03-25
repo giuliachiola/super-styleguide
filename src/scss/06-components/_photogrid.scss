@@ -48,7 +48,8 @@ $sp_photogrid-zindex-text: $sp_photogrid-zindex-overlay + 1;
   left: 50%;
   margin: 0;
   position: absolute;
-  text-shadow: $co_color-solid-black 0px 0px 10px; // text shadow for legibility (same as hero)
+  text-align: center;
+  text-shadow: $co_color-solid-black 0 0 rem(10); // text shadow for legibility (same as hero)
   top: 50%;
   transform: translate(-50%, -50%);
 
