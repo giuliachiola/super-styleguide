@@ -1255,7 +1255,8 @@ body {
   left: 50%;
   margin: 0;
   position: absolute;
-  text-shadow: #000 0px 0px 10px;
+  text-align: center;
+  text-shadow: #000 0 0 0.625rem;
   top: 50%;
   transform: translate(-50%, -50%);
 }
