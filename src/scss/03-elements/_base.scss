@@ -117,6 +117,16 @@ hr {
 }
 
 /* ------------------
+  blockquote
+------------------ */
+
+blockquote { // "important" section into article body
+  border-left: rem(3) solid $co_color-city-lights;
+  margin: 0;
+  padding-left: rem(20);
+}
+
+/* ------------------
   Footer at the bottom trick
 ------------------ */
 
