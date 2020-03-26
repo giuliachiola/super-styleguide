@@ -73,5 +73,11 @@
 .c-article-section__bottom {
   @include main-border('top');
 
-  margin-top: $sp_variable-m;
+  margin-top: $sp_variable-xl;
+
+  .c-button {
+    @include mq($until: tablet) {
+      margin-top: $sp_variable-m;
+    }
+  }
 }
