@@ -4,6 +4,7 @@
 
 @mixin table-styles {
   border-collapse: collapse; // to show border bottom in <tr>
+  margin-bottom: rem(30);
   text-align: left;
 
   tr {
