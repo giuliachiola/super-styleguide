@@ -3,20 +3,25 @@
   ========================================================================== */
 
 $co_header-hamburger: $co_color-light;
-$co_header-background-m: #2af598,#009efd;
+$co_header-background-1: #2af598;
+$co_header-background-2: #009efd;
 
 .c-header {
-  @include mq($until: desktop) {
-    height: 100vh;
-    position: fixed;
-    width: 100%;
-    z-index: 10;
+  .is-menu-open & {
+    @include mq($until: desktop) {
+      height: 100vh;
+      position: fixed;
+      width: 100%;
+      z-index: 10;
+    }
   }
 }
 
 .c-header__nav {
-  margin: 0;
-  position: relative; // TODO: desktop?!
+  @include mq($until: desktop) {
+    margin: 0;
+    position: relative;
+  }
 }
 
 .c-header__list {
@@ -38,7 +43,7 @@ $co_header-background-m: #2af598,#009efd;
     width: 100%;
 
     &::after {
-      background-image: linear-gradient(to bottom, $co_header-background-m);
+      background-image: linear-gradient(to bottom, rgba($co_header-background-1, 0.9), $co_header-background-1, $co_header-background-2, rgba($co_header-background-2, 0.9));
       content: '';
       height: 100%;
       left: 0;
@@ -50,7 +55,7 @@ $co_header-background-m: #2af598,#009efd;
       z-index: -1;
     }
 
-    .c-header__input:checked ~ & {
+    .c-header__toggle:checked ~ & {
       opacity: 1;
       transition: opacity 1s;
 
@@ -75,7 +80,7 @@ $co_header-background-m: #2af598,#009efd;
   @include mq($until: desktop) {
     @include ty-heading--l;
 
-    &::after {
+    &:not(:last-child)::after {
       color: rgba($co_color-light, 0.5);
       content: '~';
       display: block;
@@ -104,12 +109,17 @@ $co_header-background-m: #2af598,#009efd;
     color: $co_color-light;
   }
 
-  &[data-state= 'active'] {
-    border-bottom: rem(4) solid $co_color-main;
-    padding-bottom: rem(4);
+  &[data-state= 'active'] { // current page
+    font-weight: $font-sans-weight-bold;
 
-    &:hover {
-      text-decoration: none;
+    @include mq(desktop) {
+      border-bottom: rem(4) solid $co_color-main;
+      font-weight: $font-sans-weight-default;
+      padding-bottom: rem(4);
+
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 }
@@ -118,7 +128,7 @@ $co_header-background-m: #2af598,#009efd;
   Mobile header toggle
 --------- */
 
-.c-header__input {
+.c-header__toggle { // checkbox
   height: 45px;
   opacity: 0;
   position: absolute;
@@ -143,7 +153,7 @@ $co_header-background-m: #2af598,#009efd;
   width: 30px;
   z-index: 1;
 
-  .c-header__input:checked ~ & {
+  .c-header__toggle:checked ~ & {
     background: transparent;
     transition: background 1s;
   }
@@ -158,7 +168,7 @@ $co_header-background-m: #2af598,#009efd;
     transition: transform 1s;
     width: 30px;
 
-    .c-header__input:checked ~ & {
+    .c-header__toggle:checked ~ & {
       transform: translateY(-5px) rotate(-45deg);
       transition: transform 1s;
     }
@@ -174,7 +184,7 @@ $co_header-background-m: #2af598,#009efd;
     transition: transform 1s;
     width: 30px;
 
-    .c-header__input:checked ~ & {
+    .c-header__toggle:checked ~ & {
       transform: translateY(15px) rotate(45deg);
       transition: transform 1s;
     }
