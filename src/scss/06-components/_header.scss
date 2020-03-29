@@ -1,40 +1,196 @@
 /* ==========================================================================
   HEADER
-========================================================================== */
+  ========================================================================== */
 
-// https://codepen.io/giuliachiola/pen/RwPEpwy
+$co_header-hamburger: $co_color-light;
+$co_header-background-1: #2af598;
+$co_header-background-2: #009efd;
 
-// .c-header {}
+.c-header {
+  .is-menu-open & {
+    @include mq($until: desktop) {
+      height: 100vh;
+      position: fixed;
+      width: 100%;
+      z-index: 10;
+    }
+  }
+}
+
+.c-header__nav {
+  @include mq($until: desktop) {
+    margin: 0;
+    position: relative;
+  }
+}
 
 .c-header__list {
   @include list-reset;
 
-  padding: $sp_variable-m 0;
-  text-align: right;
+  @include mq($until: desktop) {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    opacity: 0;
+    padding: 0;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    transition: opacity 1s;
+    width: 100%;
+
+    &::after {
+      background-image: linear-gradient(to bottom, rgba($co_header-background-1, 0.9), $co_header-background-1, $co_header-background-2, rgba($co_header-background-2, 0.9));
+      content: '';
+      height: 100%;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      transition: opacity 1s;
+      width: 100%;
+      z-index: -1;
+    }
+
+    .c-header__toggle:checked ~ & {
+      opacity: 1;
+      transition: opacity 1s;
+
+      &::after {
+        opacity: 1;
+        transition: opacity 1s;
+      }
+    }
+  }
+
+  @include mq(desktop) {
+    padding: $sp_variable-m 0;
+    text-align: right;
+  }
 }
 
 .c-header__item {
   @include list-item-reset;
 
-  display: inline-block;
+  display: block;
 
-  &::before {
-    color: $co_color-main;
-    content: '•';
+  @include mq($until: desktop) {
+    @include ty-heading--l;
+
+    &:not(:last-child)::after {
+      color: rgba($co_color-light, 0.5);
+      content: '~';
+      display: block;
+    }
+  }
+
+  @include mq(desktop) {
+    display: inline-block;
+    margin-bottom: 0;
+
+    &::before {
+      color: $co_color-main;
+      content: '•';
+    }
   }
 
   .c-header__item + & {
-    margin-left: $sp_variable-m;
+    @include mq(desktop) {
+      margin-left: $sp_variable-m;
+    }
   }
 }
 
 .c-header__link {
-  &[data-state= 'active'] {
-    border-bottom: rem(4) solid $co_color-main;
-    padding-bottom: rem(4);
+  @include mq($until: desktop) {
+    color: $co_color-light;
+  }
 
-    &:hover {
-      text-decoration: none;
+  &[data-state= 'active'] { // current page
+    font-weight: $font-sans-weight-bold;
+
+    @include mq(desktop) {
+      border-bottom: rem(4) solid $co_color-main;
+      font-weight: $font-sans-weight-default;
+      padding-bottom: rem(4);
+
+      &:hover {
+        text-decoration: none;
+      }
     }
+  }
+}
+
+/* ---------
+  Mobile header toggle
+--------- */
+
+.c-header__toggle { // checkbox
+  height: 45px;
+  opacity: 0;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 45px;
+  z-index: 2;
+
+  @include mq(desktop) {
+    display: none;
+  }
+}
+
+.c-header__hamburger {
+  background: $co_header-hamburger;
+  display: block;
+  height: 2px;
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  transition: background 1s;
+  width: 30px;
+  z-index: 1;
+
+  .c-header__toggle:checked ~ & {
+    background: transparent;
+    transition: background 1s;
+  }
+
+  &::before {
+    background: $co_header-hamburger;
+    content: '';
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: 10px;
+    transition: transform 1s;
+    width: 30px;
+
+    .c-header__toggle:checked ~ & {
+      transform: translateY(-5px) rotate(-45deg);
+      transition: transform 1s;
+    }
+  }
+
+  &::after {
+    background: $co_header-hamburger;
+    bottom: 10px;
+    content: '';
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transition: transform 1s;
+    width: 30px;
+
+    .c-header__toggle:checked ~ & {
+      transform: translateY(15px) rotate(45deg);
+      transition: transform 1s;
+    }
+  }
+
+  @include mq(desktop) {
+    display: none;
   }
 }
