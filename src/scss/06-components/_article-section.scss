@@ -58,13 +58,15 @@
 
 // Content
 
-.c-article-section__img--medium {
+.c-article-section__img {
   margin: 0 auto;
+}
+
+.c-article-section__img--medium {
   max-width: 70%;
 }
 
 .c-article-section__img--small {
-  margin: 0 auto;
   max-width: 50%;
 }
 

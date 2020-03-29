@@ -305,6 +305,7 @@ body {
 ========================================================================== */
 .c-table {
   border-collapse: collapse;
+  margin-bottom: 1.875rem;
   text-align: left;
 }
 
@@ -450,6 +451,7 @@ body {
 
 .c-article-section__content table {
   border-collapse: collapse;
+  margin-bottom: 1.875rem;
   text-align: left;
 }
 
@@ -630,6 +632,10 @@ body {
   background: linear-gradient(to right, #f0c, #339);
 }
 
+.c-card--macos .c-card__img-wrapper::before {
+  background: linear-gradient(to right, #485563, #29323c);
+}
+
 .c-card__img-wrapper .icon {
   bottom: 1.25rem;
   color: #fff;
@@ -790,6 +796,14 @@ body {
   background: linear-gradient(to right, #f0c, #339);
 }
 
+.c-card--highlight-left.c-card--macos .c-card__content::before {
+  background: linear-gradient(to bottom, #485563, #29323c);
+}
+
+.c-card--highlight-top.c-card--macos .c-card__content::before {
+  background: linear-gradient(to right, #485563, #29323c);
+}
+
 .c-card__title-heading {
   font-size: 1.4375rem;
   font-weight: 500;
@@ -902,6 +916,10 @@ body {
   background: linear-gradient(to right, #f0c, #339);
 }
 
+.c-card--macos .c-card__number {
+  background: linear-gradient(to right, #485563, #29323c);
+}
+
 .c-card__tags .c-label {
   display: inline-block;
   margin-top: 0.3125rem;
@@ -971,6 +989,7 @@ body {
 
 .c-card__raw-content table {
   border-collapse: collapse;
+  margin-bottom: 1.875rem;
   text-align: left;
 }
 
