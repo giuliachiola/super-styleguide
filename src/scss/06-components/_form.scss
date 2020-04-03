@@ -1,0 +1,21 @@
+/* ==========================================================================
+  FORM
+========================================================================== */
+
+.c-form { // search page
+  align-items: stretch;
+}
+
+.c-form__input {
+  border: rem(1) solid $co_color-city-lights;
+  border-radius: rem(3); // as card radius
+  color: $co_color-medium-gray;
+  margin-right: $sp_variable-m;
+  padding: $sp_variable-s;
+  width: 50%;
+
+  &:focus {
+    border: rem(1) solid $co_color-medium-gray;
+    outline:none;
+  }
+}
