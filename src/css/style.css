@@ -289,19 +289,19 @@ body {
   SPACING
 ========================================================================== */
 .l-spacing-xs {
-  margin-bottom: 0.3125rem;
+  margin-bottom: 0.3125rem !important;
 }
 
 .l-spacing-s {
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.625rem !important;
 }
 
 .l-spacing-m {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.25rem !important;
 }
 
 .l-spacing-l {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.5rem !important;
 }
 
 /* ==========================================================================
