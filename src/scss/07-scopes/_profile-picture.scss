@@ -1,6 +1,12 @@
 /* ==========================================================================
-  07 - SCOPES
+  PROFILE PICTURE
 ========================================================================== */
 
-@import 'search-list';
-@import 'profile-picture';
+.s-profile-picture {
+  border-radius: rem(3);
+  width: rem(200);
+
+  @include mq(desktop) {
+    float: right;
+  }
+}
