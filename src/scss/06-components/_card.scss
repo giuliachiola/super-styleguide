@@ -6,7 +6,7 @@ $sp_card-content-padding: $sp_variable-m;
 $sp_card-highlight: rem(10);
 $sp_card-border-radius: rem(2);
 
-$co_card-gradient-git: #eb3349, #f45c43;
+$co_card-gradient-git: #960f0f, #f70000;
 $co_card-gradient-vuejs: #11998e, #38ef7d;
 $co_card-gradient-js: #f2994a, #f2c94c;
 $co_card-gradient-vsc: #1a2980, #26d0ce;
@@ -83,6 +83,10 @@ $tags: git, vuejs, js, vsc, css, nodejs, design-system, static-site-generator, m
   position: relative;
 }
 
+.c-card--horizontal {
+  display: flex;
+}
+
 .c-card__img-wrapper {
   position: relative;
 
@@ -134,22 +138,37 @@ $tags: git, vuejs, js, vsc, css, nodejs, design-system, static-site-generator, m
       @include image-padding(1, 1); // square
     }
   }
+
+  .c-card--squared-image.c-card--horizontal & {
+    // flex-basis: rem(10);
+    min-height: rem(200);
+    padding-top: 0;
+
+    @include mq(desktop) {
+      flex-basis: rem(300);
+      flex-shrink: 0;
+    }
+  }
+}
+
+@mixin card-highlight-left {
+  padding-left: $sp_card-content-padding + $sp_card-highlight;
+
+  &::before {
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: $sp_card-highlight;
+  }
 }
 
 .c-card__content {
   padding: $sp_card-content-padding $sp_card-content-padding rem(74) $sp_card-content-padding; // bottom padding needed for date/tags position absolute
 
   .c-card--highlight-left & {
-    padding-left: $sp_card-content-padding + $sp_card-highlight;
-
-    &::before {
-      content: '';
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: $sp_card-highlight;
-    }
+    @include card-highlight-left;
   }
 
   .c-card--highlight-top & {
@@ -162,6 +181,12 @@ $tags: git, vuejs, js, vsc, css, nodejs, design-system, static-site-generator, m
       position: absolute;
       top: 0;
       width: 100%;
+    }
+  }
+
+  .c-card--squared-image.c-card--horizontal & {
+    @include mq($until: desktop) {
+      @include card-highlight-left;
     }
   }
 
@@ -178,7 +203,8 @@ $tags: git, vuejs, js, vsc, css, nodejs, design-system, static-site-generator, m
   -------------- */
 
   @each $tag in $tags {
-    .c-card--highlight-left.c-card--#{$tag} &::before {
+    .c-card--highlight-left.c-card--#{$tag} &::before,
+    .c-card--squared-image.c-card--horizontal.c-card--#{$tag} &::before {
       @include card-gradient(to bottom, $tag);
     }
 

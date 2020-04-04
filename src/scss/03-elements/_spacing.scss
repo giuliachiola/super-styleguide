@@ -11,20 +11,26 @@ $sp_variable-xl: rem(60);
 
 $sp_main-border-radius: 2px;
 
-// Spacing classes
+// Spacing classes (default = bottom)
 
 .l-spacing-xs {
-  margin-bottom: $sp_variable-xs;
+  margin-bottom: $sp_variable-xs !important;
 }
 
 .l-spacing-s {
-  margin-bottom: $sp_variable-s;
+  margin-bottom: $sp_variable-s !important;
 }
 
 .l-spacing-m {
-  margin-bottom: $sp_variable-m;
+  margin-bottom: $sp_variable-m !important;
 }
 
 .l-spacing-l {
-  margin-bottom: $sp_variable-l;
+  margin-bottom: $sp_variable-l !important;
+}
+
+// Spacing classes (top)
+
+.l-spacing-top-m {
+  margin-top: $sp_variable-m !important;
 }

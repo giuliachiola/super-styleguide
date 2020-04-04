@@ -50,6 +50,24 @@ module.exports = {
         )
       }
     },
+    // Squared image
+    {
+      title: 'Squared image - Horizontal',
+      file: 'default.ejs',
+      context: {
+        uiContext: {
+          containerModifiers: ['ui-container--medium-bg'],
+          componentModifiers: [],
+        },
+        card: _.merge(
+          {},
+          card,
+          {
+            modifiers: ['squared-image', 'horizontal'],
+          }
+        )
+      }
+    },
     // Highlight left
     {
       title: 'Highlight left',
