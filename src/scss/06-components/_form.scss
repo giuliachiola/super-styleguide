@@ -4,18 +4,31 @@
 
 .c-form { // search page
   align-items: stretch;
+  position: relative; // set label in position absolute for 11ty
 }
 
 .c-form__input {
   border: rem(1) solid $co_color-city-lights;
   border-radius: rem(3); // as card radius
   color: $co_color-medium-gray;
+  font-size: $ty_font-size-base;
   margin-right: $sp_variable-m;
   padding: $sp_variable-s;
   width: 50%;
 
   &:focus {
-    border: rem(1) solid $co_color-medium-gray;
+    border: rem(1) solid $co_color-light-gray;
     outline:none;
   }
+
+  &::placeholder {
+    color: $co_color-light-gray;
+  }
+}
+
+.c-form__label {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
 }

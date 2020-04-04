@@ -11,7 +11,7 @@ $sp_variable-xl: rem(60);
 
 $sp_main-border-radius: 2px;
 
-// Spacing classes
+// Spacing classes (default = bottom)
 
 .l-spacing-xs {
   margin-bottom: $sp_variable-xs !important;
@@ -27,4 +27,10 @@ $sp_main-border-radius: 2px;
 
 .l-spacing-l {
   margin-bottom: $sp_variable-l !important;
+}
+
+// Spacing classes (top)
+
+.l-spacing-top-m {
+  margin-top: $sp_variable-m !important;
 }
