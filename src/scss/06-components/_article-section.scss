@@ -11,6 +11,12 @@
   margin-bottom: $sp_variable-xs;
 }
 
+.c-article-section__reading-time {
+  font-size: $ty_font-size-small;
+  font-style: italic;
+  margin: $sp_variable-xs 0;
+}
+
 .c-article-section__content { // markup content
   img {
     display: block;
