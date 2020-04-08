@@ -17,10 +17,30 @@ $co_card-gradient-template-engine: #fc4a1a, #f7b733;
 $co_card-gradient-svg: #f0c, #339;
 $co_card-gradient-mac-os: #485563, #29323c;
 
-$tags: git, vuejs, js, vsc, css, nodejs, design-system, static-site-generator, markdown, template-engine, svg, mac-os;
+$co_gradient-general-1: #2196f3, #f44336;
+$co_gradient-general-2: #b24592, #f15f79;
+$co_gradient-general-3: #00c9ff, #92fe9d;
+
+$tags: general-1, general-2, general-3, git, vuejs, js, vsc, css, nodejs, design-system, static-site-generator, markdown, template-engine, svg, mac-os;
 
 @mixin card-gradient($dir, $tag, $text: false) {
   color: $co_color-light;
+
+  // GENERAL
+
+  @if $tag == 'general-1' {
+    background: linear-gradient($dir, $co_gradient-general-1);
+  }
+
+  @if $tag == 'general-2' {
+    background: linear-gradient($dir, $co_gradient-general-2);
+  }
+
+  @if $tag == 'general-3' {
+    background: linear-gradient($dir, $co_gradient-general-3);
+  }
+
+  // TAGS
 
   @if $tag == 'git' {
     background: linear-gradient($dir, $co_card-gradient-git);
