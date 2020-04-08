@@ -14,6 +14,11 @@
   COLORS
 ========================================================================== */
 /* ==========================================================================
+  COLORS BY TAGS
+
+  Used in card, hero
+========================================================================== */
+/* ==========================================================================
   MQ CONFIG
 ========================================================================== */
 /* ==========================================================================
@@ -610,50 +615,62 @@ body {
 }
 
 .c-card--git .c-card__img-wrapper::before {
+  color: #fff;
   background: linear-gradient(to right, #960f0f, #f70000);
 }
 
 .c-card--vuejs .c-card__img-wrapper::before {
+  color: #fff;
   background: linear-gradient(to right, #11998e, #38ef7d);
 }
 
 .c-card--js .c-card__img-wrapper::before {
+  color: #fff;
   background: linear-gradient(to right, #f2994a, #f2c94c);
 }
 
 .c-card--vsc .c-card__img-wrapper::before {
+  color: #fff;
   background: linear-gradient(to right, #1a2980, #26d0ce);
 }
 
 .c-card--css .c-card__img-wrapper::before {
+  color: #fff;
   background: linear-gradient(to right, #e84393, #fd79a8);
 }
 
 .c-card--nodejs .c-card__img-wrapper::before {
+  color: #fff;
   background: linear-gradient(to right, #009432, #c4e538);
 }
 
 .c-card--design-system .c-card__img-wrapper::before {
+  color: #fff;
   background: linear-gradient(to right, #ee0979, #ff6a00);
 }
 
 .c-card--static-site-generator .c-card__img-wrapper::before {
+  color: #fff;
   background: linear-gradient(to right, #00353e, #387c88);
 }
 
 .c-card--markdown .c-card__img-wrapper::before {
+  color: #fff;
   background: linear-gradient(to right, #6b34ff, #339ff7);
 }
 
 .c-card--template-engine .c-card__img-wrapper::before {
+  color: #fff;
   background: linear-gradient(to right, #fc4a1a, #f7b733);
 }
 
 .c-card--svg .c-card__img-wrapper::before {
+  color: #fff;
   background: linear-gradient(to right, #f0c, #339);
 }
 
 .c-card--mac-os .c-card__img-wrapper::before {
+  color: #fff;
   background: linear-gradient(to right, #485563, #29323c);
 }
 
@@ -757,109 +774,133 @@ body {
 
 .c-card--highlight-left.c-card--git .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--git .c-card__content::before {
+  color: #fff;
   background: linear-gradient(to bottom, #960f0f, #f70000);
 }
 
 .c-card--highlight-top.c-card--git .c-card__content::before {
+  color: #fff;
   background: linear-gradient(to right, #960f0f, #f70000);
 }
 
 .c-card--highlight-left.c-card--vuejs .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--vuejs .c-card__content::before {
+  color: #fff;
   background: linear-gradient(to bottom, #11998e, #38ef7d);
 }
 
 .c-card--highlight-top.c-card--vuejs .c-card__content::before {
+  color: #fff;
   background: linear-gradient(to right, #11998e, #38ef7d);
 }
 
 .c-card--highlight-left.c-card--js .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--js .c-card__content::before {
+  color: #fff;
   background: linear-gradient(to bottom, #f2994a, #f2c94c);
 }
 
 .c-card--highlight-top.c-card--js .c-card__content::before {
+  color: #fff;
   background: linear-gradient(to right, #f2994a, #f2c94c);
 }
 
 .c-card--highlight-left.c-card--vsc .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--vsc .c-card__content::before {
+  color: #fff;
   background: linear-gradient(to bottom, #1a2980, #26d0ce);
 }
 
 .c-card--highlight-top.c-card--vsc .c-card__content::before {
+  color: #fff;
   background: linear-gradient(to right, #1a2980, #26d0ce);
 }
 
 .c-card--highlight-left.c-card--css .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--css .c-card__content::before {
+  color: #fff;
   background: linear-gradient(to bottom, #e84393, #fd79a8);
 }
 
 .c-card--highlight-top.c-card--css .c-card__content::before {
+  color: #fff;
   background: linear-gradient(to right, #e84393, #fd79a8);
 }
 
 .c-card--highlight-left.c-card--nodejs .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--nodejs .c-card__content::before {
+  color: #fff;
   background: linear-gradient(to bottom, #009432, #c4e538);
 }
 
 .c-card--highlight-top.c-card--nodejs .c-card__content::before {
+  color: #fff;
   background: linear-gradient(to right, #009432, #c4e538);
 }
 
 .c-card--highlight-left.c-card--design-system .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--design-system .c-card__content::before {
+  color: #fff;
   background: linear-gradient(to bottom, #ee0979, #ff6a00);
 }
 
 .c-card--highlight-top.c-card--design-system .c-card__content::before {
+  color: #fff;
   background: linear-gradient(to right, #ee0979, #ff6a00);
 }
 
 .c-card--highlight-left.c-card--static-site-generator .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--static-site-generator .c-card__content::before {
+  color: #fff;
   background: linear-gradient(to bottom, #00353e, #387c88);
 }
 
 .c-card--highlight-top.c-card--static-site-generator .c-card__content::before {
+  color: #fff;
   background: linear-gradient(to right, #00353e, #387c88);
 }
 
 .c-card--highlight-left.c-card--markdown .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--markdown .c-card__content::before {
+  color: #fff;
   background: linear-gradient(to bottom, #6b34ff, #339ff7);
 }
 
 .c-card--highlight-top.c-card--markdown .c-card__content::before {
+  color: #fff;
   background: linear-gradient(to right, #6b34ff, #339ff7);
 }
 
 .c-card--highlight-left.c-card--template-engine .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--template-engine .c-card__content::before {
+  color: #fff;
   background: linear-gradient(to bottom, #fc4a1a, #f7b733);
 }
 
 .c-card--highlight-top.c-card--template-engine .c-card__content::before {
+  color: #fff;
   background: linear-gradient(to right, #fc4a1a, #f7b733);
 }
 
 .c-card--highlight-left.c-card--svg .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--svg .c-card__content::before {
+  color: #fff;
   background: linear-gradient(to bottom, #f0c, #339);
 }
 
 .c-card--highlight-top.c-card--svg .c-card__content::before {
+  color: #fff;
   background: linear-gradient(to right, #f0c, #339);
 }
 
 .c-card--highlight-left.c-card--mac-os .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--mac-os .c-card__content::before {
+  color: #fff;
   background: linear-gradient(to bottom, #485563, #29323c);
 }
 
 .c-card--highlight-top.c-card--mac-os .c-card__content::before {
+  color: #fff;
   background: linear-gradient(to right, #485563, #29323c);
 }
 
@@ -932,50 +973,62 @@ body {
 }
 
 .c-card--git .c-card__number {
+  color: #fff;
   background: linear-gradient(to right, #960f0f, #f70000);
 }
 
 .c-card--vuejs .c-card__number {
+  color: #fff;
   background: linear-gradient(to right, #11998e, #38ef7d);
 }
 
 .c-card--js .c-card__number {
+  color: #fff;
   background: linear-gradient(to right, #f2994a, #f2c94c);
 }
 
 .c-card--vsc .c-card__number {
+  color: #fff;
   background: linear-gradient(to right, #1a2980, #26d0ce);
 }
 
 .c-card--css .c-card__number {
+  color: #fff;
   background: linear-gradient(to right, #e84393, #fd79a8);
 }
 
 .c-card--nodejs .c-card__number {
+  color: #fff;
   background: linear-gradient(to right, #009432, #c4e538);
 }
 
 .c-card--design-system .c-card__number {
+  color: #fff;
   background: linear-gradient(to right, #ee0979, #ff6a00);
 }
 
 .c-card--static-site-generator .c-card__number {
+  color: #fff;
   background: linear-gradient(to right, #00353e, #387c88);
 }
 
 .c-card--markdown .c-card__number {
+  color: #fff;
   background: linear-gradient(to right, #6b34ff, #339ff7);
 }
 
 .c-card--template-engine .c-card__number {
+  color: #fff;
   background: linear-gradient(to right, #fc4a1a, #f7b733);
 }
 
 .c-card--svg .c-card__number {
+  color: #fff;
   background: linear-gradient(to right, #f0c, #339);
 }
 
 .c-card--mac-os .c-card__number {
+  color: #fff;
   background: linear-gradient(to right, #485563, #29323c);
 }
 
@@ -1319,20 +1372,24 @@ body {
 ========================================================================== */
 .c-hero {
   align-items: center;
-  color: #fff;
   display: flex;
-  min-height: 31.25rem;
+  min-height: 21.875rem;
   position: relative;
   text-align: center;
 }
 
 .c-hero .l-main {
   position: relative;
-  text-shadow: rgba(0, 0, 0, 0.5) 0 0 0.625rem;
   width: 100%;
 }
 
-.c-hero::before {
+.c-hero--bg-img {
+  color: #fff;
+  min-height: 31.25rem;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 0 0.625rem;
+}
+
+.c-hero--bg-img::before {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent 50%), linear-gradient(to top, transparent, rgba(0, 0, 0, 0.5) 50%, transparent);
   content: '';
   height: 100%;
@@ -1340,6 +1397,66 @@ body {
   position: absolute;
   top: 0;
   width: 100%;
+}
+
+.c-hero--git {
+  color: #fff;
+  background: linear-gradient(to right, #960f0f, #f70000);
+}
+
+.c-hero--vuejs {
+  color: #fff;
+  background: linear-gradient(to right, #11998e, #38ef7d);
+}
+
+.c-hero--js {
+  color: #fff;
+  background: linear-gradient(to right, #f2994a, #f2c94c);
+}
+
+.c-hero--vsc {
+  color: #fff;
+  background: linear-gradient(to right, #1a2980, #26d0ce);
+}
+
+.c-hero--css {
+  color: #fff;
+  background: linear-gradient(to right, #e84393, #fd79a8);
+}
+
+.c-hero--nodejs {
+  color: #fff;
+  background: linear-gradient(to right, #009432, #c4e538);
+}
+
+.c-hero--design-system {
+  color: #fff;
+  background: linear-gradient(to right, #ee0979, #ff6a00);
+}
+
+.c-hero--static-site-generator {
+  color: #fff;
+  background: linear-gradient(to right, #00353e, #387c88);
+}
+
+.c-hero--markdown {
+  color: #fff;
+  background: linear-gradient(to right, #6b34ff, #339ff7);
+}
+
+.c-hero--template-engine {
+  color: #fff;
+  background: linear-gradient(to right, #fc4a1a, #f7b733);
+}
+
+.c-hero--svg {
+  color: #fff;
+  background: linear-gradient(to right, #f0c, #339);
+}
+
+.c-hero--mac-os {
+  color: #fff;
+  background: linear-gradient(to right, #485563, #29323c);
 }
 
 .c-hero--bottom-text {

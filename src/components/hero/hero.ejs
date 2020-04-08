@@ -1,10 +1,25 @@
-<section class="c-hero">
-  <img class="c-hero__img" src="<%= hero.img %>" alt="">
+<%
+  let modifiers = ''
+  if (hero.mainTag) {
+    modifiers = `${modifiers} c-hero--${hero.mainTag}`
+  }
+
+  if (hero.img) {
+    modifiers = `${modifiers} c-hero--bg-img`
+  }
+%>
+
+<section class="c-hero <%= modifiers %>">
+  <% if (hero.img) { %>
+    <img class="c-hero__img" src="<%= hero.img %>" alt="">
+  <% } %>
   <% if (hero.title && hero.subtitle) { %>
     <div class="l-main">
       <h1><%- hero.title %></h1>
       <h2 class="c-hero__subtitle"><%= hero.subtitle %></h2>
     </div>
   <% } %>
-  <span class="c-hero__credits">Photo credits <a href="#">Giulia</a></span>
+  <% if (hero.credits) { %>
+    <span class="c-hero__credits">Photo credits <a href="#"><%= hero.credits %></a></span>
+  <% } %>
 </section>

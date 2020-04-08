@@ -1,0 +1,76 @@
+/* ==========================================================================
+  COLORS BY TAGS
+
+  Used in card, hero
+========================================================================== */
+
+$co_card-gradient-git: #960f0f, #f70000;
+$co_card-gradient-vuejs: #11998e, #38ef7d;
+$co_card-gradient-js: #f2994a, #f2c94c;
+$co_card-gradient-vsc: #1a2980, #26d0ce;
+$co_card-gradient-css: #e84393, #fd79a8;
+$co_card-gradient-nodejs: #009432, #c4e538;
+$co_card-gradient-design-system: #ee0979, #ff6a00;
+$co_card-gradient-static-site-generator: #00353e, #387c88;
+$co_card-gradient-markdown: #6b34ff, #339ff7;
+$co_card-gradient-template-engine: #fc4a1a, #f7b733;
+$co_card-gradient-svg: #f0c, #339;
+$co_card-gradient-mac-os: #485563, #29323c;
+
+$tags: git, vuejs, js, vsc, css, nodejs, design-system, static-site-generator, markdown, template-engine, svg, mac-os;
+
+@mixin card-gradient($dir, $tag, $text: false) {
+  color: $co_color-light;
+
+  @if $tag == 'git' {
+    background: linear-gradient($dir, $co_card-gradient-git);
+  }
+
+  @else if $tag == 'vuejs' {
+    background: linear-gradient($dir, $co_card-gradient-vuejs);
+  }
+
+  @else if $tag == 'js' {
+    background: linear-gradient($dir, $co_card-gradient-js);
+  }
+
+  @else if $tag == 'vsc' {
+    background: linear-gradient($dir, $co_card-gradient-vsc);
+  }
+
+  @else if $tag == 'css' {
+    background: linear-gradient($dir, $co_card-gradient-css);
+  }
+
+  @else if $tag == 'nodejs' {
+    background: linear-gradient($dir, $co_card-gradient-nodejs);
+  }
+
+  @else if $tag == 'design-system' {
+    background: linear-gradient($dir, $co_card-gradient-design-system);
+  }
+
+  @else if $tag == 'static-site-generator' {
+    background: linear-gradient($dir, $co_card-gradient-static-site-generator);
+  }
+
+  @else if $tag == 'markdown' {
+    background: linear-gradient($dir, $co_card-gradient-markdown);
+  }
+
+  @else if $tag == 'template-engine' {
+    background: linear-gradient($dir, $co_card-gradient-template-engine);
+  }
+
+  @else if $tag == 'svg' {
+    background: linear-gradient($dir, $co_card-gradient-svg);
+  }
+
+  @else if $tag == 'mac-os' {
+    background: linear-gradient($dir, $co_card-gradient-mac-os);
+  }
+}
+
+@mixin card-shadow ($opacity: 0.1) {
+  box-shadow: 0 rem(10) rem(45) rem(-9) rgba(0, 0, 0, $opacity);
+}
