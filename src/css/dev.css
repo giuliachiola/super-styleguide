@@ -617,29 +617,29 @@ body {
     -------------- */
 }
 
-.c-card--general-1 .c-card__img-wrapper::before {
+.c-card--blog .c-card__img-wrapper::before {
   color: #fff;
-  background: linear-gradient(to right, #FF928B, #FFAC81);
+  background: linear-gradient(to right, #ff928b, #ffac81);
 }
 
-.c-card--general-2 .c-card__img-wrapper::before {
+.c-card--til .c-card__img-wrapper::before {
   color: #fff;
-  background: linear-gradient(to right, #A88BEB, #F8CEEC);
+  background: linear-gradient(to right, #a88beb, #f8ceec);
 }
 
-.c-card--general-3 .c-card__img-wrapper::before {
+.c-card--projects .c-card__img-wrapper::before {
   color: #fff;
-  background: linear-gradient(to right, #F9D976, #f39f86);
+  background: linear-gradient(to right, #f9d976, #f39f86);
 }
 
-.c-card--general-4 .c-card__img-wrapper::before {
+.c-card--search .c-card__img-wrapper::before {
   color: #fff;
-  background: linear-gradient(to right, #6782B4, #B1BFD8);
+  background: linear-gradient(to right, #6782b4, #b1bfd8);
 }
 
-.c-card--general-5 .c-card__img-wrapper::before {
+.c-card--about .c-card__img-wrapper::before {
   color: #fff;
-  background: linear-gradient(to right, #F67062, #FC5296);
+  background: linear-gradient(to right, #f67062, #fc5296);
 }
 
 .c-card--git .c-card__img-wrapper::before {
@@ -674,32 +674,32 @@ body {
 
 .c-card--design-system .c-card__img-wrapper::before {
   color: #fff;
-  background: #C6AEFF;
+  background: #c6aeff;
 }
 
 .c-card--static-site-generator .c-card__img-wrapper::before {
   color: #fff;
-  background: #BDD8FF;
+  background: #bdd8ff;
 }
 
 .c-card--markdown .c-card__img-wrapper::before {
   color: #fff;
-  background: #BDFFB2;
+  background: #bdffb2;
 }
 
 .c-card--template-engine .c-card__img-wrapper::before {
   color: #fff;
-  background: #fffab3;
+  background: #eef9bf;
 }
 
 .c-card--svg .c-card__img-wrapper::before {
   color: #fff;
-  background: #FFC8AE;
+  background: #ffc8ae;
 }
 
 .c-card--mac-os .c-card__img-wrapper::before {
   color: #fff;
-  background: #FF9FBB;
+  background: #ff9fbb;
 }
 
 .c-card__img-wrapper .icon {
@@ -734,7 +734,7 @@ body {
 }
 
 .c-card--squared-image.c-card--horizontal .c-card__img-wrapper {
-  min-height: 12.5rem;
+  height: 12.5rem;
   padding-top: 0;
 }
 
@@ -800,59 +800,59 @@ body {
   }
 }
 
-.c-card--highlight-left.c-card--general-1 .c-card__content::before,
-.c-card--squared-image.c-card--horizontal.c-card--general-1 .c-card__content::before {
+.c-card--highlight-left.c-card--blog .c-card__content::before,
+.c-card--squared-image.c-card--horizontal.c-card--blog .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #FF928B, #FFAC81);
+  background: linear-gradient(to right, #ff928b, #ffac81);
 }
 
-.c-card--highlight-top.c-card--general-1 .c-card__content::before {
+.c-card--highlight-top.c-card--blog .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #FF928B, #FFAC81);
+  background: linear-gradient(to right, #ff928b, #ffac81);
 }
 
-.c-card--highlight-left.c-card--general-2 .c-card__content::before,
-.c-card--squared-image.c-card--horizontal.c-card--general-2 .c-card__content::before {
+.c-card--highlight-left.c-card--til .c-card__content::before,
+.c-card--squared-image.c-card--horizontal.c-card--til .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #A88BEB, #F8CEEC);
+  background: linear-gradient(to right, #a88beb, #f8ceec);
 }
 
-.c-card--highlight-top.c-card--general-2 .c-card__content::before {
+.c-card--highlight-top.c-card--til .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #A88BEB, #F8CEEC);
+  background: linear-gradient(to right, #a88beb, #f8ceec);
 }
 
-.c-card--highlight-left.c-card--general-3 .c-card__content::before,
-.c-card--squared-image.c-card--horizontal.c-card--general-3 .c-card__content::before {
+.c-card--highlight-left.c-card--projects .c-card__content::before,
+.c-card--squared-image.c-card--horizontal.c-card--projects .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #F9D976, #f39f86);
+  background: linear-gradient(to right, #f9d976, #f39f86);
 }
 
-.c-card--highlight-top.c-card--general-3 .c-card__content::before {
+.c-card--highlight-top.c-card--projects .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #F9D976, #f39f86);
+  background: linear-gradient(to right, #f9d976, #f39f86);
 }
 
-.c-card--highlight-left.c-card--general-4 .c-card__content::before,
-.c-card--squared-image.c-card--horizontal.c-card--general-4 .c-card__content::before {
+.c-card--highlight-left.c-card--search .c-card__content::before,
+.c-card--squared-image.c-card--horizontal.c-card--search .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #6782B4, #B1BFD8);
+  background: linear-gradient(to right, #6782b4, #b1bfd8);
 }
 
-.c-card--highlight-top.c-card--general-4 .c-card__content::before {
+.c-card--highlight-top.c-card--search .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #6782B4, #B1BFD8);
+  background: linear-gradient(to right, #6782b4, #b1bfd8);
 }
 
-.c-card--highlight-left.c-card--general-5 .c-card__content::before,
-.c-card--squared-image.c-card--horizontal.c-card--general-5 .c-card__content::before {
+.c-card--highlight-left.c-card--about .c-card__content::before,
+.c-card--squared-image.c-card--horizontal.c-card--about .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #F67062, #FC5296);
+  background: linear-gradient(to right, #f67062, #fc5296);
 }
 
-.c-card--highlight-top.c-card--general-5 .c-card__content::before {
+.c-card--highlight-top.c-card--about .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #F67062, #FC5296);
+  background: linear-gradient(to right, #f67062, #fc5296);
 }
 
 .c-card--highlight-left.c-card--git .c-card__content::before,
@@ -924,67 +924,67 @@ body {
 .c-card--highlight-left.c-card--design-system .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--design-system .c-card__content::before {
   color: #fff;
-  background: #C6AEFF;
+  background: #c6aeff;
 }
 
 .c-card--highlight-top.c-card--design-system .c-card__content::before {
   color: #fff;
-  background: #C6AEFF;
+  background: #c6aeff;
 }
 
 .c-card--highlight-left.c-card--static-site-generator .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--static-site-generator .c-card__content::before {
   color: #fff;
-  background: #BDD8FF;
+  background: #bdd8ff;
 }
 
 .c-card--highlight-top.c-card--static-site-generator .c-card__content::before {
   color: #fff;
-  background: #BDD8FF;
+  background: #bdd8ff;
 }
 
 .c-card--highlight-left.c-card--markdown .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--markdown .c-card__content::before {
   color: #fff;
-  background: #BDFFB2;
+  background: #bdffb2;
 }
 
 .c-card--highlight-top.c-card--markdown .c-card__content::before {
   color: #fff;
-  background: #BDFFB2;
+  background: #bdffb2;
 }
 
 .c-card--highlight-left.c-card--template-engine .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--template-engine .c-card__content::before {
   color: #fff;
-  background: #fffab3;
+  background: #eef9bf;
 }
 
 .c-card--highlight-top.c-card--template-engine .c-card__content::before {
   color: #fff;
-  background: #fffab3;
+  background: #eef9bf;
 }
 
 .c-card--highlight-left.c-card--svg .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--svg .c-card__content::before {
   color: #fff;
-  background: #FFC8AE;
+  background: #ffc8ae;
 }
 
 .c-card--highlight-top.c-card--svg .c-card__content::before {
   color: #fff;
-  background: #FFC8AE;
+  background: #ffc8ae;
 }
 
 .c-card--highlight-left.c-card--mac-os .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--mac-os .c-card__content::before {
   color: #fff;
-  background: #FF9FBB;
+  background: #ff9fbb;
 }
 
 .c-card--highlight-top.c-card--mac-os .c-card__content::before {
   color: #fff;
-  background: #FF9FBB;
+  background: #ff9fbb;
 }
 
 .c-card__title-heading {
@@ -1055,29 +1055,29 @@ body {
   top: 1.25rem;
 }
 
-.c-card--general-1 .c-card__number {
+.c-card--blog .c-card__number {
   color: #fff;
-  background: linear-gradient(to right, #FF928B, #FFAC81);
+  background: linear-gradient(to right, #ff928b, #ffac81);
 }
 
-.c-card--general-2 .c-card__number {
+.c-card--til .c-card__number {
   color: #fff;
-  background: linear-gradient(to right, #A88BEB, #F8CEEC);
+  background: linear-gradient(to right, #a88beb, #f8ceec);
 }
 
-.c-card--general-3 .c-card__number {
+.c-card--projects .c-card__number {
   color: #fff;
-  background: linear-gradient(to right, #F9D976, #f39f86);
+  background: linear-gradient(to right, #f9d976, #f39f86);
 }
 
-.c-card--general-4 .c-card__number {
+.c-card--search .c-card__number {
   color: #fff;
-  background: linear-gradient(to right, #6782B4, #B1BFD8);
+  background: linear-gradient(to right, #6782b4, #b1bfd8);
 }
 
-.c-card--general-5 .c-card__number {
+.c-card--about .c-card__number {
   color: #fff;
-  background: linear-gradient(to right, #F67062, #FC5296);
+  background: linear-gradient(to right, #f67062, #fc5296);
 }
 
 .c-card--git .c-card__number {
@@ -1112,32 +1112,32 @@ body {
 
 .c-card--design-system .c-card__number {
   color: #fff;
-  background: #C6AEFF;
+  background: #c6aeff;
 }
 
 .c-card--static-site-generator .c-card__number {
   color: #fff;
-  background: #BDD8FF;
+  background: #bdd8ff;
 }
 
 .c-card--markdown .c-card__number {
   color: #fff;
-  background: #BDFFB2;
+  background: #bdffb2;
 }
 
 .c-card--template-engine .c-card__number {
   color: #fff;
-  background: #fffab3;
+  background: #eef9bf;
 }
 
 .c-card--svg .c-card__number {
   color: #fff;
-  background: #FFC8AE;
+  background: #ffc8ae;
 }
 
 .c-card--mac-os .c-card__number {
   color: #fff;
-  background: #FF9FBB;
+  background: #ff9fbb;
 }
 
 .c-card__tags .c-label {
@@ -1507,29 +1507,29 @@ body {
   width: 100%;
 }
 
-.c-hero--general-1 {
+.c-hero--blog {
   color: #fff;
-  background: linear-gradient(to right, #FF928B, #FFAC81);
+  background: linear-gradient(to right, #ff928b, #ffac81);
 }
 
-.c-hero--general-2 {
+.c-hero--til {
   color: #fff;
-  background: linear-gradient(to right, #A88BEB, #F8CEEC);
+  background: linear-gradient(to right, #a88beb, #f8ceec);
 }
 
-.c-hero--general-3 {
+.c-hero--projects {
   color: #fff;
-  background: linear-gradient(to right, #F9D976, #f39f86);
+  background: linear-gradient(to right, #f9d976, #f39f86);
 }
 
-.c-hero--general-4 {
+.c-hero--search {
   color: #fff;
-  background: linear-gradient(to right, #6782B4, #B1BFD8);
+  background: linear-gradient(to right, #6782b4, #b1bfd8);
 }
 
-.c-hero--general-5 {
+.c-hero--about {
   color: #fff;
-  background: linear-gradient(to right, #F67062, #FC5296);
+  background: linear-gradient(to right, #f67062, #fc5296);
 }
 
 .c-hero--git {
@@ -1564,32 +1564,32 @@ body {
 
 .c-hero--design-system {
   color: #fff;
-  background: #C6AEFF;
+  background: #c6aeff;
 }
 
 .c-hero--static-site-generator {
   color: #fff;
-  background: #BDD8FF;
+  background: #bdd8ff;
 }
 
 .c-hero--markdown {
   color: #fff;
-  background: #BDFFB2;
+  background: #bdffb2;
 }
 
 .c-hero--template-engine {
   color: #fff;
-  background: #fffab3;
+  background: #eef9bf;
 }
 
 .c-hero--svg {
   color: #fff;
-  background: #FFC8AE;
+  background: #ffc8ae;
 }
 
 .c-hero--mac-os {
   color: #fff;
-  background: #FF9FBB;
+  background: #ff9fbb;
 }
 
 .c-hero--bottom-text {

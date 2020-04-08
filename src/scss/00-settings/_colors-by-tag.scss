@@ -10,44 +10,44 @@ $co_card-gradient-js: #ffdac1;
 $co_card-gradient-vsc: #bae5e5;
 $co_card-gradient-css: #98d6ea;
 $co_card-gradient-nodejs: #c7ceea;
-$co_card-gradient-design-system: #C6AEFF;
-$co_card-gradient-static-site-generator: #BDD8FF;
-$co_card-gradient-markdown: #BDFFB2;
-$co_card-gradient-template-engine: #fffab3;
-$co_card-gradient-svg: #FFC8AE;
-$co_card-gradient-mac-os: #FF9FBB;
+$co_card-gradient-design-system: #c6aeff;
+$co_card-gradient-static-site-generator: #bdd8ff;
+$co_card-gradient-markdown: #bdffb2;
+$co_card-gradient-template-engine: #eef9bf;
+$co_card-gradient-svg: #ffc8ae;
+$co_card-gradient-mac-os: #ff9fbb;
 
-$co_gradient-general-1: #FF928B, #FFAC81;
-$co_gradient-general-2: #A88BEB, #F8CEEC;
-$co_gradient-general-3: #F9D976, #f39f86;
-$co_gradient-general-4: #6782B4, #B1BFD8;
-$co_gradient-general-5: #F67062, #FC5296;
+$co_gradient-blog: #ff928b, #ffac81;
+$co_gradient-til: #a88beb, #f8ceec;
+$co_gradient-projects: #f9d976, #f39f86;
+$co_gradient-search: #6782b4, #b1bfd8;
+$co_gradient-about: #f67062, #fc5296;
 
-$tags: general-1, general-2, general-3, general-4, general-5, git, vuejs, js, vsc, css, nodejs, design-system, static-site-generator, markdown, template-engine, svg, mac-os;
+$tags: blog, til, projects, search, about, git, vuejs, js, vsc, css, nodejs, design-system, static-site-generator, markdown, template-engine, svg, mac-os;
 
 @mixin card-gradient($dir, $tag, $text: false) {
   color: $co_color-light;
 
   // GENERAL
 
-  @if $tag == 'general-1' {
-    background: linear-gradient(to right, $co_gradient-general-1);
+  @if $tag == 'blog' {
+    background: linear-gradient(to right, $co_gradient-blog);
   }
 
-  @if $tag == 'general-2' {
-    background: linear-gradient(to right, $co_gradient-general-2);
+  @if $tag == 'til' {
+    background: linear-gradient(to right, $co_gradient-til);
   }
 
-  @if $tag == 'general-3' {
-    background: linear-gradient(to right, $co_gradient-general-3);
+  @if $tag == 'projects' {
+    background: linear-gradient(to right, $co_gradient-projects);
   }
 
-  @if $tag == 'general-4' {
-    background: linear-gradient(to right, $co_gradient-general-4);
+  @if $tag == 'search' {
+    background: linear-gradient(to right, $co_gradient-search);
   }
 
-  @if $tag == 'general-5' {
-    background: linear-gradient(to right, $co_gradient-general-5);
+  @if $tag == 'about' {
+    background: linear-gradient(to right, $co_gradient-about);
   }
 
   // TAGS
