@@ -598,6 +598,12 @@ body {
   display: flex;
 }
 
+@media (min-width: 64em) {
+  .c-card--horizontal {
+    height: 12.5rem;
+  }
+}
+
 .c-card__img-wrapper {
   position: relative;
 }
@@ -619,27 +625,27 @@ body {
 
 .c-card--blog .c-card__img-wrapper::before {
   color: #fff;
-  background: linear-gradient(to right, #ff928b, #ffac81);
+  background: #8ac6d1;
 }
 
 .c-card--til .c-card__img-wrapper::before {
   color: #fff;
-  background: linear-gradient(to right, #a88beb, #f8ceec);
+  background: #ffb6cc;
 }
 
 .c-card--projects .c-card__img-wrapper::before {
   color: #fff;
-  background: linear-gradient(to right, #f9d976, #f39f86);
+  background: #ffdd92;
 }
 
 .c-card--search .c-card__img-wrapper::before {
   color: #fff;
-  background: linear-gradient(to right, #6782b4, #b1bfd8);
+  background: #b0deff;
 }
 
 .c-card--about .c-card__img-wrapper::before {
   color: #fff;
-  background: linear-gradient(to right, #f67062, #fc5296);
+  background: #ffc68a;
 }
 
 .c-card--git .c-card__img-wrapper::before {
@@ -734,7 +740,6 @@ body {
 }
 
 .c-card--squared-image.c-card--horizontal .c-card__img-wrapper {
-  height: 12.5rem;
   padding-top: 0;
 }
 
@@ -803,56 +808,56 @@ body {
 .c-card--highlight-left.c-card--blog .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--blog .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #ff928b, #ffac81);
+  background: #8ac6d1;
 }
 
 .c-card--highlight-top.c-card--blog .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #ff928b, #ffac81);
+  background: #8ac6d1;
 }
 
 .c-card--highlight-left.c-card--til .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--til .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #a88beb, #f8ceec);
+  background: #ffb6cc;
 }
 
 .c-card--highlight-top.c-card--til .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #a88beb, #f8ceec);
+  background: #ffb6cc;
 }
 
 .c-card--highlight-left.c-card--projects .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--projects .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #f9d976, #f39f86);
+  background: #ffdd92;
 }
 
 .c-card--highlight-top.c-card--projects .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #f9d976, #f39f86);
+  background: #ffdd92;
 }
 
 .c-card--highlight-left.c-card--search .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--search .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #6782b4, #b1bfd8);
+  background: #b0deff;
 }
 
 .c-card--highlight-top.c-card--search .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #6782b4, #b1bfd8);
+  background: #b0deff;
 }
 
 .c-card--highlight-left.c-card--about .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--about .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #f67062, #fc5296);
+  background: #ffc68a;
 }
 
 .c-card--highlight-top.c-card--about .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #f67062, #fc5296);
+  background: #ffc68a;
 }
 
 .c-card--highlight-left.c-card--git .c-card__content::before,
@@ -1057,27 +1062,27 @@ body {
 
 .c-card--blog .c-card__number {
   color: #fff;
-  background: linear-gradient(to right, #ff928b, #ffac81);
+  background: #8ac6d1;
 }
 
 .c-card--til .c-card__number {
   color: #fff;
-  background: linear-gradient(to right, #a88beb, #f8ceec);
+  background: #ffb6cc;
 }
 
 .c-card--projects .c-card__number {
   color: #fff;
-  background: linear-gradient(to right, #f9d976, #f39f86);
+  background: #ffdd92;
 }
 
 .c-card--search .c-card__number {
   color: #fff;
-  background: linear-gradient(to right, #6782b4, #b1bfd8);
+  background: #b0deff;
 }
 
 .c-card--about .c-card__number {
   color: #fff;
-  background: linear-gradient(to right, #f67062, #fc5296);
+  background: #ffc68a;
 }
 
 .c-card--git .c-card__number {
@@ -1509,27 +1514,27 @@ body {
 
 .c-hero--blog {
   color: #fff;
-  background: linear-gradient(to right, #ff928b, #ffac81);
+  background: #8ac6d1;
 }
 
 .c-hero--til {
   color: #fff;
-  background: linear-gradient(to right, #a88beb, #f8ceec);
+  background: #ffb6cc;
 }
 
 .c-hero--projects {
   color: #fff;
-  background: linear-gradient(to right, #f9d976, #f39f86);
+  background: #ffdd92;
 }
 
 .c-hero--search {
   color: #fff;
-  background: linear-gradient(to right, #6782b4, #b1bfd8);
+  background: #b0deff;
 }
 
 .c-hero--about {
   color: #fff;
-  background: linear-gradient(to right, #f67062, #fc5296);
+  background: #ffc68a;
 }
 
 .c-hero--git {

@@ -16,6 +16,10 @@ $sp_card-border-radius: rem(2);
 
 .c-card--horizontal {
   display: flex;
+
+  @include mq(desktop) {
+    height: rem(200);
+  }
 }
 
 .c-card__img-wrapper {
@@ -72,7 +76,6 @@ $sp_card-border-radius: rem(2);
 
   .c-card--squared-image.c-card--horizontal & {
     // flex-basis: rem(10);
-    height: rem(200);
     padding-top: 0;
 
     @include mq(desktop) {

@@ -17,11 +17,11 @@ $co_card-gradient-template-engine: #eef9bf;
 $co_card-gradient-svg: #ffc8ae;
 $co_card-gradient-mac-os: #ff9fbb;
 
-$co_gradient-blog: #ff928b, #ffac81;
-$co_gradient-til: #a88beb, #f8ceec;
-$co_gradient-projects: #f9d976, #f39f86;
-$co_gradient-search: #6782b4, #b1bfd8;
-$co_gradient-about: #f67062, #fc5296;
+$co_gradient-blog: #8ac6d1;
+$co_gradient-til: #ffb6cc;
+$co_gradient-projects: #ffdd92;
+$co_gradient-search: #b0deff;
+$co_gradient-about: #ffc68a;
 
 $tags: blog, til, projects, search, about, git, vuejs, js, vsc, css, nodejs, design-system, static-site-generator, markdown, template-engine, svg, mac-os;
 
@@ -31,23 +31,23 @@ $tags: blog, til, projects, search, about, git, vuejs, js, vsc, css, nodejs, des
   // GENERAL
 
   @if $tag == 'blog' {
-    background: linear-gradient(to right, $co_gradient-blog);
+    background: $co_gradient-blog;
   }
 
   @if $tag == 'til' {
-    background: linear-gradient(to right, $co_gradient-til);
+    background: $co_gradient-til;
   }
 
   @if $tag == 'projects' {
-    background: linear-gradient(to right, $co_gradient-projects);
+    background: $co_gradient-projects;
   }
 
   @if $tag == 'search' {
-    background: linear-gradient(to right, $co_gradient-search);
+    background: $co_gradient-search;
   }
 
   @if $tag == 'about' {
-    background: linear-gradient(to right, $co_gradient-about);
+    background: $co_gradient-about;
   }
 
   // TAGS
