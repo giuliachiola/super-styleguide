@@ -614,6 +614,21 @@ body {
     -------------- */
 }
 
+.c-card--general-1 .c-card__img-wrapper::before {
+  color: #fff;
+  background: linear-gradient(to right, #2196f3, #f44336);
+}
+
+.c-card--general-2 .c-card__img-wrapper::before {
+  color: #fff;
+  background: linear-gradient(to right, #b24592, #f15f79);
+}
+
+.c-card--general-3 .c-card__img-wrapper::before {
+  color: #fff;
+  background: linear-gradient(to right, #00c9ff, #92fe9d);
+}
+
 .c-card--git .c-card__img-wrapper::before {
   color: #fff;
   background: linear-gradient(to right, #960f0f, #f70000);
@@ -770,6 +785,39 @@ body {
     top: 0;
     width: 0.625rem;
   }
+}
+
+.c-card--highlight-left.c-card--general-1 .c-card__content::before,
+.c-card--squared-image.c-card--horizontal.c-card--general-1 .c-card__content::before {
+  color: #fff;
+  background: linear-gradient(to bottom, #2196f3, #f44336);
+}
+
+.c-card--highlight-top.c-card--general-1 .c-card__content::before {
+  color: #fff;
+  background: linear-gradient(to right, #2196f3, #f44336);
+}
+
+.c-card--highlight-left.c-card--general-2 .c-card__content::before,
+.c-card--squared-image.c-card--horizontal.c-card--general-2 .c-card__content::before {
+  color: #fff;
+  background: linear-gradient(to bottom, #b24592, #f15f79);
+}
+
+.c-card--highlight-top.c-card--general-2 .c-card__content::before {
+  color: #fff;
+  background: linear-gradient(to right, #b24592, #f15f79);
+}
+
+.c-card--highlight-left.c-card--general-3 .c-card__content::before,
+.c-card--squared-image.c-card--horizontal.c-card--general-3 .c-card__content::before {
+  color: #fff;
+  background: linear-gradient(to bottom, #00c9ff, #92fe9d);
+}
+
+.c-card--highlight-top.c-card--general-3 .c-card__content::before {
+  color: #fff;
+  background: linear-gradient(to right, #00c9ff, #92fe9d);
 }
 
 .c-card--highlight-left.c-card--git .c-card__content::before,
@@ -970,6 +1018,21 @@ body {
   position: absolute;
   right: 1.25rem;
   top: 1.25rem;
+}
+
+.c-card--general-1 .c-card__number {
+  color: #fff;
+  background: linear-gradient(to right, #2196f3, #f44336);
+}
+
+.c-card--general-2 .c-card__number {
+  color: #fff;
+  background: linear-gradient(to right, #b24592, #f15f79);
+}
+
+.c-card--general-3 .c-card__number {
+  color: #fff;
+  background: linear-gradient(to right, #00c9ff, #92fe9d);
 }
 
 .c-card--git .c-card__number {
@@ -1397,6 +1460,21 @@ body {
   position: absolute;
   top: 0;
   width: 100%;
+}
+
+.c-hero--general-1 {
+  color: #fff;
+  background: linear-gradient(to right, #2196f3, #f44336);
+}
+
+.c-hero--general-2 {
+  color: #fff;
+  background: linear-gradient(to right, #b24592, #f15f79);
+}
+
+.c-hero--general-3 {
+  color: #fff;
+  background: linear-gradient(to right, #00c9ff, #92fe9d);
 }
 
 .c-hero--git {
