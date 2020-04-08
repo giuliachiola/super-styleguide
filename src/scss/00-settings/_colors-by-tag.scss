@@ -4,24 +4,24 @@
   Used in card, hero
 ========================================================================== */
 
-$co_card-gradient-git: #feb692, #ea5455;
-$co_card-gradient-vuejs: #81fbb8, #28c76f;
-$co_card-gradient-js: #fdeb71, #f8d800;
-$co_card-gradient-vsc: #abdcff, #0396ff;
-$co_card-gradient-css: #e2b0ff, #9f44d3;
-$co_card-gradient-nodejs: #fff720, #3cd500;
-$co_card-gradient-design-system: #90f7ec, #32ccbc;
-$co_card-gradient-static-site-generator: #43cbff, #9708cc;
-$co_card-gradient-markdown: #ce9ffc, #7367f0;
-$co_card-gradient-template-engine: #fccf31, #f55555;
-$co_card-gradient-svg: #f761a1, #8c1bab;
-$co_card-gradient-mac-os: #f97794, #623aa2;
+$co_card-gradient-git: #ff9aa2;
+$co_card-gradient-vuejs: #ffb7b2;
+$co_card-gradient-js: #ffdac1;
+$co_card-gradient-vsc: #bae5e5;
+$co_card-gradient-css: #98d6ea;
+$co_card-gradient-nodejs: #c7ceea;
+$co_card-gradient-design-system: #C6AEFF;
+$co_card-gradient-static-site-generator: #BDD8FF;
+$co_card-gradient-markdown: #BDFFB2;
+$co_card-gradient-template-engine: #fffab3;
+$co_card-gradient-svg: #FFC8AE;
+$co_card-gradient-mac-os: #FF9FBB;
 
-$co_gradient-general-1: #fff886, #f072b6;
-$co_gradient-general-2: #97abff, #123597;
-$co_gradient-general-3: #f5cbff, #c346c2;
-$co_gradient-general-4: #ffd3a5, #fd6585;
-$co_gradient-general-5: #f0ff00, #58cffb;
+$co_gradient-general-1: #FF928B, #FFAC81;
+$co_gradient-general-2: #A88BEB, #F8CEEC;
+$co_gradient-general-3: #F9D976, #f39f86;
+$co_gradient-general-4: #6782B4, #B1BFD8;
+$co_gradient-general-5: #F67062, #FC5296;
 
 $tags: general-1, general-2, general-3, general-4, general-5, git, vuejs, js, vsc, css, nodejs, design-system, static-site-generator, markdown, template-engine, svg, mac-os;
 
@@ -31,73 +31,73 @@ $tags: general-1, general-2, general-3, general-4, general-5, git, vuejs, js, vs
   // GENERAL
 
   @if $tag == 'general-1' {
-    background: linear-gradient($dir, $co_gradient-general-1);
+    background: linear-gradient(to right, $co_gradient-general-1);
   }
 
   @if $tag == 'general-2' {
-    background: linear-gradient($dir, $co_gradient-general-2);
+    background: linear-gradient(to right, $co_gradient-general-2);
   }
 
   @if $tag == 'general-3' {
-    background: linear-gradient($dir, $co_gradient-general-3);
+    background: linear-gradient(to right, $co_gradient-general-3);
   }
 
   @if $tag == 'general-4' {
-    background: linear-gradient($dir, $co_gradient-general-4);
+    background: linear-gradient(to right, $co_gradient-general-4);
   }
 
   @if $tag == 'general-5' {
-    background: linear-gradient($dir, $co_gradient-general-5);
+    background: linear-gradient(to right, $co_gradient-general-5);
   }
 
   // TAGS
 
   @if $tag == 'git' {
-    background: linear-gradient($dir, $co_card-gradient-git);
+    background: $co_card-gradient-git;
   }
 
   @else if $tag == 'vuejs' {
-    background: linear-gradient($dir, $co_card-gradient-vuejs);
+    background: $co_card-gradient-vuejs;
   }
 
   @else if $tag == 'js' {
-    background: linear-gradient($dir, $co_card-gradient-js);
+    background: $co_card-gradient-js;
   }
 
   @else if $tag == 'vsc' {
-    background: linear-gradient($dir, $co_card-gradient-vsc);
+    background: $co_card-gradient-vsc;
   }
 
   @else if $tag == 'css' {
-    background: linear-gradient($dir, $co_card-gradient-css);
+    background: $co_card-gradient-css;
   }
 
   @else if $tag == 'nodejs' {
-    background: linear-gradient($dir, $co_card-gradient-nodejs);
+    background: $co_card-gradient-nodejs;
   }
 
   @else if $tag == 'design-system' {
-    background: linear-gradient($dir, $co_card-gradient-design-system);
+    background: $co_card-gradient-design-system;
   }
 
   @else if $tag == 'static-site-generator' {
-    background: linear-gradient($dir, $co_card-gradient-static-site-generator);
+    background: $co_card-gradient-static-site-generator;
   }
 
   @else if $tag == 'markdown' {
-    background: linear-gradient($dir, $co_card-gradient-markdown);
+    background: $co_card-gradient-markdown;
   }
 
   @else if $tag == 'template-engine' {
-    background: linear-gradient($dir, $co_card-gradient-template-engine);
+    background: $co_card-gradient-template-engine;
   }
 
   @else if $tag == 'svg' {
-    background: linear-gradient($dir, $co_card-gradient-svg);
+    background: $co_card-gradient-svg;
   }
 
   @else if $tag == 'mac-os' {
-    background: linear-gradient($dir, $co_card-gradient-mac-os);
+    background: $co_card-gradient-mac-os;
   }
 }
 

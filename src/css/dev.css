@@ -619,87 +619,87 @@ body {
 
 .c-card--general-1 .c-card__img-wrapper::before {
   color: #fff;
-  background: linear-gradient(to right, #fff886, #f072b6);
+  background: linear-gradient(to right, #FF928B, #FFAC81);
 }
 
 .c-card--general-2 .c-card__img-wrapper::before {
   color: #fff;
-  background: linear-gradient(to right, #97abff, #123597);
+  background: linear-gradient(to right, #A88BEB, #F8CEEC);
 }
 
 .c-card--general-3 .c-card__img-wrapper::before {
   color: #fff;
-  background: linear-gradient(to right, #f5cbff, #c346c2);
+  background: linear-gradient(to right, #F9D976, #f39f86);
 }
 
 .c-card--general-4 .c-card__img-wrapper::before {
   color: #fff;
-  background: linear-gradient(to right, #ffd3a5, #fd6585);
+  background: linear-gradient(to right, #6782B4, #B1BFD8);
 }
 
 .c-card--general-5 .c-card__img-wrapper::before {
   color: #fff;
-  background: linear-gradient(to right, #f0ff00, #58cffb);
+  background: linear-gradient(to right, #F67062, #FC5296);
 }
 
 .c-card--git .c-card__img-wrapper::before {
   color: #fff;
-  background: linear-gradient(to right, #feb692, #ea5455);
+  background: #ff9aa2;
 }
 
 .c-card--vuejs .c-card__img-wrapper::before {
   color: #fff;
-  background: linear-gradient(to right, #81fbb8, #28c76f);
+  background: #ffb7b2;
 }
 
 .c-card--js .c-card__img-wrapper::before {
   color: #fff;
-  background: linear-gradient(to right, #fdeb71, #f8d800);
+  background: #ffdac1;
 }
 
 .c-card--vsc .c-card__img-wrapper::before {
   color: #fff;
-  background: linear-gradient(to right, #abdcff, #0396ff);
+  background: #bae5e5;
 }
 
 .c-card--css .c-card__img-wrapper::before {
   color: #fff;
-  background: linear-gradient(to right, #e2b0ff, #9f44d3);
+  background: #98d6ea;
 }
 
 .c-card--nodejs .c-card__img-wrapper::before {
   color: #fff;
-  background: linear-gradient(to right, #fff720, #3cd500);
+  background: #c7ceea;
 }
 
 .c-card--design-system .c-card__img-wrapper::before {
   color: #fff;
-  background: linear-gradient(to right, #90f7ec, #32ccbc);
+  background: #C6AEFF;
 }
 
 .c-card--static-site-generator .c-card__img-wrapper::before {
   color: #fff;
-  background: linear-gradient(to right, #43cbff, #9708cc);
+  background: #BDD8FF;
 }
 
 .c-card--markdown .c-card__img-wrapper::before {
   color: #fff;
-  background: linear-gradient(to right, #ce9ffc, #7367f0);
+  background: #BDFFB2;
 }
 
 .c-card--template-engine .c-card__img-wrapper::before {
   color: #fff;
-  background: linear-gradient(to right, #fccf31, #f55555);
+  background: #fffab3;
 }
 
 .c-card--svg .c-card__img-wrapper::before {
   color: #fff;
-  background: linear-gradient(to right, #f761a1, #8c1bab);
+  background: #FFC8AE;
 }
 
 .c-card--mac-os .c-card__img-wrapper::before {
   color: #fff;
-  background: linear-gradient(to right, #f97794, #623aa2);
+  background: #FF9FBB;
 }
 
 .c-card__img-wrapper .icon {
@@ -803,188 +803,188 @@ body {
 .c-card--highlight-left.c-card--general-1 .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--general-1 .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to bottom, #fff886, #f072b6);
+  background: linear-gradient(to right, #FF928B, #FFAC81);
 }
 
 .c-card--highlight-top.c-card--general-1 .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #fff886, #f072b6);
+  background: linear-gradient(to right, #FF928B, #FFAC81);
 }
 
 .c-card--highlight-left.c-card--general-2 .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--general-2 .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to bottom, #97abff, #123597);
+  background: linear-gradient(to right, #A88BEB, #F8CEEC);
 }
 
 .c-card--highlight-top.c-card--general-2 .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #97abff, #123597);
+  background: linear-gradient(to right, #A88BEB, #F8CEEC);
 }
 
 .c-card--highlight-left.c-card--general-3 .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--general-3 .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to bottom, #f5cbff, #c346c2);
+  background: linear-gradient(to right, #F9D976, #f39f86);
 }
 
 .c-card--highlight-top.c-card--general-3 .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #f5cbff, #c346c2);
+  background: linear-gradient(to right, #F9D976, #f39f86);
 }
 
 .c-card--highlight-left.c-card--general-4 .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--general-4 .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to bottom, #ffd3a5, #fd6585);
+  background: linear-gradient(to right, #6782B4, #B1BFD8);
 }
 
 .c-card--highlight-top.c-card--general-4 .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #ffd3a5, #fd6585);
+  background: linear-gradient(to right, #6782B4, #B1BFD8);
 }
 
 .c-card--highlight-left.c-card--general-5 .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--general-5 .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to bottom, #f0ff00, #58cffb);
+  background: linear-gradient(to right, #F67062, #FC5296);
 }
 
 .c-card--highlight-top.c-card--general-5 .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #f0ff00, #58cffb);
+  background: linear-gradient(to right, #F67062, #FC5296);
 }
 
 .c-card--highlight-left.c-card--git .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--git .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to bottom, #feb692, #ea5455);
+  background: #ff9aa2;
 }
 
 .c-card--highlight-top.c-card--git .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #feb692, #ea5455);
+  background: #ff9aa2;
 }
 
 .c-card--highlight-left.c-card--vuejs .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--vuejs .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to bottom, #81fbb8, #28c76f);
+  background: #ffb7b2;
 }
 
 .c-card--highlight-top.c-card--vuejs .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #81fbb8, #28c76f);
+  background: #ffb7b2;
 }
 
 .c-card--highlight-left.c-card--js .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--js .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to bottom, #fdeb71, #f8d800);
+  background: #ffdac1;
 }
 
 .c-card--highlight-top.c-card--js .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #fdeb71, #f8d800);
+  background: #ffdac1;
 }
 
 .c-card--highlight-left.c-card--vsc .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--vsc .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to bottom, #abdcff, #0396ff);
+  background: #bae5e5;
 }
 
 .c-card--highlight-top.c-card--vsc .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #abdcff, #0396ff);
+  background: #bae5e5;
 }
 
 .c-card--highlight-left.c-card--css .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--css .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to bottom, #e2b0ff, #9f44d3);
+  background: #98d6ea;
 }
 
 .c-card--highlight-top.c-card--css .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #e2b0ff, #9f44d3);
+  background: #98d6ea;
 }
 
 .c-card--highlight-left.c-card--nodejs .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--nodejs .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to bottom, #fff720, #3cd500);
+  background: #c7ceea;
 }
 
 .c-card--highlight-top.c-card--nodejs .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #fff720, #3cd500);
+  background: #c7ceea;
 }
 
 .c-card--highlight-left.c-card--design-system .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--design-system .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to bottom, #90f7ec, #32ccbc);
+  background: #C6AEFF;
 }
 
 .c-card--highlight-top.c-card--design-system .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #90f7ec, #32ccbc);
+  background: #C6AEFF;
 }
 
 .c-card--highlight-left.c-card--static-site-generator .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--static-site-generator .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to bottom, #43cbff, #9708cc);
+  background: #BDD8FF;
 }
 
 .c-card--highlight-top.c-card--static-site-generator .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #43cbff, #9708cc);
+  background: #BDD8FF;
 }
 
 .c-card--highlight-left.c-card--markdown .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--markdown .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to bottom, #ce9ffc, #7367f0);
+  background: #BDFFB2;
 }
 
 .c-card--highlight-top.c-card--markdown .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #ce9ffc, #7367f0);
+  background: #BDFFB2;
 }
 
 .c-card--highlight-left.c-card--template-engine .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--template-engine .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to bottom, #fccf31, #f55555);
+  background: #fffab3;
 }
 
 .c-card--highlight-top.c-card--template-engine .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #fccf31, #f55555);
+  background: #fffab3;
 }
 
 .c-card--highlight-left.c-card--svg .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--svg .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to bottom, #f761a1, #8c1bab);
+  background: #FFC8AE;
 }
 
 .c-card--highlight-top.c-card--svg .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #f761a1, #8c1bab);
+  background: #FFC8AE;
 }
 
 .c-card--highlight-left.c-card--mac-os .c-card__content::before,
 .c-card--squared-image.c-card--horizontal.c-card--mac-os .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to bottom, #f97794, #623aa2);
+  background: #FF9FBB;
 }
 
 .c-card--highlight-top.c-card--mac-os .c-card__content::before {
   color: #fff;
-  background: linear-gradient(to right, #f97794, #623aa2);
+  background: #FF9FBB;
 }
 
 .c-card__title-heading {
@@ -1057,87 +1057,87 @@ body {
 
 .c-card--general-1 .c-card__number {
   color: #fff;
-  background: linear-gradient(to right, #fff886, #f072b6);
+  background: linear-gradient(to right, #FF928B, #FFAC81);
 }
 
 .c-card--general-2 .c-card__number {
   color: #fff;
-  background: linear-gradient(to right, #97abff, #123597);
+  background: linear-gradient(to right, #A88BEB, #F8CEEC);
 }
 
 .c-card--general-3 .c-card__number {
   color: #fff;
-  background: linear-gradient(to right, #f5cbff, #c346c2);
+  background: linear-gradient(to right, #F9D976, #f39f86);
 }
 
 .c-card--general-4 .c-card__number {
   color: #fff;
-  background: linear-gradient(to right, #ffd3a5, #fd6585);
+  background: linear-gradient(to right, #6782B4, #B1BFD8);
 }
 
 .c-card--general-5 .c-card__number {
   color: #fff;
-  background: linear-gradient(to right, #f0ff00, #58cffb);
+  background: linear-gradient(to right, #F67062, #FC5296);
 }
 
 .c-card--git .c-card__number {
   color: #fff;
-  background: linear-gradient(to right, #feb692, #ea5455);
+  background: #ff9aa2;
 }
 
 .c-card--vuejs .c-card__number {
   color: #fff;
-  background: linear-gradient(to right, #81fbb8, #28c76f);
+  background: #ffb7b2;
 }
 
 .c-card--js .c-card__number {
   color: #fff;
-  background: linear-gradient(to right, #fdeb71, #f8d800);
+  background: #ffdac1;
 }
 
 .c-card--vsc .c-card__number {
   color: #fff;
-  background: linear-gradient(to right, #abdcff, #0396ff);
+  background: #bae5e5;
 }
 
 .c-card--css .c-card__number {
   color: #fff;
-  background: linear-gradient(to right, #e2b0ff, #9f44d3);
+  background: #98d6ea;
 }
 
 .c-card--nodejs .c-card__number {
   color: #fff;
-  background: linear-gradient(to right, #fff720, #3cd500);
+  background: #c7ceea;
 }
 
 .c-card--design-system .c-card__number {
   color: #fff;
-  background: linear-gradient(to right, #90f7ec, #32ccbc);
+  background: #C6AEFF;
 }
 
 .c-card--static-site-generator .c-card__number {
   color: #fff;
-  background: linear-gradient(to right, #43cbff, #9708cc);
+  background: #BDD8FF;
 }
 
 .c-card--markdown .c-card__number {
   color: #fff;
-  background: linear-gradient(to right, #ce9ffc, #7367f0);
+  background: #BDFFB2;
 }
 
 .c-card--template-engine .c-card__number {
   color: #fff;
-  background: linear-gradient(to right, #fccf31, #f55555);
+  background: #fffab3;
 }
 
 .c-card--svg .c-card__number {
   color: #fff;
-  background: linear-gradient(to right, #f761a1, #8c1bab);
+  background: #FFC8AE;
 }
 
 .c-card--mac-os .c-card__number {
   color: #fff;
-  background: linear-gradient(to right, #f97794, #623aa2);
+  background: #FF9FBB;
 }
 
 .c-card__tags .c-label {
@@ -1509,87 +1509,87 @@ body {
 
 .c-hero--general-1 {
   color: #fff;
-  background: linear-gradient(to right, #fff886, #f072b6);
+  background: linear-gradient(to right, #FF928B, #FFAC81);
 }
 
 .c-hero--general-2 {
   color: #fff;
-  background: linear-gradient(to right, #97abff, #123597);
+  background: linear-gradient(to right, #A88BEB, #F8CEEC);
 }
 
 .c-hero--general-3 {
   color: #fff;
-  background: linear-gradient(to right, #f5cbff, #c346c2);
+  background: linear-gradient(to right, #F9D976, #f39f86);
 }
 
 .c-hero--general-4 {
   color: #fff;
-  background: linear-gradient(to right, #ffd3a5, #fd6585);
+  background: linear-gradient(to right, #6782B4, #B1BFD8);
 }
 
 .c-hero--general-5 {
   color: #fff;
-  background: linear-gradient(to right, #f0ff00, #58cffb);
+  background: linear-gradient(to right, #F67062, #FC5296);
 }
 
 .c-hero--git {
   color: #fff;
-  background: linear-gradient(to right, #feb692, #ea5455);
+  background: #ff9aa2;
 }
 
 .c-hero--vuejs {
   color: #fff;
-  background: linear-gradient(to right, #81fbb8, #28c76f);
+  background: #ffb7b2;
 }
 
 .c-hero--js {
   color: #fff;
-  background: linear-gradient(to right, #fdeb71, #f8d800);
+  background: #ffdac1;
 }
 
 .c-hero--vsc {
   color: #fff;
-  background: linear-gradient(to right, #abdcff, #0396ff);
+  background: #bae5e5;
 }
 
 .c-hero--css {
   color: #fff;
-  background: linear-gradient(to right, #e2b0ff, #9f44d3);
+  background: #98d6ea;
 }
 
 .c-hero--nodejs {
   color: #fff;
-  background: linear-gradient(to right, #fff720, #3cd500);
+  background: #c7ceea;
 }
 
 .c-hero--design-system {
   color: #fff;
-  background: linear-gradient(to right, #90f7ec, #32ccbc);
+  background: #C6AEFF;
 }
 
 .c-hero--static-site-generator {
   color: #fff;
-  background: linear-gradient(to right, #43cbff, #9708cc);
+  background: #BDD8FF;
 }
 
 .c-hero--markdown {
   color: #fff;
-  background: linear-gradient(to right, #ce9ffc, #7367f0);
+  background: #BDFFB2;
 }
 
 .c-hero--template-engine {
   color: #fff;
-  background: linear-gradient(to right, #fccf31, #f55555);
+  background: #fffab3;
 }
 
 .c-hero--svg {
   color: #fff;
-  background: linear-gradient(to right, #f761a1, #8c1bab);
+  background: #FFC8AE;
 }
 
 .c-hero--mac-os {
   color: #fff;
-  background: linear-gradient(to right, #f97794, #623aa2);
+  background: #FF9FBB;
 }
 
 .c-hero--bottom-text {
