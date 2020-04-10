@@ -1293,6 +1293,11 @@ body {
   color: #fff;
 }
 
+.t-palette-color--6 .c-hero {
+  background: linear-gradient(to right, #e1ccec, #cba7de);
+  color: #fff;
+}
+
 .c-hero--bottom-text {
   align-items: flex-end;
   padding-bottom: 1.875rem;
