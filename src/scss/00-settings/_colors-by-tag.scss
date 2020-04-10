@@ -113,63 +113,65 @@ $co_palette-3: #edc4a9;
 $co_palette-4: #ffaaa5;
 $co_palette-5: #ff8b94;
 
+$co_darken: 10%;
+
 @mixin color-palette($color, $inverted: false) {
   // 1
 
-  @if $color == 1 and $inverted == true {
-    background: rgba($co_palette-1, 0.1);
-    color: $co_palette-1;
-  }
+  // @if $color == 1 and $inverted == true {
+  //   background: rgba($co_palette-1, 0.1);
+  //   color: $co_palette-1;
+  // }
 
-  @else if $color == 1 {
-    background: $co_palette-1;
+  @if $color == 1 {
+    background: linear-gradient(to right, $co_palette-1, darken($co_palette-1, $co_darken));
     color: $co_color-light;
   }
 
   // 2
 
-  @else if $color == 2 and $inverted == true {
-    background: rgba($co_palette-2, 0.1);
-    color: $co_palette-2;
-  }
+  // @else if $color == 2 and $inverted == true {
+  //   background: rgba($co_palette-2, 0.1);
+  //   color: $co_palette-2;
+  // }
 
   @else if $color == 2 {
-    background: $co_palette-2;
+    background: linear-gradient(to right, $co_palette-2, darken($co_palette-2, $co_darken));
     color: $co_color-light;
   }
 
   // 3
 
-  @else if $color == 3 and $inverted == true {
-    background: rgba($co_palette-3, 0.1);
-    color: $co_palette-3;
-  }
+  // @else if $color == 3 and $inverted == true {
+  //   background: rgba($co_palette-3, 0.1);
+  //   color: $co_palette-3;
+  // }
 
   @else if $color == 3 {
-    background: $co_palette-3;
+    background: linear-gradient(to right, $co_palette-3, darken($co_palette-3, $co_darken));
     color: $co_color-light;
   }
 
   // 4
-  @else if $color == 4 and $inverted == true {
-    background: rgba($co_palette-4, 0.1);
-    color: $co_palette-4;
-  }
+  // @else if $color == 4 and $inverted == true {
+  //   background: rgba($co_palette-4, 0.1);
+  //   color: $co_palette-4;
+  // }
 
   @else if $color == 4 {
-    background: $co_palette-4;
+    background: linear-gradient(to right, $co_palette-4, darken($co_palette-4, $co_darken));
     color: $co_color-light;
   }
 
   // 5
 
-  @else if $color == 5 and $inverted == true {
-    background: rgba($co_palette-5, 0.1);
-    color: $co_palette-5;
-  }
+  // @else if $color == 5 and $inverted == true {
+  //   background: rgba($co_palette-5, 0.1);
+  //   color: $co_palette-5;
+  // }
 
   @else if $color == 5 {
-    background: $co_palette-5;
+    background: linear-gradient(to right, $co_palette-5, darken($co_palette-5, $co_darken));
     color: $co_color-light;
   }
 }

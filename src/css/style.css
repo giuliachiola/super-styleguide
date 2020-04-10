@@ -621,27 +621,27 @@ body {
 }
 
 .t-palette-color--1 .c-card__img-wrapper::before {
-  background: #a1dac5;
+  background: linear-gradient(to right, #a1dac5, #7cccae);
   color: #fff;
 }
 
 .t-palette-color--2 .c-card__img-wrapper::before {
-  background: #cddcb4;
+  background: linear-gradient(to right, #cddcb4, #b6cc91);
   color: #fff;
 }
 
 .t-palette-color--3 .c-card__img-wrapper::before {
-  background: #edc4a9;
+  background: linear-gradient(to right, #edc4a9, #e4a77f);
   color: #fff;
 }
 
 .t-palette-color--4 .c-card__img-wrapper::before {
-  background: #ffaaa5;
+  background: linear-gradient(to right, #ffaaa5, #ff7a72);
   color: #fff;
 }
 
 .t-palette-color--5 .c-card__img-wrapper::before {
-  background: #ff8b94;
+  background: linear-gradient(to right, #ff8b94, #ff5865);
   color: #fff;
 }
 
@@ -743,27 +743,27 @@ body {
 }
 
 .t-palette-color--1 .c-card__content::before {
-  background: #a1dac5;
+  background: linear-gradient(to right, #a1dac5, #7cccae);
   color: #fff;
 }
 
 .t-palette-color--2 .c-card__content::before {
-  background: #cddcb4;
+  background: linear-gradient(to right, #cddcb4, #b6cc91);
   color: #fff;
 }
 
 .t-palette-color--3 .c-card__content::before {
-  background: #edc4a9;
+  background: linear-gradient(to right, #edc4a9, #e4a77f);
   color: #fff;
 }
 
 .t-palette-color--4 .c-card__content::before {
-  background: #ffaaa5;
+  background: linear-gradient(to right, #ffaaa5, #ff7a72);
   color: #fff;
 }
 
 .t-palette-color--5 .c-card__content::before {
-  background: #ff8b94;
+  background: linear-gradient(to right, #ff8b94, #ff5865);
   color: #fff;
 }
 
@@ -836,27 +836,27 @@ body {
 }
 
 .t-palette-color--1 .c-card__number {
-  background: #a1dac5;
+  background: linear-gradient(to right, #a1dac5, #7cccae);
   color: #fff;
 }
 
 .t-palette-color--2 .c-card__number {
-  background: #cddcb4;
+  background: linear-gradient(to right, #cddcb4, #b6cc91);
   color: #fff;
 }
 
 .t-palette-color--3 .c-card__number {
-  background: #edc4a9;
+  background: linear-gradient(to right, #edc4a9, #e4a77f);
   color: #fff;
 }
 
 .t-palette-color--4 .c-card__number {
-  background: #ffaaa5;
+  background: linear-gradient(to right, #ffaaa5, #ff7a72);
   color: #fff;
 }
 
 .t-palette-color--5 .c-card__number {
-  background: #ff8b94;
+  background: linear-gradient(to right, #ff8b94, #ff5865);
   color: #fff;
 }
 
@@ -1269,27 +1269,27 @@ body {
 }
 
 .t-palette-color--1 .c-hero {
-  background: #a1dac5;
+  background: linear-gradient(to right, #a1dac5, #7cccae);
   color: #fff;
 }
 
 .t-palette-color--2 .c-hero {
-  background: #cddcb4;
+  background: linear-gradient(to right, #cddcb4, #b6cc91);
   color: #fff;
 }
 
 .t-palette-color--3 .c-hero {
-  background: #edc4a9;
+  background: linear-gradient(to right, #edc4a9, #e4a77f);
   color: #fff;
 }
 
 .t-palette-color--4 .c-hero {
-  background: #ffaaa5;
+  background: linear-gradient(to right, #ffaaa5, #ff7a72);
   color: #fff;
 }
 
 .t-palette-color--5 .c-hero {
-  background: #ff8b94;
+  background: linear-gradient(to right, #ff8b94, #ff5865);
   color: #fff;
 }
 
