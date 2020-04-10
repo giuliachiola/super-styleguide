@@ -1381,27 +1381,27 @@ body {
 }
 
 .t-palette-color--1 .c-label {
-  background: #a1dac5;
+  background: rgba(161, 218, 197, 0.1);
   color: #fff;
 }
 
 .t-palette-color--2 .c-label {
-  background: #cddcb4;
+  background: rgba(205, 220, 180, 0.1);
   color: #fff;
 }
 
 .t-palette-color--3 .c-label {
-  background: #edc4a9;
+  background: rgba(237, 196, 169, 0.1);
   color: #fff;
 }
 
 .t-palette-color--4 .c-label {
-  background: #ffaaa5;
+  background: rgba(255, 170, 165, 0.1);
   color: #fff;
 }
 
 .t-palette-color--5 .c-label {
-  background: #ff8b94;
+  background: rgba(255, 139, 148, 0.1);
   color: #fff;
 }
 

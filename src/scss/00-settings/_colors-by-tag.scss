@@ -113,29 +113,29 @@ $co_palette-3: #edc4a9;
 $co_palette-4: #ffaaa5;
 $co_palette-5: #ff8b94;
 
-@mixin color-palette($color) {
+@mixin color-palette($color, $opacity: 1) {
   @if $color == 1 {
-    background: $co_palette-1;
+    background: rgba($co_palette-1, $opacity);
     color: $co_color-light;
   }
 
   @else if $color == 2 {
-    background: $co_palette-2;
+    background: rgba($co_palette-2, $opacity);
     color: $co_color-light;
   }
 
   @else if $color == 3 {
-    background: $co_palette-3;
+    background: rgba($co_palette-3, $opacity);
     color: $co_color-light;
   }
 
   @else if $color == 4 {
-    background: $co_palette-4;
+    background: rgba($co_palette-4, $opacity);
     color: $co_color-light;
   }
 
   @else if $color == 5 {
-    background: $co_palette-5;
+    background: rgba($co_palette-5, $opacity);
     color: $co_color-light;
   }
 }
