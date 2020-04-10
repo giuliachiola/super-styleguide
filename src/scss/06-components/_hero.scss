@@ -42,7 +42,7 @@
 //   }
 // }
 
-@for $i from 1 through 5 {
+@for $i from 1 through 10 {
   .t-palette-color--#{$i} .c-hero {
     @include color-palette($i);
   }

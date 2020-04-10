@@ -113,6 +113,17 @@ $co_palette-3: #edc4a9;
 $co_palette-4: #ffaaa5;
 $co_palette-5: #ff8b94;
 
+$co_pastel-1: #ffb6b6;
+$co_pastel-2: #aacfcf;
+$co_pastel-3: #f6d186;
+$co_pastel-4: #f5cab3;
+$co_pastel-5: #ffd3b6;
+$co_pastel-6: #dcd6f7;
+$co_pastel-7: #a0ffe6;
+$co_pastel-8: #e1ccec;
+$co_pastel-9: #badfdb;
+$co_pastel-10: #fee9b2;
+
 $co_darken: 10%;
 
 @mixin color-palette($color, $inverted: false) {
@@ -172,6 +183,51 @@ $co_darken: 10%;
 
   @else if $color == 5 {
     background: linear-gradient(to right, $co_palette-5, darken($co_palette-5, $co_darken));
+    color: $co_color-light;
+  }
+}
+
+@mixin hero-colors {
+  @if $color == 1 {
+    background: linear-gradient(to right, $co_pastel-6, darken($co_pastel-6, $co_darken));
+    color: $co_color-light;
+  }
+  @else if $color == 2 {
+    background: linear-gradient(to right, $co_pastel-6, darken($co_pastel-6, $co_darken));
+    color: $co_color-light;
+  }
+  @else if $color == 3 {
+    background: linear-gradient(to right, $co_pastel-6, darken($co_pastel-6, $co_darken));
+    color: $co_color-light;
+  }
+  @else if $color == 4 {
+    background: linear-gradient(to right, $co_pastel-6, darken($co_pastel-6, $co_darken));
+    color: $co_color-light;
+  }
+  @else if $color == 5 {
+    background: linear-gradient(to right, $co_pastel-6, darken($co_pastel-6, $co_darken));
+    color: $co_color-light;
+  }
+  @else if $color == 6 {
+    background: linear-gradient(to right, $co_pastel-6, darken($co_pastel-6, $co_darken));
+    color: $co_color-light;
+  }
+  @else if $color == 7 {
+    background: linear-gradient(to right, $co_pastel-6, darken($co_pastel-6, $co_darken));
+    color: $co_color-light;
+  }
+  @else if $color == 8 {
+    background: linear-gradient(to right, $co_pastel-6, darken($co_pastel-6, $co_darken));
+    color: $co_color-light;
+  }
+
+  @else if $color == 9 {
+    background: linear-gradient(to right, $co_pastel-7, darken($co_pastel-7, $co_darken));
+    color: $co_color-light;
+  }
+
+  @else if $color == 10 {
+    background: linear-gradient(to right, $co_pastel-8, darken($co_pastel-8, $co_darken));
     color: $co_color-light;
   }
 }
