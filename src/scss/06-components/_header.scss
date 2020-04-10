@@ -110,8 +110,9 @@ $co_header-background-2: #009efd;
   }
 
   &:hover {
-    border-bottom: rem(2) solid $co_color-main;
+    border-bottom: rem(1) solid $co_color-main;
     padding-bottom: rem(4);
+    text-decoration: none;
 
     @for $i from 1 through 5 {
       .t-palette-color--#{$i} & {

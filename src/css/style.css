@@ -1107,8 +1107,9 @@ body {
 }
 
 .c-header__link:hover {
-  border-bottom: 0.125rem solid #50596c;
+  border-bottom: 0.0625rem solid #50596c;
   padding-bottom: 0.25rem;
+  text-decoration: none;
 }
 
 .t-palette-color--1 .c-header__link:hover {
@@ -1388,7 +1389,7 @@ body {
   LABEL
 ========================================================================== */
 .c-label {
-  background: rgba(80, 89, 108, 0.1);
+  background: rgba(80, 89, 108, 0.07);
   border-radius: 2px;
   border-radius: 6.25rem;
   font-size: 0.75rem;
