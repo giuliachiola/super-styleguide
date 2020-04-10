@@ -114,8 +114,6 @@ $co_palette-4: #123c69;
 $co_palette-5: #ac3b61;
 
 @mixin color-palette($color) {
-  color: $co_color-light;
-
   @if $color == 1 {
     background: $co_palette-1;
   }
@@ -126,13 +124,16 @@ $co_palette-5: #ac3b61;
 
   @else if $color == 3 {
     background: $co_palette-3;
+    color: $co_color-light;
   }
 
   @else if $color == 4 {
     background: $co_palette-4;
+    color: $co_color-light;
   }
 
   @else if $color == 5 {
     background: $co_palette-5;
+    color: $co_color-light;
   }
 }
