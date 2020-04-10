@@ -621,25 +621,25 @@ body {
 }
 
 .t-palette-color--1 .c-card__img-wrapper::before {
-  background: #edc7b7;
+  background: #a8e6cf;
 }
 
 .t-palette-color--2 .c-card__img-wrapper::before {
-  background: #eee2dc;
+  background: #dcedc1;
 }
 
 .t-palette-color--3 .c-card__img-wrapper::before {
-  background: #bab2b5;
+  background: #ffd3b6;
   color: #fff;
 }
 
 .t-palette-color--4 .c-card__img-wrapper::before {
-  background: #123c69;
+  background: #ffaaa5;
   color: #fff;
 }
 
 .t-palette-color--5 .c-card__img-wrapper::before {
-  background: #ac3b61;
+  background: #ff8b94;
   color: #fff;
 }
 
@@ -741,25 +741,25 @@ body {
 }
 
 .t-palette-color--1 .c-card__content::before {
-  background: #edc7b7;
+  background: #a8e6cf;
 }
 
 .t-palette-color--2 .c-card__content::before {
-  background: #eee2dc;
+  background: #dcedc1;
 }
 
 .t-palette-color--3 .c-card__content::before {
-  background: #bab2b5;
+  background: #ffd3b6;
   color: #fff;
 }
 
 .t-palette-color--4 .c-card__content::before {
-  background: #123c69;
+  background: #ffaaa5;
   color: #fff;
 }
 
 .t-palette-color--5 .c-card__content::before {
-  background: #ac3b61;
+  background: #ff8b94;
   color: #fff;
 }
 
@@ -832,25 +832,25 @@ body {
 }
 
 .t-palette-color--1 .c-card__number {
-  background: #edc7b7;
+  background: #a8e6cf;
 }
 
 .t-palette-color--2 .c-card__number {
-  background: #eee2dc;
+  background: #dcedc1;
 }
 
 .t-palette-color--3 .c-card__number {
-  background: #bab2b5;
+  background: #ffd3b6;
   color: #fff;
 }
 
 .t-palette-color--4 .c-card__number {
-  background: #123c69;
+  background: #ffaaa5;
   color: #fff;
 }
 
 .t-palette-color--5 .c-card__number {
-  background: #ac3b61;
+  background: #ff8b94;
   color: #fff;
 }
 
@@ -1222,25 +1222,25 @@ body {
 }
 
 .t-palette-color--1 .c-hero {
-  background: #edc7b7;
+  background: #a8e6cf;
 }
 
 .t-palette-color--2 .c-hero {
-  background: #eee2dc;
+  background: #dcedc1;
 }
 
 .t-palette-color--3 .c-hero {
-  background: #bab2b5;
+  background: #ffd3b6;
   color: #fff;
 }
 
 .t-palette-color--4 .c-hero {
-  background: #123c69;
+  background: #ffaaa5;
   color: #fff;
 }
 
 .t-palette-color--5 .c-hero {
-  background: #ac3b61;
+  background: #ff8b94;
   color: #fff;
 }
 

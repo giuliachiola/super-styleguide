@@ -107,11 +107,11 @@ $tags: blog, til, projects, search, about, git, vuejs, js, vsc, css, nodejs, des
 
 // ========
 
-$co_palette-1: #edc7b7;
-$co_palette-2: #eee2dc;
-$co_palette-3: #bab2b5;
-$co_palette-4: #123c69;
-$co_palette-5: #ac3b61;
+$co_palette-1: #a8e6cf;
+$co_palette-2: #dcedc1;
+$co_palette-3: #ffd3b6;
+$co_palette-4: #ffaaa5;
+$co_palette-5: #ff8b94;
 
 @mixin color-palette($color) {
   @if $color == 1 {
