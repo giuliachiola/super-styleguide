@@ -116,10 +116,12 @@ $co_palette-5: #ff8b94;
 @mixin color-palette($color) {
   @if $color == 1 {
     background: $co_palette-1;
+    color: $co_color-light;
   }
 
   @else if $color == 2 {
     background: $co_palette-2;
+    color: $co_color-light;
   }
 
   @else if $color == 3 {
