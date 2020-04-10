@@ -23,9 +23,9 @@
     @include label-state-active;
   }
 
-  @for $i from 1 through 5 {
-    .t-palette-color--#{$i} & {
-      @include color-palette($i, $inverted: true);
-    }
-  }
+  // @for $i from 1 through 5 {
+  //   .t-palette-color--#{$i} & {
+  //     @include color-palette($i, $inverted: true);
+  //   }
+  // }
 }

@@ -109,6 +109,17 @@ $co_header-background-2: #009efd;
     color: $co_color-light;
   }
 
+  &:hover {
+    border-bottom: rem(2) solid $co_color-main;
+    padding-bottom: rem(4);
+
+    @for $i from 1 through 5 {
+      .t-palette-color--#{$i} & {
+        @include color-palette-border($i);
+      }
+    }
+  }
+
   &[data-state= 'active'] { // current page
     font-weight: $font-sans-weight-bold;
 
