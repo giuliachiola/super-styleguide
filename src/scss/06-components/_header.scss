@@ -117,6 +117,12 @@ $co_header-background-2: #009efd;
       font-weight: $font-sans-weight-default;
       padding-bottom: rem(4);
 
+      @for $i from 1 through 5 {
+        .t-palette-color--#{$i} & {
+          @include color-palette-border($i);
+        }
+      }
+
       &:hover {
         text-decoration: none;
       }

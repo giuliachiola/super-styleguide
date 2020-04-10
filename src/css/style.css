@@ -621,17 +621,17 @@ body {
 }
 
 .t-palette-color--1 .c-card__img-wrapper::before {
-  background: #a8e6cf;
+  background: #a1dac5;
   color: #fff;
 }
 
 .t-palette-color--2 .c-card__img-wrapper::before {
-  background: #dcedc1;
+  background: #cddcb4;
   color: #fff;
 }
 
 .t-palette-color--3 .c-card__img-wrapper::before {
-  background: #ffd3b6;
+  background: #edc4a9;
   color: #fff;
 }
 
@@ -743,17 +743,17 @@ body {
 }
 
 .t-palette-color--1 .c-card__content::before {
-  background: #a8e6cf;
+  background: #a1dac5;
   color: #fff;
 }
 
 .t-palette-color--2 .c-card__content::before {
-  background: #dcedc1;
+  background: #cddcb4;
   color: #fff;
 }
 
 .t-palette-color--3 .c-card__content::before {
-  background: #ffd3b6;
+  background: #edc4a9;
   color: #fff;
 }
 
@@ -836,17 +836,17 @@ body {
 }
 
 .t-palette-color--1 .c-card__number {
-  background: #a8e6cf;
+  background: #a1dac5;
   color: #fff;
 }
 
 .t-palette-color--2 .c-card__number {
-  background: #dcedc1;
+  background: #cddcb4;
   color: #fff;
 }
 
 .t-palette-color--3 .c-card__number {
-  background: #ffd3b6;
+  background: #edc4a9;
   color: #fff;
 }
 
@@ -1116,6 +1116,21 @@ body {
     font-weight: 400;
     padding-bottom: 0.25rem;
   }
+  .t-palette-color--1 .c-header__link[data-state='active'] {
+    border-color: #a1dac5;
+  }
+  .t-palette-color--2 .c-header__link[data-state='active'] {
+    border-color: #cddcb4;
+  }
+  .t-palette-color--3 .c-header__link[data-state='active'] {
+    border-color: #edc4a9;
+  }
+  .t-palette-color--4 .c-header__link[data-state='active'] {
+    border-color: #ffaaa5;
+  }
+  .t-palette-color--5 .c-header__link[data-state='active'] {
+    border-color: #ff8b94;
+  }
   .c-header__link[data-state='active']:hover {
     text-decoration: none;
   }
@@ -1228,17 +1243,17 @@ body {
 }
 
 .t-palette-color--1 .c-hero {
-  background: #a8e6cf;
+  background: #a1dac5;
   color: #fff;
 }
 
 .t-palette-color--2 .c-hero {
-  background: #dcedc1;
+  background: #cddcb4;
   color: #fff;
 }
 
 .t-palette-color--3 .c-hero {
-  background: #ffd3b6;
+  background: #edc4a9;
   color: #fff;
 }
 
@@ -1362,6 +1377,31 @@ body {
 
 .c-label[data-state='active'] {
   background: rgba(80, 89, 108, 0.7);
+  color: #fff;
+}
+
+.t-palette-color--1 .c-label {
+  background: #a1dac5;
+  color: #fff;
+}
+
+.t-palette-color--2 .c-label {
+  background: #cddcb4;
+  color: #fff;
+}
+
+.t-palette-color--3 .c-label {
+  background: #edc4a9;
+  color: #fff;
+}
+
+.t-palette-color--4 .c-label {
+  background: #ffaaa5;
+  color: #fff;
+}
+
+.t-palette-color--5 .c-label {
+  background: #ff8b94;
   color: #fff;
 }
 

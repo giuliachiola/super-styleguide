@@ -107,9 +107,9 @@ $tags: blog, til, projects, search, about, git, vuejs, js, vsc, css, nodejs, des
 
 // ========
 
-$co_palette-1: #a8e6cf;
-$co_palette-2: #dcedc1;
-$co_palette-3: #ffd3b6;
+$co_palette-1: #a1dac5;
+$co_palette-2: #cddcb4;
+$co_palette-3: #edc4a9;
 $co_palette-4: #ffaaa5;
 $co_palette-5: #ff8b94;
 
@@ -137,5 +137,27 @@ $co_palette-5: #ff8b94;
   @else if $color == 5 {
     background: $co_palette-5;
     color: $co_color-light;
+  }
+}
+
+@mixin color-palette-border($color) {
+  @if $color == 1 {
+    border-color: $co_palette-1;
+  }
+
+  @else if $color == 2 {
+    border-color: $co_palette-2;
+  }
+
+  @else if $color == 3 {
+    border-color: $co_palette-3;
+  }
+
+  @else if $color == 4 {
+    border-color: $co_palette-4;
+  }
+
+  @else if $color == 5 {
+    border-color: $co_palette-5;
   }
 }

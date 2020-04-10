@@ -22,4 +22,10 @@
   &[data-state= 'active'] {
     @include label-state-active;
   }
+
+  @for $i from 1 through 5 {
+    .t-palette-color--#{$i} & {
+      @include color-palette($i);
+    }
+  }
 }
