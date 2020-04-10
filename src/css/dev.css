@@ -1272,27 +1272,52 @@ body {
 }
 
 .t-palette-color--1 .c-hero {
-  background: linear-gradient(to right, #a1dac5, #7cccae);
+  background: linear-gradient(to right, #dcd6f7, #b8abef);
   color: #fff;
 }
 
 .t-palette-color--2 .c-hero {
-  background: linear-gradient(to right, #cddcb4, #b6cc91);
+  background: linear-gradient(to right, #dcd6f7, #b8abef);
   color: #fff;
 }
 
 .t-palette-color--3 .c-hero {
-  background: linear-gradient(to right, #edc4a9, #e4a77f);
+  background: linear-gradient(to right, #dcd6f7, #b8abef);
   color: #fff;
 }
 
 .t-palette-color--4 .c-hero {
-  background: linear-gradient(to right, #ffaaa5, #ff7a72);
+  background: linear-gradient(to right, #dcd6f7, #b8abef);
   color: #fff;
 }
 
 .t-palette-color--5 .c-hero {
-  background: linear-gradient(to right, #ff8b94, #ff5865);
+  background: linear-gradient(to right, #dcd6f7, #b8abef);
+  color: #fff;
+}
+
+.t-palette-color--6 .c-hero {
+  background: linear-gradient(to right, #dcd6f7, #b8abef);
+  color: #fff;
+}
+
+.t-palette-color--7 .c-hero {
+  background: linear-gradient(to right, #dcd6f7, #b8abef);
+  color: #fff;
+}
+
+.t-palette-color--8 .c-hero {
+  background: linear-gradient(to right, #dcd6f7, #b8abef);
+  color: #fff;
+}
+
+.t-palette-color--9 .c-hero {
+  background: linear-gradient(to right, #a0ffe6, #6dffd9);
+  color: #fff;
+}
+
+.t-palette-color--10 .c-hero {
+  background: linear-gradient(to right, #e1ccec, #cba7de);
   color: #fff;
 }
 

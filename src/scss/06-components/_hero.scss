@@ -44,7 +44,7 @@
 
 @for $i from 1 through 10 {
   .t-palette-color--#{$i} .c-hero {
-    @include color-palette($i);
+    @include hero-colors($i);
   }
 }
 

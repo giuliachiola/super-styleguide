@@ -187,7 +187,7 @@ $co_darken: 10%;
   }
 }
 
-@mixin hero-colors {
+@mixin hero-colors($color) {
   @if $color == 1 {
     background: linear-gradient(to right, $co_pastel-6, darken($co_pastel-6, $co_darken));
     color: $co_color-light;
