@@ -13,7 +13,7 @@ $co_card-gradient-nodejs: #c7ceea;
 $co_card-gradient-design-system: #c6aeff;
 $co_card-gradient-static-site-generator: #bdd8ff;
 $co_card-gradient-markdown: #bdffb2;
-$co_card-gradient-template-engine: #eef9bf;
+$co_card-gradient-template-engine: #a9ffae;
 $co_card-gradient-svg: #ffc8ae;
 $co_card-gradient-mac-os: #ff9fbb;
 
@@ -103,4 +103,36 @@ $tags: blog, til, projects, search, about, git, vuejs, js, vsc, css, nodejs, des
 
 @mixin card-shadow ($opacity: 0.1) {
   box-shadow: 0 rem(10) rem(45) rem(-9) rgba(0, 0, 0, $opacity);
+}
+
+// ========
+
+$co_palette-1: #edc7b7;
+$co_palette-2: #eee2dc;
+$co_palette-3: #bab2b5;
+$co_palette-4: #123c69;
+$co_palette-5: #ac3b61;
+
+@mixin color-palette($color) {
+  color: $co_color-light;
+
+  @if $color == '1' {
+    background: $co_palette-1;
+  }
+
+  @else if $color == '2' {
+    background: $co_palette-2;
+  }
+
+  @else if $color == '3' {
+    background: $co_palette-3;
+  }
+
+  @else if $color == '4' {
+    background: $co_palette-4;
+  }
+
+  @else if $color == '5' {
+    background: $co_palette-5;
+  }
 }

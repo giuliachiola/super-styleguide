@@ -40,9 +40,15 @@ $sp_card-border-radius: rem(2);
       }
     -------------- */
 
-    @each $tag in $tags {
-      .c-card--#{$tag} & {
-        @include card-gradient(to right, $tag);
+    // @each $tag in $tags {
+    //   .c-card--#{$tag} & {
+    //     @include card-gradient(to right, $tag);
+    //   }
+    // }
+
+    @for $i from 1 through 5 {
+      .t-palette-color--#{$i} & {
+        @include color-palette($i);
       }
     }
   }
@@ -136,14 +142,20 @@ $sp_card-border-radius: rem(2);
     }
   -------------- */
 
-  @each $tag in $tags {
-    .c-card--highlight-left.c-card--#{$tag} &::before,
-    .c-card--squared-image.c-card--horizontal.c-card--#{$tag} &::before {
-      @include card-gradient(to bottom, $tag);
-    }
+  // @each $tag in $tags {
+  //   .c-card--highlight-left.c-card--#{$tag} &::before,
+  //   .c-card--squared-image.c-card--horizontal.c-card--#{$tag} &::before {
+  //     @include card-gradient(to bottom, $tag);
+  //   }
 
-    .c-card--highlight-top.c-card--#{$tag} &::before {
-      @include card-gradient(to right, $tag);
+  //   .c-card--highlight-top.c-card--#{$tag} &::before {
+  //     @include card-gradient(to right, $tag);
+  //   }
+  // }
+
+  @for $i from 1 through 5 {
+    .t-palette-color--#{$i} &::before {
+      @include color-palette($i);
     }
   }
 }
@@ -201,9 +213,15 @@ $sp_card-border-radius: rem(2);
   right: rem(20);
   top: rem(20);
 
-  @each $tag in $tags {
-    .c-card--#{$tag} & {
-      @include card-gradient(to right, $tag);
+  // @each $tag in $tags {
+  //   .c-card--#{$tag} & {
+  //     @include card-gradient(to right, $tag);
+  //   }
+  // }
+
+  @for $i from 1 through 5 {
+    .t-palette-color--#{$i} & {
+      @include color-palette($i);
     }
   }
 }
