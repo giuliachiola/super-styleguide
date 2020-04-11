@@ -46,9 +46,16 @@ $sp_card-border-radius: rem(2);
     //   }
     // }
 
-    @for $i from 1 through 5 {
+    // @for $i from 1 through 5 {
+    //   .t-palette-color--#{$i} & {
+    //     @include color-palette($i);
+    //   }
+    // }
+
+    @for $i from 1 through 6 {
       .t-palette-color--#{$i} & {
-        @include color-palette($i);
+        background-color: var(--palette-color-#{$i});
+        color: $co_color-light;
       }
     }
   }
@@ -153,9 +160,16 @@ $sp_card-border-radius: rem(2);
   //   }
   // }
 
-  @for $i from 1 through 5 {
+  // @for $i from 1 through 5 {
+  //   .t-palette-color--#{$i} &::before {
+  //     @include color-palette($i);
+  //   }
+  // }
+
+  @for $i from 1 through 6 {
     .t-palette-color--#{$i} &::before {
-      @include color-palette($i);
+      background-color: var(--palette-color-#{$i});
+      color: $co_color-light;
     }
   }
 }
@@ -219,9 +233,16 @@ $sp_card-border-radius: rem(2);
   //   }
   // }
 
-  @for $i from 1 through 5 {
+  // @for $i from 1 through 5 {
+  //   .t-palette-color--#{$i} & {
+  //     @include color-palette($i);
+  //   }
+  // }
+
+  @for $i from 1 through 6 {
     .t-palette-color--#{$i} & {
-      @include color-palette($i);
+      background-color: var(--palette-color-#{$i});
+      color: $co_color-light;
     }
   }
 }

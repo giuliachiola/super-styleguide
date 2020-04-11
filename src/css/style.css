@@ -18,6 +18,14 @@
 
   Used in card, hero
 ========================================================================== */
+:root {
+  --co_palette-1: #59c6f3;
+  --co_palette-2: #76c2c4;
+  --co_palette-3: #f6c458;
+  --co_palette-4: #f7e2ba;
+  --co_palette-5: #ec5b69;
+}
+
 /* ==========================================================================
   MQ CONFIG
 ========================================================================== */
@@ -621,27 +629,32 @@ body {
 }
 
 .t-palette-color--1 .c-card__img-wrapper::before {
-  background: linear-gradient(to right, #a1dac5, #7cccae);
+  background-color: var(--palette-color-1);
   color: #fff;
 }
 
 .t-palette-color--2 .c-card__img-wrapper::before {
-  background: linear-gradient(to right, #cddcb4, #b6cc91);
+  background-color: var(--palette-color-2);
   color: #fff;
 }
 
 .t-palette-color--3 .c-card__img-wrapper::before {
-  background: linear-gradient(to right, #edc4a9, #e4a77f);
+  background-color: var(--palette-color-3);
   color: #fff;
 }
 
 .t-palette-color--4 .c-card__img-wrapper::before {
-  background: linear-gradient(to right, #ffaaa5, #ff7a72);
+  background-color: var(--palette-color-4);
   color: #fff;
 }
 
 .t-palette-color--5 .c-card__img-wrapper::before {
-  background: linear-gradient(to right, #ff8b94, #ff5865);
+  background-color: var(--palette-color-5);
+  color: #fff;
+}
+
+.t-palette-color--6 .c-card__img-wrapper::before {
+  background-color: var(--palette-color-6);
   color: #fff;
 }
 
@@ -743,27 +756,32 @@ body {
 }
 
 .t-palette-color--1 .c-card__content::before {
-  background: linear-gradient(to right, #a1dac5, #7cccae);
+  background-color: var(--palette-color-1);
   color: #fff;
 }
 
 .t-palette-color--2 .c-card__content::before {
-  background: linear-gradient(to right, #cddcb4, #b6cc91);
+  background-color: var(--palette-color-2);
   color: #fff;
 }
 
 .t-palette-color--3 .c-card__content::before {
-  background: linear-gradient(to right, #edc4a9, #e4a77f);
+  background-color: var(--palette-color-3);
   color: #fff;
 }
 
 .t-palette-color--4 .c-card__content::before {
-  background: linear-gradient(to right, #ffaaa5, #ff7a72);
+  background-color: var(--palette-color-4);
   color: #fff;
 }
 
 .t-palette-color--5 .c-card__content::before {
-  background: linear-gradient(to right, #ff8b94, #ff5865);
+  background-color: var(--palette-color-5);
+  color: #fff;
+}
+
+.t-palette-color--6 .c-card__content::before {
+  background-color: var(--palette-color-6);
   color: #fff;
 }
 
@@ -836,27 +854,32 @@ body {
 }
 
 .t-palette-color--1 .c-card__number {
-  background: linear-gradient(to right, #a1dac5, #7cccae);
+  background-color: var(--palette-color-1);
   color: #fff;
 }
 
 .t-palette-color--2 .c-card__number {
-  background: linear-gradient(to right, #cddcb4, #b6cc91);
+  background-color: var(--palette-color-2);
   color: #fff;
 }
 
 .t-palette-color--3 .c-card__number {
-  background: linear-gradient(to right, #edc4a9, #e4a77f);
+  background-color: var(--palette-color-3);
   color: #fff;
 }
 
 .t-palette-color--4 .c-card__number {
-  background: linear-gradient(to right, #ffaaa5, #ff7a72);
+  background-color: var(--palette-color-4);
   color: #fff;
 }
 
 .t-palette-color--5 .c-card__number {
-  background: linear-gradient(to right, #ff8b94, #ff5865);
+  background-color: var(--palette-color-5);
+  color: #fff;
+}
+
+.t-palette-color--6 .c-card__number {
+  background-color: var(--palette-color-6);
   color: #fff;
 }
 
@@ -1269,32 +1292,32 @@ body {
 }
 
 .t-palette-color--1 .c-hero {
-  background: linear-gradient(to right, #a1dac5, #7cccae);
+  background-color: var(--palette-color-1);
   color: #fff;
 }
 
 .t-palette-color--2 .c-hero {
-  background: linear-gradient(to right, #cddcb4, #b6cc91);
+  background-color: var(--palette-color-2);
   color: #fff;
 }
 
 .t-palette-color--3 .c-hero {
-  background: linear-gradient(to right, #edc4a9, #e4a77f);
+  background-color: var(--palette-color-3);
   color: #fff;
 }
 
 .t-palette-color--4 .c-hero {
-  background: linear-gradient(to right, #ffaaa5, #ff7a72);
+  background-color: var(--palette-color-4);
   color: #fff;
 }
 
 .t-palette-color--5 .c-hero {
-  background: linear-gradient(to right, #ff8b94, #ff5865);
+  background-color: var(--palette-color-5);
   color: #fff;
 }
 
 .t-palette-color--6 .c-hero {
-  background: linear-gradient(to right, #e1ccec, #cba7de);
+  background-color: var(--palette-color-6);
   color: #fff;
 }
 
