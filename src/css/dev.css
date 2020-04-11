@@ -1059,23 +1059,18 @@ body {
   }
   .t-palette-color--1 .c-header__list {
     background-image: linear-gradient(to bottom, var(--co_palette-1), var(--co_palette-1--darken), var(--co_palette-1));
-    opacity: 0.9;
   }
   .t-palette-color--2 .c-header__list {
     background-image: linear-gradient(to bottom, var(--co_palette-2), var(--co_palette-2--darken), var(--co_palette-2));
-    opacity: 0.9;
   }
   .t-palette-color--3 .c-header__list {
     background-image: linear-gradient(to bottom, var(--co_palette-3), var(--co_palette-3--darken), var(--co_palette-3));
-    opacity: 0.9;
   }
   .t-palette-color--4 .c-header__list {
     background-image: linear-gradient(to bottom, var(--co_palette-4), var(--co_palette-4--darken), var(--co_palette-4));
-    opacity: 0.9;
   }
   .t-palette-color--5 .c-header__list {
     background-image: linear-gradient(to bottom, var(--co_palette-5), var(--co_palette-5--darken), var(--co_palette-5));
-    opacity: 0.9;
   }
   .c-header__toggle:checked ~ .c-header__list {
     opacity: 1;

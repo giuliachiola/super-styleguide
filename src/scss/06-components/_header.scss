@@ -55,7 +55,6 @@ $co_header-hamburger: $co_color-light;
     @for $i from 1 through 5 {
       .t-palette-color--#{$i} & {
         background-image: linear-gradient(to bottom, var(--co_palette-#{$i}), var(--co_palette-#{$i}--darken), var(--co_palette-#{$i}));
-        opacity: 0.9;
       }
     }
 
