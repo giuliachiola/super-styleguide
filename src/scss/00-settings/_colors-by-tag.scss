@@ -20,18 +20,18 @@ $co_darken: 10%;
   --co_palette-4: #{$co_palette-4};
   --co_palette-5: #{$co_palette-5};
   --co_palette-dark: #{$co_palette-dark};
-  // Darken
-  --co_palette-1--darken: #{darken($co_palette-1, 10%)};
-  --co_palette-2--darken: #{darken($co_palette-2, 10%)};
-  --co_palette-3--darken: #{darken($co_palette-3, 10%)};
-  --co_palette-4--darken: #{darken($co_palette-4, 10%)};
-  --co_palette-5--darken: #{darken($co_palette-5, 10%)};
   // Lighten
   --co_palette-1--lighten: #{lighten($co_palette-1, 10%)};
   --co_palette-2--lighten: #{lighten($co_palette-2, 10%)};
   --co_palette-3--lighten: #{lighten($co_palette-3, 10%)};
   --co_palette-4--lighten: #{lighten($co_palette-4, 10%)};
   --co_palette-5--lighten: #{lighten($co_palette-5, 10%)};
+  // Lighter
+  --co_palette-1--lightest: #{lighten($co_palette-1, 80%)};
+  --co_palette-2--lightest: #{lighten($co_palette-2, 80%)};
+  --co_palette-3--lightest: #{lighten($co_palette-3, 80%)};
+  --co_palette-4--lightest: #{lighten($co_palette-4, 80%)};
+  --co_palette-5--lightest: #{lighten($co_palette-5, 80%)};
 }
 
 // SHADOW

@@ -23,10 +23,9 @@
     @include label-state-active;
   }
 
-  // @for $i from 1 through 5 {
-  //   .t-palette-color--#{$i} & {
-  //     background-color: var(--co_palette-#{$i});
-  //     color: $co_color-light;
-  //   }
-  // }
+  @for $i from 1 through 5 {
+    .t-palette-color--#{$i} & {
+      background-color: var(--co_palette-#{$i}--lightest);
+    }
+  }
 }

@@ -28,16 +28,16 @@
   --co_palette-4: #1b98e0;
   --co_palette-5: #ff9f1c;
   --co_palette-dark: #073b4c;
-  --co_palette-1--darken: #eb184a;
-  --co_palette-2--darken: #ffc233;
-  --co_palette-3--darken: #05a47b;
-  --co_palette-4--darken: #1679b2;
-  --co_palette-5--darken: #e88600;
   --co_palette-1--lighten: #f37694;
   --co_palette-2--lighten: #ffe099;
   --co_palette-3--lighten: #17f8be;
   --co_palette-4--lighten: #45ade9;
   --co_palette-5--lighten: #ffb54f;
+  --co_palette-1--lightest: white;
+  --co_palette-2--lightest: white;
+  --co_palette-3--lightest: white;
+  --co_palette-4--lightest: white;
+  --co_palette-5--lightest: white;
 }
 
 /* ==========================================================================
@@ -1426,6 +1426,26 @@ body {
 .c-label[data-state='active'] {
   background: rgba(80, 89, 108, 0.7);
   color: #fff;
+}
+
+.t-palette-color--1 .c-label {
+  background-color: var(--co_palette-1--lightest);
+}
+
+.t-palette-color--2 .c-label {
+  background-color: var(--co_palette-2--lightest);
+}
+
+.t-palette-color--3 .c-label {
+  background-color: var(--co_palette-3--lightest);
+}
+
+.t-palette-color--4 .c-label {
+  background-color: var(--co_palette-4--lightest);
+}
+
+.t-palette-color--5 .c-label {
+  background-color: var(--co_palette-5--lightest);
 }
 
 /* ==========================================================================
