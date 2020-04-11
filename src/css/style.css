@@ -1426,23 +1426,23 @@ body {
 }
 
 .t-palette-color--1 .c-label {
-  background-color: var(--co_palette-1--lightest);
+  background-color: var(--co_palette-1--opacity);
 }
 
 .t-palette-color--2 .c-label {
-  background-color: var(--co_palette-2--lightest);
+  background-color: var(--co_palette-2--opacity);
 }
 
 .t-palette-color--3 .c-label {
-  background-color: var(--co_palette-3--lightest);
+  background-color: var(--co_palette-3--opacity);
 }
 
 .t-palette-color--4 .c-label {
-  background-color: var(--co_palette-4--lightest);
+  background-color: var(--co_palette-4--opacity);
 }
 
 .t-palette-color--5 .c-label {
-  background-color: var(--co_palette-5--lightest);
+  background-color: var(--co_palette-5--opacity);
 }
 
 /* ==========================================================================

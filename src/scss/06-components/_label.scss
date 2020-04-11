@@ -25,7 +25,7 @@
 
   @for $i from 1 through 5 {
     .t-palette-color--#{$i} & {
-      background-color: var(--co_palette-#{$i}--lightest);
+      background-color: var(--co_palette-#{$i}--opacity);
     }
   }
 }
