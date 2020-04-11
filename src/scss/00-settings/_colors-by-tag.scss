@@ -5,7 +5,7 @@
 ========================================================================== */
 
 $co_palette-1: #ef476f;
-$co_palette-2: #ffd166;
+$co_palette-2: #ffc233;
 $co_palette-3: #06d6a0;
 $co_palette-4: #1b98e0;
 $co_palette-5: #ff9f1c;
@@ -26,12 +26,12 @@ $co_darken: 10%;
   --co_palette-3--lighten: #{lighten($co_palette-3, 10%)};
   --co_palette-4--lighten: #{lighten($co_palette-4, 10%)};
   --co_palette-5--lighten: #{lighten($co_palette-5, 10%)};
-  // Lighter
-  --co_palette-1--lightest: #{lighten($co_palette-1, 80%)};
-  --co_palette-2--lightest: #{lighten($co_palette-2, 80%)};
-  --co_palette-3--lightest: #{lighten($co_palette-3, 80%)};
-  --co_palette-4--lightest: #{lighten($co_palette-4, 80%)};
-  --co_palette-5--lightest: #{lighten($co_palette-5, 80%)};
+  // Opacity
+  --co_palette-1--opacity: #{rgba($co_palette-1, 0.1)};
+  --co_palette-2--opacity: #{rgba($co_palette-2, 0.2)};
+  --co_palette-3--opacity: #{rgba($co_palette-3, 0.2)};
+  --co_palette-4--opacity: #{rgba($co_palette-4, 0.1)};
+  --co_palette-5--opacity: #{rgba($co_palette-5, 0.1)};
 }
 
 // SHADOW
