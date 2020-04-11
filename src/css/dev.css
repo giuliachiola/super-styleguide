@@ -243,10 +243,6 @@ body.is-menu-open {
   position: fixed;
 }
 
-p {
-  line-height: 1.4;
-}
-
 a {
   color: #50596c;
   text-decoration: none;
@@ -259,10 +255,6 @@ a:hover, a:focus {
 
 code {
   font-family: "Fira Code", monospace;
-}
-
-ul {
-  font-size: 1rem;
 }
 
 /* ------------------

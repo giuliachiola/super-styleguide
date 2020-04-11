@@ -32,11 +32,11 @@ body {
   }
 }
 
-p {
-  // font-size: $ty_font-size-base;
-  // font-size: rem($ty_font-size-base);
-  line-height: 1.4;
-}
+// p {
+//   // font-size: $ty_font-size-base;
+//   // font-size: rem($ty_font-size-base);
+//   // line-height: 1.4;
+// }
 
 a {
   color: $co_color-main;
@@ -69,9 +69,9 @@ code {
   font-family: $ty_font-family-code;
 }
 
-ul {
-  font-size: $ty_font-size-base;
-}
+// ul {
+//   font-size: $ty_font-size-base;
+// }
 
 // ol,
 // ul {
