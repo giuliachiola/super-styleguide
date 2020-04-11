@@ -25,7 +25,8 @@
 
   // @for $i from 1 through 5 {
   //   .t-palette-color--#{$i} & {
-  //     @include color-palette($i, $inverted: true);
+  //     background-color: var(--co_palette-#{$i});
+  //     color: $co_color-light;
   //   }
   // }
 }

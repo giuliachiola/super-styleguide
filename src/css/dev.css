@@ -17,16 +17,27 @@
   COLORS
 ========================================================================== */
 /* ==========================================================================
-  COLORS BY TAGS
+  COLORS BY PAGES
 
   Used in card, hero
 ========================================================================== */
 :root {
-  --co_palette-1: #59c6f3;
-  --co_palette-2: #76c2c4;
-  --co_palette-3: #f6c458;
-  --co_palette-4: #f7e2ba;
-  --co_palette-5: #ec5b69;
+  --co_palette-1: #ef476f;
+  --co_palette-2: #ffd166;
+  --co_palette-3: #06d6a0;
+  --co_palette-4: #1b98e0;
+  --co_palette-5: #ff9f1c;
+  --co_palette-dark: #073b4c;
+  --co_palette-1--darken: #eb184a;
+  --co_palette-2--darken: #ffc233;
+  --co_palette-3--darken: #05a47b;
+  --co_palette-4--darken: #1679b2;
+  --co_palette-5--darken: #e88600;
+  --co_palette-1--lighten: #f37694;
+  --co_palette-2--lighten: #ffe099;
+  --co_palette-3--lighten: #17f8be;
+  --co_palette-4--lighten: #45ade9;
+  --co_palette-5--lighten: #ffb54f;
 }
 
 /* ==========================================================================
@@ -635,11 +646,7 @@ body {
   top: 0;
   width: 100%;
   /* --------------
-      Colors by category, output example:
-
-      .c-card--nodejs & {
-        @include card-gradient(to right, 'nodejs');
-      }
+      Colors by page
     -------------- */
 }
 
@@ -665,11 +672,6 @@ body {
 
 .t-palette-color--5 .c-card__img-wrapper::before {
   background-color: var(--co_palette-5--lighten);
-  color: #fff;
-}
-
-.t-palette-color--6 .c-card__img-wrapper::before {
-  background-color: var(--co_palette-6--lighten);
   color: #fff;
 }
 
@@ -718,15 +720,7 @@ body {
 .c-card__content {
   padding: 1.25rem 1.25rem 4.625rem 1.25rem;
   /* --------------
-    Colors by category, output example:
-
-    .c-card--highlight-left.c-card--git &::before {
-      @include card-gradient(to bottom, 'git');
-    }
-
-    .c-card--highlight-top.c-card--git &::before {
-      @include card-gradient(to right, 'git');
-    }
+    Colors by page
   -------------- */
 }
 
@@ -792,11 +786,6 @@ body {
 
 .t-palette-color--5 .c-card__content::before {
   background-color: var(--co_palette-5--lighten);
-  color: #fff;
-}
-
-.t-palette-color--6 .c-card__content::before {
-  background-color: var(--co_palette-6--lighten);
   color: #fff;
 }
 
@@ -890,11 +879,6 @@ body {
 
 .t-palette-color--5 .c-card__number {
   background-color: var(--co_palette-5--lighten);
-  color: #fff;
-}
-
-.t-palette-color--6 .c-card__number {
-  background-color: var(--co_palette-6--lighten);
   color: #fff;
 }
 
@@ -1170,10 +1154,6 @@ body {
   border-color: var(--co_palette-5--lighten);
 }
 
-.t-palette-color--6 .c-header__link:hover {
-  border-color: var(--co_palette-6--lighten);
-}
-
 .c-header__link[data-state='active'] {
   font-weight: 600;
 }
@@ -1198,9 +1178,6 @@ body {
   }
   .t-palette-color--5 .c-header__link[data-state='active'] {
     border-color: var(--co_palette-5--lighten);
-  }
-  .t-palette-color--6 .c-header__link[data-state='active'] {
-    border-color: var(--co_palette-6--lighten);
   }
   .c-header__link[data-state='active']:hover {
     text-decoration: none;
@@ -1335,11 +1312,6 @@ body {
 
 .t-palette-color--5 .c-hero {
   background-color: var(--co_palette-5);
-  color: #fff;
-}
-
-.t-palette-color--6 .c-hero {
-  background-color: var(--co_palette-6);
   color: #fff;
 }
 

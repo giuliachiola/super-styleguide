@@ -36,19 +36,7 @@
 
 // Hero colors
 
-// @each $tag in $tags {
-//   .c-hero--#{$tag} {
-//     @include card-gradient(to right, $tag);
-//   }
-// }
-
-// @for $i from 1 through 6 {
-//   .t-palette-color--#{$i} .c-hero {
-//     @include color-palette($i);
-//   }
-// }
-
-@for $i from 1 through 6 {
+@for $i from 1 through 5 {
   .t-palette-color--#{$i} .c-hero {
     background-color: var(--co_palette-#{$i});
     color: $co_color-light;

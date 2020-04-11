@@ -114,12 +114,7 @@ $co_header-background-2: #009efd;
     padding-bottom: rem(4);
     text-decoration: none;
 
-    // @for $i from 1 through 5 {
-    //   .t-palette-color--#{$i} & {
-    //     @include color-palette-border($i);
-    //   }
-    // }
-    @for $i from 1 through 6 {
+    @for $i from 1 through 5 {
       .t-palette-color--#{$i} & {
         border-color: var(--co_palette-#{$i}--lighten);
       }
@@ -134,12 +129,7 @@ $co_header-background-2: #009efd;
       font-weight: $font-sans-weight-default;
       padding-bottom: rem(4);
 
-      // @for $i from 1 through 5 {
-      //   .t-palette-color--#{$i} & {
-      //     @include color-palette-border($i);
-      //   }
-      // }
-      @for $i from 1 through 6 {
+      @for $i from 1 through 5 {
         .t-palette-color--#{$i} & {
           border-color: var(--co_palette-#{$i}--lighten);
         }

@@ -33,26 +33,10 @@ $sp_card-border-radius: rem(2);
     width: 100%;
 
     /* --------------
-      Colors by category, output example:
-
-      .c-card--nodejs & {
-        @include card-gradient(to right, 'nodejs');
-      }
+      Colors by page
     -------------- */
 
-    // @each $tag in $tags {
-    //   .c-card--#{$tag} & {
-    //     @include card-gradient(to right, $tag);
-    //   }
-    // }
-
-    // @for $i from 1 through 5 {
-    //   .t-palette-color--#{$i} & {
-    //     @include color-palette($i);
-    //   }
-    // }
-
-    @for $i from 1 through 6 {
+    @for $i from 1 through 5 {
       .t-palette-color--#{$i} & {
         background-color: var(--co_palette-#{$i}--lighten);
         color: $co_color-light;
@@ -138,35 +122,10 @@ $sp_card-border-radius: rem(2);
   }
 
   /* --------------
-    Colors by category, output example:
-
-    .c-card--highlight-left.c-card--git &::before {
-      @include card-gradient(to bottom, 'git');
-    }
-
-    .c-card--highlight-top.c-card--git &::before {
-      @include card-gradient(to right, 'git');
-    }
+    Colors by page
   -------------- */
 
-  // @each $tag in $tags {
-  //   .c-card--highlight-left.c-card--#{$tag} &::before,
-  //   .c-card--squared-image.c-card--horizontal.c-card--#{$tag} &::before {
-  //     @include card-gradient(to bottom, $tag);
-  //   }
-
-  //   .c-card--highlight-top.c-card--#{$tag} &::before {
-  //     @include card-gradient(to right, $tag);
-  //   }
-  // }
-
-  // @for $i from 1 through 5 {
-  //   .t-palette-color--#{$i} &::before {
-  //     @include color-palette($i);
-  //   }
-  // }
-
-  @for $i from 1 through 6 {
+  @for $i from 1 through 5 {
     .t-palette-color--#{$i} &::before {
       background-color: var(--co_palette-#{$i}--lighten);
       color: $co_color-light;
@@ -227,19 +186,7 @@ $sp_card-border-radius: rem(2);
   right: rem(20);
   top: rem(20);
 
-  // @each $tag in $tags {
-  //   .c-card--#{$tag} & {
-  //     @include card-gradient(to right, $tag);
-  //   }
-  // }
-
-  // @for $i from 1 through 5 {
-  //   .t-palette-color--#{$i} & {
-  //     @include color-palette($i);
-  //   }
-  // }
-
-  @for $i from 1 through 6 {
+  @for $i from 1 through 5 {
     .t-palette-color--#{$i} & {
       background-color: var(--co_palette-#{$i}--lighten);
       color: $co_color-light;
