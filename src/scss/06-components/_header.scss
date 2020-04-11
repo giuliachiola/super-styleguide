@@ -37,7 +37,8 @@ $co_header-hamburger: $co_color-light;
     position: fixed;
     text-align: center;
     top: 0;
-    transition: opacity 1s;
+    transition: all 1s;
+    visibility: hidden; // opacity is not enough to hide menu list, because pointer events remain
     width: 100%;
 
     &::after {
@@ -60,7 +61,8 @@ $co_header-hamburger: $co_color-light;
 
     .c-header__toggle:checked ~ & {
       opacity: 1;
-      transition: opacity 1s;
+      transition: all 1s;
+      visibility: visible;
 
       &::after {
         opacity: 1;
