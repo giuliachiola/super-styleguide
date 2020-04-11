@@ -121,7 +121,7 @@ $co_header-background-2: #009efd;
     // }
     @for $i from 1 through 6 {
       .t-palette-color--#{$i} & {
-        border-color: var(--co_palette-#{$i});
+        border-color: var(--co_palette-#{$i}--lighten);
       }
     }
   }
@@ -141,7 +141,7 @@ $co_header-background-2: #009efd;
       // }
       @for $i from 1 through 6 {
         .t-palette-color--#{$i} & {
-          border-color: var(--co_palette-#{$i});
+          border-color: var(--co_palette-#{$i}--lighten);
         }
       }
 

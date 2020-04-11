@@ -50,7 +50,7 @@
 
 @for $i from 1 through 6 {
   .t-palette-color--#{$i} .c-hero {
-    background-color: var(--co_palette-#{$i}--darken);
+    background-color: var(--co_palette-#{$i});
     color: $co_color-light;
   }
 }
