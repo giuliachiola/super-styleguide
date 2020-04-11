@@ -632,32 +632,32 @@ body {
 }
 
 .t-palette-color--1 .c-card__img-wrapper::before {
-  background-color: var(--palette-color-1);
+  background-color: var(--co_palette-1);
   color: #fff;
 }
 
 .t-palette-color--2 .c-card__img-wrapper::before {
-  background-color: var(--palette-color-2);
+  background-color: var(--co_palette-2);
   color: #fff;
 }
 
 .t-palette-color--3 .c-card__img-wrapper::before {
-  background-color: var(--palette-color-3);
+  background-color: var(--co_palette-3);
   color: #fff;
 }
 
 .t-palette-color--4 .c-card__img-wrapper::before {
-  background-color: var(--palette-color-4);
+  background-color: var(--co_palette-4);
   color: #fff;
 }
 
 .t-palette-color--5 .c-card__img-wrapper::before {
-  background-color: var(--palette-color-5);
+  background-color: var(--co_palette-5);
   color: #fff;
 }
 
 .t-palette-color--6 .c-card__img-wrapper::before {
-  background-color: var(--palette-color-6);
+  background-color: var(--co_palette-6);
   color: #fff;
 }
 
@@ -759,32 +759,32 @@ body {
 }
 
 .t-palette-color--1 .c-card__content::before {
-  background-color: var(--palette-color-1);
+  background-color: var(--co_palette-1);
   color: #fff;
 }
 
 .t-palette-color--2 .c-card__content::before {
-  background-color: var(--palette-color-2);
+  background-color: var(--co_palette-2);
   color: #fff;
 }
 
 .t-palette-color--3 .c-card__content::before {
-  background-color: var(--palette-color-3);
+  background-color: var(--co_palette-3);
   color: #fff;
 }
 
 .t-palette-color--4 .c-card__content::before {
-  background-color: var(--palette-color-4);
+  background-color: var(--co_palette-4);
   color: #fff;
 }
 
 .t-palette-color--5 .c-card__content::before {
-  background-color: var(--palette-color-5);
+  background-color: var(--co_palette-5);
   color: #fff;
 }
 
 .t-palette-color--6 .c-card__content::before {
-  background-color: var(--palette-color-6);
+  background-color: var(--co_palette-6);
   color: #fff;
 }
 
@@ -857,32 +857,32 @@ body {
 }
 
 .t-palette-color--1 .c-card__number {
-  background-color: var(--palette-color-1);
+  background-color: var(--co_palette-1);
   color: #fff;
 }
 
 .t-palette-color--2 .c-card__number {
-  background-color: var(--palette-color-2);
+  background-color: var(--co_palette-2);
   color: #fff;
 }
 
 .t-palette-color--3 .c-card__number {
-  background-color: var(--palette-color-3);
+  background-color: var(--co_palette-3);
   color: #fff;
 }
 
 .t-palette-color--4 .c-card__number {
-  background-color: var(--palette-color-4);
+  background-color: var(--co_palette-4);
   color: #fff;
 }
 
 .t-palette-color--5 .c-card__number {
-  background-color: var(--palette-color-5);
+  background-color: var(--co_palette-5);
   color: #fff;
 }
 
 .t-palette-color--6 .c-card__number {
-  background-color: var(--palette-color-6);
+  background-color: var(--co_palette-6);
   color: #fff;
 }
 
@@ -1139,23 +1139,33 @@ body {
 }
 
 .t-palette-color--1 .c-header__link:hover {
-  border-color: #a1dac5;
+  background-color: var(--co_palette-1);
+  color: #fff;
 }
 
 .t-palette-color--2 .c-header__link:hover {
-  border-color: #cddcb4;
+  background-color: var(--co_palette-2);
+  color: #fff;
 }
 
 .t-palette-color--3 .c-header__link:hover {
-  border-color: #edc4a9;
+  background-color: var(--co_palette-3);
+  color: #fff;
 }
 
 .t-palette-color--4 .c-header__link:hover {
-  border-color: #ffaaa5;
+  background-color: var(--co_palette-4);
+  color: #fff;
 }
 
 .t-palette-color--5 .c-header__link:hover {
-  border-color: #ff8b94;
+  background-color: var(--co_palette-5);
+  color: #fff;
+}
+
+.t-palette-color--6 .c-header__link:hover {
+  background-color: var(--co_palette-6);
+  color: #fff;
 }
 
 .c-header__link[data-state='active'] {
@@ -1295,32 +1305,32 @@ body {
 }
 
 .t-palette-color--1 .c-hero {
-  background-color: var(--palette-color-1);
+  background-color: var(--co_palette-1);
   color: #fff;
 }
 
 .t-palette-color--2 .c-hero {
-  background-color: var(--palette-color-2);
+  background-color: var(--co_palette-2);
   color: #fff;
 }
 
 .t-palette-color--3 .c-hero {
-  background-color: var(--palette-color-3);
+  background-color: var(--co_palette-3);
   color: #fff;
 }
 
 .t-palette-color--4 .c-hero {
-  background-color: var(--palette-color-4);
+  background-color: var(--co_palette-4);
   color: #fff;
 }
 
 .t-palette-color--5 .c-hero {
-  background-color: var(--palette-color-5);
+  background-color: var(--co_palette-5);
   color: #fff;
 }
 
 .t-palette-color--6 .c-hero {
-  background-color: var(--palette-color-6);
+  background-color: var(--co_palette-6);
   color: #fff;
 }
 

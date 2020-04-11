@@ -54,7 +54,7 @@ $sp_card-border-radius: rem(2);
 
     @for $i from 1 through 6 {
       .t-palette-color--#{$i} & {
-        background-color: var(--palette-color-#{$i});
+        background-color: var(--co_palette-#{$i});
         color: $co_color-light;
       }
     }
@@ -168,7 +168,7 @@ $sp_card-border-radius: rem(2);
 
   @for $i from 1 through 6 {
     .t-palette-color--#{$i} &::before {
-      background-color: var(--palette-color-#{$i});
+      background-color: var(--co_palette-#{$i});
       color: $co_color-light;
     }
   }
@@ -241,7 +241,7 @@ $sp_card-border-radius: rem(2);
 
   @for $i from 1 through 6 {
     .t-palette-color--#{$i} & {
-      background-color: var(--palette-color-#{$i});
+      background-color: var(--co_palette-#{$i});
       color: $co_color-light;
     }
   }
