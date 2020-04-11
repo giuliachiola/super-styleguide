@@ -18,16 +18,11 @@
 }
 
 .c-article-section__content { // markup content
+  @include ty-paragraph--l;
+
   img {
     display: block;
     margin: 0 auto;
-  }
-
-  p,
-  li,
-  a {
-    font-size: rem(20);
-    line-height: 1.4;
   }
 
   table { // markdown table with external wrapper

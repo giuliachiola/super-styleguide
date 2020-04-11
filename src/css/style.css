@@ -465,16 +465,28 @@ body {
   margin: 0.3125rem 0;
 }
 
+.c-article-section__content {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+@media (min-width: 48em) {
+  .c-article-section__content {
+    font-size: 1.125rem;
+    line-height: 1.4;
+  }
+}
+
+@media (min-width: 64em) {
+  .c-article-section__content {
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+}
+
 .c-article-section__content img {
   display: block;
   margin: 0 auto;
-}
-
-.c-article-section__content p,
-.c-article-section__content li,
-.c-article-section__content a {
-  font-size: 1.25rem;
-  line-height: 1.4;
 }
 
 .c-article-section__content table {
