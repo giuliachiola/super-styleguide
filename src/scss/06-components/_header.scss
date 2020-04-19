@@ -3,8 +3,6 @@
   ========================================================================== */
 
 $co_header-hamburger: $co_color-light;
-$co_header-background-1: #2af598;
-$co_header-background-2: #009efd;
 
 .c-header {
   .is-menu-open & {
@@ -39,11 +37,11 @@ $co_header-background-2: #009efd;
     position: fixed;
     text-align: center;
     top: 0;
-    transition: opacity 1s;
+    transition: all 1s;
+    visibility: hidden; // opacity is not enough to hide menu list, because pointer events remain
     width: 100%;
 
     &::after {
-      background-image: linear-gradient(to bottom, rgba($co_header-background-1, 0.9), $co_header-background-1, $co_header-background-2, rgba($co_header-background-2, 0.9));
       content: '';
       height: 100%;
       left: 0;
@@ -55,9 +53,16 @@ $co_header-background-2: #009efd;
       z-index: -1;
     }
 
+    @for $i from 1 through 5 {
+      .t-palette-color--#{$i} & {
+        background-image: linear-gradient(to bottom, var(--co_palette-#{$i}), var(--co_palette-#{$i}--darken), var(--co_palette-#{$i}));
+      }
+    }
+
     .c-header__toggle:checked ~ & {
       opacity: 1;
-      transition: opacity 1s;
+      transition: all 1s;
+      visibility: visible;
 
       &::after {
         opacity: 1;
@@ -109,6 +114,18 @@ $co_header-background-2: #009efd;
     color: $co_color-light;
   }
 
+  &:hover {
+    border-bottom: rem(1) solid $co_color-main;
+    padding-bottom: rem(4);
+    text-decoration: none;
+
+    @for $i from 1 through 5 {
+      .t-palette-color--#{$i} & {
+        border-color: var(--co_palette-#{$i}--lighten);
+      }
+    }
+  }
+
   &[data-state= 'active'] { // current page
     font-weight: $font-sans-weight-bold;
 
@@ -116,6 +133,12 @@ $co_header-background-2: #009efd;
       border-bottom: rem(4) solid $co_color-main;
       font-weight: $font-sans-weight-default;
       padding-bottom: rem(4);
+
+      @for $i from 1 through 5 {
+        .t-palette-color--#{$i} & {
+          border-color: var(--co_palette-#{$i}--lighten);
+        }
+      }
 
       &:hover {
         text-decoration: none;
