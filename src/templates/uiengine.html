@@ -12,6 +12,12 @@
     <!-- add your custom scripts here:
     <script src="/scripts/my.js" defer></script>
     -->
+    <script>
+    const checkbox = document.querySelector(".c-header__toggle");
+    checkbox.addEventListener('change', function() {
+      document.body.classList.toggle("is-menu-open");
+    });
+    </script>
 
     <!-- uiengine:foot -->
   </body>
