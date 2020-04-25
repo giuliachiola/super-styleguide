@@ -25,12 +25,13 @@ module.exports = {
       {
         modifiers: ['highlight-top'],
         hasImg: false,
+        number: 17,
       }
     )),
     hero: {
       title: `Today I learned`,
       subtitle: `Useful snippet I learned daily`,
-      img: `https://images.unsplash.com/photo-1553830591-42e4fd7035ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80`,
+      // img: `https://images.unsplash.com/photo-1553830591-42e4fd7035ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80`,
     }
   }
 }

@@ -863,10 +863,12 @@ body {
   box-shadow: 0 0.625rem 2.8125rem -0.5625rem rgba(0, 0, 0, 0.3);
   border-radius: 0.125rem;
   color: #fff;
+  float: right;
   padding: 0.3125rem 0.625rem;
-  position: absolute;
-  right: 1.25rem;
-  top: 1.25rem;
+}
+
+.c-card__number::after {
+  clear: right;
 }
 
 .t-palette-color--1 .c-card__number {

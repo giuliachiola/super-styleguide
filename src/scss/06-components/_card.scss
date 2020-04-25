@@ -181,10 +181,12 @@ $sp_card-border-radius: rem(2);
 
   border-radius: $sp_card-border-radius;
   color: $co_color-light;
+  float: right;
   padding: rem(5 10);
-  position: absolute;
-  right: rem(20);
-  top: rem(20);
+
+  &::after {
+    clear: right; // clean float: right
+  }
 
   @for $i from 1 through 5 {
     .t-palette-color--#{$i} & {
