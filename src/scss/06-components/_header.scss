@@ -114,14 +114,16 @@ $co_header-hamburger: $co_color-light;
     color: $co_color-light;
   }
 
-  &:hover {
-    border-bottom: rem(1) solid $co_color-main;
-    padding-bottom: rem(4);
-    text-decoration: none;
+  @media (hover: hover) { // https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover -> The hover CSS media feature can be used to test whether the user's primary input mechanism can hover over elements.
+    &:hover {
+      border-bottom: rem(1) solid $co_color-main;
+      padding-bottom: rem(4);
+      text-decoration: none;
 
-    @for $i from 1 through 5 {
-      .t-palette-color--#{$i} & {
-        border-color: var(--co_palette-#{$i}--lighten);
+      @for $i from 1 through 5 {
+        .t-palette-color--#{$i} & {
+          border-color: var(--co_palette-#{$i}--lighten);
+        }
       }
     }
   }

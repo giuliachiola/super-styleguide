@@ -1,0 +1,8 @@
+<% [1,2,3,4,5].forEach(function(color){ %>
+  <p>t-palette-color--<%= color %></p>
+
+  <div class="t-palette-color--<%= color %>">
+    <%- include('../label') -%>
+  </div>
+<% }); %>
+

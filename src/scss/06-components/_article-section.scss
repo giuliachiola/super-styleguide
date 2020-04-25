@@ -25,12 +25,24 @@
     margin: 0 auto;
   }
 
-  table { // markdown table with external wrapper
-    @include table-styles;
-  }
-
   a {
     text-decoration: underline;
+  }
+
+  // Tables
+
+  table { // markdown table with external wrapper
+    @include table-styles;
+
+    // Preserve legibility in mobile viewport
+    @include mq($until: tablet) {
+      display: block;
+      overflow-x: scroll;
+
+      * {
+        white-space: nowrap;
+      }
+    }
   }
 }
 
@@ -44,6 +56,25 @@
   .c-article-section--custom & {
     margin-bottom: rem(40); // same as <h1> margin-bottom
     padding-bottom: 0;
+  }
+}
+
+// Tags
+
+.c-article-section__tags {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.c-article-section__tag {
+  @include list-item-reset;
+
+  margin-top: $sp_variable-xs;
+
+  & ~ & {
+    margin-left: $sp_variable-xs;
   }
 }
 
