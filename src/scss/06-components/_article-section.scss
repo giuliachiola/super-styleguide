@@ -47,6 +47,25 @@
   }
 }
 
+// Tags
+
+.c-article-section__tags {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.c-article-section__tag {
+  @include list-item-reset;
+
+  margin-top: $sp_variable-xs;
+
+  & ~ & {
+    margin-left: $sp_variable-xs;
+  }
+}
+
 // Twitter share button
 
 .c-article-section__share {

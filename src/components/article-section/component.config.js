@@ -26,5 +26,20 @@ module.exports = {
         }
       }
     },
+    // Main
+    {
+      title: 'Default',
+      file: 'main.ejs',
+      context: {
+        uiContext: {
+          containerModifiers: ['ui-container--medium-bg'],
+          componentModifiers: ['ui-card'],
+        },
+        articleSection: {
+          date: randItem('dates'),
+          tags: Array.from({length: getRandom(4, 1)}, () => randItem('tags').label),
+        }
+      }
+    },
   ]
 }

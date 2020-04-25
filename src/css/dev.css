@@ -532,6 +532,24 @@ body {
   padding-bottom: 0;
 }
 
+.c-article-section__tags {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.c-article-section__tag {
+  margin-bottom: 0;
+  padding-left: 0;
+  margin-top: 0.3125rem;
+}
+
+.c-article-section__tag ~ .c-article-section__tag {
+  margin-left: 0.3125rem;
+}
+
 .c-article-section__share {
   height: 1.25rem;
 }
@@ -970,6 +988,11 @@ body {
 ========================================================================== */
 .c-footer {
   background-color: #e8e8e8;
+}
+
+.c-footer .l-main {
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .c-footer__group {
