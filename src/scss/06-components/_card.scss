@@ -185,6 +185,7 @@ $sp_card-border-radius: rem(2);
   border-radius: $sp_card-border-radius;
   color: $co_color-light;
   float: right;
+  margin-left: $sp_variable-xs; // just to make sure title does not go on the TIL number
   padding: rem(5 10);
 
   &::after {
