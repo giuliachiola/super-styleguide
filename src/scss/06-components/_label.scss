@@ -19,13 +19,20 @@
     margin-left: $sp_variable-xs;
   }
 
-  &[data-state= 'active'] {
-    @include label-state-active;
-  }
+  // &[data-state= 'active'] {
+  //   @include label-state-active;
+  // }
+
+  // color label by palette color
 
   @for $i from 1 through 5 {
     .t-palette-color--#{$i} & {
       background-color: var(--co_palette-#{$i}--opacity);
+
+      &[data-state= 'active'] {
+        background: var(--co_palette-#{$i});
+        color: $co_color-light;
+      }
     }
   }
 }
