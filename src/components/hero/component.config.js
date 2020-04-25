@@ -35,7 +35,19 @@ module.exports = {
           img: `https://images.unsplash.com/photo-1504237111663-37d6094bec09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3150&q=80`,
           credits: 'Giulia Chiola',
         }
-      }
+      },
+    },
+    // Hero with quote
+    {
+      file: 'default.ejs',
+      title: 'Hero with quote',
+      context: {
+        uiContext: {
+          containerModifiers: ['ui-container--medium-bg'],
+          componentModifiers: [],
+        },
+        hero: hero,
+      },
     },
   ]
 }

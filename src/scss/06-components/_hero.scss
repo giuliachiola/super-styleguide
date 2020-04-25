@@ -34,6 +34,10 @@
   }
 }
 
+.c-hero--quote {
+  font-style: italic;
+}
+
 // Hero colors
 
 @for $i from 1 through 5 {
@@ -41,16 +45,6 @@
     background-color: var(--co_palette-#{$i});
     color: $co_color-light;
   }
-}
-
-.c-hero--bottom-text {
-  align-items: flex-end;
-  padding-bottom: rem(30);
-}
-
-.c-hero--top-text {
-  align-items: flex-start;
-  padding-top: rem(30);
 }
 
 .c-hero__title-custom { // ex. Tagged post "git" --> git has custom styles

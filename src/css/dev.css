@@ -879,6 +879,7 @@ body {
   border-radius: 0.125rem;
   color: #fff;
   float: right;
+  margin-left: 0.3125rem;
   padding: 0.3125rem 0.625rem;
 }
 
@@ -1347,6 +1348,10 @@ body {
   width: 100%;
 }
 
+.c-hero--quote {
+  font-style: italic;
+}
+
 .t-palette-color--1 .c-hero {
   background-color: var(--co_palette-1);
   color: #fff;
@@ -1370,16 +1375,6 @@ body {
 .t-palette-color--5 .c-hero {
   background-color: var(--co_palette-5);
   color: #fff;
-}
-
-.c-hero--bottom-text {
-  align-items: flex-end;
-  padding-bottom: 1.875rem;
-}
-
-.c-hero--top-text {
-  align-items: flex-start;
-  padding-top: 1.875rem;
 }
 
 .c-hero__title-custom {
@@ -1703,6 +1698,12 @@ body {
   display: block;
   font-size: 0.625rem;
   margin-top: 0.1875rem;
+}
+
+@media (max-width: 47.99em) {
+  .giphy-embed {
+    width: 100%;
+  }
 }
 
 /* ==========================================================================
