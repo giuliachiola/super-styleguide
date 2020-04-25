@@ -993,6 +993,16 @@ body {
   padding: 0.625rem;
 }
 
+@media (max-width: 47.99em) {
+  .c-card__raw-content table {
+    display: block;
+    overflow-x: scroll;
+  }
+  .c-card__raw-content table * {
+    white-space: nowrap;
+  }
+}
+
 .c-card__raw-content a {
   text-decoration: underline;
 }

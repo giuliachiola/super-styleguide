@@ -231,6 +231,11 @@ $sp_card-border-radius: rem(2);
 
   table {
     @include table-styles;
+
+    // Preserve legibility in mobile viewport
+    @include mq($until: tablet) {
+      @include table-scrollable-content;
+    }
   }
 
   // link styles

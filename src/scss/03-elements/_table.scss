@@ -17,6 +17,15 @@
   }
 }
 
+@mixin table-scrollable-content {
+  display: block;
+  overflow-x: scroll;
+
+  * {
+    white-space: nowrap;
+  }
+}
+
 .c-table { // <table class="c-table">...</table>
   @include table-styles;
 }
