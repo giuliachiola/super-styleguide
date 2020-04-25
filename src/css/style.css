@@ -715,15 +715,17 @@ body {
   width: 8.75rem;
 }
 
-.c-card--squared-image .c-card__img-wrapper {
-  display: block;
-  overflow: hidden;
-  position: relative;
-  padding-top: calc(calc(6 / 20) * 100%);
+@media (max-width: 47.99em) {
+  .c-card--squared-image .c-card__img-wrapper {
+    display: none;
+  }
 }
 
 @media (min-width: 48em) {
   .c-card--squared-image .c-card__img-wrapper {
+    display: block;
+    overflow: hidden;
+    position: relative;
     padding-top: calc(calc(1 / 1) * 100%);
   }
 }
@@ -773,10 +775,10 @@ body {
 }
 
 @media (max-width: 63.99em) {
-  .c-card--squared-image.c-card--horizontal .c-card__content {
+  .c-card--squared-image .c-card__content {
     padding-left: 1.875rem;
   }
-  .c-card--squared-image.c-card--horizontal .c-card__content::before {
+  .c-card--squared-image .c-card__content::before {
     content: '';
     height: 100%;
     left: 0;

@@ -63,10 +63,13 @@ $sp_card-border-radius: rem(2);
   }
 
   .c-card--squared-image & {
-    @include aspect-ratio;
-    @include image-padding(20, 6); // shorter
+    @include mq($until: tablet) {
+      display: none;
+    }
+    // @include image-padding(20, 6); // shorter
 
     @include mq(tablet) {
+      @include aspect-ratio;
       @include image-padding(1, 1); // square
     }
   }
@@ -115,7 +118,7 @@ $sp_card-border-radius: rem(2);
     }
   }
 
-  .c-card--squared-image.c-card--horizontal & {
+  .c-card--squared-image & { // Image does not fit in mobile viewport
     @include mq($until: desktop) {
       @include card-highlight-left;
     }
@@ -187,6 +190,8 @@ $sp_card-border-radius: rem(2);
   &::after {
     clear: right; // clean float: right
   }
+
+  // Colors
 
   @for $i from 1 through 5 {
     .t-palette-color--#{$i} & {
