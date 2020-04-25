@@ -25,12 +25,24 @@
     margin: 0 auto;
   }
 
-  table { // markdown table with external wrapper
-    @include table-styles;
-  }
-
   a {
     text-decoration: underline;
+  }
+
+  // Tables
+
+  table { // markdown table with external wrapper
+    @include table-styles;
+
+    // Preserve legibility in mobile viewport
+    @include mq($until: tablet) {
+      display: block;
+      overflow-x: scroll;
+
+      * {
+        white-space: nowrap;
+      }
+    }
   }
 }
 
