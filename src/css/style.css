@@ -354,7 +354,7 @@ body {
   background: #f3f3f3;
 }
 
-pre[class^="language-"] {
+pre[class^='language-'] {
   font-size: inherit;
 }
 
@@ -1706,12 +1706,12 @@ pre[class^="language-"] {
 }
 
 @media (max-width: 47.99em) {
-  iframe.giphy-embed {
+  .s-giphy iframe.giphy-embed {
     width: 100%;
   }
 }
 
-iframe.giphy-embed p ~ a {
+.s-giphy p ~ a {
   color: #acb3c2;
   display: block;
   font-size: 0.625rem;
