@@ -24,3 +24,15 @@
     }
   }
 }
+
+.s-giphy--medium-d {
+  @include mq(desktop) {
+    max-width: 70%;
+  }
+}
+
+.s-giphy--small-d {
+  @include mq(desktop) {
+    max-width: 50%;
+  }
+}
