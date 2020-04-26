@@ -13,10 +13,14 @@
     }
   }
 
-  p > a { // Set style for "via GIPHY" link at the bottom
-    color: $co_color-light-gray;
-    display: block;
-    font-size: $ty_font-size-xsmall;
-    margin-top: $sp_variable-xxs;
+  p { // Set style for "via GIPHY" link at the bottom
+    margin: 0;
+
+    > a {
+      color: $co_color-light-gray;
+      display: block;
+      font-size: $ty_font-size-xsmall;
+      margin-top: $sp_variable-xxs;
+    }
   }
 }

@@ -573,12 +573,16 @@ pre[class^='language-'] {
   margin: 0 auto;
 }
 
-.c-article-section__img--medium {
-  max-width: 70%;
+@media (min-width: 64em) {
+  .c-article-section__img--medium {
+    max-width: 70%;
+  }
 }
 
-.c-article-section__img--small {
-  max-width: 50%;
+@media (min-width: 64em) {
+  .c-article-section__img--small {
+    max-width: 50%;
+  }
 }
 
 .c-article-section__bottom {
@@ -1709,6 +1713,10 @@ pre[class^='language-'] {
   .s-giphy iframe.giphy-embed {
     width: 100%;
   }
+}
+
+.s-giphy p {
+  margin: 0;
 }
 
 .s-giphy p > a {

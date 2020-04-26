@@ -90,11 +90,15 @@
 }
 
 .c-article-section__img--medium {
-  max-width: 70%;
+  @include mq(desktop) {
+    max-width: 70%;
+  }
 }
 
 .c-article-section__img--small {
-  max-width: 50%;
+  @include mq(desktop) {
+    max-width: 50%;
+  }
 }
 
 // Bottom
