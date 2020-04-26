@@ -48,14 +48,15 @@ $co_header-hamburger: $co_color-light;
       opacity: 0;
       position: absolute;
       top: 0;
-      transition: opacity 1s;
+      transition: all 1s;
       width: 100%;
       z-index: -1;
     }
 
     @for $i from 1 through 5 {
       .t-palette-color--#{$i} & {
-        background-image: linear-gradient(to bottom, var(--co_palette-#{$i}), var(--co_palette-#{$i}--darken), var(--co_palette-#{$i}));
+        background-color: var(--co_palette-#{$i});
+        // background-image: linear-gradient(to bottom, var(--co_palette-#{$i}), var(--co_palette-#{$i}--darken), var(--co_palette-#{$i}));
       }
     }
 
@@ -63,10 +64,11 @@ $co_header-hamburger: $co_color-light;
       opacity: 1;
       transition: all 1s;
       visibility: visible;
+      z-index: 1; // TODO: check z-indexes!
 
       &::after {
         opacity: 1;
-        transition: opacity 1s;
+        transition: all 1s;
       }
     }
   }
@@ -112,6 +114,10 @@ $co_header-hamburger: $co_color-light;
 .c-header__link {
   @include mq($until: desktop) {
     color: $co_color-light;
+
+    &:hover {
+      color: $co_color-light;
+    }
   }
 
   @media (hover: hover) { // https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover -> The hover CSS media feature can be used to test whether the user's primary input mechanism can hover over elements.
@@ -162,6 +168,12 @@ $co_header-hamburger: $co_color-light;
   width: 45px;
   z-index: 2;
 
+  @include mq($until: desktop) {
+    &:checked {
+      z-index: 2; // TODO: check z-indexes!
+    }
+  }
+
   @include mq(desktop) {
     display: none;
   }
@@ -174,13 +186,14 @@ $co_header-hamburger: $co_color-light;
   position: absolute;
   right: 20px;
   top: 30px;
-  transition: background 1s;
+  transition: all 1s;
   width: 30px;
   z-index: 1;
 
   .c-header__toggle:checked ~ & {
     background: transparent;
-    transition: background 1s;
+    transition: all 1s;
+    z-index: 2; // TODO: check z-indexes!
   }
 
   &::before {
@@ -190,12 +203,12 @@ $co_header-hamburger: $co_color-light;
     left: 0;
     position: absolute;
     top: 10px;
-    transition: transform 1s;
+    transition: all 1s;
     width: 30px;
 
     .c-header__toggle:checked ~ & {
       transform: translateY(-5px) rotate(-45deg);
-      transition: transform 1s;
+      transition: all 1s;
     }
   }
 
@@ -206,12 +219,12 @@ $co_header-hamburger: $co_color-light;
     height: 2px;
     left: 0;
     position: absolute;
-    transition: transform 1s;
+    transition: all 1s;
     width: 30px;
 
     .c-header__toggle:checked ~ & {
       transform: translateY(15px) rotate(45deg);
-      transition: transform 1s;
+      transition: all 1s;
     }
   }
 
