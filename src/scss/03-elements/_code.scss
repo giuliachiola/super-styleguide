@@ -8,6 +8,7 @@
 
 // Prism customization
 
-pre[class^= 'language-'] {
+pre[class*= 'language-'],
+code[class*= 'language-'] {
   font-size: inherit; // inherit the block font-size, to be large as the text around it
 }
