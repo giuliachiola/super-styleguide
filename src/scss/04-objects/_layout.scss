@@ -3,9 +3,9 @@
 ========================================================================== */
 
 .l-main {
-  margin: rem(20px);
+  margin: rem(0 20);
 
-  @include mq(desktop) {
+  @include mq(1040px) { // TODO: using 'desktop' 1024 layout on 1024 is not good
     margin: 0 auto;
     max-width: rem(1024);
     width: 100vw; // to set a width for articles with less content

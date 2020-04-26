@@ -357,6 +357,10 @@ body {
   background: #f3f3f3;
 }
 
+pre[class^='language-'] {
+  font-size: inherit;
+}
+
 /* ==========================================================================
   MAIN BORDER
 ========================================================================== */
@@ -446,10 +450,10 @@ body {
   LAYOUT
 ========================================================================== */
 .l-main {
-  margin: 1.25rem;
+  margin: 0rem 1.25rem;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 65em) {
   .l-main {
     margin: 0 auto;
     max-width: 64rem;
@@ -572,12 +576,16 @@ body {
   margin: 0 auto;
 }
 
-.c-article-section__img--medium {
-  max-width: 70%;
+@media (min-width: 64em) {
+  .c-article-section__img--medium {
+    max-width: 70%;
+  }
 }
 
-.c-article-section__img--small {
-  max-width: 50%;
+@media (min-width: 64em) {
+  .c-article-section__img--small {
+    max-width: 50%;
+  }
 }
 
 .c-article-section__bottom {
@@ -1094,33 +1102,34 @@ body {
     opacity: 0;
     position: absolute;
     top: 0;
-    transition: opacity 1s;
+    transition: all 1s;
     width: 100%;
     z-index: -1;
   }
   .t-palette-color--1 .c-header__list {
-    background-image: linear-gradient(to bottom, var(--co_palette-1), var(--co_palette-1--darken), var(--co_palette-1));
+    background-color: var(--co_palette-1);
   }
   .t-palette-color--2 .c-header__list {
-    background-image: linear-gradient(to bottom, var(--co_palette-2), var(--co_palette-2--darken), var(--co_palette-2));
+    background-color: var(--co_palette-2);
   }
   .t-palette-color--3 .c-header__list {
-    background-image: linear-gradient(to bottom, var(--co_palette-3), var(--co_palette-3--darken), var(--co_palette-3));
+    background-color: var(--co_palette-3);
   }
   .t-palette-color--4 .c-header__list {
-    background-image: linear-gradient(to bottom, var(--co_palette-4), var(--co_palette-4--darken), var(--co_palette-4));
+    background-color: var(--co_palette-4);
   }
   .t-palette-color--5 .c-header__list {
-    background-image: linear-gradient(to bottom, var(--co_palette-5), var(--co_palette-5--darken), var(--co_palette-5));
+    background-color: var(--co_palette-5);
   }
   .c-header__toggle:checked ~ .c-header__list {
     opacity: 1;
     transition: all 1s;
     visibility: visible;
+    z-index: 1;
   }
   .c-header__toggle:checked ~ .c-header__list::after {
     opacity: 1;
-    transition: opacity 1s;
+    transition: all 1s;
   }
 }
 
@@ -1185,6 +1194,9 @@ body {
 
 @media (max-width: 63.99em) {
   .c-header__link {
+    color: #fff;
+  }
+  .c-header__link:hover {
     color: #fff;
   }
 }
@@ -1255,6 +1267,12 @@ body {
   z-index: 2;
 }
 
+@media (max-width: 63.99em) {
+  .c-header__toggle:checked {
+    z-index: 2;
+  }
+}
+
 @media (min-width: 64em) {
   .c-header__toggle {
     display: none;
@@ -1268,14 +1286,15 @@ body {
   position: absolute;
   right: 20px;
   top: 30px;
-  transition: background 1s;
+  transition: all 1s;
   width: 30px;
   z-index: 1;
 }
 
 .c-header__toggle:checked ~ .c-header__hamburger {
   background: transparent;
-  transition: background 1s;
+  transition: all 1s;
+  z-index: 2;
 }
 
 .c-header__hamburger::before {
@@ -1285,13 +1304,13 @@ body {
   left: 0;
   position: absolute;
   top: 10px;
-  transition: transform 1s;
+  transition: all 1s;
   width: 30px;
 }
 
 .c-header__toggle:checked ~ .c-header__hamburger::before {
   transform: translateY(-5px) rotate(-45deg);
-  transition: transform 1s;
+  transition: all 1s;
 }
 
 .c-header__hamburger::after {
@@ -1301,13 +1320,13 @@ body {
   height: 2px;
   left: 0;
   position: absolute;
-  transition: transform 1s;
+  transition: all 1s;
   width: 30px;
 }
 
 .c-header__toggle:checked ~ .c-header__hamburger::after {
   transform: translateY(15px) rotate(45deg);
-  transition: transform 1s;
+  transition: all 1s;
 }
 
 @media (min-width: 64em) {
@@ -1693,16 +1712,32 @@ body {
   width: 100%;
 }
 
-.u-giphy__caption {
+@media (max-width: 47.99em) {
+  .s-giphy iframe.giphy-embed {
+    width: 100%;
+  }
+}
+
+.s-giphy p {
+  margin: 0;
+}
+
+.s-giphy p > a {
   color: #acb3c2;
   display: block;
   font-size: 0.625rem;
   margin-top: 0.1875rem;
 }
 
-@media (max-width: 47.99em) {
-  .giphy-embed {
-    width: 100%;
+@media (min-width: 64em) {
+  .s-giphy--medium-d {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 64em) {
+  .s-giphy--small-d {
+    max-width: 50%;
   }
 }
 

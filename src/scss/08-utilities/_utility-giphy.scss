@@ -6,15 +6,33 @@
   width: 100%;
 }
 
-.u-giphy__caption {
-  color: $co_color-light-gray;
-  display: block;
-  font-size: $ty_font-size-xsmall;
-  margin-top: $sp_variable-xxs;
+.s-giphy {
+  iframe.giphy-embed { // giphy <iframe> class
+    @include mq($until: tablet) {
+      width: 100%;
+    }
+  }
+
+  p { // Set style for "via GIPHY" link at the bottom
+    margin: 0;
+
+    > a {
+      color: $co_color-light-gray;
+      display: block;
+      font-size: $ty_font-size-xsmall;
+      margin-top: $sp_variable-xxs;
+    }
+  }
 }
 
-.giphy-embed { // giphy <iframe> class
-  @include mq($until: tablet) {
-    width: 100%;
+.s-giphy--medium-d {
+  @include mq(desktop) {
+    max-width: 70%;
+  }
+}
+
+.s-giphy--small-d {
+  @include mq(desktop) {
+    max-width: 50%;
   }
 }
