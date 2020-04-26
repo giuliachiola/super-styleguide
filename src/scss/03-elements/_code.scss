@@ -5,3 +5,9 @@
 :not(pre) > code:not([class^= 'language-']) { // inline code
   background: $co_color-concrete;
 }
+
+// Prism customization
+
+pre[class^="language-"] {
+  font-size: inherit; // inherit the block font-size, to be large as the text around it
+}
