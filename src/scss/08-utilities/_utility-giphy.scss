@@ -13,7 +13,7 @@
     }
   }
 
-  p ~ a { // Set style for "via GIPHY" link at the bottom
+  p > a { // Set style for "via GIPHY" link at the bottom
     color: $co_color-light-gray;
     display: block;
     font-size: $ty_font-size-xsmall;
