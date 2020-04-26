@@ -357,7 +357,8 @@ body {
   background: #f3f3f3;
 }
 
-pre[class^='language-'] {
+pre[class*='language-'],
+code[class*='language-'] {
   font-size: inherit;
 }
 
