@@ -1701,17 +1701,17 @@ body {
   width: 100%;
 }
 
-.u-giphy__caption {
+@media (max-width: 47.99em) {
+  iframe.giphy-embed {
+    width: 100%;
+  }
+}
+
+iframe.giphy-embed p ~ a {
   color: #acb3c2;
   display: block;
   font-size: 0.625rem;
   margin-top: 0.1875rem;
-}
-
-@media (max-width: 47.99em) {
-  .giphy-embed {
-    width: 100%;
-  }
 }
 
 /* ==========================================================================

@@ -6,15 +6,15 @@
   width: 100%;
 }
 
-.u-giphy__caption {
-  color: $co_color-light-gray;
-  display: block;
-  font-size: $ty_font-size-xsmall;
-  margin-top: $sp_variable-xxs;
-}
-
-.giphy-embed { // giphy <iframe> class
+iframe.giphy-embed { // giphy <iframe> class
   @include mq($until: tablet) {
     width: 100%;
+  }
+
+  p ~ a { // Set style for "via GIPHY" link at the bottom
+    color: $co_color-light-gray;
+    display: block;
+    font-size: $ty_font-size-xsmall;
+    margin-top: $sp_variable-xxs;
   }
 }
