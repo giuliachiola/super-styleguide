@@ -29,6 +29,7 @@ body {
 
   &.is-menu-open {
     position: fixed;
+    width: 100%; // fix body movement when the user opens/closes the hamburger menu
   }
 }
 
