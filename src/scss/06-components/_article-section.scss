@@ -21,6 +21,8 @@
   @include ty-paragraph--l;
 
   img {
+    @include element-shadow;
+
     display: block;
     margin: 0 auto;
   }

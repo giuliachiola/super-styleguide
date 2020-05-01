@@ -7,7 +7,7 @@ $sp_card-highlight: rem(10);
 $sp_card-border-radius: rem(2);
 
 .c-card {
-  @include card-shadow;
+  @include element-shadow;
 
   border-radius: $sp_card-border-radius;
   overflow: hidden;
@@ -180,7 +180,7 @@ $sp_card-border-radius: rem(2);
 }
 
 .c-card__number {
-  @include card-shadow(0.3);
+  @include element-shadow(0.3);
 
   border-radius: $sp_card-border-radius;
   color: $co_color-light;
@@ -243,5 +243,11 @@ $sp_card-border-radius: rem(2);
 
   a {
     text-decoration: underline;
+  }
+
+  // img styles
+
+  img {
+    @include element-shadow;
   }
 }
