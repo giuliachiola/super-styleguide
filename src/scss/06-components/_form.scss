@@ -12,9 +12,13 @@
   border-radius: rem(3); // as card radius
   color: $co_color-medium-gray;
   font-size: $ty_font-size-base;
-  margin-right: $sp_variable-m;
   padding: $sp_variable-s;
-  width: 50%;
+  width: 100%;
+
+  @include mq(tablet) {
+    margin-right: $sp_variable-m;
+    width: 50%;
+  }
 
   &:focus {
     border: rem(1) solid $co_color-light-gray;
