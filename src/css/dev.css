@@ -16,11 +16,6 @@
 /* ==========================================================================
   COLORS
 ========================================================================== */
-/* ==========================================================================
-  COLORS BY PAGES
-
-  Used in card, hero
-========================================================================== */
 :root {
   --co_palette-1: #ef476f;
   --co_palette-2: #ffc233;
@@ -241,6 +236,7 @@ body {
 
 body.is-menu-open {
   position: fixed;
+  width: 100%;
 }
 
 a {
@@ -1561,70 +1557,6 @@ code[class*='language-'] {
 
 .c-filter__item + .c-filter__item {
   margin-left: 0.3125rem;
-}
-
-/* ==========================================================================
-  PHOTOGRID
-========================================================================== */
-.c-photogrid {
-  display: grid;
-}
-
-@media (min-width: 64em) {
-  .c-photogrid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    max-height: calc(100vh - 113px);
-    z-index: 0;
-  }
-}
-
-.c-photogrid__item {
-  max-height: calc(100vh / 2);
-  overflow: hidden;
-  position: relative;
-}
-
-@media (min-width: 64em) {
-  .c-photogrid__item::before {
-    background: rgba(0, 0, 0, 0.5);
-    content: '';
-    height: 100%;
-    left: 0;
-    opacity: 1;
-    position: absolute;
-    top: 0;
-    transition: ease-in-out 1s;
-    width: 100%;
-    z-index: 1;
-  }
-  .c-photogrid__item:hover::before {
-    opacity: 0;
-    transition: ease-in-out 1s;
-  }
-}
-
-.c-photogrid__title {
-  color: #fff;
-  left: 50%;
-  margin: 0;
-  position: absolute;
-  text-align: center;
-  text-shadow: #000 0 0 0.625rem;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-@media (min-width: 64em) {
-  .c-photogrid__title {
-    z-index: 2;
-  }
-}
-
-.c-photogrid__img {
-  max-width: none;
-  object-fit: cover;
-  width: 100%;
 }
 
 /* ==========================================================================
