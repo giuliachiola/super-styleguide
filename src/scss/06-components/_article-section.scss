@@ -21,8 +21,6 @@
   @include ty-paragraph--l;
 
   img {
-    @include element-shadow;
-
     display: block;
     margin: 0 auto;
   }
@@ -101,6 +99,10 @@
   @include mq(desktop) {
     max-width: 50%;
   }
+}
+
+.c-article-section__img--shadow {
+  @include element-shadow;
 }
 
 // Bottom

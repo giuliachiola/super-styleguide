@@ -247,7 +247,7 @@ $sp_card-border-radius: rem(2);
 
   // img styles
 
-  img {
+  .c-article__img--shadow {
     @include element-shadow;
   }
 }
