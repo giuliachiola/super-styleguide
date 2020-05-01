@@ -494,6 +494,7 @@ code[class*='language-'] {
 }
 
 .c-article-section__content img {
+  box-shadow: 0 0.625rem 2.8125rem -0.5625rem rgba(0, 0, 0, 0.1);
   display: block;
   margin: 0 auto;
 }
@@ -1008,6 +1009,10 @@ code[class*='language-'] {
 
 .c-card__raw-content a {
   text-decoration: underline;
+}
+
+.c-card__raw-content img {
+  box-shadow: 0 0.625rem 2.8125rem -0.5625rem rgba(0, 0, 0, 0.1);
 }
 
 /* ==========================================================================

@@ -62,6 +62,6 @@ $co_color-main-shade-10: shade($co_color-main, 10%);
 
 // SHADOW
 
-@mixin card-shadow ($opacity: 0.1) {
+@mixin element-shadow ($opacity: 0.1) {
   box-shadow: 0 rem(10) rem(45) rem(-9) rgba(0, 0, 0, $opacity);
 }

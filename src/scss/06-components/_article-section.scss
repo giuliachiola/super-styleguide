@@ -101,6 +101,10 @@
   }
 }
 
+.c-article-section__img--shadow {
+  @include element-shadow;
+}
+
 // Bottom
 
 .c-article-section__bottom {
