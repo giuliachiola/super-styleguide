@@ -21,8 +21,8 @@ module.exports = {
           componentModifiers: ['ui-card'],
         },
         hero: {
-          title: false,
-          img: `https://images.unsplash.com/photo-1474377207190-a7d8b3334068?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80`,
+          title: 'Quote',
+          // img: `https://images.unsplash.com/photo-1474377207190-a7d8b3334068?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80`,
         },
         articleSection: {
           date: randItem('dates'),
