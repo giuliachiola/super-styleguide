@@ -3,6 +3,7 @@
   ========================================================================== */
 
 $co_header-hamburger: $co_color-light;
+$an_header-mobile-animation: cubic-bezier(0.32, -0.01, 0, 0.99);
 
 .c-header {
   .is-menu-open & {
@@ -32,44 +33,24 @@ $co_header-hamburger: $co_color-light;
     height: 100%;
     justify-content: center;
     left: 0;
-    opacity: 0;
     padding: 0;
     position: fixed;
     text-align: center;
     top: 0;
-    transition: all 1s;
-    visibility: hidden; // opacity is not enough to hide menu list, because pointer events remain
+    transform: translate(100%, 0);
+    transition: transform 1s $an_header-mobile-animation;
     width: 100%;
-
-    &::after {
-      content: '';
-      height: 100%;
-      left: 0;
-      opacity: 0;
-      position: absolute;
-      top: 0;
-      transition: all 1s;
-      width: 100%;
-      z-index: -1;
-    }
+    z-index: 1; // just to be sure it goes on top
 
     @for $i from 1 through 5 {
       .t-palette-color--#{$i} & {
-        background-color: var(--co_palette-#{$i});
-        // background-image: linear-gradient(to bottom, var(--co_palette-#{$i}), var(--co_palette-#{$i}--darken), var(--co_palette-#{$i}));
+        background-color: var(--co_palette-#{$i}--lighten);
       }
     }
 
     .c-header__toggle:checked ~ & {
-      opacity: 1;
-      transition: all 1s;
-      visibility: visible;
-      z-index: 1; // TODO: check z-indexes!
-
-      &::after {
-        opacity: 1;
-        transition: all 1s;
-      }
+      transform: translate(0, 0);
+      transition: transform 1s $an_header-mobile-animation;
     }
   }
 
@@ -87,11 +68,7 @@ $co_header-hamburger: $co_color-light;
   @include mq($until: desktop) {
     @include ty-heading--l;
 
-    &:not(:last-child)::after {
-      color: rgba($co_color-light, 0.5);
-      content: '~';
-      display: block;
-    }
+    margin-bottom: $sp_variable-m;
   }
 
   @include mq(desktop) {
@@ -186,13 +163,13 @@ $co_header-hamburger: $co_color-light;
   position: absolute;
   right: 20px;
   top: 30px;
-  transition: all 1s;
+  transition: background 1s;
   width: 30px;
   z-index: 1;
 
   .c-header__toggle:checked ~ & {
     background: transparent;
-    transition: all 1s;
+    transition: background 1s;
     z-index: 2; // TODO: check z-indexes!
   }
 
@@ -203,12 +180,12 @@ $co_header-hamburger: $co_color-light;
     left: 0;
     position: absolute;
     top: 10px;
-    transition: all 1s;
+    transition: transform 1s;
     width: 30px;
 
     .c-header__toggle:checked ~ & {
       transform: translateY(-5px) rotate(-45deg);
-      transition: all 1s;
+      transition: transform 1s;
     }
   }
 
@@ -219,12 +196,12 @@ $co_header-hamburger: $co_color-light;
     height: 2px;
     left: 0;
     position: absolute;
-    transition: all 1s;
+    transition: transform 1s;
     width: 30px;
 
     .c-header__toggle:checked ~ & {
       transform: translateY(15px) rotate(45deg);
-      transition: all 1s;
+      transition: transform 1s;
     }
   }
 
