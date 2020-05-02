@@ -7,6 +7,8 @@
 }
 
 .s-giphy {
+  margin: 0 auto; // center the gif
+
   iframe.giphy-embed { // giphy <iframe> class
     @include mq($until: tablet) {
       width: 100%;
