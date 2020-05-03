@@ -5,13 +5,15 @@
 $co_header-hamburger: $co_color-light;
 $an_header-mobile-animation: cubic-bezier(0.32, -0.01, 0, 0.99);
 
+$sp_header-z-index-m: 10;
+
 .c-header {
   .is-menu-open & {
     @include mq($until: desktop) {
       height: 100vh;
       position: fixed;
       width: 100%;
-      z-index: 10;
+      z-index: $sp_header-z-index-m;
     }
   }
 }
@@ -40,7 +42,7 @@ $an_header-mobile-animation: cubic-bezier(0.32, -0.01, 0, 0.99);
     transform: translate(100%, 0);
     transition: transform 1s $an_header-mobile-animation;
     width: 100%;
-    z-index: 1; // just to be sure it goes on top
+    // z-index: 1; // just to be sure it goes on top of the header
 
     @for $i from 1 through 5 {
       .t-palette-color--#{$i} & {
@@ -143,13 +145,13 @@ $an_header-mobile-animation: cubic-bezier(0.32, -0.01, 0, 0.99);
   right: 10px;
   top: 10px;
   width: 45px;
-  z-index: 2;
+  // z-index: 2;
 
-  @include mq($until: desktop) {
-    &:checked {
-      z-index: 2; // TODO: check z-indexes!
-    }
-  }
+  // @include mq($until: desktop) {
+  //   &:checked {
+  //     z-index: 2; // TODO: check z-indexes!
+  //   }
+  // }
 
   @include mq(desktop) {
     display: none;
@@ -165,12 +167,12 @@ $an_header-mobile-animation: cubic-bezier(0.32, -0.01, 0, 0.99);
   top: 30px;
   transition: background 1s;
   width: 30px;
-  z-index: 1;
+  // z-index: 1;
 
   .c-header__toggle:checked ~ & {
     background: transparent;
     transition: background 1s;
-    z-index: 2; // TODO: check z-indexes!
+    // z-index: 2; // TODO: check z-indexes!
   }
 
   &::before {
