@@ -783,7 +783,7 @@ code[class*='language-'] {
   width: 100%;
 }
 
-@media (max-width: 63.99em) {
+@media (max-width: 47.99em) {
   .c-card--squared-image .c-card__content {
     padding-left: 1.875rem;
   }

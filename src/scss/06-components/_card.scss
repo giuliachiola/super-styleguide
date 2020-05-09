@@ -119,7 +119,7 @@ $sp_card-border-radius: rem(2);
   }
 
   .c-card--squared-image & { // Image does not fit in mobile viewport
-    @include mq($until: desktop) {
+    @include mq($until: tablet) {
       @include card-highlight-left;
     }
   }
