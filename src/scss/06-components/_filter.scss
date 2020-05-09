@@ -2,6 +2,8 @@
   FILTER
 ========================================================================== */
 
+$sp_filter-margin: $sp_variable-xs;
+
 // .c-filter {}
 
 .c-filter__legend {
@@ -16,9 +18,9 @@
 }
 
 .c-filter__item {
-  margin-top: rem(5);
+  margin-top: $sp_filter-margin;
 
-  .c-filter__item + & {
-    margin-left: rem(5);
+  &:not(:last-child) {
+    margin-right: $sp_filter-margin;
   }
 }

@@ -1529,8 +1529,8 @@ code[class*='language-'] {
   margin-top: 0.3125rem;
 }
 
-.c-filter__item + .c-filter__item {
-  margin-left: 0.3125rem;
+.c-filter__item:not(:last-child) {
+  margin-right: 0.3125rem;
 }
 
 /* ==========================================================================
