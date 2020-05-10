@@ -1098,6 +1098,7 @@ code[class*='language-'] {
     transform: translate(100%, 0);
     transition: transform 1s cubic-bezier(0.32, -0.01, 0, 0.99);
     width: 100%;
+    z-index: 10;
   }
   .t-palette-color--1 .c-header__list {
     background-color: var(--co_palette-1--lighten);
@@ -1244,6 +1245,7 @@ code[class*='language-'] {
   right: 10px;
   top: 10px;
   width: 45px;
+  z-index: 11;
 }
 
 @media (min-width: 64em) {
@@ -1261,6 +1263,7 @@ code[class*='language-'] {
   top: 30px;
   transition: background 1s;
   width: 30px;
+  z-index: 11;
 }
 
 .c-header__toggle:checked ~ .c-header__hamburger {
