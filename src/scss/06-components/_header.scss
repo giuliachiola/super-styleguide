@@ -139,13 +139,17 @@ $sp_header-hamburger-z-index-m: $sp_header-z-index-m + 1;
   Mobile header toggle
 --------- */
 
+$sp_header-toggle-width: rem(45); // clickable area
+$sp_header-hamburger-line: rem(2);
+
 .c-header__toggle { // checkbox
-  height: 45px;
+  height: $sp_header-toggle-width;
+  margin: 0; // reset checkbox margins
   opacity: 0;
   position: absolute;
-  right: 10px;
-  top: 10px;
-  width: 45px;
+  right: rem(10);
+  top: rem(10);
+  width: $sp_header-toggle-width;
   z-index: $sp_header-hamburger-z-index-m;
 
   @include mq(desktop) {
@@ -156,12 +160,12 @@ $sp_header-hamburger-z-index-m: $sp_header-z-index-m + 1;
 .c-header__hamburger {
   background: $co_header-hamburger;
   display: block;
-  height: 2px;
+  height: $sp_header-hamburger-line;
   position: absolute;
-  right: 20px;
-  top: 30px;
+  right: rem(20);
+  top: rem(30);
   transition: background 1s;
-  width: 30px;
+  width: rem(30);
   z-index: $sp_header-hamburger-z-index-m;
 
   .c-header__toggle:checked ~ & {
@@ -172,12 +176,12 @@ $sp_header-hamburger-z-index-m: $sp_header-z-index-m + 1;
   &::before {
     background: $co_header-hamburger;
     content: '';
-    height: 2px;
+    height: $sp_header-hamburger-line;
     left: 0;
     position: absolute;
-    top: 10px;
+    top: rem(10);
     transition: transform 1s;
-    width: 30px;
+    width: rem(30);
 
     .c-header__toggle:checked ~ & {
       transform: translateY(-5px) rotate(-45deg);
@@ -187,13 +191,13 @@ $sp_header-hamburger-z-index-m: $sp_header-z-index-m + 1;
 
   &::after {
     background: $co_header-hamburger;
-    bottom: 10px;
+    bottom: rem(10);
     content: '';
-    height: 2px;
+    height: $sp_header-hamburger-line;
     left: 0;
     position: absolute;
     transition: transform 1s;
-    width: 30px;
+    width: rem(30);
 
     .c-header__toggle:checked ~ & {
       transform: translateY(15px) rotate(45deg);
