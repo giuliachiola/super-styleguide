@@ -1095,6 +1095,7 @@ code[class*='language-'] {
     transform: translate(100%, 0);
     transition: transform 1s cubic-bezier(0.32, -0.01, 0, 0.99);
     width: 100%;
+    z-index: 10;
   }
   .t-palette-color--1 .c-header__list {
     background-color: var(--co_palette-1--lighten);
@@ -1235,12 +1236,14 @@ code[class*='language-'] {
   Mobile header toggle
 --------- */
 .c-header__toggle {
-  height: 45px;
+  height: 2.8125rem;
+  margin: 0;
   opacity: 0;
   position: absolute;
-  right: 10px;
-  top: 10px;
-  width: 45px;
+  right: 0.625rem;
+  top: 0.625rem;
+  width: 2.8125rem;
+  z-index: 11;
 }
 
 @media (min-width: 64em) {
@@ -1252,12 +1255,13 @@ code[class*='language-'] {
 .c-header__hamburger {
   background: #fff;
   display: block;
-  height: 2px;
+  height: 0.125rem;
   position: absolute;
-  right: 20px;
-  top: 30px;
+  right: 1.25rem;
+  top: 1.875rem;
   transition: background 1s;
-  width: 30px;
+  width: 1.875rem;
+  z-index: 11;
 }
 
 .c-header__toggle:checked ~ .c-header__hamburger {
@@ -1268,12 +1272,12 @@ code[class*='language-'] {
 .c-header__hamburger::before {
   background: #fff;
   content: '';
-  height: 2px;
+  height: 0.125rem;
   left: 0;
   position: absolute;
-  top: 10px;
+  top: 0.625rem;
   transition: transform 1s;
-  width: 30px;
+  width: 1.875rem;
 }
 
 .c-header__toggle:checked ~ .c-header__hamburger::before {
@@ -1283,13 +1287,13 @@ code[class*='language-'] {
 
 .c-header__hamburger::after {
   background: #fff;
-  bottom: 10px;
+  bottom: 0.625rem;
   content: '';
-  height: 2px;
+  height: 0.125rem;
   left: 0;
   position: absolute;
   transition: transform 1s;
-  width: 30px;
+  width: 1.875rem;
 }
 
 .c-header__toggle:checked ~ .c-header__hamburger::after {

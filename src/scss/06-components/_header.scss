@@ -6,6 +6,7 @@ $co_header-hamburger: $co_color-light;
 $an_header-mobile-animation: cubic-bezier(0.32, -0.01, 0, 0.99);
 
 $sp_header-z-index-m: 10;
+$sp_header-hamburger-z-index-m: $sp_header-z-index-m + 1;
 
 .c-header {
   .is-menu-open & {
@@ -42,7 +43,7 @@ $sp_header-z-index-m: 10;
     transform: translate(100%, 0);
     transition: transform 1s $an_header-mobile-animation;
     width: 100%;
-    // z-index: 1; // just to be sure it goes on top of the header
+    z-index: $sp_header-z-index-m;
 
     @for $i from 1 through 5 {
       .t-palette-color--#{$i} & {
@@ -138,20 +139,18 @@ $sp_header-z-index-m: 10;
   Mobile header toggle
 --------- */
 
+$sp_header-toggle-width: rem(45); // clickable area
+$sp_header-hamburger-line: rem(2);
+
 .c-header__toggle { // checkbox
-  height: 45px;
+  height: $sp_header-toggle-width;
+  margin: 0; // reset checkbox margins
   opacity: 0;
   position: absolute;
-  right: 10px;
-  top: 10px;
-  width: 45px;
-  // z-index: 2;
-
-  // @include mq($until: desktop) {
-  //   &:checked {
-  //     z-index: 2; // TODO: check z-indexes!
-  //   }
-  // }
+  right: rem(10);
+  top: rem(10);
+  width: $sp_header-toggle-width;
+  z-index: $sp_header-hamburger-z-index-m;
 
   @include mq(desktop) {
     display: none;
@@ -161,29 +160,28 @@ $sp_header-z-index-m: 10;
 .c-header__hamburger {
   background: $co_header-hamburger;
   display: block;
-  height: 2px;
+  height: $sp_header-hamburger-line;
   position: absolute;
-  right: 20px;
-  top: 30px;
+  right: rem(20);
+  top: rem(30);
   transition: background 1s;
-  width: 30px;
-  // z-index: 1;
+  width: rem(30);
+  z-index: $sp_header-hamburger-z-index-m;
 
   .c-header__toggle:checked ~ & {
     background: transparent;
     transition: background 1s;
-    // z-index: 2; // TODO: check z-indexes!
   }
 
   &::before {
     background: $co_header-hamburger;
     content: '';
-    height: 2px;
+    height: $sp_header-hamburger-line;
     left: 0;
     position: absolute;
-    top: 10px;
+    top: rem(10);
     transition: transform 1s;
-    width: 30px;
+    width: rem(30);
 
     .c-header__toggle:checked ~ & {
       transform: translateY(-5px) rotate(-45deg);
@@ -193,13 +191,13 @@ $sp_header-z-index-m: 10;
 
   &::after {
     background: $co_header-hamburger;
-    bottom: 10px;
+    bottom: rem(10);
     content: '';
-    height: 2px;
+    height: $sp_header-hamburger-line;
     left: 0;
     position: absolute;
     transition: transform 1s;
-    width: 30px;
+    width: rem(30);
 
     .c-header__toggle:checked ~ & {
       transform: translateY(15px) rotate(45deg);
