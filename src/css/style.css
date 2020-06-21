@@ -52,6 +52,11 @@
 /* ==========================================================================
   TYPOGRAPHY
 ========================================================================== */
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.65;
+}
+
 /* ==========================================================================
   HEADINGS
 ========================================================================== */
@@ -60,9 +65,6 @@
 ------------------ */
 /* ------------------
   Headings rules
------------------- */
-/* ------------------
-  Headings - XXL
 ------------------ */
 /* ------------------
   Headings - XL
@@ -79,57 +81,54 @@
 h1 {
   font-size: 2.125rem;
   font-weight: 500;
+  line-height: 1.2;
 }
 
 @media (min-width: 48em) {
   h1 {
     font-size: 2.5rem;
-    font-weight: 500;
   }
 }
 
 @media (min-width: 64em) {
   h1 {
     font-size: 3rem;
-    font-weight: 500;
   }
 }
 
 h2 {
   font-size: 1.75rem;
   font-weight: 500;
+  line-height: 1.2;
 }
 
 @media (min-width: 48em) {
   h2 {
     font-size: 1.9375rem;
-    font-weight: 500;
   }
 }
 
 @media (min-width: 64em) {
   h2 {
     font-size: 2.375rem;
-    font-weight: 500;
   }
 }
 
 h3 {
   font-size: 1.4375rem;
   font-weight: 500;
+  line-height: 1.2;
 }
 
 @media (min-width: 48em) {
   h3 {
     font-size: 1.5625rem;
-    font-weight: 500;
   }
 }
 
 @media (min-width: 64em) {
   h3 {
     font-size: 1.75rem;
-    font-weight: 500;
   }
 }
 
@@ -138,6 +137,7 @@ h5,
 h6 {
   font-size: 1.1875rem;
   font-weight: 500;
+  line-height: 1.2;
 }
 
 @media (min-width: 48em) {
@@ -145,7 +145,6 @@ h6 {
   h5,
   h6 {
     font-size: 1.25rem;
-    font-weight: 500;
   }
 }
 
@@ -154,7 +153,6 @@ h6 {
   h5,
   h6 {
     font-size: 1.5rem;
-    font-weight: 500;
   }
 }
 
@@ -225,7 +223,6 @@ html {
 
 body {
   color: #50596c;
-  font-family: "Montserrat", sans-serif;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -504,20 +501,18 @@ code[class*='language-'] {
 
 .c-article-section__content {
   font-size: 1rem;
-  line-height: 1.4;
+  line-height: 1.65;
 }
 
 @media (min-width: 48em) {
   .c-article-section__content {
     font-size: 1.125rem;
-    line-height: 1.4;
   }
 }
 
 @media (min-width: 64em) {
   .c-article-section__content {
     font-size: 1.25rem;
-    line-height: 1.4;
   }
 }
 
@@ -853,6 +848,7 @@ code[class*='language-'] {
 .c-card__title-heading {
   font-size: 1.4375rem;
   font-weight: 500;
+  line-height: 1.2;
   font-weight: 600;
   margin-bottom: 0.625rem;
   margin-top: 0;
@@ -862,14 +858,12 @@ code[class*='language-'] {
 @media (min-width: 48em) {
   .c-card__title-heading {
     font-size: 1.5625rem;
-    font-weight: 500;
   }
 }
 
 @media (min-width: 64em) {
   .c-card__title-heading {
     font-size: 1.75rem;
-    font-weight: 500;
   }
 }
 
@@ -955,13 +949,13 @@ code[class*='language-'] {
 .c-card--highlight-left .c-card__raw-content h2 {
   font-size: 1.4375rem;
   font-weight: 500;
+  line-height: 1.2;
 }
 
 @media (min-width: 48em) {
   .c-card--highlight-top .c-card__raw-content h2,
   .c-card--highlight-left .c-card__raw-content h2 {
     font-size: 1.5625rem;
-    font-weight: 500;
   }
 }
 
@@ -969,7 +963,6 @@ code[class*='language-'] {
   .c-card--highlight-top .c-card__raw-content h2,
   .c-card--highlight-left .c-card__raw-content h2 {
     font-size: 1.75rem;
-    font-weight: 500;
   }
 }
 
@@ -983,6 +976,7 @@ code[class*='language-'] {
 .c-card--highlight-left .c-card__raw-content h6 {
   font-size: 1.1875rem;
   font-weight: 500;
+  line-height: 1.2;
 }
 
 @media (min-width: 48em) {
@@ -995,7 +989,6 @@ code[class*='language-'] {
   .c-card--highlight-left .c-card__raw-content h5,
   .c-card--highlight-left .c-card__raw-content h6 {
     font-size: 1.25rem;
-    font-weight: 500;
   }
 }
 
@@ -1009,7 +1002,6 @@ code[class*='language-'] {
   .c-card--highlight-left .c-card__raw-content h5,
   .c-card--highlight-left .c-card__raw-content h6 {
     font-size: 1.5rem;
-    font-weight: 500;
   }
 }
 
@@ -1163,6 +1155,7 @@ code[class*='language-'] {
   .c-header__item {
     font-size: 1.75rem;
     font-weight: 500;
+    line-height: 1.2;
     margin-bottom: 1.25rem;
   }
 }
@@ -1170,14 +1163,12 @@ code[class*='language-'] {
 @media (max-width: 63.99em) and (min-width: 48em) {
   .c-header__item {
     font-size: 1.9375rem;
-    font-weight: 500;
   }
 }
 
 @media (max-width: 63.99em) and (min-width: 64em) {
   .c-header__item {
     font-size: 2.375rem;
-    font-weight: 500;
   }
 }
 
@@ -1402,6 +1393,7 @@ code[class*='language-'] {
   /* stylelint-disable */
   font-size: 1.4375rem;
   font-weight: 500;
+  line-height: 1.2;
   font-weight: 600;
   /* stylelint-enable */
 }
@@ -1409,14 +1401,12 @@ code[class*='language-'] {
 @media (min-width: 48em) {
   .c-hero__title-custom {
     font-size: 1.5625rem;
-    font-weight: 500;
   }
 }
 
 @media (min-width: 64em) {
   .c-hero__title-custom {
     font-size: 1.75rem;
-    font-weight: 500;
   }
 }
 
@@ -1445,19 +1435,18 @@ code[class*='language-'] {
 .c-hero__subtitle {
   font-size: 1.1875rem;
   font-weight: 500;
+  line-height: 1.2;
 }
 
 @media (min-width: 48em) {
   .c-hero__subtitle {
     font-size: 1.25rem;
-    font-weight: 500;
   }
 }
 
 @media (min-width: 64em) {
   .c-hero__subtitle {
     font-size: 1.5rem;
-    font-weight: 500;
   }
 }
 

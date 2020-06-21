@@ -12,35 +12,28 @@ $font-sans-weight-bold: 600;
 $ty_font-size-small: rem(12);
 $ty_font-size-xsmall: rem(10);
 
+$ty_body-line-height: 1.65;
+
 $map-paragraph-l: (
-  mobile: (
-    fontsize:   rem(16),
-    lineheight: 1.4,
-  ),
-  tablet: (
-    fontsize:   rem(18),
-    lineheight: 1.4,
-  ),
-  desktop: (
-    fontsize:   rem(20),
-    lineheight: 1.4,
-  ),
+  mobile: rem(16),
+  tablet: rem(18),
+  desktop: rem(20),
 );
 
 @mixin ty-paragraph--l {
-  font-size: map-deep-get($map-paragraph-l, 'mobile', 'fontsize');
-  // font-weight: $font-sans-weight-medium;
-  line-height: map-deep-get($map-paragraph-l, 'mobile', 'lineheight');
+  font-size: map-get($map-paragraph-l, 'mobile');
+  line-height: $ty_body-line-height;
 
   @include mq(tablet) {
-    font-size: map-deep-get($map-paragraph-l, 'tablet', 'fontsize');
-    // font-weight: $font-sans-weight-medium;
-    line-height: map-deep-get($map-paragraph-l, 'tablet', 'lineheight');
+    font-size: map-get($map-paragraph-l, 'tablet');
   }
 
   @include mq(desktop) {
-    font-size: map-deep-get($map-paragraph-l, 'desktop', 'fontsize');
-    // font-weight: $font-sans-weight-medium;
-    line-height: map-deep-get($map-paragraph-l, 'desktop', 'lineheight');
+    font-size: map-get($map-paragraph-l, 'desktop');
   }
+}
+
+body {
+  font-family: $ty_font-family-default;
+  line-height: $ty_body-line-height;
 }
