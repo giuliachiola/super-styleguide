@@ -359,6 +359,34 @@ code[class*='language-'] {
   MAIN BORDER
 ========================================================================== */
 /* ==========================================================================
+  PARAGRAPH SELECTION
+========================================================================== */
+.t-palette-color--1 p::selection {
+  background-color: var(--co_palette-1--lighten);
+  color: #fff;
+}
+
+.t-palette-color--2 p::selection {
+  background-color: var(--co_palette-2--lighten);
+  color: #fff;
+}
+
+.t-palette-color--3 p::selection {
+  background-color: var(--co_palette-3--lighten);
+  color: #fff;
+}
+
+.t-palette-color--4 p::selection {
+  background-color: var(--co_palette-4--lighten);
+  color: #fff;
+}
+
+.t-palette-color--5 p::selection {
+  background-color: var(--co_palette-5--lighten);
+  color: #fff;
+}
+
+/* ==========================================================================
   04 - OBJECTS
 ========================================================================== */
 /* ==========================================================================
