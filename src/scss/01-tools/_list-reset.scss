@@ -11,7 +11,12 @@
 @mixin list-reset {
   list-style: none;
   margin: 0;
+  padding-inline-start: $sp_variable-m;
   padding-left: 0;
+
+  @include mq(desktop) {
+    padding-inline-start: $sp_variable-l;
+  }
 }
 
 /* ------------------
