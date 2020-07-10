@@ -35,12 +35,12 @@ $sp_header-hamburger-z-index-m: $sp_header-z-index-m + 1;
     flex-direction: column;
     height: 100%;
     justify-content: center;
-    left: 0;
+    left: 100%; // start to left: 100% -> fix issue https://gitlab.com/giuliach/super-styleguide/-/issues/23
     padding: 0;
     position: fixed;
     text-align: center;
     top: 0;
-    transform: translate(100%, 0);
+    transform: translate3d(0, 0, 0);
     transition: transform 1s $an_header-mobile-animation;
     width: 100%;
     z-index: $sp_header-z-index-m;
@@ -52,7 +52,7 @@ $sp_header-hamburger-z-index-m: $sp_header-z-index-m + 1;
     }
 
     .c-header__toggle:checked ~ & {
-      transform: translate(0, 0);
+      transform: translate3d(-100%, 0, 0);
       transition: transform 1s $an_header-mobile-animation;
     }
   }

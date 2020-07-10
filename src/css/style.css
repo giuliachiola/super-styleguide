@@ -1151,12 +1151,12 @@ code[class*='language-'] {
     flex-direction: column;
     height: 100%;
     justify-content: center;
-    left: 0;
+    left: 100%;
     padding: 0;
     position: fixed;
     text-align: center;
     top: 0;
-    transform: translate(100%, 0);
+    transform: translate3d(0, 0, 0);
     transition: transform 1s cubic-bezier(0.32, -0.01, 0, 0.99);
     width: 100%;
     z-index: 10;
@@ -1177,7 +1177,7 @@ code[class*='language-'] {
     background-color: var(--co_palette-5--lighten);
   }
   .c-header__toggle:checked ~ .c-header__list {
-    transform: translate(0, 0);
+    transform: translate3d(-100%, 0, 0);
     transition: transform 1s cubic-bezier(0.32, -0.01, 0, 0.99);
   }
 }
