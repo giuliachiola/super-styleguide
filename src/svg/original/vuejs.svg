@@ -1,0 +1,27 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" style="vector-effect: non-scaling-stroke;" stroke="null">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g stroke="null">
+  <title stroke="null">background</title>
+  <rect stroke="null" fill="none" id="canvas_background" height="202" width="202" y="-1" x="-1"/>
+  <g style="vector-effect: non-scaling-stroke;" stroke="null" display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect stroke="null" fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g stroke="null">
+  <title stroke="null">Layer 1</title>
+  <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+  <desc style="vector-effect: non-scaling-stroke;" stroke="null" transform="matrix(0.4444444709353981,0,0,0.4444444709353981,0,0) ">Created with Sketch.</desc>
+  <style style="vector-effect: non-scaling-stroke;" stroke="null" transform="matrix(0.4444444709353981,0,0,0.4444444709353981,0,0) " type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}
+	.st1{clip-path:url(#XMLID_6_);}
+	.st2{opacity:0.66;}</style>
+  <style style="vector-effect: non-scaling-stroke;" stroke="null" transform="matrix(0.08041040204684524,0,0,0.08041040204684524,0,0) ">.st0{fill:#0179cb}</style>
+  <style style="vector-effect: non-scaling-stroke;" stroke="null" transform="matrix(0.0007111111455493507,0,0,0.0007111111455493507,0,0) " type="text/css">.st0{fill:#333333;}</style>
+  <style style="vector-effect: non-scaling-stroke;" stroke="null" transform="matrix(0.0007111111455493507,0,0,0.0007111111455493507,0,0) " type="text/css">.st0{fill:#333333;}</style>
+  <style style="vector-effect: non-scaling-stroke;" stroke="null" transform="matrix(0.0007111111455493507,0,0,0.0007111111455493507,0,0) " type="text/css">.st0{fill:#333333;}</style>
+  <g stroke="null" id="svg_140">
+   <path stroke="null" id="svg_138" d="m122.606688,15.230789l-22.60669,39.152563l-22.60669,-39.152563l-75.274717,0l97.881407,169.538427l97.881407,-169.538427l-75.274717,0z" class="st0"/>
+   <path stroke="null" id="svg_139" d="m122.606688,15.230789l-22.60669,39.152563l-22.60669,-39.152563l-36.122154,0l58.728844,101.718358l58.728844,-101.718358l-36.122154,0z"/>
+  </g>
+ </g>
+</svg>
