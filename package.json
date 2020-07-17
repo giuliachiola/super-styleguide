@@ -9,6 +9,9 @@
     "scss:to:css:dev": "node-sass --output-style expanded src/scss/ -o src/css/",
     "css:to:postcss:dev": "postcss src/css --dir dist/css",
     "styles:dev": "npm run stylelint && npm run scss:to:css:dev && npm run css:to:postcss:dev",
+    "_____________________________SVG_____________________________": "",
+    "clean:svgo": "rimraf src/svg/svgo/*",
+    "svg:optimize": "npm run clean:svgo && node scripts/svgo.js",
     "_____________________________Dev_______________________________": "",
     "watcher": "nodemon -e scss -x \"npm run styles:dev\"",
     "build:serve": "node ./scripts/uiengine build --watch --serve",
@@ -35,7 +38,8 @@
     "sass-mq": "^5.0.1",
     "stylelint": "^12.0.1",
     "stylelint-order": "^4.0.0",
-    "stylelint-scss": "^3.13.0"
+    "stylelint-scss": "^3.13.0",
+    "svgo": "^1.3.2"
   },
   "dependencies": {}
 }
