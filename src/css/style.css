@@ -756,15 +756,16 @@ code[class*='language-'] {
   opacity: 0.5;
   position: absolute;
   right: 1.25rem;
+  width: 5rem;
+}
+
+.c-card__img-wrapper .icon--design-system,
+.c-card__img-wrapper .icon--reindeer {
   width: 6.25rem;
 }
 
-.c-card__img-wrapper .icon-nodejs {
-  width: 8.75rem;
-}
-
-.c-card__img-wrapper .icon-design-system {
-  width: 8.75rem;
+.c-card__img-wrapper .icon--nodejs {
+  width: 7.5rem;
 }
 
 @media (max-width: 47.99em) {
