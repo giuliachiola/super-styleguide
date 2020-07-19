@@ -1,1 +1,18 @@
-<svg class="icon icon-vsc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 234 235.1" width="2488" height="2500"><path d="M83.3 143.9l-58 45.2L0 176.5V58.7L25.2 46l57.6 45.3L174 0l60 23.9v186.9l-59.7 24.3-91-91.2zm88.9 15.9V75.3l-54.6 42.3 54.6 42.2zM27.3 144.6L56 118.5 27.3 89.9v54.7z" fill="currentColor"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="101px" viewBox="0 0 100 101" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>vsc copy</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="All-icons-Copy" transform="translate(-34.000000, -296.000000)">
+            <g id="vsc-copy" transform="translate(34.000000, 296.000000)" filter="url(#filter-1)">
+                <g id="vsc" fill="#000000" fill-rule="nonzero">
+                    <path d="M35.5982906,61.4957265 L10.8119658,80.8119658 L0,75.4273504 L0,25.0854701 L10.7692308,19.6581197 L35.3846154,39.017094 L74.3589744,0 L100,10.2136752 L100,90.0854701 L74.4871795,100.470085 L35.5982906,61.4957265 Z M73.5897436,68.2905983 L73.5897436,32.1794872 L50.2564103,50.2564103 L73.5897436,68.2905983 Z M11.6666667,61.7948718 L23.9316239,50.6410256 L11.6666667,38.4188034 L11.6666667,61.7948718 L11.6666667,61.7948718 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

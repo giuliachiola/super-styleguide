@@ -1,32 +1,23 @@
-<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" style="vector-effect: non-scaling-stroke;" stroke="null">
- <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
-
- <g stroke="null">
-  <title stroke="null">background</title>
-  <rect stroke="null" fill="none" id="canvas_background" height="202" width="202" y="-1" x="-1"/>
-  <g style="vector-effect: non-scaling-stroke;" stroke="null" display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
-   <rect stroke="null" fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
-  </g>
- </g>
- <g stroke="null">
-  <title stroke="null">Layer 1</title>
-  <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
-  <desc style="vector-effect: non-scaling-stroke;" stroke="null" transform="matrix(0.4444444709353981,0,0,0.4444444709353981,0,0) ">Created with Sketch.</desc>
-  <style style="vector-effect: non-scaling-stroke;" stroke="null" transform="matrix(0.4444444709353981,0,0,0.4444444709353981,0,0) " type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}
-	.st1{clip-path:url(#XMLID_6_);}
-	.st2{opacity:0.66;}</style>
-  <style style="vector-effect: non-scaling-stroke;" stroke="null" transform="matrix(0.08041040204684524,0,0,0.08041040204684524,0,0) ">.st0{fill:#0179cb}</style>
-  <style style="vector-effect: non-scaling-stroke;" stroke="null" transform="matrix(0.0007111111455493507,0,0,0.0007111111455493507,0,0) " type="text/css">.st0{fill:#333333;}</style>
-  <style style="vector-effect: non-scaling-stroke;" stroke="null" transform="matrix(0.0007111111455493507,0,0,0.0007111111455493507,0,0) " type="text/css">.st0{fill:#333333;}</style>
-  <style style="vector-effect: non-scaling-stroke;" stroke="null" transform="matrix(0.0007111111455493507,0,0,0.0007111111455493507,0,0) " type="text/css">.st0{fill:#333333;}</style>
-  <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
-  <desc transform="matrix(0.4444424841160668,0,0,0.4444424841160668,0,0) ">Created with Sketch.</desc>
-  <linearGradient y2="0.5" y1="0.5" x2="1" x1="0" id="svg_157">
-   <stop stop-color="#4c4c4c" offset="0"/>
-   <stop stop-color="#343434" offset="1"/>
-  </linearGradient>
-  <g stroke="null" id="svg_168">
-   <path stroke="null" id="svg_167" d="m198.512335,111.021931l-10.396071,-31.942484a4.51393,4.51393 0 0 0 -0.251424,-0.859518l-20.85646,-64.20071a8.29113,8.29113 0 0 0 -7.916918,-5.654106a8.150801,8.150801 0 0 0 -7.823365,5.700883l-19.880001,61.177781l-62.744792,0l-19.909237,-61.177781a8.150801,8.150801 0 0 0 -7.788283,-5.700883l-0.046776,0a8.314518,8.314518 0 0 0 -7.89353,5.70673l-20.874001,64.276722c0,0.058471 -0.046776,0.105247 -0.064318,0.163718l-10.583177,32.515496a11.863683,11.863683 0 0 0 4.309283,13.278671l91.436312,66.440134a4.677647,4.677647 0 0 0 5.525471,-0.029235l91.453853,-66.410899a11.857836,11.857836 0 0 0 4.303436,-13.284519m-136.675009,-26.387778l25.487331,78.444146l-61.183628,-78.444146m86.565712,78.461688l24.440708,-75.204876l1.052471,-3.256812l35.725532,0l-55.35411,70.913134m40.601979,-135.458821l17.909542,55.15531l-35.84832,0m-12.881071,9.355295l-17.757519,54.646615l-10.594871,32.544732l-28.311461,-87.191347m-30.831543,-64.510604l17.944625,55.15531l-35.824932,0m-11.682424,41.496579a2.520083,2.520083 0 0 1 -0.912141,-2.82413l7.858448,-24.148355l57.634463,73.889287m112.836549,-46.916803l-64.586616,46.899262l0.216341,-0.280659l57.418121,-73.591087l7.858448,24.13666a2.520083,2.520083 0 0 1 -0.906294,2.829977"/>
-  </g>
- </g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="92px" viewBox="0 0 100 92" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>gitlab copy</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="All-icons-Copy" transform="translate(-452.000000, -40.000000)">
+            <g id="gitlab-copy" transform="translate(452.000000, 36.000000)" filter="url(#filter-1)">
+                <g id="gitlab">
+                    <g id="background"></g>
+                    <g id="Layer-1" transform="translate(0.495050, 4.455446)" fill="#000000" fill-rule="nonzero" stroke="#000000">
+                        <g id="svg_168">
+                            <path d="M98.2734332,51.0009559 L93.1268634,35.187845 C93.0995812,35.0422353 93.0578869,34.8996993 93.002396,34.7623411 L82.6774158,2.97981139 C82.1132001,1.29782895 80.5322012,0.168710839 78.7581495,0.180653679 C76.9878379,0.170014654 75.4172832,1.3144772 74.8851965,3.00296832 L65.0436119,33.2889985 L33.9818337,33.2889985 L24.1257757,3.00296832 C23.5955926,1.32062127 22.0340994,0.177636386 20.2701901,0.180653679 L20.2470337,0.180653679 C18.4714763,0.180653679 16.8962362,1.31989818 16.3393455,3.00586287 L6.00568168,34.8260223 C6.00568168,34.8549683 5.98252525,34.8781248 5.97384109,34.9070708 L0.734644554,51.003851 C-0.0551816445,53.4258213 0.806435402,56.0808173 2.86795297,57.5774505 L48.133454,90.4686059 C48.9509823,91.0603721 50.0576149,91.0545169 50.8688356,90.4541332 L96.1430203,57.5774505 C98.2055066,56.0802004 99.0662383,53.4231593 98.2734342,51.0009559 M30.6125386,37.9376995 L43.2300292,76.7714351 L12.9411045,37.9376995 M55.7954173,76.7801193 L67.8947777,39.5499827 L68.415803,37.9376995 L86.1017099,37.9376995 L58.6986851,73.0432114 M78.7986748,5.98438911 L87.6647847,33.288998 L69.9180916,33.288998 M63.5413238,37.9203322 L54.7504728,64.9731119 L49.5054871,81.0843653 L35.4899124,37.9203322 M20.2267723,5.9843896 L29.11025,33.2889985 L11.3751351,33.2889985 M5.59175693,53.8318594 C5.15369251,53.5132738 4.9712536,52.9484146 5.14020198,52.4337752 L9.03052277,40.4791441 L37.5624351,77.057999 M93.4221129,53.8318589 L61.4485406,77.0493153 L61.5556401,76.9103752 L89.9804525,40.4791441 L93.8707733,52.4279856 C94.0417415,52.9428565 93.8603721,53.5091973 93.4221129,53.8289644" id="svg_167"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>
