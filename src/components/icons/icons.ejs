@@ -1,0 +1,21 @@
+<style>
+  .u-debug .icon {
+    width: 100px;
+    height: 100px;
+  }
+</style>
+
+<% icons.forEach(function(icon){ %>
+  <table class="c-table">
+    <tbody>
+      <tr>
+        <td><h3><%= icon %></h3></td>
+        <td>
+          <span class="u-debug">
+            <%- include('../../svg/svgo/'+ icon +'.svg') %>
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+<% }); %>

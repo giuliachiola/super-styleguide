@@ -8,7 +8,27 @@ moduleAlias.addAlias('@content', process.cwd() + '/content')
 const _ = require('lodash')
 // Components
 const { cards } = require('../card/default-content.js')
-
+const tags =
+['codepen',
+  'css',
+  'design-system',
+  'git',
+  'gitlab',
+  'github',
+  'js',
+  'svg',
+  'mac-os',
+  'markdown',
+  'nodejs',
+  'reindeer',
+  'static-site-generator',
+  'svg',
+  'template-engine',
+  'terminal',
+  'twitter',
+  'vsc',
+  'vuejs',
+]
 const card = cards[0]
 
 module.exports = {
@@ -108,175 +128,27 @@ module.exports = {
     /* --------
       Tags
     -------- */
-    // git
     {
-      title: 'git',
-      file: 'default.ejs',
+      title: 'Card tags',
+      file: 'cards-tags.ejs',
       context: {
         uiContext: {
           containerModifiers: ['ui-container--medium-bg'],
-          componentModifiers: ['ui-card'],
+          componentModifiers: [],
         },
-        card: _.merge(
-          {},
-          card,
-          {
-            modifiers: ['squared-image'],
-            mainTag: 'git',
-          }
-        )
-      }
-    },
-    // vsc
-    {
-      title: 'vsc',
-      file: 'default.ejs',
-      context: {
-        uiContext: {
-          containerModifiers: ['ui-container--medium-bg'],
-          componentModifiers: ['ui-card'],
-        },
-        card: _.merge(
-          {},
-          card,
-          {
-            modifiers: ['squared-image'],
-            mainTag: 'vsc',
-          }
-        )
-      }
-    },
-    // vuejs
-    {
-      title: 'vuejs',
-      file: 'default.ejs',
-      context: {
-        uiContext: {
-          containerModifiers: ['ui-container--medium-bg'],
-          componentModifiers: ['ui-card'],
-        },
-        card: _.merge(
-          {},
-          card,
-          {
-            modifiers: ['squared-image'],
-            mainTag: 'vuejs',
-          }
-        )
-      }
-    },
-    // js
-    {
-      title: 'js',
-      file: 'default.ejs',
-      context: {
-        uiContext: {
-          containerModifiers: ['ui-container--medium-bg'],
-          componentModifiers: ['ui-card'],
-        },
-        card: _.merge(
-          {},
-          card,
-          {
-            modifiers: ['squared-image'],
-            mainTag: 'js',
-          }
-        )
-      }
-    },
-    // css
-    {
-      title: 'css',
-      file: 'default.ejs',
-      context: {
-        uiContext: {
-          containerModifiers: ['ui-container--medium-bg'],
-          componentModifiers: ['ui-card'],
-        },
-        card: _.merge(
-          {},
-          card,
-          {
-            modifiers: ['squared-image'],
-            mainTag: 'css',
-          }
-        )
-      }
-    },
-    // nodejs
-    {
-      title: 'nodejs',
-      file: 'default.ejs',
-      context: {
-        uiContext: {
-          containerModifiers: ['ui-container--medium-bg'],
-          componentModifiers: ['ui-card'],
-        },
-        card: _.merge(
-          {},
-          card,
-          {
-            modifiers: ['squared-image'],
-            mainTag: 'nodejs',
-          }
-        )
-      }
-    },
-    // design system
-    {
-      title: 'design system',
-      file: 'default.ejs',
-      context: {
-        uiContext: {
-          containerModifiers: ['ui-container--medium-bg'],
-          componentModifiers: ['ui-card'],
-        },
-        card: _.merge(
-          {},
-          card,
-          {
-            modifiers: ['squared-image'],
-            mainTag: 'design-system',
-          }
-        )
-      }
-    },
-    // static site generator
-    {
-      title: 'static site generator',
-      file: 'default.ejs',
-      context: {
-        uiContext: {
-          containerModifiers: ['ui-container--medium-bg'],
-          componentModifiers: ['ui-card'],
-        },
-        card: _.merge(
-          {},
-          card,
-          {
-            modifiers: ['squared-image'],
-            mainTag: 'static-site-generator',
-          }
-        )
-      }
-    },
-    // markdown
-    {
-      title: 'markdown',
-      file: 'default.ejs',
-      context: {
-        uiContext: {
-          containerModifiers: ['ui-container--medium-bg'],
-          componentModifiers: ['ui-card'],
-        },
-        card: _.merge(
-          {},
-          card,
-          {
-            modifiers: ['squared-image'],
-            mainTag: 'markdown',
-          }
-        )
+        cardsArr: tags.map((tag) => {
+          return (
+            _.merge(
+              {},
+              card,
+              {
+                title: tag,
+                modifiers: ['squared-image'],
+                mainTag: tag,
+              },
+            )
+          )
+        })
       }
     },
   ]

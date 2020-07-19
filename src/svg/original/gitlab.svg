@@ -1,0 +1,32 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" style="vector-effect: non-scaling-stroke;" stroke="null">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g stroke="null">
+  <title stroke="null">background</title>
+  <rect stroke="null" fill="none" id="canvas_background" height="202" width="202" y="-1" x="-1"/>
+  <g style="vector-effect: non-scaling-stroke;" stroke="null" display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect stroke="null" fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g stroke="null">
+  <title stroke="null">Layer 1</title>
+  <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+  <desc style="vector-effect: non-scaling-stroke;" stroke="null" transform="matrix(0.4444444709353981,0,0,0.4444444709353981,0,0) ">Created with Sketch.</desc>
+  <style style="vector-effect: non-scaling-stroke;" stroke="null" transform="matrix(0.4444444709353981,0,0,0.4444444709353981,0,0) " type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}
+	.st1{clip-path:url(#XMLID_6_);}
+	.st2{opacity:0.66;}</style>
+  <style style="vector-effect: non-scaling-stroke;" stroke="null" transform="matrix(0.08041040204684524,0,0,0.08041040204684524,0,0) ">.st0{fill:#0179cb}</style>
+  <style style="vector-effect: non-scaling-stroke;" stroke="null" transform="matrix(0.0007111111455493507,0,0,0.0007111111455493507,0,0) " type="text/css">.st0{fill:#333333;}</style>
+  <style style="vector-effect: non-scaling-stroke;" stroke="null" transform="matrix(0.0007111111455493507,0,0,0.0007111111455493507,0,0) " type="text/css">.st0{fill:#333333;}</style>
+  <style style="vector-effect: non-scaling-stroke;" stroke="null" transform="matrix(0.0007111111455493507,0,0,0.0007111111455493507,0,0) " type="text/css">.st0{fill:#333333;}</style>
+  <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+  <desc transform="matrix(0.4444424841160668,0,0,0.4444424841160668,0,0) ">Created with Sketch.</desc>
+  <linearGradient y2="0.5" y1="0.5" x2="1" x1="0" id="svg_157">
+   <stop stop-color="#4c4c4c" offset="0"/>
+   <stop stop-color="#343434" offset="1"/>
+  </linearGradient>
+  <g stroke="null" id="svg_168">
+   <path stroke="null" id="svg_167" d="m198.512335,111.021931l-10.396071,-31.942484a4.51393,4.51393 0 0 0 -0.251424,-0.859518l-20.85646,-64.20071a8.29113,8.29113 0 0 0 -7.916918,-5.654106a8.150801,8.150801 0 0 0 -7.823365,5.700883l-19.880001,61.177781l-62.744792,0l-19.909237,-61.177781a8.150801,8.150801 0 0 0 -7.788283,-5.700883l-0.046776,0a8.314518,8.314518 0 0 0 -7.89353,5.70673l-20.874001,64.276722c0,0.058471 -0.046776,0.105247 -0.064318,0.163718l-10.583177,32.515496a11.863683,11.863683 0 0 0 4.309283,13.278671l91.436312,66.440134a4.677647,4.677647 0 0 0 5.525471,-0.029235l91.453853,-66.410899a11.857836,11.857836 0 0 0 4.303436,-13.284519m-136.675009,-26.387778l25.487331,78.444146l-61.183628,-78.444146m86.565712,78.461688l24.440708,-75.204876l1.052471,-3.256812l35.725532,0l-55.35411,70.913134m40.601979,-135.458821l17.909542,55.15531l-35.84832,0m-12.881071,9.355295l-17.757519,54.646615l-10.594871,32.544732l-28.311461,-87.191347m-30.831543,-64.510604l17.944625,55.15531l-35.824932,0m-11.682424,41.496579a2.520083,2.520083 0 0 1 -0.912141,-2.82413l7.858448,-24.148355l57.634463,73.889287m112.836549,-46.916803l-64.586616,46.899262l0.216341,-0.280659l57.418121,-73.591087l7.858448,24.13666a2.520083,2.520083 0 0 1 -0.906294,2.829977"/>
+  </g>
+ </g>
+</svg>
