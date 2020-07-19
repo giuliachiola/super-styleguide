@@ -1,1 +1,30 @@
-<svg class="icon icon--template-engine" width="100" height="136" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor" fill-rule="nonzero"><path d="M78.169 114.158v20.558l20.637-20.558z"/><path d="M70.211 106.2h29.608V0H0v135.809h70.211V106.2zM30.104 21.651v7.958h-8.488V21.65h8.488zM21.616 92.22H49.91v7.957H21.616V92.22zM78.203 83.2H21.616v-7.958h56.587v7.958zm0-16.976H21.616v-7.958h56.587v7.958zm0-16.976H21.616V41.29h56.587v7.958z"/></g></svg>
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="202" width="202" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+  <desc transform="matrix(0.4444444709353981,0,0,0.4444444709353981,0,0) ">Created with Sketch.</desc>
+  <g stroke="null" id="svg_36">
+   <g stroke="null" transform="matrix(0.5277777293894461,0,0,0.5277777293894461,-1800.4997579094843,-1801.536541671607) " id="svg_34">
+    <title stroke="null" transform="translate(0,-0.9469041228294373) translate(0.947885274887085,0) translate(-4.547473508864641e-13,3.859201192855835) translate(3399.999755859375,0) translate(0,3399.999755859375) ">background</title>
+    <rect stroke="null" x="3399.947641" y="3401.912053" width="402" height="402" id="svg_32" fill="none"/>
+   </g>
+   <g stroke="null" transform="matrix(0.5277777293894461,0,0,0.5277777293894461,-1800.4997579094843,-1801.536541671607) " id="svg_35">
+    <title stroke="null" transform="translate(0,-0.9469041228294373) translate(0.947885274887085,0) translate(-4.547473508864641e-13,3.859201192855835) translate(3399.999755859375,0) translate(0,3399.999755859375) ">Layer 1</title>
+    <g stroke="null" id="svg_29">
+     <g stroke="null" transform="matrix(0.20244056565785018,0,0,-0.20244056565785018,-258.9284947679324,-371.22221474345224) " fill="#000000" id="svg_30">
+      <path stroke="null" d="m18752.548627,-19375.190199c-55,-18 -115,-52 -187,-106c-97,-75 -155,-102 -225,-103c-74,-2 -103,22 -101,84c2,49 -14,48 -40,-2c-69,-136 92,-330 320,-385c180,-42 426,17 512,123c14,18 30,33 34,33c4,0 21,-15 36,-32c97,-109 334,-166 514,-124c245,59 403,271 305,408c-22,32 -44,39 -28,9c16,-31 12,-58 -13,-87c-21,-24 -31,-27 -84,-27c-70,1 -127,27 -224,101c-122,93 -194,122 -301,122c-79,0 -121,-16 -167,-64l-35,-36l-33,35c-18,19 -49,41 -69,50c-43,18 -162,19 -214,1z" id="svg_31"/>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

@@ -1,8 +1,7 @@
 /* ==========================================================================
-  08 - UTILITY
+  DEBUG
 ========================================================================== */
 
-@import 'utility-typography';
-@import 'utility-giphy';
-@import 'utility-hidden';
-@import 'debug';
+.u-debug {
+  outline: 1px solid lime;
+}

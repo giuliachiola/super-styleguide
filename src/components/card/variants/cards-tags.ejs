@@ -10,11 +10,14 @@
   })
 %>
 
-<div class="ui-container <%=uimodifiers%>">
+<div class="ui-container t-palette-color--1 <%=uimodifiers%>">
   <div class="<%=uicomponentmodifiers%>">
     <!-- COMPONENT start -->
-    <%- include('../button'); %>
+    <div class="o-cards-grid">
+      <% cardsArr.forEach(function(item){ %>
+        <%- include('../card', { card: item }) %>
+      <% }); %>
+    </div>
     <!-- COMPONENT end -->
   </div>
 </div>
-

@@ -1,3 +1,3 @@
 module.exports = {
-  components: ['button']
+  components: ['icons', 'button']
 }

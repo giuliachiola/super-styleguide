@@ -3,7 +3,7 @@
 ========================================================================== */
 
 .ui-container {
-  height: 100%;
+  min-height: 100%;
 
   &--dark-bg {
     background: repeating-linear-gradient(45deg, #171717, #272727 10px, #272727 10px, #272727 20px);
