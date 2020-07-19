@@ -51,22 +51,22 @@ $sp_card-border-radius: rem(2);
     opacity: 0.5;
     position: absolute;
     right: $sp_variable-m;
+    width: rem(80);
+  }
+
+  .icon--design-system,
+  .icon--reindeer { // custom size
     width: rem(100);
   }
 
-  .icon-nodejs {
-    width: rem(140); // custom size
-  }
-
-  .icon-design-system {
-    width: rem(140); // custom size
+  .icon--nodejs { // custom size
+    width: rem(120);
   }
 
   .c-card--squared-image & {
     @include mq($until: tablet) {
       display: none;
     }
-    // @include image-padding(20, 6); // shorter
 
     @include mq(tablet) {
       @include aspect-ratio;
@@ -75,7 +75,6 @@ $sp_card-border-radius: rem(2);
   }
 
   .c-card--squared-image.c-card--horizontal & {
-    // flex-basis: rem(10);
     padding-top: 0;
 
     @include mq(desktop) {
