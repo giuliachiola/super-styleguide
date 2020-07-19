@@ -38,7 +38,6 @@ svgfilesArr.forEach(iconName => {
             attributes: [
               'fill="currentColor"',
               'width="200"',
-              'height="200"',
             ],
           },
         },
