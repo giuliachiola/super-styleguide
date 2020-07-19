@@ -9,14 +9,14 @@ const _ = require('lodash')
 // Components
 const { cards } = require('../card/default-content.js')
 const tags =
-['codepen',
+[
+  'codepen',
   'css',
   'design-system',
   'git',
-  'gitlab',
   'github',
+  'gitlab',
   'js',
-  'svg',
   'mac-os',
   'markdown',
   'nodejs',

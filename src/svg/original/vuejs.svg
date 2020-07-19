@@ -1,1 +1,19 @@
-<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" style="vector-effect:non-scaling-stroke" stroke="null"><path stroke="null" fill="none" id="canvas_background" d="M-1-1h202v202H-1z"/><g><g stroke="null" id="svg_140"><path stroke="null" id="svg_138" opacity="0.7" d="M122.607 15.23L100 54.384 77.393 15.231H2.12L100 184.769l97.881-169.538h-75.274z" class="st0"/><path stroke="null" id="svg_139" d="M122.607 15.23L100 54.384 77.393 15.231H41.271L100 116.949l58.729-101.718h-36.122z"/></g></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="87px" viewBox="0 0 100 87" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>vuejs copy</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="All-icons-Copy" transform="translate(-327.000000, -319.000000)">
+            <g id="vuejs-copy" transform="translate(327.000000, 319.000000)" filter="url(#filter-1)">
+                <g id="vuejs" transform="translate(0.000000, -0.000000)" fill="#000000" fill-rule="nonzero">
+                    <polygon id="Path" fill-opacity="0.5" points="61.548 0 50 20 38.452 0 0 0 50 86.604 100 0"></polygon>
+                    <polygon id="Path" points="61.548 0 50 20 38.452 0 20 0 50 51.96 80 0"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
