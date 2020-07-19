@@ -499,11 +499,16 @@ code[class*='language-'] {
 /* ==========================================================================
   ARTICLE SECTION
 ========================================================================== */
-.c-article-section__date {
+.c-article-section__date, .c-article-section__toc {
   color: #acb3c2;
   display: block;
   font-size: 0.75rem;
   margin-bottom: 0.3125rem;
+}
+
+.c-article-section__toc ol {
+  color: #50596c;
+  padding-inline-start: 1.5625rem;
 }
 
 .c-article-section__reading-time {
