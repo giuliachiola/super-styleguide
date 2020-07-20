@@ -9,7 +9,7 @@ moduleAlias.addAlias('@content', process.cwd() + '/content')
 const { randItem, getRandom } = require('@content/dynamic-content.js')
 
 module.exports = {
-  label: 'CA',
+  label: 'TPL',
   variants: [
     // Default
     {

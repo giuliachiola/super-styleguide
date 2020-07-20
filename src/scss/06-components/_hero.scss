@@ -3,8 +3,9 @@
 ========================================================================== */
 
 .c-hero {
-  // padding: rem(150) 0;
   align-items: center;
+  background-color: var(--co_palette);
+  color: $co_color-light;
   display: flex;
   min-height: rem(350);
   position: relative;
@@ -36,15 +37,6 @@
 
 .c-hero--quote {
   font-style: italic;
-}
-
-// Hero colors
-
-@for $i from 1 through 5 {
-  .t-palette-color--#{$i} .c-hero {
-    background-color: var(--co_palette-#{$i});
-    color: $co_color-light;
-  }
 }
 
 .c-hero__title-custom { // ex. Tagged post "git" --> git has custom styles

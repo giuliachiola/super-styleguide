@@ -11,7 +11,7 @@ const { cards } = require('../card/default-content.js')
 const { filterList } = require('../filter/default-content.js')
 
 module.exports = {
-  label: 'CA',
+  label: 'TPL',
   variants: ['default.ejs'],
   context: {
     uiContext: {
