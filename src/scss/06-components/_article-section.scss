@@ -19,7 +19,7 @@
   @extend %article-section-side-info;
 
   ol {
-    color: $co_color-medium-gray;
+    color: var(--co_text);
     padding-inline-start: rem(25);
   }
 }
@@ -92,7 +92,7 @@
   height: rem(20); // hotfix because embedded <iframe> for sharing is not perfectly aligne
 
   .btn { // twitter class
-    background-color: $co_color-main;
+    background-color: var(--co_text);
   }
 }
 

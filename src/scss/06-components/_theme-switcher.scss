@@ -1,0 +1,60 @@
+/* ==========================================================================
+  THEME SWITCHER
+========================================================================== */
+
+$sp_switcher-width: rem(60) * 0.8;
+$sp_switcher-height: rem(34) * 0.8;
+$sp_switcher-before-height: rem(26) * 0.8;
+
+.c-theme-switcher {
+  align-items: center;
+  display: flex;
+}
+
+.c-theme-switcher__text {
+  font-size: $ty_font-size-xsmall;
+  margin-left: rem(10);
+}
+
+.c-theme-switcher__checkbox {
+  display: inline-block;
+  height: $sp_switcher-height;
+  position: relative;
+  width: $sp_switcher-width;
+
+  input {
+    display: none;
+  }
+}
+
+.c-theme-switcher__slider {
+  background-color: #ccc;
+  border-radius: $sp_switcher-height;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+
+  &::before {
+    background-color: #fff;
+    border-radius: 50%;
+    bottom: 3px;
+    content: '';
+    height: $sp_switcher-before-height;
+    left: 4px;
+    position: absolute;
+    transition: 0.4s;
+    width: $sp_switcher-before-height;
+  }
+}
+
+input:checked + .c-theme-switcher__slider {
+  background-color: $co_color-main-tint-10;
+
+  &::before {
+    transform: translateX($sp_switcher-before-height);
+  }
+}

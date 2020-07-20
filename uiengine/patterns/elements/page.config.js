@@ -1,3 +1,3 @@
 module.exports = {
-  components: ['icons', 'button']
+  components: ['icons', 'button', 'theme-switcher']
 }

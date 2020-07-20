@@ -74,7 +74,7 @@ $sp_header-hamburger-z-index-m: $sp_header-z-index-m + 1;
     margin-bottom: 0;
 
     &::before {
-      color: $co_color-main;
+      color: var(--co_text);
       content: '•';
     }
   }

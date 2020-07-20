@@ -21,7 +21,8 @@ html {
 }
 
 body {
-  color: $co_color-medium-gray;
+  background-color: var(--co_background);
+  color: var(--co_text);
   height: 100%;
   margin: 0;
   padding: 0;
@@ -39,13 +40,13 @@ body {
 // }
 
 a {
-  color: $co_color-main;
+  color: var(--co_text);
   // -webkit-tap-highlight-color: transparent; // Chrome on Android: remove blue highlight on all the clickable area
   text-decoration: none;
 
   &:hover,
   &:focus {
-    color: $co_color-main-tint-10;
+    color: var(--co_text-tint-10);
     text-decoration: underline;
   }
 }
