@@ -40,11 +40,11 @@
 
   h2 {
     &::before {
-      content: '&ldquo;';
+      content: '“';
     }
 
     &::after {
-      content: '&rdquo;';
+      content: '”';
     }
   }
 }
