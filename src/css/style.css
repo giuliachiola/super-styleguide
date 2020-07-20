@@ -1237,7 +1237,7 @@ p::selection {
 }
 
 @media (min-width: 64em) {
-  .c-header__link.is-current-section {
+  .c-header__link.is-current-section:not([data-state='active']) {
     border-bottom: 0.125rem dotted #50596c;
     border-color: var(--co_palette--lighten);
     font-weight: 400;

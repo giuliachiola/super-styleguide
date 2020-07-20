@@ -119,7 +119,7 @@ $sp_header-hamburger-z-index-m: $sp_header-z-index-m + 1;
     }
   }
 
-  &.is-current-section { // e.g. is a tutorial from "tutorials" section
+  &.is-current-section:not([data-state= 'active']) { // e.g. is a tutorial from "tutorials" section
     @include mq(desktop) {
       border-bottom: rem(2) dotted $co_color-main;
       border-color: var(--co_palette--lighten);
