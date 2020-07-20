@@ -31,6 +31,7 @@ $sp_header-hamburger-z-index-m: $sp_header-z-index-m + 1;
 
   @include mq($until: desktop) {
     align-content: center;
+    background-color: var(--co_palette--lighten);
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -44,12 +45,6 @@ $sp_header-hamburger-z-index-m: $sp_header-z-index-m + 1;
     transition: transform 1s $an_header-mobile-animation;
     width: 100%;
     z-index: $sp_header-z-index-m;
-
-    @for $i from 1 through 5 {
-      .t-palette-color--#{$i} & {
-        background-color: var(--co_palette-#{$i}--lighten);
-      }
-    }
 
     .c-header__toggle:checked ~ & {
       transform: translate3d(-100%, 0, 0);
@@ -103,14 +98,9 @@ $sp_header-hamburger-z-index-m: $sp_header-z-index-m + 1;
   @media (hover: hover) { // https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover -> The hover CSS media feature can be used to test whether the user's primary input mechanism can hover over elements.
     &:hover {
       border-bottom: rem(1) solid $co_color-main;
+      border-color: var(--co_palette--lighten);
       padding-bottom: rem(4);
       text-decoration: none;
-
-      @for $i from 1 through 5 {
-        .t-palette-color--#{$i} & {
-          border-color: var(--co_palette-#{$i}--lighten);
-        }
-      }
     }
   }
 
@@ -119,14 +109,9 @@ $sp_header-hamburger-z-index-m: $sp_header-z-index-m + 1;
 
     @include mq(desktop) {
       border-bottom: rem(4) solid $co_color-main;
+      border-color: var(--co_palette--lighten);
       font-weight: $font-sans-weight-default;
       padding-bottom: rem(4);
-
-      @for $i from 1 through 5 {
-        .t-palette-color--#{$i} & {
-          border-color: var(--co_palette-#{$i}--lighten);
-        }
-      }
 
       &:hover {
         text-decoration: none;
