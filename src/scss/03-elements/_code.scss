@@ -4,6 +4,10 @@
 
 :not(pre) > code:not([class^= 'language-']) { // inline code
   background: $co_color-concrete;
+
+  [data-theme= 'dark'] & {
+    background: #1e1e3f; // same as code snippets
+  }
 }
 
 // Prism customization

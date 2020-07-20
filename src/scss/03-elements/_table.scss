@@ -9,6 +9,10 @@
 
   tr {
     border-bottom: rem(1) solid $co_color-city-lights;
+
+    [data-theme= 'dark'] & {
+      border-color: rgba($co_color-city-lights, 0.5);
+    }
   }
 
   th,
