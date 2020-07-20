@@ -389,6 +389,10 @@ body {
   border-bottom: 0.0625rem solid #e8e8e8;
 }
 
+[data-theme='dark'] .c-table tr {
+  border-color: rgba(232, 232, 232, 0.5);
+}
+
 .c-table th,
 .c-table td {
   padding: 0.625rem;
@@ -409,6 +413,10 @@ body {
 ========================================================================== */
 :not(pre) > code:not([class^='language-']) {
   background: #f3f3f3;
+}
+
+[data-theme='dark'] :not(pre) > code:not([class^='language-']) {
+  background: #1e1e3f;
 }
 
 pre[class*='language-'],
@@ -582,6 +590,10 @@ p::selection {
 
 .c-article-section__content table tr {
   border-bottom: 0.0625rem solid #e8e8e8;
+}
+
+[data-theme='dark'] .c-article-section__content table tr {
+  border-color: rgba(232, 232, 232, 0.5);
 }
 
 .c-article-section__content table th,
@@ -1009,6 +1021,10 @@ p::selection {
 
 .c-card__raw-content table tr {
   border-bottom: 0.0625rem solid #e8e8e8;
+}
+
+[data-theme='dark'] .c-card__raw-content table tr {
+  border-color: rgba(232, 232, 232, 0.5);
 }
 
 .c-card__raw-content table th,
@@ -1539,7 +1555,7 @@ p::selection {
 .c-theme-switcher__slider::before {
   background-color: #fff;
   border-radius: 50%;
-  bottom: 3px;
+  bottom: 4px;
   content: '';
   height: 1.3rem;
   left: 4px;
