@@ -4,6 +4,11 @@
 
 .c-footer {
   background-color: $co_color-city-lights;
+  // background-color: var(--co_palette);
+
+  [data-theme= 'dark'] & {
+    background-color: $co_color-palette-dark-darken;
+  }
 
   .l-main {
     margin-bottom: 0;
@@ -17,6 +22,10 @@
   justify-content: flex-end;
   margin-bottom: 0;
   // padding: $sp_variable-m 0;
+}
+
+.c-footer__theme-switcher {
+  margin-right: auto;
 }
 
 .c-footer__item {

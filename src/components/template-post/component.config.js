@@ -8,27 +8,31 @@ moduleAlias.addAlias('@content', process.cwd() + '/content')
 // Components
 const { randItem, getRandom } = require('@content/dynamic-content.js')
 
+const postContext = {
+  uiContext: {
+    containerModifiers: ['ui-container--medium-bg'],
+    componentModifiers: ['ui-card'],
+  },
+  hero: {
+    title: 'Quote',
+    // img: `https://images.unsplash.com/photo-1474377207190-a7d8b3334068?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80`,
+  },
+  articleSection: {
+    date: randItem('dates'),
+    tags: Array.from({length: getRandom(4, 1)}, () => randItem('tags').label),
+  }
+}
+
 module.exports = {
   label: 'TPL',
   variants: [
-    // Default
     {
-      title: 'Default',
       file: 'default.ejs',
-      context: {
-        uiContext: {
-          containerModifiers: ['ui-container--medium-bg'],
-          componentModifiers: ['ui-card'],
-        },
-        hero: {
-          title: 'Quote',
-          // img: `https://images.unsplash.com/photo-1474377207190-a7d8b3334068?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80`,
-        },
-        articleSection: {
-          date: randItem('dates'),
-          tags: Array.from({length: getRandom(4, 1)}, () => randItem('tags').label),
-        }
-      }
+      context: postContext,
     },
-  ]
+    {
+      file: 'dark-mode.ejs',
+      context: postContext,
+    }
+  ],
 }

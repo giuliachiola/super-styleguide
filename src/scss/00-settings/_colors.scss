@@ -12,6 +12,8 @@ $co_palette-5: #ff9f1c;
 $co_palette-dark: #073b4c;
 
 $co_lighten: 10%;
+$co_shadow-default: 0.1;
+$co_shadow-colored: 0.4;
 
 // Neutrals
 
@@ -27,52 +29,88 @@ $co_color-dark-gray: #3f3f3f;
 // Set main colors
 
 $co_color-main: $co_color-medium-gray;
-
 $co_color-main-tint-10: tint($co_color-main, 10%);
-$co_color-main-shade-10: shade($co_color-main, 10%);
+$co_color-palette-dark-darken: darken($co_palette-dark, 5%);
 
 /**
  * CSS vars
  */
 
 :root {
+  --co_text: #{$co_color-main};
+  --co_text-tint-10: #{$co_color-main-tint-10};
+  --co_background: #{$co_color-light};
+  --co_shadow: #{rgba($co_color-solid-black, $co_shadow-default)};
   --co_palette: #{$co_color-main};
   --co_palette--lighten: #{lighten($co_color-main, $co_lighten)};
   --co_palette--opacity: #{rgba($co_color-main, 0.1)};
 }
 
+[data-theme= 'dark'] {
+  --co_text: #{$co_color-light};
+  --co_background: #{$co_palette-dark};
+  --co_text-tint-10: #{tint($co_color-light, 10%)};
+}
+
+// Palette colors
+
 .t-palette-color--1 {
   --co_palette: #{$co_palette-1};
   --co_palette--lighten: #{lighten($co_palette-1, $co_lighten)};
   --co_palette--opacity: #{rgba($co_palette-1, 0.1)};
+
+  [data-theme= 'dark'] & {
+    --co_shadow: #{rgba($co_palette-1, $co_shadow-colored)};
+    --co_palette--opacity: #{rgba($co_palette-1, 0.3)};
+  }
 }
 
 .t-palette-color--2 {
   --co_palette: #{$co_palette-2};
   --co_palette--lighten: #{lighten($co_palette-2, $co_lighten)};
   --co_palette--opacity: #{rgba($co_palette-2, 0.1)};
+
+  [data-theme= 'dark'] & {
+    --co_shadow: #{rgba($co_palette-2, $co_shadow-colored)};
+    --co_palette--opacity: #{rgba($co_palette-2, 0.3)};
+  }
 }
 
 .t-palette-color--3 {
   --co_palette: #{$co_palette-3};
   --co_palette--lighten: #{lighten($co_palette-3, $co_lighten)};
   --co_palette--opacity: #{rgba($co_palette-3, 0.1)};
+
+  [data-theme= 'dark'] & {
+    --co_shadow: #{rgba($co_palette-3, $co_shadow-colored)};
+    --co_palette--opacity: #{rgba($co_palette-3, 0.3)};
+  }
 }
 
 .t-palette-color--4 {
   --co_palette: #{$co_palette-4};
   --co_palette--lighten: #{lighten($co_palette-4, $co_lighten)};
   --co_palette--opacity: #{rgba($co_palette-4, 0.1)};
+
+  [data-theme= 'dark'] & {
+    --co_shadow: #{rgba($co_palette-4, $co_shadow-colored)};
+    --co_palette--opacity: #{rgba($co_palette-4, 0.3)};
+  }
 }
 
 .t-palette-color--5 {
   --co_palette: #{$co_palette-5};
   --co_palette--lighten: #{lighten($co_palette-5, $co_lighten)};
   --co_palette--opacity: #{rgba($co_palette-5, 0.1)};
+
+  [data-theme= 'dark'] & {
+    --co_shadow: #{rgba($co_palette-5, $co_shadow-colored)};
+    --co_palette--opacity: #{rgba($co_palette-5, 0.3)};
+  }
 }
 
 // SHADOW
 
-@mixin element-shadow ($opacity: 0.1) {
-  box-shadow: 0 rem(10) rem(45) rem(-9) rgba(0, 0, 0, $opacity);
+@mixin element-shadow ($opacity: $co_shadow-default) {
+  box-shadow: 0 rem(10) rem(45) rem(-9) var(--co_shadow);
 }

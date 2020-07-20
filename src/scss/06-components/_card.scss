@@ -89,6 +89,7 @@ $sp_card-border-radius: rem(2);
 }
 
 .c-card__content {
+  background-color: var(--co_background);
   padding: $sp_card-content-padding $sp_card-content-padding rem(74) $sp_card-content-padding; // bottom padding needed for date/tags position absolute
 
   .c-card--highlight-left & {
@@ -161,7 +162,7 @@ $sp_card-border-radius: rem(2);
 }
 
 .c-card__number {
-  @include element-shadow(0.3);
+  @include element-shadow($opacity: 0.3);
 
   background-color: var(--co_palette--lighten);
   border-radius: $sp_card-border-radius;
