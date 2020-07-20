@@ -1358,11 +1358,11 @@ p::selection {
   font-style: italic;
 }
 
-.c-hero--quote h2::before {
+.c-hero__quote::before {
   content: '“';
 }
 
-.c-hero--quote h2::after {
+.c-hero__quote::after {
   content: '”';
 }
 

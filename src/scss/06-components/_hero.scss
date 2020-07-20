@@ -37,15 +37,15 @@
 
 .c-hero--quote {
   font-style: italic;
+}
 
-  h2 {
-    &::before {
-      content: '“';
-    }
+.c-hero__quote { // quote but not author
+  &::before {
+    content: '“';
+  }
 
-    &::after {
-      content: '”';
-    }
+  &::after {
+    content: '”';
   }
 }
 
