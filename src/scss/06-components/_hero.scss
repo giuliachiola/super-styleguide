@@ -37,6 +37,16 @@
 
 .c-hero--quote {
   font-style: italic;
+
+  h2 {
+    &::before {
+      content: '&ldquo;';
+    }
+
+    &::after {
+      content: '&rdquo;';
+    }
+  }
 }
 
 .c-hero__title-custom { // ex. Tagged post "git" --> git has custom styles

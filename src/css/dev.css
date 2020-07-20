@@ -1239,6 +1239,15 @@ p::selection {
   }
 }
 
+@media (min-width: 64em) {
+  .c-header__link.is-current-section {
+    border-bottom: 0.125rem dotted #50596c;
+    border-color: var(--co_palette--lighten);
+    font-weight: 400;
+    padding-bottom: 0.25rem;
+  }
+}
+
 /* ---------
   Mobile header toggle
 --------- */
@@ -1350,6 +1359,14 @@ p::selection {
 
 .c-hero--quote {
   font-style: italic;
+}
+
+.c-hero--quote h2::before {
+  content: '&ldquo;';
+}
+
+.c-hero--quote h2::after {
+  content: '&rdquo;';
 }
 
 .c-hero__title-custom {
