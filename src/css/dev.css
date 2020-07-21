@@ -1361,6 +1361,11 @@ p::selection {
   font-style: italic;
 }
 
+.c-hero__quote {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
 .c-hero__quote::before {
   content: '“';
 }
