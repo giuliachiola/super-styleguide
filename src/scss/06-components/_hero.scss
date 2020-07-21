@@ -40,6 +40,9 @@
 }
 
 .c-hero__quote { // quote but not author
+  max-width: 80%;
+  margin: 0 auto;
+
   &::before {
     content: '“';
   }
