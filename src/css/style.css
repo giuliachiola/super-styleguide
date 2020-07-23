@@ -1359,8 +1359,8 @@ p::selection {
 }
 
 .c-hero__quote {
-  max-width: 80%;
   margin: 0 auto;
+  max-width: 80%;
 }
 
 .c-hero__quote::before {

@@ -15,6 +15,7 @@
     "_____________________________Dev_______________________________": "",
     "watcher": "nodemon -e scss -x \"npm run styles:dev\"",
     "build:serve": "node ./scripts/uiengine build --watch --serve",
+    "build": "npm run styles:dev && node ./scripts/uiengine build",
     "dev": "npm-run-all -l clean:dev --parallel build:serve watcher"
   },
   "author": "",

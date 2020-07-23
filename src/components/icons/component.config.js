@@ -27,7 +27,7 @@ module.exports = {
           'static-site-generator',
           'svg',
           'template-engine',
-          'terminal',
+          'shell',
           'twitter',
           'vsc',
           'vuejs',
