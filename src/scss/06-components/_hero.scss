@@ -53,22 +53,11 @@
 }
 
 .c-hero__title-custom { // ex. Tagged post "git" --> git has custom styles
-  border-bottom: rem(1) dashed $co_color-light;
-  text-transform: uppercase;
-
-  /* stylelint-disable */
   @include ty-heading--m;
 
+  border-bottom: rem(1) dashed $co_color-light;
   font-weight: $font-sans-weight-bold;
-
-  @include mq(tablet) { // TODO: check how override mixin without this terrible code!
-    font-weight: $font-sans-weight-bold;
-  }
-
-  @include mq(desktop) {
-    font-weight: $font-sans-weight-bold;
-  }
-  /* stylelint-enable */
+  text-transform: uppercase;
 }
 
 .c-hero__img {
