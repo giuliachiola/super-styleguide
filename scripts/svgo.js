@@ -46,6 +46,11 @@ svgfilesArr.forEach(iconName => {
             onlyMatchedOnce: false
           }
         },
+        {
+          cleanupIDs: {
+            prefix: `${iconName.slice(0, -4)}-` // remove last string part '.svg'
+          }
+        }
       ]
     })
     // Read svg file content

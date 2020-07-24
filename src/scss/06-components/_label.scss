@@ -8,7 +8,7 @@
 }
 
 .c-label {
-  background-color: var(--co_palette--opacity);
+  background-color: var(--co_palette--lighten-hard);
   border-radius: $sp_main-border-radius;
   border-radius: rem(100);
   font-size: $ty_font-size-small;
@@ -26,5 +26,13 @@
   &[data-state= 'active'] {
     background: var(--co_palette);
     color: $co_color-light;
+  }
+
+  [data-theme= 'dark'] & {
+    color: $co_palette-dark;
+
+    &:hover {
+      color: $co_palette-dark;
+    }
   }
 }

@@ -28,7 +28,7 @@
   margin-right: auto;
 }
 
-.c-footer__item {
+.c-footer__link {
   color: $co_color-medium-gray;
   padding: $sp_variable-s;
 
@@ -36,7 +36,7 @@
     color: $co_color-dark-gray;
   }
 
-  .c-footer__item ~ & {
+  .c-footer__link ~ & {
     margin-left: $sp_variable-s;
   }
 
