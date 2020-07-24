@@ -6,7 +6,8 @@
   background: $co_color-concrete;
 
   [data-theme= 'dark'] & {
-    background: #1e1e3f; // same as code snippets
+    background: $co_palette-code-snippets; // same as code snippets
+    padding: 3px; // improve readability
   }
 }
 
