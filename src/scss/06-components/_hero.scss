@@ -37,11 +37,18 @@
 
 .c-hero--quote {
   font-style: italic;
+
+  @include mq($until: tablet) {
+    padding: rem(50) rem(20); // hamburger occupies space!
+  }
 }
 
 .c-hero__quote { // quote but not author
   margin: 0 auto;
-  max-width: 80%;
+
+  @include mq(tablet) {
+    max-width: 80%;
+  }
 
   &::before {
     content: '“';
@@ -72,6 +79,10 @@
 
 .c-hero__subtitle {
   @include ty-heading--s;
+
+  .c-hero--quote & {
+    margin-bottom: 0;
+  }
 }
 
 .c-hero__scroll-down {
