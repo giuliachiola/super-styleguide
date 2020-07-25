@@ -1348,9 +1348,20 @@ p::selection {
   font-style: italic;
 }
 
+@media (max-width: 47.99em) {
+  .c-hero--quote {
+    padding: 3.125rem 1.25rem;
+  }
+}
+
 .c-hero__quote {
   margin: 0 auto;
-  max-width: 80%;
+}
+
+@media (min-width: 48em) {
+  .c-hero__quote {
+    max-width: 80%;
+  }
 }
 
 .c-hero__quote::before {
@@ -1408,6 +1419,10 @@ p::selection {
   .c-hero__subtitle {
     font-size: 1.5rem;
   }
+}
+
+.c-hero--quote .c-hero__subtitle {
+  margin-bottom: 0;
 }
 
 .c-hero__scroll-down {
