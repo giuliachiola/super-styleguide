@@ -105,13 +105,12 @@ $sp_header-hamburger-z-index-m: $sp_header-z-index-m + 1;
   }
 
   &[data-state= 'active'] { // current page
-    font-weight: $font-sans-weight-bold;
+    border-bottom: rem(2) dashed $co_color-light;
+    font-weight: $font-sans-weight-default;
+    padding-bottom: rem(4);
 
     @include mq(desktop) {
-      border-bottom: rem(4) solid $co_color-main;
-      border-color: var(--co_palette--lighten);
-      font-weight: $font-sans-weight-default;
-      padding-bottom: rem(4);
+      border-bottom: rem(4) solid var(--co_palette--lighten);
 
       &:hover {
         text-decoration: none;
@@ -119,10 +118,11 @@ $sp_header-hamburger-z-index-m: $sp_header-z-index-m + 1;
     }
   }
 
-  &.is-current-section:not([data-state= 'active']) { // e.g. is a tutorial from "tutorials" section
+  &[data-state= 'current-section'] { // e.g. is a tutorial from "tutorials" section
+    border-bottom: rem(2) dotted $co_color-light;
+
     @include mq(desktop) {
-      border-bottom: rem(2) dotted $co_color-main;
-      border-color: var(--co_palette--lighten);
+      border-bottom: rem(2) dotted var(--co_palette--lighten);
       font-weight: $font-sans-weight-default;
       padding-bottom: rem(4);
     }
