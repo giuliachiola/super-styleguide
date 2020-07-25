@@ -79,6 +79,7 @@ $sp_card-border-radius: rem(2);
   padding-left: $sp_card-content-padding + $sp_card-highlight;
 
   &::before {
+    background-color: var(--co_palette--lighten);
     content: '';
     height: 100%;
     left: 0;
