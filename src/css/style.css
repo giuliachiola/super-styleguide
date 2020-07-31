@@ -625,7 +625,7 @@ p::selection {
 }
 
 .c-article-section__top {
-  border-bottom: 0.0625rem solid #e8e8e8;
+  border-bottom: 0.0625rem solid rgba(172, 179, 194, 0.5);
   padding-bottom: 1.25rem;
   align-items: flex-end;
   display: flex;
@@ -684,7 +684,7 @@ p::selection {
 }
 
 .c-article-section__bottom {
-  border-top: 0.0625rem solid #e8e8e8;
+  border-top: 0.0625rem solid rgba(172, 179, 194, 0.5);
   padding-top: 1.25rem;
   margin-top: 3.75rem;
 }
