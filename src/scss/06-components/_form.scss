@@ -20,6 +20,11 @@
     width: 50%;
   }
 
+  [data-theme= 'dark'] & {
+    background: transparent;
+    color: $co_color-light;
+  }
+
   &:focus {
     border: rem(1) solid $co_color-light-gray;
     outline:none;
