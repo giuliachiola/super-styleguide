@@ -542,14 +542,18 @@ p::selection {
 }
 
 .c-article-section__toc {
-  border-bottom: 0.0625rem solid rgba(172, 179, 194, 0.5);
-  padding-bottom: 1.25rem;
   color: #acb3c2;
 }
 
 .c-article-section__toc ol {
   color: var(--co_text);
+  margin-bottom: 0;
   padding-inline-start: 1.25rem;
+}
+
+.c-article-section__toc nav {
+  border-bottom: 0.0625rem solid rgba(172, 179, 194, 0.5);
+  padding-bottom: 1.25rem;
 }
 
 .c-article-section__reading-time {

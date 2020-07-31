@@ -14,13 +14,16 @@
 }
 
 .c-article-section__toc {
-  @include main-border('bottom');
-
   color: $co_color-light-gray;
 
   ol {
     color: var(--co_text);
+    margin-bottom: 0;
     padding-inline-start: rem(20);
+  }
+
+  nav {
+    @include main-border('bottom');
   }
 }
 
