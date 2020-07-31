@@ -541,12 +541,8 @@ p::selection {
   margin-bottom: 0.3125rem;
 }
 
-.c-article-section ul {
-  padding-inline-start: 1.25rem;
-}
-
 .c-article-section__toc {
-  border-bottom: 0.0625rem solid #e8e8e8;
+  border-bottom: 0.0625rem solid rgba(172, 179, 194, 0.5);
   padding-bottom: 1.25rem;
   color: #acb3c2;
 }
@@ -624,6 +620,16 @@ p::selection {
   }
   .c-article-section__content table * {
     white-space: nowrap;
+  }
+}
+
+.c-article-section__content ul {
+  padding-inline-start: 1.25rem;
+}
+
+@media (min-width: 64em) {
+  .c-article-section__content ul {
+    padding-inline-start: 2.5rem;
   }
 }
 
