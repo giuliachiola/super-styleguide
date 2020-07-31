@@ -4,10 +4,10 @@
 
 :not(pre) > code:not([class^= 'language-']) { // inline code
   background: $co_color-concrete;
+  padding: 3px; // improve readability
 
   [data-theme= 'dark'] & {
     background: $co_palette-code-snippets; // same as code snippets
-    padding: 3px; // improve readability
   }
 }
 

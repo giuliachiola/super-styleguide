@@ -9,18 +9,24 @@
   margin-bottom: $sp_variable-xs;
 }
 
-// .c-article-section {}
+.c-article-section {
+  ul {
+    padding-inline-start: rem(20);
+  }
+}
 
 .c-article-section__date {
   @extend %article-section-side-info;
 }
 
 .c-article-section__toc {
-  @extend %article-section-side-info;
+  @include main-border('bottom');
+
+  color: $co_color-light-gray;
 
   ol {
     color: var(--co_text);
-    padding-inline-start: rem(25);
+    padding-inline-start: rem(20);
   }
 }
 

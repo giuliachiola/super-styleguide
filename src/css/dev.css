@@ -408,11 +408,11 @@ body {
 ========================================================================== */
 :not(pre) > code:not([class^='language-']) {
   background: #f3f3f3;
+  padding: 3px;
 }
 
 [data-theme='dark'] :not(pre) > code:not([class^='language-']) {
   background: #1e1e3f;
-  padding: 3px;
 }
 
 pre[class*='language-'],
@@ -534,16 +534,26 @@ p::selection {
 /* ==========================================================================
   ARTICLE SECTION
 ========================================================================== */
-.c-article-section__date, .c-article-section__toc {
+.c-article-section__date {
   color: #acb3c2;
   display: block;
   font-size: 0.75rem;
   margin-bottom: 0.3125rem;
 }
 
+.c-article-section ul {
+  padding-inline-start: 1.25rem;
+}
+
+.c-article-section__toc {
+  border-bottom: 0.0625rem solid #e8e8e8;
+  padding-bottom: 1.25rem;
+  color: #acb3c2;
+}
+
 .c-article-section__toc ol {
   color: var(--co_text);
-  padding-inline-start: 1.5625rem;
+  padding-inline-start: 1.25rem;
 }
 
 .c-article-section__reading-time {
@@ -1516,6 +1526,11 @@ p::selection {
     margin-right: 1.25rem;
     width: 50%;
   }
+}
+
+[data-theme='dark'] .c-form__input {
+  background: transparent;
+  color: #fff;
 }
 
 .c-form__input:focus {
