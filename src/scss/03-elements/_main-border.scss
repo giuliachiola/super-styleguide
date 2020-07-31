@@ -2,7 +2,7 @@
   MAIN BORDER
 ========================================================================== */
 
-@mixin main-border($dir, $color: $co_color-city-lights, $spacing: 'medium') {
+@mixin main-border($dir, $color: rgba($co_color-light-gray, 0.5), $spacing: 'medium') {
   @if $dir == 'top' and $spacing == 'medium' {
     border-top: rem(1) solid $color;
     padding-top: $sp_variable-m;
