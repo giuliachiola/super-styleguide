@@ -103,11 +103,16 @@ code {
   Image reset
 ------------------ */
 
-img,
-amp-img {
+img {
   height: auto;
   max-width: 100%;
   vertical-align: middle;
+
+  // alt text
+  /* stylelint-disable */
+  color: var(--co_palette--lighten);
+  text-transform: uppercase;
+  /* stylelint-enable */
 }
 
 /* ------------------
