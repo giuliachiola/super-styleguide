@@ -1559,57 +1559,25 @@ p::selection {
 /* ==========================================================================
   THEME SWITCHER
 ========================================================================== */
-.c-theme-switcher {
-  align-items: center;
-  display: flex;
-}
-
-.c-theme-switcher__text {
-  font-size: 0.625rem;
-  margin-left: 0.625rem;
-}
-
-.c-theme-switcher__checkbox {
-  display: inline-block;
-  height: 1.7rem;
-  position: relative;
-  width: 3rem;
-}
-
-.c-theme-switcher__checkbox input {
+.c-theme-switcher__input {
   display: none;
 }
 
-.c-theme-switcher__slider {
-  background-color: #ccc;
-  border-radius: 1.7rem;
-  bottom: 0;
+[data-theme='dark'] .c-theme-switcher__label--dark {
+  display: none;
+}
+
+[data-theme='light'] .c-theme-switcher__label--light {
+  display: none;
+}
+
+.c-theme-switcher__label {
+  color: transparent;
+  text-shadow: 0 0 0 var(--co_text);
+}
+
+.c-theme-switcher__label:hover {
   cursor: pointer;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: 0.4s;
-}
-
-.c-theme-switcher__slider::before {
-  background-color: #fff;
-  border-radius: 50%;
-  bottom: 4px;
-  content: '';
-  height: 1.3rem;
-  left: 4px;
-  position: absolute;
-  transition: 0.4s;
-  width: 1.3rem;
-}
-
-input:checked + .c-theme-switcher__slider {
-  background-color: #626a7b;
-}
-
-input:checked + .c-theme-switcher__slider::before {
-  transform: translateX(1.3rem);
 }
 
 /* ==========================================================================
