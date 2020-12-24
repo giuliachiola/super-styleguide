@@ -14,8 +14,9 @@ const postContext = {
     componentModifiers: ['ui-card'],
   },
   hero: {
-    title: 'Quote',
-    // img: `https://images.unsplash.com/photo-1474377207190-a7d8b3334068?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80`,
+    title: 'Lorem ipsum dolor sit amet',
+    subtitle: 'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.',
+    // img: `https://www.seekpng.com/png/full/3-38187_free-botanical-drawings-for-bullet-journaling-bullet-journal.png`,
   },
   articleSection: {
     date: randItem('dates'),
