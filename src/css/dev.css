@@ -1096,12 +1096,12 @@ p::selection {
 }
 
 .c-footer__link {
-  color: #50596c;
+  color: var(--co_text);
   padding: 0.625rem;
 }
 
 .c-footer__link:hover {
-  color: #3f3f3f;
+  opacity: 0.6;
 }
 
 .c-footer__link ~ .c-footer__link {

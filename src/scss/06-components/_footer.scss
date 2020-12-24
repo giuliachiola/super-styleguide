@@ -29,11 +29,11 @@
 }
 
 .c-footer__link {
-  color: $co_color-medium-gray;
+  color: var(--co_text);
   padding: $sp_variable-s;
 
   &:hover {
-    color: $co_color-dark-gray;
+    opacity: 0.6;
   }
 
   .c-footer__link ~ & {
