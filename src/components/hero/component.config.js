@@ -46,7 +46,10 @@ module.exports = {
           containerModifiers: ['ui-container--medium-bg'],
           componentModifiers: [],
         },
-        hero: hero,
+        hero: {
+          quote: 'Lorem ipsum this is a quote',
+          quoteAuthor: 'Quote author'
+        },
       },
     },
   ]
