@@ -27,7 +27,7 @@
       <% navList.forEach(function(item, i){ %>
         <li class="c-header__item">
           <a class="c-header__link"
-            href="<% item.url %>"
+            href="<%= item.url %>"
             <% if (i === 0) { %>data-state="active"<% } %>
             <% if (i === 1) { %>data-state="current-section"<% } %>>
             <%= item.label %>
