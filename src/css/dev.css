@@ -1588,16 +1588,6 @@ p::selection {
   text-shadow: rgba(0, 0, 0, 0.5) 0 0 0.625rem;
 }
 
-.c-hero--bg-img::before {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent 50%), linear-gradient(to top, transparent, rgba(0, 0, 0, 0.5) 50%, transparent);
-  content: '';
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
 .c-hero--quote {
   font-style: italic;
 }
@@ -1648,13 +1638,17 @@ p::selection {
 }
 
 .c-hero__img {
-  height: 100%;
-  left: 0;
-  object-fit: cover;
   position: absolute;
   top: 0;
+  left: 0;
   width: 100%;
-  z-index: -1;
+  height: 100%;
+  background-image: var(--hero-image);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.3;
 }
 
 .c-hero__subtitle {
@@ -1677,10 +1671,6 @@ p::selection {
 
 .c-hero--quote .c-hero__subtitle {
   margin-bottom: 0;
-}
-
-.c-hero__scroll-down {
-  color: #fff;
 }
 
 .c-hero__credits {

@@ -16,7 +16,7 @@ const postContext = {
   hero: {
     title: 'Lorem ipsum dolor sit amet',
     subtitle: 'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.',
-    // img: `https://www.seekpng.com/png/full/3-38187_free-botanical-drawings-for-bullet-journaling-bullet-journal.png`,
+    img: `https://www.seekpng.com/png/full/3-38187_free-botanical-drawings-for-bullet-journaling-bullet-journal.png`,
   },
   articleSection: {
     date: randItem('dates'),
