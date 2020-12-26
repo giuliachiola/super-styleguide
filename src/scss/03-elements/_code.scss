@@ -2,7 +2,11 @@
   CODE
 ========================================================================== */
 
-:not(pre) > code:not([class^= 'language-']) { // inline code
+/**
+ * Inline code
+ */
+
+:not(pre) > code:not([class^= 'language-']) {
   background: $co_color-concrete;
   padding: 3px; // improve readability
 
@@ -11,9 +15,43 @@
   }
 }
 
-// Prism customization
+/**
+ * Prism customization
+ */
 
 pre[class*= 'language-'],
 code[class*= 'language-'] {
   font-size: inherit; // inherit the block font-size, to be large as the text around it
+}
+
+// Copy button
+// https://www.tomspencer.dev/blog/2018/09/14/adding-click-to-copy-buttons-to-a-hugo-powered-blog/
+
+.c-code {
+  position: relative;
+
+  .c-code__copy-button {
+    @include button-reset;
+    @include element-shadow;
+
+    background: var(--co_palette);
+    color: var(--co_background);
+    font-size: 12px;
+    line-height: 1.2;
+    padding: 2px 10px;
+    position: absolute;
+    right: 10px;
+    text-transform: uppercase;
+    top: 10px;
+
+    &:hover,
+    &:focus {
+      background: var(--co_palette--lighten);
+      cursor: pointer;
+    }
+
+    &:focus {
+      outline:0;
+    }
+  }
 }

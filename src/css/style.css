@@ -406,6 +406,9 @@ body {
 /* ==========================================================================
   CODE
 ========================================================================== */
+/**
+ * Inline code
+ */
 :not(pre) > code:not([class^='language-']) {
   background: #f3f3f3;
   padding: 3px;
@@ -415,9 +418,40 @@ body {
   background: #1e1e3f;
 }
 
+/**
+ * Prism customization
+ */
 pre[class*='language-'],
 code[class*='language-'] {
   font-size: inherit;
+}
+
+.c-code {
+  position: relative;
+}
+
+.c-code .c-code__copy-button {
+  background: transparent;
+  border: none;
+  box-shadow: 0 0.625rem 2.8125rem -0.5625rem var(--co_shadow);
+  background: var(--co_palette);
+  color: var(--co_background);
+  font-size: 12px;
+  line-height: 1.2;
+  padding: 2px 10px;
+  position: absolute;
+  right: 10px;
+  text-transform: uppercase;
+  top: 10px;
+}
+
+.c-code .c-code__copy-button:hover, .c-code .c-code__copy-button:focus {
+  background: var(--co_palette--lighten);
+  cursor: pointer;
+}
+
+.c-code .c-code__copy-button:focus {
+  outline: 0;
 }
 
 /* ==========================================================================
