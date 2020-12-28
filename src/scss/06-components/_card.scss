@@ -79,6 +79,7 @@ $sp_card-border-radius: rem(2);
   padding-left: $sp_card-content-padding + $sp_card-highlight;
 
   &::before {
+    background-color: var(--co_palette--lighten);
     content: '';
     height: 100%;
     left: 0;
@@ -89,7 +90,6 @@ $sp_card-border-radius: rem(2);
 }
 
 .c-card__content {
-  background-color: var(--co_background);
   padding: $sp_card-content-padding $sp_card-content-padding rem(74) $sp_card-content-padding; // bottom padding needed for date/tags position absolute
 
   .c-card--highlight-left & {
@@ -124,15 +124,6 @@ $sp_card-border-radius: rem(2);
   @include ty-heading--m;
 
   font-weight: $font-sans-weight-bold;
-
-  @include mq(tablet) { // TODO: check how override mixin without this terrible code!
-    font-weight: $font-sans-weight-bold;
-  }
-
-  @include mq(desktop) {
-    font-weight: $font-sans-weight-bold;
-  }
-
   margin-bottom: $sp_variable-s;
   margin-top: 0;
   text-transform: uppercase;

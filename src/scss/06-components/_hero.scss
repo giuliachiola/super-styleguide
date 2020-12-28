@@ -23,25 +23,22 @@
   color: $co_color-light;
   min-height: rem(500);
   text-shadow: rgba($co_color-solid-black, 0.5) 0 0 rem(10); // text shadow for legibility
-
-  &::before {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent 50%), linear-gradient(to top, transparent, rgba(0, 0, 0, 0.5) 50%, transparent);
-    content: '';
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
 }
 
 .c-hero--quote {
   font-style: italic;
+
+  @include mq($until: tablet) {
+    padding: rem(50) rem(20); // hamburger occupies space!
+  }
 }
 
 .c-hero__quote { // quote but not author
   margin: 0 auto;
-  max-width: 80%;
+
+  @include mq(tablet) {
+    max-width: 80%;
+  }
 
   &::before {
     content: '“';
@@ -53,40 +50,33 @@
 }
 
 .c-hero__title-custom { // ex. Tagged post "git" --> git has custom styles
-  border-bottom: rem(1) dashed $co_color-light;
-  text-transform: uppercase;
-
-  /* stylelint-disable */
   @include ty-heading--m;
 
+  border-bottom: rem(1) dashed $co_color-light;
   font-weight: $font-sans-weight-bold;
-
-  @include mq(tablet) { // TODO: check how override mixin without this terrible code!
-    font-weight: $font-sans-weight-bold;
-  }
-
-  @include mq(desktop) {
-    font-weight: $font-sans-weight-bold;
-  }
-  /* stylelint-enable */
+  text-transform: uppercase;
 }
 
 .c-hero__img {
+  background-attachment: fixed;
+  background-image: var(--hero-image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100%;
   left: 0;
-  object-fit: cover;
+  opacity: 0.3;
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: -1;
 }
 
 .c-hero__subtitle {
   @include ty-heading--s;
-}
 
-.c-hero__scroll-down {
-  color: $co_color-light;
+  .c-hero--quote & {
+    margin-bottom: 0;
+  }
 }
 
 .c-hero__credits { // link to photo

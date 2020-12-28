@@ -1,15 +1,37 @@
 <%
-  var navList = ['tutorials', 'today I learned', 'useful resources', 'projects', 'about']
+  var navList = [
+    {
+      label: 'today I learned',
+      url: '/_variants/_default/template-til/default.ejs-1.html'
+    },
+    {
+      label: 'tutorials',
+      url: '/_variants/_default/template-tutorials/default.ejs-1.html'
+    },
+    {
+      label: 'projects',
+      url: '/_variants/_default/template-projects/default.ejs-1.html'
+    },
+    {
+      label: 'about',
+      url: '/_variants/_default/template-about/default.ejs-1.html'
+    }
+  ]
 %>
 
 <header class="c-header">
   <nav class="c-header__nav l-main">
-    <input class="c-header__toggle" type="checkbox" name="checkbox" id="checkbox_id" value="value"/>
-    <label class="c-header__hamburger" for="checkbox_id"></label>
+    <input class="c-header__toggle" type="checkbox" name="checkbox" id="headerToggle" value="value"/>
+    <label class="c-header__hamburger" for="headerToggle"></label>
     <ul class="c-header__list">
-      <% navList.forEach(function(item){ %>
+      <% navList.forEach(function(item, i){ %>
         <li class="c-header__item">
-          <a class="c-header__link" href="#"><%=item%></a>
+          <a class="c-header__link"
+            href="<%= item.url %>"
+            <% if (i === 0) { %>data-state="active"<% } %>
+            <% if (i === 1) { %>data-state="current-section"<% } %>>
+            <%= item.label %>
+          </a>
         </li>
       <% }); %>
     </ul>

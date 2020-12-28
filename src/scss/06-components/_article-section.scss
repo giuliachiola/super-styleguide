@@ -9,18 +9,21 @@
   margin-bottom: $sp_variable-xs;
 }
 
-// .c-article-section {}
-
 .c-article-section__date {
   @extend %article-section-side-info;
 }
 
 .c-article-section__toc {
-  @extend %article-section-side-info;
+  color: $co_color-light-gray;
 
   ol {
     color: var(--co_text);
-    padding-inline-start: rem(25);
+    margin-bottom: 0;
+    padding-inline-start: rem(20);
+  }
+
+  nav {
+    @include main-border('bottom');
   }
 }
 
@@ -50,6 +53,14 @@
     // Preserve legibility in mobile viewport
     @include mq($until: tablet) {
       @include table-scrollable-content;
+    }
+  }
+
+  ul {
+    padding-inline-start: $sp_variable-m;
+
+    @include mq(desktop) {
+      padding-inline-start: $sp_variable-l;
     }
   }
 }

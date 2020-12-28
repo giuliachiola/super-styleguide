@@ -7,7 +7,7 @@
   // background-color: var(--co_palette);
 
   [data-theme= 'dark'] & {
-    background-color: $co_color-palette-dark-darken;
+    background-color: $co_color-palette-dark-darken2;
   }
 
   .l-main {
@@ -28,15 +28,15 @@
   margin-right: auto;
 }
 
-.c-footer__item {
-  color: $co_color-medium-gray;
+.c-footer__link {
+  color: var(--co_text);
   padding: $sp_variable-s;
 
   &:hover {
-    color: $co_color-dark-gray;
+    opacity: 0.6;
   }
 
-  .c-footer__item ~ & {
+  .c-footer__link ~ & {
     margin-left: $sp_variable-s;
   }
 
