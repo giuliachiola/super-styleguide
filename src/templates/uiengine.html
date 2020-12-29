@@ -14,35 +14,39 @@
     -->
 
     <script>
-    /* open/close mobile menu */
-    const checkbox = document.querySelector(".c-header__toggle");
+    /* ----------------------------
+      Open/Close mobile menu
+    ---------------------------- */
+    const checkbox = document.querySelector(".c-header__toggle")
     if (checkbox) {
       checkbox.addEventListener('change', function() {
         document.body.classList.toggle("is-menu-open")
       })
     }
 
-    /* switch theme (light/dark mode) */
-
+    /* ----------------------------
+      Switch theme (light/dark mode)
+    ---------------------------- */
     const toggleSwitch = document.querySelector('.j-theme-switcher input[type="checkbox"]')
     const currentTheme = localStorage.getItem('theme') || 'light'
-    document.documentElement.setAttribute('data-theme', currentTheme);
+    document.documentElement.setAttribute('data-theme', currentTheme)
 
     if (currentTheme === 'dark') {
-      toggleSwitch.checked = true;
+      toggleSwitch.checked = true
     }
 
     const switchTheme = (e) => {
       const theme = e.target.checked ? 'dark' : 'light'
-      document.documentElement.setAttribute('data-theme', theme);
-      localStorage.setItem('theme', theme);
+      document.documentElement.setAttribute('data-theme', theme)
+      localStorage.setItem('theme', theme)
     }
 
-    toggleSwitch.addEventListener('change', switchTheme, false);
+    toggleSwitch.addEventListener('change', switchTheme, false)
 
-    /* Add copy button in snippets using PrismJS */
-    // https://www.tomspencer.dev/blog/2018/09/14/adding-click-to-copy-buttons-to-a-hugo-powered-blog/
-
+    /* ----------------------------
+      Add copy button in snippets using PrismJS
+      https://www.tomspencer.dev/blog/2018/09/14/adding-click-to-copy-buttons-to-a-hugo-powered-blog/
+    ---------------------------- */
     (function() {
       'use strict'
 
@@ -103,8 +107,7 @@
       }
 
       Array.prototype.forEach.call(highlightBlocks, addCopyButton)
-    })();
-
+    })()
     </script>
 
     <!-- PrismJS from CDN -->
