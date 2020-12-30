@@ -1852,6 +1852,12 @@ p::selection {
   font-style: italic;
 }
 
+@media (max-width: 47.99em) {
+  .u-ty-break-t {
+    display: none;
+  }
+}
+
 /* ==========================================================================
   UTILITY GIPHY
 ========================================================================== */
@@ -1861,12 +1867,6 @@ p::selection {
 
 .s-giphy {
   margin: 0 auto;
-}
-
-@media (max-width: 47.99em) {
-  .s-giphy iframe.giphy-embed {
-    width: 100%;
-  }
 }
 
 .s-giphy p {
