@@ -634,19 +634,20 @@ code[class*='language-'] {
   background: transparent;
   border: none;
   box-shadow: 0 0.625rem 2.8125rem -0.5625rem var(--co_shadow);
-  background: var(--co_palette);
-  color: var(--co_background);
-  font-size: 12px;
+  background: #2e2e62;
+  color: #fff;
+  font-size: 0.75rem;
+  letter-spacing: 0.0625rem;
   line-height: 1.2;
-  padding: 2px 10px;
+  padding: 0.125rem 0.625rem;
   position: absolute;
-  right: 10px;
+  right: 0.625rem;
   text-transform: uppercase;
-  top: 10px;
+  top: 0.625rem;
 }
 
 .c-code .c-code__copy-button:hover, .c-code .c-code__copy-button:focus {
-  background: var(--co_palette--lighten);
+  background: #3f3f84;
   cursor: pointer;
 }
 
