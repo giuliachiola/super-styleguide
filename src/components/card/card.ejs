@@ -3,18 +3,20 @@
   const abstract = truncate(card.abstract)
 
   let modifiers = ''
-  if (card.mainTag) {
-    modifiers = `${modifiers} c-card--${card.mainTag}`
-  }
   if (card.modifiers) {
     card.modifiers.forEach((mod) => {
       modifiers = `${modifiers} c-card--${mod}`
     })
   }
+
+  let spacingClass = ''
+  if (card.spacingClass) {
+    spacingClass = card.spacingClass
+  }
 %>
 
 
-<article class="c-card <%=modifiers%>">
+<article class="c-card <%=modifiers%> <%=spacingClass%>">
   <% if (card.hasImg) { %>
     <div class="c-card__img-wrapper">
       <%- include('../../svg/svgo/'+card.mainTag+'.svg') %>

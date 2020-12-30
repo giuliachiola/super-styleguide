@@ -22,7 +22,8 @@ const projectsContext = {
     {
       modifiers: ['highlight-left'],
       hasImg: false,
-      table: {}
+      table: {},
+      spacingClass: 'l-spacing-m',
     }
   )),
   hero: {

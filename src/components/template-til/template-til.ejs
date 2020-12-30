@@ -13,9 +13,7 @@
     </div>
     <div class="l-spacing-l">
       <% cards.forEach(function(card){ %>
-        <div class="l-spacing-m">
-          <%- include('../card/card.ejs', { card: card, mod: 'l-spacing-m' }); %>
-        </div>
+        <%- include('../card/card.ejs', { card: card }); %>
       <% }) %>
     </div>
     <div class="o-distributed o-distributed--center l-spacing-l">
