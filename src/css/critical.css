@@ -1,0 +1,709 @@
+@charset "UTF-8";
+/* ==========================================================================
+  CRITICAL
+========================================================================== */
+/* ==========================================================================
+  00 - SETTINGS
+========================================================================== */
+/* ==========================================================================
+  MAP DEEP GET
+========================================================================== */
+/* ==========================================================================
+  COLORS
+========================================================================== */
+/**
+ * CSS vars
+ */
+:root {
+  --co_text: #50596c;
+  --co_text-tint-10: #626a7b;
+  --co_background: #fff;
+  --co_shadow: rgba(0, 0, 0, 0.1);
+  --co_palette: #50596c;
+  --co_palette--lighten: #667189;
+  --co_palette--lighten-hard: #9ea6b7;
+}
+
+[data-theme='dark'] {
+  --co_text: #fff;
+  --co_background: #191935;
+  --co_text-tint-10: white;
+}
+
+.t-palette-color--1 {
+  --co_palette: #ef476f;
+  --co_palette--lighten: #f37694;
+  --co_palette--lighten-hard: #ffe1e8;
+}
+
+[data-theme='dark'] .t-palette-color--1 {
+  --co_shadow: rgba(239, 71, 111, 0.4);
+}
+
+.t-palette-color--2 {
+  --co_palette: #ffc233;
+  --co_palette--lighten: #ffd166;
+  --co_palette--lighten-hard: #ffedc4;
+}
+
+[data-theme='dark'] .t-palette-color--2 {
+  --co_shadow: rgba(255, 194, 51, 0.4);
+}
+
+.t-palette-color--3 {
+  --co_palette: #06d6a0;
+  --co_palette--lighten: #17f8be;
+  --co_palette--lighten-hard: #adffe9;
+}
+
+[data-theme='dark'] .t-palette-color--3 {
+  --co_shadow: rgba(6, 214, 160, 0.4);
+}
+
+.t-palette-color--4 {
+  --co_palette: #1b98e0;
+  --co_palette--lighten: #45ade9;
+  --co_palette--lighten-hard: #ace1ff;
+}
+
+[data-theme='dark'] .t-palette-color--4 {
+  --co_shadow: rgba(27, 152, 224, 0.4);
+}
+
+.t-palette-color--5 {
+  --co_palette: #ff9f1c;
+  --co_palette--lighten: #ffb54f;
+  --co_palette--lighten-hard: #ffe3bd;
+}
+
+[data-theme='dark'] .t-palette-color--5 {
+  --co_shadow: rgba(255, 159, 28, 0.4);
+}
+
+/* ==========================================================================
+  MQ CONFIG
+========================================================================== */
+/* ==========================================================================
+  Functions
+========================================================================== */
+/* ==========================================================================
+  Strip unit
+========================================================================== */
+/* ==========================================================================
+  Convert PX to REM
+========================================================================== */
+/* ==========================================================================
+  TYPOGRAPHY
+========================================================================== */
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.65;
+}
+
+/* ==========================================================================
+  HEADINGS
+========================================================================== */
+/* ------------------
+  Headings maps
+------------------ */
+/* ------------------
+  Headings rules
+------------------ */
+/* ------------------
+  Headings - XL
+------------------ */
+/* ------------------
+  Headings - L
+------------------ */
+/* ------------------
+  Headings - M
+------------------ */
+/* ------------------
+  Headings - S
+------------------ */
+h1 {
+  font-size: 2.125rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+@media (min-width: 48em) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 64em) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+@media (min-width: 48em) {
+  h2 {
+    font-size: 1.9375rem;
+  }
+}
+
+@media (min-width: 64em) {
+  h2 {
+    font-size: 2.375rem;
+  }
+}
+
+h3 {
+  font-size: 1.4375rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+@media (min-width: 48em) {
+  h3 {
+    font-size: 1.5625rem;
+  }
+}
+
+@media (min-width: 64em) {
+  h3 {
+    font-size: 1.75rem;
+  }
+}
+
+h4,
+h5,
+h6 {
+  font-size: 1.1875rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+@media (min-width: 48em) {
+  h4,
+  h5,
+  h6 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 64em) {
+  h4,
+  h5,
+  h6 {
+    font-size: 1.5rem;
+  }
+}
+
+/* ==========================================================================
+  01 - TOOLS
+========================================================================== */
+/* ==========================================================================
+  BUTTON RESET
+========================================================================== */
+/* ==========================================================================
+  FIELDSET RESET
+========================================================================== */
+legend {
+  display: table;
+  padding: 0;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  min-width: 0;
+  padding: 0.01em 0 0 0;
+}
+
+body:not(:-moz-handler-blocked) fieldset {
+  display: table-cell;
+}
+
+/* ==========================================================================
+  LIST RESET
+========================================================================== */
+/* ------------------
+  Usage
+
+  <ul> @include list-reset;
+------------------ */
+/* ------------------
+  Usage
+
+  <li> @include list-item-reset;
+------------------ */
+/* ==========================================================================
+  02 - GENERIC (import)
+========================================================================== */
+/* ==========================================================================
+  BASE
+========================================================================== */
+* {
+  box-sizing: border-box;
+  font-family: inherit;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: inherit;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--co_background);
+  color: var(--co_text);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body.is-menu-open {
+  position: fixed;
+  width: 100%;
+}
+
+a {
+  color: var(--co_text);
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: var(--co_text-tint-10);
+  text-decoration: underline;
+}
+
+code {
+  font-family: "Fira Code", monospace;
+}
+
+/* ------------------
+  Image reset
+------------------ */
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  /* stylelint-disable */
+  color: var(--co_palette--lighten);
+  text-transform: uppercase;
+  /* stylelint-enable */
+}
+
+/* ------------------
+  <hr>
+------------------ */
+hr {
+  background-color: #e8e8e8;
+  border: none;
+  color: #e8e8e8;
+  height: 0.0625rem;
+}
+
+/* ------------------
+  blockquote
+------------------ */
+blockquote {
+  border-left: 0.1875rem solid #e8e8e8;
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+/* ------------------
+  Footer at the bottom trick
+------------------ */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+@media (min-width: 64em) {
+  .l-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+@media (min-width: 64em) {
+  .c-footer {
+    margin-top: auto;
+  }
+}
+
+/* ==========================================================================
+  SPACING
+========================================================================== */
+.l-spacing-xs {
+  margin-bottom: 0.3125rem !important;
+}
+
+.l-spacing-s {
+  margin-bottom: 0.625rem !important;
+}
+
+.l-spacing-m {
+  margin-bottom: 1.25rem !important;
+}
+
+.l-spacing-l {
+  margin-bottom: 2.5rem !important;
+}
+
+.l-spacing-top-m {
+  margin-top: 1.25rem !important;
+}
+
+/* ==========================================================================
+  HEADER
+  ========================================================================== */
+@media (max-width: 63.99em) {
+  .is-menu-open .c-header {
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+  }
+}
+
+@media (max-width: 63.99em) {
+  .c-header__nav {
+    margin: 0;
+    position: relative;
+  }
+}
+
+.c-header__list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+@media (max-width: 63.99em) {
+  .c-header__list {
+    align-content: center;
+    background-color: var(--co_palette--lighten);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    left: 100%;
+    padding: 0;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    transform: translate3d(0, 0, 0);
+    transition: transform 1s cubic-bezier(0.32, -0.01, 0, 0.99);
+    width: 100%;
+    z-index: 10;
+  }
+  .c-header__toggle:checked ~ .c-header__list {
+    transform: translate3d(-100%, 0, 0);
+    transition: transform 1s cubic-bezier(0.32, -0.01, 0, 0.99);
+  }
+}
+
+@media (min-width: 64em) {
+  .c-header__list {
+    padding: 1.25rem 0;
+    text-align: right;
+  }
+}
+
+.c-header__item {
+  margin-bottom: 0;
+  padding-left: 0;
+  display: block;
+}
+
+@media (max-width: 63.99em) {
+  .c-header__item {
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media (max-width: 63.99em) and (min-width: 48em) {
+  .c-header__item {
+    font-size: 1.9375rem;
+  }
+}
+
+@media (max-width: 63.99em) and (min-width: 64em) {
+  .c-header__item {
+    font-size: 2.375rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .c-header__item {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  .c-header__item::before {
+    color: var(--co_text);
+    content: '•';
+  }
+}
+
+@media (min-width: 64em) {
+  .c-header__item + .c-header__item {
+    margin-left: 1.25rem;
+  }
+}
+
+@media (max-width: 63.99em) {
+  .c-header__link {
+    color: #fff;
+  }
+  .c-header__link:hover {
+    color: #fff;
+  }
+}
+
+@media (hover: hover) {
+  .c-header__link:hover {
+    border-bottom: 0.0625rem solid #50596c;
+    border-color: var(--co_palette--lighten);
+    padding-bottom: 0.25rem;
+    text-decoration: none;
+  }
+}
+
+.c-header__link[data-state='active'] {
+  border-bottom: 0.125rem dashed #fff;
+  font-weight: 400;
+  padding-bottom: 0.25rem;
+}
+
+@media (min-width: 64em) {
+  .c-header__link[data-state='active'] {
+    border-bottom: 0.25rem solid var(--co_palette--lighten);
+  }
+  .c-header__link[data-state='active']:hover {
+    text-decoration: none;
+  }
+}
+
+.c-header__link[data-state='current-section'] {
+  border-bottom: 0.125rem dotted #fff;
+}
+
+@media (min-width: 64em) {
+  .c-header__link[data-state='current-section'] {
+    border-bottom: 0.125rem dotted var(--co_palette--lighten);
+    font-weight: 400;
+    padding-bottom: 0.25rem;
+  }
+}
+
+/* ---------
+  Mobile header toggle
+--------- */
+.c-header__toggle {
+  height: 2.8125rem;
+  margin: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0.625rem;
+  top: 0.625rem;
+  width: 2.8125rem;
+  z-index: 11;
+}
+
+@media (min-width: 64em) {
+  .c-header__toggle {
+    display: none;
+  }
+}
+
+.c-header__hamburger {
+  background: #fff;
+  display: block;
+  height: 0.125rem;
+  position: absolute;
+  right: 1.25rem;
+  top: 1.875rem;
+  transition: background 1s;
+  width: 1.875rem;
+  z-index: 11;
+}
+
+.c-header__toggle:checked ~ .c-header__hamburger {
+  background: transparent;
+  transition: background 1s;
+}
+
+.c-header__hamburger::before {
+  background: #fff;
+  content: '';
+  height: 0.125rem;
+  left: 0;
+  position: absolute;
+  top: 0.625rem;
+  transition: transform 1s;
+  width: 1.875rem;
+}
+
+.c-header__toggle:checked ~ .c-header__hamburger::before {
+  transform: translateY(-5px) rotate(-45deg);
+  transition: transform 1s;
+}
+
+.c-header__hamburger::after {
+  background: #fff;
+  bottom: 0.625rem;
+  content: '';
+  height: 0.125rem;
+  left: 0;
+  position: absolute;
+  transition: transform 1s;
+  width: 1.875rem;
+}
+
+.c-header__toggle:checked ~ .c-header__hamburger::after {
+  transform: translateY(15px) rotate(45deg);
+  transition: transform 1s;
+}
+
+@media (min-width: 64em) {
+  .c-header__hamburger {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+  HERO
+========================================================================== */
+.c-hero {
+  align-items: center;
+  background-color: var(--co_palette);
+  color: #fff;
+  display: flex;
+  min-height: 21.875rem;
+  position: relative;
+  text-align: center;
+}
+
+.c-hero .l-main {
+  position: relative;
+  width: 100%;
+}
+
+.c-hero--bg-img {
+  color: #fff;
+  min-height: 31.25rem;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 0 0.625rem;
+}
+
+.c-hero--quote {
+  font-style: italic;
+}
+
+@media (max-width: 47.99em) {
+  .c-hero--quote {
+    padding: 3.125rem 1.25rem;
+  }
+}
+
+.c-hero__quote {
+  margin: 0 auto;
+}
+
+@media (min-width: 48em) {
+  .c-hero__quote {
+    max-width: 80%;
+  }
+}
+
+.c-hero__quote::before {
+  content: '“';
+}
+
+.c-hero__quote::after {
+  content: '”';
+}
+
+.c-hero__title-custom {
+  font-size: 1.4375rem;
+  font-weight: 500;
+  line-height: 1.2;
+  border-bottom: 0.0625rem dashed #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@media (min-width: 48em) {
+  .c-hero__title-custom {
+    font-size: 1.5625rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .c-hero__title-custom {
+    font-size: 1.75rem;
+  }
+}
+
+.c-hero__img {
+  background-attachment: fixed;
+  background-image: var(--hero-image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  left: 0;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.c-hero__subtitle {
+  font-size: 1.1875rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+@media (min-width: 48em) {
+  .c-hero__subtitle {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .c-hero__subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+.c-hero--quote .c-hero__subtitle {
+  margin-bottom: 0;
+}
+
+.c-hero__credits {
+  bottom: 20px;
+  color: inherit;
+  font-size: 0.75rem;
+  position: absolute;
+  right: 20px;
+}
+
+.c-hero__credits a {
+  color: inherit;
+  text-decoration: underline;
+}

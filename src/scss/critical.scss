@@ -1,0 +1,15 @@
+/* ==========================================================================
+  CRITICAL
+========================================================================== */
+
+@import '00-settings/_settings';
+@import '01-tools/_tools';
+@import '02-generic/_generic';
+
+// specific elements
+@import '03-elements/base';
+@import '03-elements/spacing';
+
+// component
+@import '06-components/header';
+@import '06-components/hero';
