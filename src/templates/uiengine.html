@@ -31,6 +31,9 @@
     <script src="/scripts/my.js" defer></script>
     -->
 
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
+
+
     <script>
     /* ----------------------------
       Open/Close mobile menu
@@ -128,6 +131,31 @@
 
       Array.prototype.forEach.call(highlightBlocks, addCopyButton)
     })()
+
+    /* reading progress in article content */
+
+    const progressEl = document.querySelector('.j-reading-progress')
+    const progressValueEl = document.querySelector('.j-reading-progress__value')
+    const articleEl = document.querySelector('.j-article-section__content')
+    const articleHeight = articleEl ? articleEl.clientHeight : undefined
+    const offset = 300;
+
+    // document.addEventListener('scroll', updateProgress)
+    function updateProgress() {
+      const scrollTop = document.documentElement.scrollTop;
+      const scrollPercent = Math.round((scrollTop - offset) / articleHeight * 100);
+
+      progressValueEl.style.width = `${scrollPercent}%`
+      progressEl.classList.toggle('is-sticky-on-top', articleEl.getBoundingClientRect().top < 0)
+
+      // console.log('scrollPercent ', scrollPercent)
+    }
+
+    if (articleEl) {
+      document.addEventListener('scroll', _.debounce(updateProgress, 400))
+    }
+
+
     </script>
 
     <!-- PrismJS from CDN -->
