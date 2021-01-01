@@ -1640,7 +1640,7 @@ p::selection {
 }
 
 .c-reading-progress__value {
-  background: var(--co_palette);
+  background: var(--co_palette--lighten);
   display: block;
   height: 10px;
   max-width: 100%;
