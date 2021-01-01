@@ -1,0 +1,27 @@
+/**
+ * READING PROGRESS
+ */
+
+.c-reading-progress {
+  @include element-shadow;
+
+  background-color: rgba($co_color-light-gray, 0.2);
+  position: sticky;
+  scroll-margin-top: 10px;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+
+  &.is-sticky-on-top {
+    background-color: rgba($co_color-light-gray, 0.5);
+    transition: all 0.6s ease;
+  }
+}
+
+.c-reading-progress__value {
+  background: var(--co_palette);
+  display: block;
+  height: 10px;
+  max-width: 100%;
+  transition: width 0.3s ease-out;
+}
