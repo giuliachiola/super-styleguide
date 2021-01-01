@@ -1624,6 +1624,7 @@ p::selection {
 .c-reading-progress {
   box-shadow: 0 0.625rem 2.8125rem -0.5625rem var(--co_shadow);
   background-color: rgba(172, 179, 194, 0.2);
+  opacity: 0;
   position: sticky;
   scroll-margin-top: 10px;
   top: 0;
@@ -1633,6 +1634,7 @@ p::selection {
 
 .c-reading-progress.is-sticky-on-top {
   background-color: rgba(172, 179, 194, 0.5);
+  opacity: 1;
   transition: all 0.6s ease;
 }
 
