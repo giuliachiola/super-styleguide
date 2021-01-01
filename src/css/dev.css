@@ -1783,6 +1783,34 @@ p::selection {
 }
 
 /* ==========================================================================
+  PAGINATION
+========================================================================== */
+.c-pagination {
+  margin: 1.25rem 0;
+}
+
+.c-pagination__list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  gap: 1.25rem;
+  justify-content: space-between;
+}
+
+.c-pagination__link {
+  color: var(--co_text);
+}
+
+@media (hover: hover) {
+  .c-pagination__link:hover {
+    border-bottom: 0.1875rem solid var(--co_palette--lighten);
+    padding-bottom: 0.25rem;
+    text-decoration: none;
+  }
+}
+
+/* ==========================================================================
   THEME SWITCHER
 ========================================================================== */
 .c-theme-switcher__input {

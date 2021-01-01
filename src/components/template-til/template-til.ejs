@@ -16,10 +16,14 @@
         <%- include('../card/card.ejs', { card: card }); %>
       <% }) %>
     </div>
-    <div class="o-distributed o-distributed--center l-spacing-l">
+    <!-- <div class="o-distributed o-distributed--center l-spacing-l">
       <a class="c-button" href="#">Load more tips...</a>
-    </div>
+    </div> -->
+
+    <!-- pagination -->
+    <%- include('../pagination/pagination.ejs') %>
   </main>
+
   <!-- footer -->
   <%- include('../footer/footer.ejs'); %>
 </div>
