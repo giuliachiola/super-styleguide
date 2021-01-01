@@ -1153,7 +1153,7 @@ p::selection {
   right: 1.25rem;
   text-align: right;
   /* stylelint-disable */
-  max-width: calc(100% - $sp_variable-m * 2);
+  max-width: calc(100% - 2.5rem);
   /* stylelint-enable */
 }
 
