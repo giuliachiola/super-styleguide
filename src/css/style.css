@@ -952,6 +952,9 @@ p::selection {
   position: absolute;
   right: 1.25rem;
   text-align: right;
+  /* stylelint-disable */
+  max-width: calc(100% - $sp_variable-m * 2);
+  /* stylelint-enable */
 }
 
 .c-card__date {
@@ -974,6 +977,11 @@ p::selection {
 
 .c-card__number::after {
   clear: right;
+}
+
+.c-card__tags {
+  overflow: scroll;
+  white-space: nowrap;
 }
 
 .c-card__tags .c-label {

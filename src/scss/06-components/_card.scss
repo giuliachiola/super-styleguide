@@ -143,6 +143,11 @@ $sp_card-border-radius: rem(2);
   position: absolute;
   right: $sp_variable-m;
   text-align: right;
+
+  // useful to set tags overflow
+  /* stylelint-disable */
+  max-width: calc(100% - $sp_variable-m * 2);
+  /* stylelint-enable */
 }
 
 .c-card__date {
@@ -169,6 +174,9 @@ $sp_card-border-radius: rem(2);
 }
 
 .c-card__tags {
+  overflow: scroll;
+  white-space: nowrap;
+
   .c-label {
     display: inline-block;
     margin-top: rem(5);
