@@ -709,26 +709,6 @@ p::selection {
   background-color: var(--co_text);
 }
 
-.c-article-section__img {
-  margin: 0 auto;
-}
-
-@media (min-width: 64em) {
-  .c-article-section__img--medium {
-    max-width: 70%;
-  }
-}
-
-@media (min-width: 64em) {
-  .c-article-section__img--small {
-    max-width: 50%;
-  }
-}
-
-.c-article-section__img--shadow {
-  box-shadow: 0 0.625rem 2.8125rem -0.5625rem var(--co_shadow);
-}
-
 .c-article-section__bottom {
   border-top: 0.0625rem solid rgba(172, 179, 194, 0.5);
   padding-top: 1.25rem;
@@ -1783,6 +1763,25 @@ p::selection {
 @media (min-width: 64em) {
   .u-hidden-d {
     display: none !important;
+  }
+}
+
+/* ==========================================================================
+  UTILITY ELEMENTS
+========================================================================== */
+.u-shadow {
+  box-shadow: 0 0.625rem 2.8125rem -0.5625rem var(--co_shadow);
+}
+
+@media (min-width: 64em) {
+  .s-img--medium-d {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 64em) {
+  .s-img--small-d {
+    max-width: 50%;
   }
 }
 

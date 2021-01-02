@@ -107,28 +107,6 @@
   }
 }
 
-// Content
-
-.c-article-section__img {
-  margin: 0 auto;
-}
-
-.c-article-section__img--medium {
-  @include mq(desktop) {
-    max-width: 70%;
-  }
-}
-
-.c-article-section__img--small {
-  @include mq(desktop) {
-    max-width: 50%;
-  }
-}
-
-.c-article-section__img--shadow {
-  @include element-shadow;
-}
-
 // Bottom
 
 .c-article-section__bottom {
