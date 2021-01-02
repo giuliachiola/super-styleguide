@@ -55,11 +55,11 @@ $sp_card-border-radius: rem(2);
   }
 
   .c-card--squared-image & {
-    @include mq($until: tablet) {
+    @include mq($until: desktop) {
       display: none;
     }
 
-    @include mq(tablet) {
+    @include mq(desktop) {
       @include aspect-ratio;
       @include image-padding(1, 1); // square
     }
@@ -112,7 +112,7 @@ $sp_card-border-radius: rem(2);
   }
 
   .c-card--squared-image & { // Image does not fit in mobile viewport
-    @include mq($until: tablet) {
+    @include mq($until: desktop) {
       @include card-highlight-left;
     }
   }

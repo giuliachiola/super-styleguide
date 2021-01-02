@@ -6,7 +6,8 @@
   border-radius: rem(3);
   width: rem(200);
 
-  @include mq(desktop) {
+  @include mq(tablet) {
     float: right;
+    margin-left: rem(40);
   }
 }
