@@ -70,9 +70,11 @@
 .c-article-section__top {
   @include main-border('bottom');
 
-  align-items: flex-end;
-  display: flex;
-  justify-content: space-between;
+  @include mq(tablet) {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+  }
 
   .c-article-section--custom & {
     margin-bottom: rem(40); // same as <h1> margin-bottom
@@ -86,7 +88,8 @@
   @include list-reset;
 
   display: flex;
-  flex-wrap: wrap;
+  overflow: scroll;
+  white-space: nowrap;
 }
 
 .c-article-section__tag {
@@ -103,6 +106,10 @@
 
 .c-article-section__share {
   height: rem(20); // hotfix because embedded <iframe> for sharing is not perfectly aligne
+
+  @include mq($until: tablet) {
+    margin-top: $sp_variable-m;
+  }
 
   .btn { // twitter class
     background-color: var(--co_text);
