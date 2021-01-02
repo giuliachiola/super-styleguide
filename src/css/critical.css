@@ -707,3 +707,29 @@ body {
   color: inherit;
   text-decoration: underline;
 }
+
+/* ==========================================================================
+  LABEL
+========================================================================== */
+.c-label {
+  background-color: var(--co_palette--lighten-hard);
+  border-radius: 2px;
+  border-radius: 6.25rem;
+  color: #073b4c;
+  font-size: 0.75rem;
+  padding: 0.125rem 0.5rem;
+  text-transform: uppercase;
+}
+
+.c-label:hover {
+  color: #073b4c;
+}
+
+.c-label + .c-label {
+  margin-left: 0.3125rem;
+}
+
+.c-label[data-state='active'] {
+  background: var(--co_palette);
+  color: #fff;
+}
