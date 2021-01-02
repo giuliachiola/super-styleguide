@@ -243,7 +243,7 @@ pre > code.line-highlight[data-end]:after {
 .t-palette-color--2 {
   --co_palette: #0d3b95;
   --co_palette--lighten: #114ec4;
-  --co_palette--lighten-hard: #ffedc4;
+  --co_palette--lighten-hard: #9abcff;
 }
 
 [data-theme='dark'] .t-palette-color--2 {
