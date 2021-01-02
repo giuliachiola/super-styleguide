@@ -14,6 +14,7 @@ $co_palette-dark: #073b4c;
 $co_palette-code-snippets: #1e1e3f;
 
 // do not use opacity/lighen but custom solid values instead
+// IMPORTANT: lighten colors are also used in base.njk theme colors
 
 $co_palette-1-light: #ffe1e8;
 $co_palette-2-light: #d7e5ff;
