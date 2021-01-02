@@ -1954,6 +1954,12 @@ p::selection {
 
 @media (min-width: 48em) {
   .s-giphy--small-d {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 64em) {
+  .s-giphy--small-d {
     max-width: 50%;
   }
 }

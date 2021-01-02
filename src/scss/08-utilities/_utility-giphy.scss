@@ -29,6 +29,10 @@
 
 .s-giphy--small-d {
   @include mq(tablet) {
+    max-width: 70%;
+  }
+
+  @include mq(desktop) {
     max-width: 50%;
   }
 }
