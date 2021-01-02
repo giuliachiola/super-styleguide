@@ -215,13 +215,13 @@ pre > code.line-highlight[data-end]:after {
  * CSS vars
  */
 :root {
-  --co_text: #50596c;
-  --co_text-tint-10: #626a7b;
+  --co_text: #69778f;
+  --co_text-tint-10: #78859a;
   --co_background: #fff;
   --co_shadow: rgba(0, 0, 0, 0.1);
-  --co_palette: #50596c;
-  --co_palette--lighten: #667189;
-  --co_palette--lighten-hard: #9ea6b7;
+  --co_palette: #69778f;
+  --co_palette--lighten: #8591a6;
+  --co_palette--lighten-hard: #c0c6d1;
 }
 
 [data-theme='dark'] {
@@ -241,13 +241,13 @@ pre > code.line-highlight[data-end]:after {
 }
 
 .t-palette-color--2 {
-  --co_palette: #ffc233;
-  --co_palette--lighten: #ffd166;
+  --co_palette: #ffbc20;
+  --co_palette--lighten: #ffcb53;
   --co_palette--lighten-hard: #ffedc4;
 }
 
 [data-theme='dark'] .t-palette-color--2 {
-  --co_shadow: rgba(255, 194, 51, 0.4);
+  --co_shadow: rgba(255, 188, 32, 0.4);
 }
 
 .t-palette-color--3 {
@@ -768,14 +768,14 @@ p::selection {
   ARTICLE SECTION
 ========================================================================== */
 .c-article-section__date {
-  color: #acb3c2;
+  color: #69778f;
   display: block;
   font-size: 0.75rem;
   margin-bottom: 0.3125rem;
 }
 
 .c-article-section__toc {
-  color: #acb3c2;
+  color: #69778f;
 }
 
 .c-article-section__toc ol {
@@ -927,7 +927,7 @@ p::selection {
 .c-button {
   background: transparent;
   border: none;
-  background: #50596c;
+  background: #69778f;
   border-radius: 2px;
   color: #fff;
   display: inline-block;
@@ -937,7 +937,7 @@ p::selection {
 }
 
 .c-button:hover {
-  background: #626a7b;
+  background: #78859a;
   color: #fff;
   text-decoration: none;
 }
@@ -947,11 +947,11 @@ p::selection {
 --------------- */
 .c-button--secondary {
   background: #fff;
-  color: #50596c;
+  color: #69778f;
 }
 
 .c-button--secondary:hover {
-  background: #50596c;
+  background: #69778f;
   color: #fff;
 }
 
@@ -960,12 +960,12 @@ p::selection {
 --------------- */
 .c-button--border {
   background: #fff;
-  border: 1px solid #50596c;
-  color: #50596c;
+  border: 1px solid #69778f;
+  color: #69778f;
 }
 
 .c-button--border:hover {
-  background: #50596c;
+  background: #69778f;
   color: #fff;
 }
 
@@ -1138,7 +1138,7 @@ p::selection {
 }
 
 .c-card__date {
-  color: #acb3c2;
+  color: #69778f;
   display: block;
   font-size: 0.75rem;
   margin-bottom: 0.3125rem;
@@ -1442,7 +1442,7 @@ p::selection {
 
 @media (hover: hover) {
   .c-header__link:hover {
-    border-bottom: 0.0625rem solid #50596c;
+    border-bottom: 0.0625rem solid #69778f;
     border-color: var(--co_palette--lighten);
     padding-bottom: 0.25rem;
     text-decoration: none;
@@ -1736,7 +1736,7 @@ p::selection {
 .c-form__input {
   border: 0.0625rem solid #e8e8e8;
   border-radius: 0.1875rem;
-  color: #50596c;
+  color: #69778f;
   font-size: 1rem;
   padding: 0.625rem;
   width: 100%;

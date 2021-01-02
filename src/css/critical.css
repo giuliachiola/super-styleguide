@@ -15,13 +15,13 @@
  * CSS vars
  */
 :root {
-  --co_text: #50596c;
-  --co_text-tint-10: #626a7b;
+  --co_text: #69778f;
+  --co_text-tint-10: #78859a;
   --co_background: #fff;
   --co_shadow: rgba(0, 0, 0, 0.1);
-  --co_palette: #50596c;
-  --co_palette--lighten: #667189;
-  --co_palette--lighten-hard: #9ea6b7;
+  --co_palette: #69778f;
+  --co_palette--lighten: #8591a6;
+  --co_palette--lighten-hard: #c0c6d1;
 }
 
 [data-theme='dark'] {
@@ -41,13 +41,13 @@
 }
 
 .t-palette-color--2 {
-  --co_palette: #ffc233;
-  --co_palette--lighten: #ffd166;
+  --co_palette: #ffbc20;
+  --co_palette--lighten: #ffcb53;
   --co_palette--lighten-hard: #ffedc4;
 }
 
 [data-theme='dark'] .t-palette-color--2 {
-  --co_shadow: rgba(255, 194, 51, 0.4);
+  --co_shadow: rgba(255, 188, 32, 0.4);
 }
 
 .t-palette-color--3 {
@@ -477,7 +477,7 @@ body {
 
 @media (hover: hover) {
   .c-header__link:hover {
-    border-bottom: 0.0625rem solid #50596c;
+    border-bottom: 0.0625rem solid #69778f;
     border-color: var(--co_palette--lighten);
     padding-bottom: 0.25rem;
     text-decoration: none;

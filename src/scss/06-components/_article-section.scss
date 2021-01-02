@@ -2,19 +2,15 @@
   ARTICLE SECTION
 ========================================================================== */
 
-%article-section-side-info {
-  color: $co_color-light-gray;
+.c-article-section__date {
+  color: $co_color-medium-gray;
   display: block;
   font-size: $ty_font-size-small;
   margin-bottom: $sp_variable-xs;
 }
 
-.c-article-section__date {
-  @extend %article-section-side-info;
-}
-
 .c-article-section__toc {
-  color: $co_color-light-gray;
+  color: $co_color-medium-gray;
 
   ol {
     color: var(--co_text);
