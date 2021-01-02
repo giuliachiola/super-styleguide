@@ -877,9 +877,14 @@ p::selection {
 .c-article-section__top {
   border-bottom: 0.0625rem solid rgba(172, 179, 194, 0.5);
   padding-bottom: 1.25rem;
-  align-items: flex-end;
-  display: flex;
-  justify-content: space-between;
+}
+
+@media (min-width: 48em) {
+  .c-article-section__top {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .c-article-section--custom .c-article-section__top {
@@ -892,7 +897,8 @@ p::selection {
   margin: 0;
   padding-left: 0;
   display: flex;
-  flex-wrap: wrap;
+  overflow: scroll;
+  white-space: nowrap;
 }
 
 .c-article-section__tag {
@@ -907,6 +913,12 @@ p::selection {
 
 .c-article-section__share {
   height: 1.25rem;
+}
+
+@media (max-width: 47.99em) {
+  .c-article-section__share {
+    margin-top: 1.25rem;
+  }
 }
 
 .c-article-section__share .btn {
