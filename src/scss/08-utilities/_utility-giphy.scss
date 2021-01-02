@@ -22,13 +22,13 @@
 }
 
 .s-giphy--medium-d {
-  @include mq(desktop) {
+  @include mq(tablet) {
     max-width: 70%;
   }
 }
 
 .s-giphy--small-d {
-  @include mq(desktop) {
+  @include mq(tablet) {
     max-width: 50%;
   }
 }
