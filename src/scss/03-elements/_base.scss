@@ -147,15 +147,11 @@ body {
 }
 
 .l-wrapper {
-  @include mq(tablet) {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-}
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
-.c-footer {
-  @include mq(tablet) {
+  .c-footer { // it works just if <footer> is inside .l-wrapper
     margin-top: auto;
   }
 }

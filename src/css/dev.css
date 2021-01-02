@@ -532,18 +532,14 @@ body {
   margin: 0;
 }
 
-@media (min-width: 48em) {
-  .l-wrapper {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
+.l-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
-@media (min-width: 48em) {
-  .c-footer {
-    margin-top: auto;
-  }
+.l-wrapper .c-footer {
+  margin-top: auto;
 }
 
 /* ==========================================================================
