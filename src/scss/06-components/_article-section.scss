@@ -12,6 +12,12 @@
 .c-article-section__toc {
   color: $co_color-medium-gray;
 
+  summary {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
   ol {
     color: var(--co_text);
     margin-bottom: 0;

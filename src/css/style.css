@@ -578,6 +578,10 @@ p::selection {
   color: #69778f;
 }
 
+.c-article-section__toc summary:hover {
+  cursor: pointer;
+}
+
 .c-article-section__toc ol {
   color: var(--co_text);
   margin-bottom: 0;
