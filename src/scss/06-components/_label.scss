@@ -2,18 +2,23 @@
   LABEL
 ========================================================================== */
 
-@mixin label-state-active {
-  background: rgba($co_color-main, 0.7);
-  color: $co_color-light;
-}
+// @mixin label-state-active {
+//   background: rgba($co_color-main, 0.7);
+//   color: $co_color-light;
+// }
 
 .c-label {
   background-color: var(--co_palette--lighten-hard);
   border-radius: $sp_main-border-radius;
   border-radius: rem(100);
+  color: $co_palette-dark;
   font-size: $ty_font-size-small;
   padding: rem(2 8);
   text-transform: uppercase;
+
+  &:hover {
+    color: $co_palette-dark;
+  }
 
   .c-label + & {
     margin-left: $sp_variable-xs;
@@ -26,13 +31,5 @@
   &[data-state= 'active'] {
     background: var(--co_palette);
     color: $co_color-light;
-  }
-
-  [data-theme= 'dark'] & {
-    color: $co_palette-dark;
-
-    &:hover {
-      color: $co_palette-dark;
-    }
   }
 }

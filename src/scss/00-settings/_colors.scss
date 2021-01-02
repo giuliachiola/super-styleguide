@@ -3,19 +3,21 @@
 ========================================================================== */
 
 // Palette colors
+// from https://www.schemecolor.com/color-fest.php (change yellow with orange to preserve hero legibility)
 
 $co_palette-1: #ef476f;
-$co_palette-2: #ffbc20;
+$co_palette-2: #0d3b95;
 $co_palette-3: #06d6a0;
-$co_palette-4: #1b98e0;
+$co_palette-4: #118ab2;
 $co_palette-5: #ff9f1c;
 $co_palette-dark: #073b4c;
 $co_palette-code-snippets: #1e1e3f;
 
 // do not use opacity/lighen but custom solid values instead
+// IMPORTANT: lighten colors are also used in base.njk theme colors
 
 $co_palette-1-light: #ffe1e8;
-$co_palette-2-light: #ffedc4;
+$co_palette-2-light: #d7e5ff;
 $co_palette-3-light: #adffe9;
 $co_palette-4-light: #ace1ff;
 $co_palette-5-light: #ffe3bd;
