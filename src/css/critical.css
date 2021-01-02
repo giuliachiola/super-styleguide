@@ -41,13 +41,13 @@
 }
 
 .t-palette-color--2 {
-  --co_palette: #ffbc20;
-  --co_palette--lighten: #ffcb53;
+  --co_palette: #0d3b95;
+  --co_palette--lighten: #114ec4;
   --co_palette--lighten-hard: #ffedc4;
 }
 
 [data-theme='dark'] .t-palette-color--2 {
-  --co_shadow: rgba(255, 188, 32, 0.4);
+  --co_shadow: rgba(13, 59, 149, 0.4);
 }
 
 .t-palette-color--3 {
