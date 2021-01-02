@@ -332,7 +332,7 @@ body {
   margin: 0;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 48em) {
   .l-wrapper {
     display: flex;
     flex-direction: column;
@@ -340,7 +340,7 @@ body {
   }
 }
 
-@media (min-width: 64em) {
+@media (min-width: 48em) {
   .c-footer {
     margin-top: auto;
   }

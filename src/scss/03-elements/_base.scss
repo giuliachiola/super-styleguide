@@ -147,7 +147,7 @@ body {
 }
 
 .l-wrapper {
-  @include mq(desktop) {
+  @include mq(tablet) {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -155,7 +155,7 @@ body {
 }
 
 .c-footer {
-  @include mq(desktop) {
-    margin-top:auto;
+  @include mq(tablet) {
+    margin-top: auto;
   }
 }
