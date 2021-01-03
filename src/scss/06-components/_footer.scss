@@ -20,9 +20,13 @@
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: center;
   margin-bottom: 0;
   position: relative; // copyright is in position absolute
+
+  @include mq(tablet) {
+    justify-content: flex-end;
+  }
 }
 
 .c-footer__copyright {
@@ -42,10 +46,24 @@
     top: 50%;
     transform: translate(-50%, -50%);
   }
+
+  span { // heart emoji
+    color: transparent;
+    text-shadow: 0 0 0 var(--co_text);
+  }
 }
 
 .c-footer__theme-switcher {
-  margin-right: auto;
+  @include mq($until: tablet) {
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @include mq(tablet) {
+    margin-right: auto;
+  }
 }
 
 .c-footer__socials {
