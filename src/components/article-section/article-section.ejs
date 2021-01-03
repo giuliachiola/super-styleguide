@@ -6,6 +6,7 @@
       <time class="c-article-section__date" datetime="2019-03-01">31st Aug 2019</time>
       <p class="c-article-section__reading-time">1 min read</p>
 
+      <!-- tags -->
       <ul class="c-article-section__tags">
         <% articleSection.tags.forEach(function(tag){ %>
         <li class="c-article-section__tag">
@@ -43,6 +44,11 @@
   <div class="c-article-section__content j-article-section__content">
     <%- include('./article-section-content.ejs'); %>
   </div>
+
+  <!-- edit on gitlab -->
+  <a href="https://gitlab.com/giuliach/super-blog-content/-/blob/master/til/template-engine/nunjucks-scoped-vars.md"><small>Edit this page on GitLab</small></a>
+
+  <!-- tags -->
 
   <div class="c-article-section__bottom">
     <ul class="c-article-section__tags l-spacing-m">
