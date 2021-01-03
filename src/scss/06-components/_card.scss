@@ -126,7 +126,7 @@ $sp_card-border-radius: rem(2);
     display: inline;
   }
 
-  .icon--external-link {
+  & ~ .icon--external-link {
     height: rem(20);
   }
 }

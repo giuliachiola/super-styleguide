@@ -1127,7 +1127,7 @@ p::selection {
   display: inline;
 }
 
-.c-card__title .icon--external-link {
+.c-card__title ~ .icon--external-link {
   height: 1.25rem;
 }
 
