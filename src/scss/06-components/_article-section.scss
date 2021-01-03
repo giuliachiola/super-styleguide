@@ -80,6 +80,14 @@
       transition: opacity 0.6s ease;
     }
   }
+
+  // scroll to headers has a little margin-top (prevent reading scrollbars goes above)
+
+  h2,
+  h3,
+  h4 {
+    scroll-margin-top: $sp_variable-m;
+  }
 }
 
 .c-article-section__top {

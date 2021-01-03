@@ -681,6 +681,12 @@ p::selection {
   transition: opacity 0.6s ease;
 }
 
+.c-article-section__content h2,
+.c-article-section__content h3,
+.c-article-section__content h4 {
+  scroll-margin-top: 1.25rem;
+}
+
 .c-article-section__top {
   border-bottom: 0.0625rem solid rgba(172, 179, 194, 0.5);
   padding-bottom: 1.25rem;
