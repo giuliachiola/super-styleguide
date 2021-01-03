@@ -232,4 +232,10 @@ $sp_card-border-radius: rem(2);
   .c-article__img--shadow {
     @include element-shadow;
   }
+
+  // markdown it anchor
+
+  .j-header-anchor {
+    display: none; // ex. projects
+  }
 }
