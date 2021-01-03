@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html class="<!-- uiengine:class -->">
   <head>
+    <!-- IMPORTANT: we have to check localStorage as soon as page loads to prevent flickering -->
+    <script>
+    const currentTheme = localStorage.getItem('theme') || 'light'
+    document.documentElement.setAttribute('data-theme', currentTheme)
+    </script>
+
     <title><!-- uiengine:title --></title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -145,8 +151,6 @@
 
     document.addEventListener('DOMContentLoaded', (event) => {
       const toggleSwitch = document.querySelector('.j-theme-switcher input[type="checkbox"]')
-      const currentTheme = localStorage.getItem('theme') || 'light'
-      document.documentElement.setAttribute('data-theme', currentTheme)
 
       if (currentTheme === 'dark') {
         toggleSwitch.checked = true
