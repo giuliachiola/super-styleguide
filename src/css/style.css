@@ -919,6 +919,18 @@ p::selection {
   }
 }
 
+.c-card__title {
+  display: inline-block;
+}
+
+.c-card__title h2 {
+  display: inline;
+}
+
+.c-card__title ~ .icon--external-link {
+  height: 1.25rem;
+}
+
 .c-card__title-heading {
   font-size: 1.4375rem;
   font-weight: 500;
