@@ -1125,11 +1125,7 @@ p::selection {
 
 .c-footer__copyright {
   font-size: 0.75rem;
-  left: 50%;
   margin: 0;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 
 @media (max-width: 47.99em) {
@@ -1138,6 +1134,15 @@ p::selection {
     margin-bottom: 20px;
     order: 3;
     text-align: center;
+  }
+}
+
+@media (min-width: 48em) {
+  .c-footer__copyright {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 

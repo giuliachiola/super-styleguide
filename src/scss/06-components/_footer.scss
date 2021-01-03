@@ -27,17 +27,20 @@
 
 .c-footer__copyright {
   font-size: $ty_font-size-small;
-  left: 50%;
   margin: 0;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
 
   @include mq($until: tablet) {
     flex-basis: 100%;
     margin-bottom: 20px;
     order: 3;
     text-align: center;
+  }
+
+  @include mq(tablet) {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
