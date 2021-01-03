@@ -58,11 +58,26 @@
     }
   }
 
+  // list
+
   ul {
     padding-inline-start: $sp_variable-m;
 
     @include mq(desktop) {
       padding-inline-start: $sp_variable-l;
+    }
+  }
+
+  // markdown it anchor
+
+  .j-header-anchor {
+    opacity: 0;
+    text-decoration: none;
+    transition: opacity 0.6s ease;
+
+    &:hover {
+      opacity: 1;
+      transition: opacity 0.6s ease;
     }
   }
 }
