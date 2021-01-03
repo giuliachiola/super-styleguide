@@ -1178,7 +1178,7 @@ p::selection {
 
 .c-footer__link {
   color: var(--co_text);
-  height: calc(1.875rem + 0.625rem);
+  height: calc(30px + 0.625rem);
   padding: 0.625rem;
 }
 
