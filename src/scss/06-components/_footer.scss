@@ -19,13 +19,34 @@
 .c-footer__group {
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   margin-bottom: 0;
-  // padding: $sp_variable-m 0;
+  position: relative; // copyright is in position absolute
+}
+
+.c-footer__copyright {
+  font-size: $ty_font-size-small;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  @include mq($until: tablet) {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    order: 3;
+    text-align: center;
+  }
 }
 
 .c-footer__theme-switcher {
   margin-right: auto;
+}
+
+.c-footer__socials {
+  display: flex; // fix <a> padding height overflow
 }
 
 .c-footer__link {
