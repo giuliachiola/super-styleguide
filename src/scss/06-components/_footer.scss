@@ -72,6 +72,7 @@
 
 .c-footer__link {
   color: var(--co_text);
+  height: calc(#{rem(30)} + #{$sp_variable-s}); // 30px = SVG height, 20px = $sp_variable-s
   padding: $sp_variable-s;
 
   &:hover {
