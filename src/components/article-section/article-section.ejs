@@ -2,25 +2,26 @@
   <h1>This is the post title</h1>
 
   <div class="c-article-section__top l-spacing-m">
-    <div class="c-article-section__info">
+    <p class="c-article-section__info">
       <time class="c-article-section__date" datetime="2019-03-01">31st Aug 2019</time>
-      <p class="c-article-section__reading-time">1 min read</p>
+      <span class="c-article-section__reading-time">1 min read</span>
+    </p>
 
-      <!-- tags -->
-      <ul class="c-article-section__tags">
-        <% articleSection.tags.forEach(function(tag){ %>
-        <li class="c-article-section__tag">
-          <a class="c-label" href="#"><%= tag %></a>
-        </li>
-        <% }); %>
-      </ul>
-    </div>
-
+    <!-- twitter share -->
     <div class="c-article-section__share">
       <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
         data-show-count="false">Tweet</a>
       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
+
+    <!-- tags -->
+    <ul class="c-article-section__tags">
+      <% articleSection.tags.forEach(function(tag){ %>
+      <li class="c-article-section__tag">
+        <a class="c-label" href="#"><%= tag %></a>
+      </li>
+      <% }); %>
+    </ul>
   </div>
 
   <aside>
