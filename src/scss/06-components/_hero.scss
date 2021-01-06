@@ -80,6 +80,10 @@
   @include ty-heading--s;
 
   margin-bottom: 0;
+
+  .c-hero--quote & { // quote author
+    font-style: normal;
+  }
 }
 
 .c-hero__credits { // link to photo

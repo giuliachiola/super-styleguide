@@ -693,6 +693,10 @@ body {
   }
 }
 
+.c-hero--quote .c-hero__subtitle {
+  font-style: normal;
+}
+
 .c-hero__credits {
   bottom: 20px;
   color: inherit;
