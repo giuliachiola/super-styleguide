@@ -1399,6 +1399,7 @@ p::selection {
 
 .c-footer__copyright span {
   color: transparent;
+  font-size: 0.5625rem;
   text-shadow: 0 0 0 var(--co_text);
 }
 
