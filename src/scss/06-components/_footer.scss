@@ -42,6 +42,9 @@
     margin-bottom: 10px;
     order: 3;
     text-align: center;
+
+    // heart visually centered
+    transform: translateX(-7px);
   }
 
   @include mq(tablet) {

@@ -1190,6 +1190,7 @@ p::selection {
     margin-bottom: 10px;
     order: 3;
     text-align: center;
+    transform: translateX(-7px);
   }
 }
 
