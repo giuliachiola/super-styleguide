@@ -31,7 +31,7 @@
 
 .c-footer__copyright {
   [data-theme= 'light'] & {
-    --co_text: #{$co_color-dark-gray};
+    color: $co_color-dark-gray;
   }
 
   font-size: $ty_font-size-small;
@@ -54,6 +54,7 @@
   span { // heart emoji
     color: transparent;
     font-size: rem(9);
+    opacity: 0.7;
     text-shadow: 0 0 0 var(--co_text);
   }
 }
