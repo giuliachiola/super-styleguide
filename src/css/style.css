@@ -1175,6 +1175,10 @@ p::selection {
   margin: 0;
 }
 
+[data-theme='light'] .c-footer__copyright {
+  --co_text: #3f3f3f;
+}
+
 @media (max-width: 47.99em) {
   .c-footer__copyright {
     flex-basis: 100%;

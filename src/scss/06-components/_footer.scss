@@ -30,6 +30,10 @@
 }
 
 .c-footer__copyright {
+  [data-theme= 'light'] & {
+    --co_text: #{$co_color-dark-gray};
+  }
+
   font-size: $ty_font-size-small;
   margin: 0;
 
