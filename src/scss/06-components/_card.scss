@@ -185,7 +185,7 @@ $sp_card-border-radius: rem(2);
 }
 
 .c-card__tags {
-  overflow: scroll;
+  overflow-x: auto;
   white-space: nowrap;
 
   .c-label {

@@ -111,7 +111,7 @@
   @include list-reset;
 
   display: flex;
-  overflow: scroll;
+  overflow-x: auto;
   white-space: nowrap;
 }
 
