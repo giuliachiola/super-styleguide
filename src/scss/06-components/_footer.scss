@@ -35,7 +35,7 @@
 
   @include mq($until: tablet) {
     flex-basis: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     order: 3;
     text-align: center;
   }
