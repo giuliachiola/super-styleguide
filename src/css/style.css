@@ -604,8 +604,13 @@ p::selection {
 .c-article-section__share {
   grid-area: tweet;
   height: 1.25rem;
-  margin-top: auto;
   text-align: right;
+}
+
+@media (min-width: 48em) {
+  .c-article-section__share {
+    margin-top: auto;
+  }
 }
 
 .c-article-section__share .btn {

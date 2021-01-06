@@ -47,8 +47,11 @@
 .c-article-section__share {
   grid-area: tweet;
   height: rem(20); // hotfix because embedded <iframe> for sharing is not perfectly aligne
-  margin-top: auto;
   text-align: right;
+
+  @include mq(tablet) {
+    margin-top: auto;
+  }
 
   .btn { // twitter class
     background-color: var(--co_text);
