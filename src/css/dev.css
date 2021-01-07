@@ -836,6 +836,10 @@ p::selection {
   cursor: pointer;
 }
 
+.c-article-section__toc summary:focus {
+  outline-color: var(--co_palette);
+}
+
 .c-article-section__toc ol {
   color: var(--co_text);
   margin-bottom: 0;
@@ -1974,6 +1978,38 @@ p::selection {
 /* ==========================================================================
   07 - SCOPES
 ========================================================================== */
+/* ==========================================================================
+  BACK TO TOP
+========================================================================== */
+.s-back-to-top {
+  bottom: 0;
+  height: 3.125rem;
+  opacity: 0;
+  padding: 0.625rem 1.25rem 0 0.625rem;
+  position: fixed;
+  right: 0;
+  transition: opacity 0.6s ease;
+}
+
+@media (max-width: 63.99em) {
+  .s-back-to-top {
+    display: none;
+  }
+}
+
+.s-back-to-top:hover {
+  color: var(--co_palette--lighten);
+}
+
+.s-back-to-top.is-active {
+  opacity: 1;
+  transition: opacity 0.6s ease;
+}
+
+.s-back-to-top svg {
+  width: 1.25rem;
+}
+
 /* ==========================================================================
   SEARCH LIST
 ========================================================================== */
