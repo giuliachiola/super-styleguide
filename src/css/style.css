@@ -1783,15 +1783,17 @@ p::selection {
 ========================================================================== */
 .s-back-to-top {
   bottom: 0;
+  height: 3.125rem;
   opacity: 0;
-  padding: 0.625rem;
+  padding: 0.625rem 1.25rem 0 0.625rem;
   position: fixed;
   right: 0;
+  transition: opacity 0.6s ease;
 }
 
-@media (pointer: fine) {
+@media (max-width: 63.99em) {
   .s-back-to-top {
-    padding: 0.625rem 1.25rem 0 0.625rem;
+    display: none;
   }
 }
 
