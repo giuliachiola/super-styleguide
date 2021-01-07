@@ -9,6 +9,14 @@
   position: fixed;
   right: 0;
 
+  @media (pointer: fine) { // computer ex. mouse pointer
+    padding: $sp_variable-s $sp_variable-m 0 $sp_variable-s; // leave enough space to the right for scrollbar
+  }
+
+  &:hover {
+    color: var(--co_palette--lighten);
+  }
+
   &.is-active {
     opacity: 1;
     transition: opacity 0.6s ease;

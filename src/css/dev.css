@@ -1989,6 +1989,16 @@ p::selection {
   right: 0;
 }
 
+@media (pointer: fine) {
+  .s-back-to-top {
+    padding: 0.625rem 1.25rem 0 0.625rem;
+  }
+}
+
+.s-back-to-top:hover {
+  color: var(--co_palette--lighten);
+}
+
 .s-back-to-top.is-active {
   opacity: 1;
   transition: opacity 0.6s ease;
