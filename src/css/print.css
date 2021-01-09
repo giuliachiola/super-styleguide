@@ -1,0 +1,33 @@
+/* ==========================================================================
+	PRINT
+========================================================================== */
+@media print {
+  .c-header,
+  .c-hero,
+  .c-footer,
+  .s-next-post-button,
+  .c-code__copy-button,
+  .c-article-section__tags,
+  .c-article-section__share,
+  .c-article-section__toc {
+    display: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+  .c-code {
+    border: 1px solid #808080;
+  }
+  .c-code code[class*='language-'],
+  .c-code pre[class*='language-'] {
+    background: none;
+    text-shadow: none;
+  }
+  .c-code * {
+    color: #000 !important;
+  }
+}
