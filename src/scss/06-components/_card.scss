@@ -145,6 +145,15 @@ $sp_card-border-radius: rem(2);
   }
 }
 
+.c-card__external-icon {
+  margin-left: $sp_variable-xs;
+  vertical-align: top;
+
+  &:hover {
+    color: var(--co_palette);
+  }
+}
+
 .c-card__abstract {
   margin-top: 0;
 }

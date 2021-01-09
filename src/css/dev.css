@@ -1181,6 +1181,15 @@ p::selection {
   margin-bottom: 1.25rem;
 }
 
+.c-card__external-icon {
+  margin-left: 0.3125rem;
+  vertical-align: top;
+}
+
+.c-card__external-icon:hover {
+  color: var(--co_palette);
+}
+
 .c-card__abstract {
   margin-top: 0;
 }
