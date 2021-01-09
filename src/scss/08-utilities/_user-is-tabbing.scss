@@ -3,6 +3,7 @@
  */
 
 @include mq(desktop) {
+  a:focus,
   button:focus,
   input:focus,
   select:focus,
@@ -12,6 +13,7 @@
   }
 
   body:not(.user-is-tabbing) {
+    a:focus,
     button:focus,
     input:focus,
     select:focus,
