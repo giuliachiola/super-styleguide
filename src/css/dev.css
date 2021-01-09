@@ -2043,12 +2043,12 @@ p::selection {
  * USER IS TABBING
  */
 @media (min-width: 64em) {
-  a:focus,
-  button:focus,
-  input:focus,
-  select:focus,
-  textarea:focus,
-  summary:focus {
+  body.user-is-tabbing a:focus,
+  body.user-is-tabbing button:focus,
+  body.user-is-tabbing input:focus,
+  body.user-is-tabbing select:focus,
+  body.user-is-tabbing textarea:focus,
+  body.user-is-tabbing summary:focus {
     outline-color: var(--co_palette);
   }
   body:not(.user-is-tabbing) a:focus,
