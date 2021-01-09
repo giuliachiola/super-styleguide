@@ -26,6 +26,7 @@
   .c-code pre[class*='language-'] {
     background: none;
     text-shadow: none;
+    white-space: pre-wrap;
   }
   .c-code * {
     color: #000 !important;
