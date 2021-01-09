@@ -597,7 +597,6 @@ body {
 }
 
 .c-hero .l-main {
-  position: relative;
   width: 100%;
 }
 
@@ -695,19 +694,6 @@ body {
 
 .c-hero--quote .c-hero__subtitle {
   font-style: normal;
-}
-
-.c-hero__credits {
-  bottom: 20px;
-  color: inherit;
-  font-size: 0.75rem;
-  position: absolute;
-  right: 20px;
-}
-
-.c-hero__credits a {
-  color: inherit;
-  text-decoration: underline;
 }
 
 /* ==========================================================================

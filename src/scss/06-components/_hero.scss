@@ -13,7 +13,7 @@
   text-align: center;
 
   .l-main {
-    position: relative; // FIXME: necessary to have gradient below the text!
+    // position: relative; // necessary to have gradient below the text!
     width: 100%; // center text on mobile
   }
 }
@@ -86,15 +86,17 @@
   }
 }
 
-.c-hero__credits { // link to photo
-  bottom: 20px;
-  color: inherit;
-  font-size: $ty_font-size-small;
-  position: absolute;
-  right: 20px;
+// NOT USED RIGHT NOW 9/01/2021
 
-  a {
-    color: inherit;
-    text-decoration: underline;
-  }
-}
+// .c-hero__credits { // link to photo
+//   bottom: 20px;
+//   color: inherit;
+//   font-size: $ty_font-size-small;
+//   position: absolute;
+//   right: 20px;
+
+//   a {
+//     color: inherit;
+//     text-decoration: underline;
+//   }
+// }
