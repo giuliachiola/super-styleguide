@@ -1,0 +1,15 @@
+/**
+ * USER IS TABBING
+ */
+
+@include mq(desktop) {
+  body:not(.user-is-tabbing) {
+    button:focus,
+    input:focus,
+    select:focus,
+    textarea:focus,
+    summary:focus {
+      outline: none;
+    }
+  }
+}

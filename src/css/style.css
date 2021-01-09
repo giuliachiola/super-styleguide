@@ -1843,6 +1843,19 @@ p::selection {
 /* ==========================================================================
   08 - UTILITY
 ========================================================================== */
+/**
+ * USER IS TABBING
+ */
+@media (min-width: 64em) {
+  body:not(.user-is-tabbing) button:focus,
+  body:not(.user-is-tabbing) input:focus,
+  body:not(.user-is-tabbing) select:focus,
+  body:not(.user-is-tabbing) textarea:focus,
+  body:not(.user-is-tabbing) summary:focus {
+    outline: none;
+  }
+}
+
 /* ==========================================================================
   UTILITY TYPOGRAPHY
 ========================================================================== */
