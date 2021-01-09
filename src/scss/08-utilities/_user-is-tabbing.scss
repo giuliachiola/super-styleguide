@@ -3,6 +3,14 @@
  */
 
 @include mq(desktop) {
+  button:focus,
+  input:focus,
+  select:focus,
+  textarea:focus,
+  summary:focus {
+    outline-color: var(--co_palette);
+  }
+
   body:not(.user-is-tabbing) {
     button:focus,
     input:focus,
