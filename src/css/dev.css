@@ -1138,6 +1138,19 @@ code[class*='language-'] {
   }
 }
 
+.c-card__title {
+  /* stylelint-disable */
+  /* stylelint-enable */
+}
+
+.c-card__title:hover {
+  text-decoration: none;
+}
+
+.c-card__title:hover h2 {
+  text-decoration: underline;
+}
+
 .c-card__title h2 {
   display: inline;
 }
