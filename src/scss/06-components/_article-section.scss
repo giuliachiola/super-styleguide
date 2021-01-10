@@ -110,8 +110,11 @@
   }
 
   a {
-    color: var(--co_palette);
     text-decoration: underline;
+
+    &:hover {
+      color: var(--co_palette);
+    }
   }
 
   // Tables

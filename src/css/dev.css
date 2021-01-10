@@ -885,8 +885,11 @@ code[class*='language-'] {
 }
 
 .c-article-section__content a {
-  color: var(--co_palette);
   text-decoration: underline;
+}
+
+.c-article-section__content a:hover {
+  color: var(--co_palette);
 }
 
 .c-article-section__content table {
@@ -1355,8 +1358,11 @@ code[class*='language-'] {
 }
 
 .c-card__raw-content a {
-  color: var(--co_palette);
   text-decoration: underline;
+}
+
+.c-card__raw-content a:hover {
+  color: var(--co_palette);
 }
 
 .c-card__raw-content .c-article__img--shadow {
