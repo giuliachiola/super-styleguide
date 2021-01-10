@@ -653,9 +653,9 @@ code[class*='language-'] {
   MAIN BORDER
 ========================================================================== */
 /* ==========================================================================
-  PARAGRAPH SELECTION
+  PARAGRAPH, list, headings.. SELECTION
 ========================================================================== */
-p::selection {
+*::selection {
   background-color: var(--co_palette--lighten);
   color: #fff;
 }
