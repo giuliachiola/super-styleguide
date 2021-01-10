@@ -293,8 +293,8 @@ a {
   text-decoration: none;
 }
 
-a:hover, a:focus {
-  color: var(--co_text-tint-10);
+a:hover {
+  color: var(--co_palette);
   text-decoration: underline;
 }
 

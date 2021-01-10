@@ -44,9 +44,8 @@ a {
   // -webkit-tap-highlight-color: transparent; // Chrome on Android: remove blue highlight on all the clickable area
   text-decoration: none;
 
-  &:hover,
-  &:focus {
-    color: var(--co_text-tint-10);
+  &:hover {
+    color: var(--co_palette);
     text-decoration: underline;
   }
 }
