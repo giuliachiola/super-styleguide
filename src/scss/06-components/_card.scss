@@ -119,9 +119,6 @@ $sp_card-border-radius: rem(2);
 }
 
 .c-card__title {
-  // set <a> to display: inline-block, because <h2> is set to inline (see projects external links)
-  display: inline-block;
-
   h2 {
     display: inline;
   }

@@ -938,10 +938,6 @@ code[class*='language-'] {
   }
 }
 
-.c-card__title {
-  display: inline-block;
-}
-
 .c-card__title h2 {
   display: inline;
 }
