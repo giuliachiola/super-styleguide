@@ -253,6 +253,7 @@ $sp_card-border-radius: rem(2);
   // link styles
 
   a {
+    color: var(--co_palette);
     text-decoration: underline;
   }
 

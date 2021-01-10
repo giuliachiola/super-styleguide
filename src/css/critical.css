@@ -291,7 +291,7 @@ a {
 }
 
 a:hover {
-  color: var(--co_palette);
+  color: var(--co_text-tint-10);
   text-decoration: underline;
 }
 

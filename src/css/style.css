@@ -294,7 +294,7 @@ a {
 }
 
 a:hover {
-  color: var(--co_palette);
+  color: var(--co_text-tint-10);
   text-decoration: underline;
 }
 
@@ -685,6 +685,7 @@ code[class*='language-'] {
 }
 
 .c-article-section__content a {
+  color: var(--co_palette);
   text-decoration: underline;
 }
 
@@ -1154,6 +1155,7 @@ code[class*='language-'] {
 }
 
 .c-card__raw-content a {
+  color: var(--co_palette);
   text-decoration: underline;
 }
 
