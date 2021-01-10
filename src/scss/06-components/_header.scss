@@ -28,7 +28,7 @@ $sp_header-hamburger-z-index-m: $sp_header-z-index-m + 1;
 }
 
 .c-header__list {
-  @include list-reset;
+  @extend %list-reset;
 
   @include mq($until: desktop) {
     align-content: center;
@@ -60,7 +60,7 @@ $sp_header-hamburger-z-index-m: $sp_header-z-index-m + 1;
 }
 
 .c-header__item {
-  @include list-item-reset;
+  @extend %list-item-reset;
 
   display: block;
 

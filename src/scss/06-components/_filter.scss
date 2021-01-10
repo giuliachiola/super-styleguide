@@ -11,7 +11,7 @@ $sp_filter-margin: $sp_variable-xs;
 }
 
 .c-filter__list {
-  @include list-reset;
+  @extend %list-reset;
 
   display: flex;
   flex-flow: wrap;

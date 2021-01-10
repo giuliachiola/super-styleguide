@@ -26,7 +26,7 @@
 // Tags
 
 .c-article-section__tags {
-  @include list-reset;
+  @extend %list-reset;
 
   display: flex;
   grid-area: tags;
@@ -35,7 +35,7 @@
 }
 
 .c-article-section__tag {
-  @include list-item-reset;
+  @extend %list-item-reset;
 
   & ~ & {
     margin-left: $sp_variable-xs;

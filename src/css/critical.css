@@ -230,13 +230,24 @@ body:not(:-moz-handler-blocked) fieldset {
 /* ------------------
   Usage
 
-  <ul> @include list-reset;
+  <ul> @extend %list-reset;
 ------------------ */
+.c-header__list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
 /* ------------------
   Usage
 
-  <li> @include list-item-reset;
+  <li> @extend %list-item-reset;
 ------------------ */
+.c-header__item {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
 /* ==========================================================================
   02 - GENERIC (import)
 ========================================================================== */
@@ -381,12 +392,6 @@ body {
   }
 }
 
-.c-header__list {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-}
-
 @media (max-width: 63.99em) {
   .c-header__list {
     align-content: center;
@@ -419,8 +424,6 @@ body {
 }
 
 .c-header__item {
-  margin-bottom: 0;
-  padding-left: 0;
   display: block;
 }
 

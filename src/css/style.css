@@ -230,13 +230,24 @@ body:not(:-moz-handler-blocked) fieldset {
 /* ------------------
   Usage
 
-  <ul> @include list-reset;
+  <ul> @extend %list-reset;
 ------------------ */
+.c-article-section__tags, .c-header__list, .c-filter__list, .c-pagination__list, .s-search-list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
 /* ------------------
   Usage
 
-  <li> @include list-item-reset;
+  <li> @extend %list-item-reset;
 ------------------ */
+.c-article-section__tag, .c-header__item, .s-search-list li {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
 /* ==========================================================================
   02 - GENERIC (import)
 ========================================================================== */
@@ -583,18 +594,10 @@ code[class*='language-'] {
 }
 
 .c-article-section__tags {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
   display: flex;
   grid-area: tags;
   overflow-x: auto;
   white-space: nowrap;
-}
-
-.c-article-section__tag {
-  margin-bottom: 0;
-  padding-left: 0;
 }
 
 .c-article-section__tag ~ .c-article-section__tag {
@@ -1285,12 +1288,6 @@ code[class*='language-'] {
   }
 }
 
-.c-header__list {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-}
-
 @media (max-width: 63.99em) {
   .c-header__list {
     align-content: center;
@@ -1323,8 +1320,6 @@ code[class*='language-'] {
 }
 
 .c-header__item {
-  margin-bottom: 0;
-  padding-left: 0;
   display: block;
 }
 
@@ -1634,9 +1629,6 @@ code[class*='language-'] {
 }
 
 .c-filter__list {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
   display: flex;
   flex-flow: wrap;
 }
@@ -1702,9 +1694,6 @@ code[class*='language-'] {
 }
 
 .c-pagination__list {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
   display: flex;
   gap: 1.25rem;
   justify-content: space-between;
@@ -1813,17 +1802,6 @@ code[class*='language-'] {
 /* ==========================================================================
   SEARCH LIST
 ========================================================================== */
-.s-search-list {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-}
-
-.s-search-list li {
-  margin-bottom: 0;
-  padding-left: 0;
-}
-
 /* ==========================================================================
   PROFILE PICTURE
 ========================================================================== */

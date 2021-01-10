@@ -7,7 +7,7 @@
 }
 
 .c-pagination__list {
-  @include list-reset;
+  @extend %list-reset;
 
   display: flex;
   gap: $sp_variable-m;

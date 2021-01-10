@@ -3,9 +3,9 @@
 ========================================================================== */
 
 .s-search-list {
-  @include list-reset;
+  @extend %list-reset;
 
   li {
-    @include list-item-reset;
+    @extend %list-item-reset;
   }
 }
