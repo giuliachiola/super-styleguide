@@ -23,6 +23,7 @@ const tilContext = {
       modifiers: ['highlight-top'],
       hasImg: false,
       number: 17,
+      spacingClass: 'l-spacing-m',
     }
   )),
   hero: {

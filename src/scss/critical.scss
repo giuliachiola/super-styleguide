@@ -1,12 +1,16 @@
 /* ==========================================================================
-  STYLE
+  CRITICAL
 ========================================================================== */
 
 @import '00-settings/_settings';
 @import '01-tools/_tools';
 @import '02-generic/_generic';
-@import '03-elements/_elements';
-@import '04-objects/_objects';
-@import '06-components/_components';
-@import '07-scopes/_scopes';
-@import '08-utilities/_utilities';
+
+// specific elements
+@import '03-elements/base';
+@import '03-elements/spacing';
+
+// component
+@import '06-components/header';
+@import '06-components/hero';
+@import '06-components/label';

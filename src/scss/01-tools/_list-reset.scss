@@ -5,10 +5,10 @@
 /* ------------------
   Usage
 
-  <ul> @include list-reset;
+  <ul> @extend %list-reset;
 ------------------ */
 
-@mixin list-reset {
+%list-reset {
   list-style: none;
   margin: 0;
   padding-left: 0;
@@ -17,10 +17,10 @@
 /* ------------------
   Usage
 
-  <li> @include list-item-reset;
+  <li> @extend %list-item-reset;
 ------------------ */
 
-@mixin list-item-reset {
+%list-item-reset {
   margin-bottom: 0;
   padding-left: 0;
 }

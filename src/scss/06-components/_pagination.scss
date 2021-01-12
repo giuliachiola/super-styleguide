@@ -1,0 +1,27 @@
+/* ==========================================================================
+  PAGINATION
+========================================================================== */
+
+.c-pagination {
+  margin: $sp_variable-m 0;
+}
+
+.c-pagination__list {
+  @extend %list-reset;
+
+  display: flex;
+  gap: $sp_variable-m;
+  justify-content: space-between;
+}
+
+.c-pagination__link {
+  color: var(--co_text);
+
+  @media (hover: hover) { // https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover -> The hover CSS media feature can be used to test whether the user's primary input mechanism can hover over elements.
+    &:hover {
+      border-bottom: rem(3) solid var(--co_palette--lighten);
+      padding-bottom: rem(4);
+      text-decoration: none;
+    }
+  }
+}

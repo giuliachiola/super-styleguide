@@ -9,3 +9,9 @@
 .u-ty-italic {
   font-style: italic;
 }
+
+.u-ty-break-t {
+  @include mq($until: tablet) {
+    display: none;
+  }
+}

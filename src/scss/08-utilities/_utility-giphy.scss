@@ -2,17 +2,11 @@
   UTILITY GIPHY
 ========================================================================== */
 
-.u-giphy-centered {
-  width: 100%;
-}
-
 .s-giphy {
   margin: 0 auto; // center the gif
 
-  iframe.giphy-embed { // giphy <iframe> class
-    @include mq($until: tablet) {
-      width: 100%;
-    }
+  > video {
+    width: 100%;
   }
 
   p { // Set style for "via GIPHY" link at the bottom
@@ -28,12 +22,16 @@
 }
 
 .s-giphy--medium-d {
-  @include mq(desktop) {
+  @include mq(tablet) {
     max-width: 70%;
   }
 }
 
 .s-giphy--small-d {
+  @include mq(tablet) {
+    max-width: 70%;
+  }
+
   @include mq(desktop) {
     max-width: 50%;
   }

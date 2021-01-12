@@ -1,8 +1,13 @@
 /* ==========================================================================
-  PARAGRAPH SELECTION
+  PARAGRAPH, list, headings.. SELECTION
 ========================================================================== */
 
-p::selection {
+*::selection {
   background-color: var(--co_palette--lighten);
   color: $co_color-light;
+
+  // use color black with light green background to preserve legibility
+  .t-palette-color--3 & {
+    color: $co_color-solid-black;
+  }
 }

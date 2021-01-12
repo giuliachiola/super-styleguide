@@ -2,19 +2,81 @@
   ARTICLE SECTION
 ========================================================================== */
 
-%article-section-side-info {
-  color: $co_color-light-gray;
-  display: block;
-  font-size: $ty_font-size-small;
-  margin-bottom: $sp_variable-xs;
+.c-article-section__top {
+  @include main-border('bottom');
+
+  display: grid;
+  gap: $sp_variable-xs;
+  grid-template-areas:
+    'info tweet'
+    'tags tags';
+
+  @include mq(tablet) {
+    grid-template-areas:
+      'info .'
+      'tags tweet';
+  }
+
+  .c-article-section--custom & {
+    margin-bottom: rem(40); // same as <h1> margin-bottom
+    padding-bottom: 0;
+  }
+}
+
+// Tags
+
+.c-article-section__tags {
+  @extend %list-reset;
+
+  display: flex;
+  grid-area: tags;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.c-article-section__tag {
+  @extend %list-item-reset;
+
+  & ~ & {
+    margin-left: $sp_variable-xs;
+  }
+}
+
+// Twitter share button
+
+.c-article-section__share {
+  grid-area: tweet;
+  height: rem(20); // hotfix because embedded <iframe> for sharing is not perfectly aligne
+  text-align: right;
+
+  @include mq(tablet) {
+    margin-top: auto;
+  }
+
+  .btn { // twitter class
+    background-color: var(--co_text);
+  }
+}
+
+.c-article-section__info {
+  grid-area: info;
+  margin: 0;
 }
 
 .c-article-section__date {
-  @extend %article-section-side-info;
+  color: $co_color-medium-gray;
+  font-size: $ty_font-size-small;
+  white-space: nowrap;
 }
 
 .c-article-section__toc {
-  color: $co_color-light-gray;
+  color: $co_color-medium-gray;
+
+  summary {
+    &:hover {
+      cursor: pointer;
+    }
+  }
 
   ol {
     color: var(--co_text);
@@ -30,7 +92,13 @@
 .c-article-section__reading-time {
   font-size: $ty_font-size-small;
   font-style: italic;
-  margin: $sp_variable-xs 0;
+  margin: 0;
+
+  &::before {
+    content: '—';
+    font-style: normal; // override italic
+    padding-right: $sp_variable-xs;
+  }
 }
 
 .c-article-section__content { // markup content
@@ -43,6 +111,10 @@
 
   a {
     text-decoration: underline;
+
+    &:hover {
+      color: var(--co_palette);
+    }
   }
 
   // Tables
@@ -56,6 +128,8 @@
     }
   }
 
+  // list
+
   ul {
     padding-inline-start: $sp_variable-m;
 
@@ -63,70 +137,27 @@
       padding-inline-start: $sp_variable-l;
     }
   }
-}
 
-.c-article-section__top {
-  @include main-border('bottom');
+  // markdown it anchor
 
-  align-items: flex-end;
-  display: flex;
-  justify-content: space-between;
+  .j-header-anchor {
+    opacity: 0;
+    text-decoration: none;
+    transition: opacity 0.6s ease;
 
-  .c-article-section--custom & {
-    margin-bottom: rem(40); // same as <h1> margin-bottom
-    padding-bottom: 0;
+    &:hover {
+      opacity: 1;
+      transition: opacity 0.6s ease;
+    }
   }
-}
 
-// Tags
+  // scroll to headers has a little margin-top (prevent reading scrollbars goes above)
 
-.c-article-section__tags {
-  @include list-reset;
-
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.c-article-section__tag {
-  @include list-item-reset;
-
-  margin-top: $sp_variable-xs;
-
-  & ~ & {
-    margin-left: $sp_variable-xs;
+  h2,
+  h3,
+  h4 {
+    scroll-margin-top: $sp_variable-m;
   }
-}
-
-// Twitter share button
-
-.c-article-section__share {
-  height: rem(20); // hotfix because embedded <iframe> for sharing is not perfectly aligne
-
-  .btn { // twitter class
-    background-color: var(--co_text);
-  }
-}
-
-// Content
-
-.c-article-section__img {
-  margin: 0 auto;
-}
-
-.c-article-section__img--medium {
-  @include mq(desktop) {
-    max-width: 70%;
-  }
-}
-
-.c-article-section__img--small {
-  @include mq(desktop) {
-    max-width: 50%;
-  }
-}
-
-.c-article-section__img--shadow {
-  @include element-shadow;
 }
 
 // Bottom

@@ -13,15 +13,21 @@
     </div>
     <div class="l-spacing-l">
       <% cards.forEach(function(card){ %>
-        <div class="l-spacing-m">
-          <%- include('../card/card.ejs', { card: card, mod: 'l-spacing-m' }); %>
-        </div>
+        <%- include('../card/card.ejs', { card: card }); %>
       <% }) %>
     </div>
-    <div class="o-distributed o-distributed--center l-spacing-l">
+    <!-- <div class="o-distributed o-distributed--center l-spacing-l">
       <a class="c-button" href="#">Load more tips...</a>
-    </div>
+    </div> -->
+
+    <!-- pagination -->
+    <%- include('../pagination/pagination.ejs') %>
   </main>
+
   <!-- footer -->
   <%- include('../footer/footer.ejs'); %>
 </div>
+
+<a href="#" class="s-back-to-top j-back-to-top" title="back to top">
+  <%- include('../../svg/svgo/arrow-up.svg') %>
+</a>

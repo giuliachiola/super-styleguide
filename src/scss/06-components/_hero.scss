@@ -8,11 +8,12 @@
   color: $co_color-light;
   display: flex;
   min-height: rem(350);
+  padding: rem(40) 0; // title and subtitle do not have margins
   position: relative;
   text-align: center;
 
   .l-main {
-    position: relative; // FIXME: necessary to have gradient below the text!
+    // position: relative; // necessary to have gradient below the text!
     width: 100%; // center text on mobile
   }
 }
@@ -49,6 +50,10 @@
   }
 }
 
+.c-hero__title {
+  margin-top: 0;
+}
+
 .c-hero__title-custom { // ex. Tagged post "git" --> git has custom styles
   @include ty-heading--m;
 
@@ -74,20 +79,24 @@
 .c-hero__subtitle {
   @include ty-heading--s;
 
-  .c-hero--quote & {
-    margin-bottom: 0;
+  margin-bottom: 0;
+
+  .c-hero--quote & { // quote author
+    font-style: normal;
   }
 }
 
-.c-hero__credits { // link to photo
-  bottom: 20px;
-  color: inherit;
-  font-size: $ty_font-size-small;
-  position: absolute;
-  right: 20px;
+// NOT USED RIGHT NOW 9/01/2021
 
-  a {
-    color: inherit;
-    text-decoration: underline;
-  }
-}
+// .c-hero__credits { // link to photo
+//   bottom: 20px;
+//   color: inherit;
+//   font-size: $ty_font-size-small;
+//   position: absolute;
+//   right: 20px;
+
+//   a {
+//     color: inherit;
+//     text-decoration: underline;
+//   }
+// }

@@ -1,10 +1,34 @@
 <!DOCTYPE html>
 <html class="<!-- uiengine:class -->">
   <head>
+    <!-- IMPORTANT: we have to check localStorage as soon as page loads to prevent flickering -->
+    <script>
+    const currentTheme = localStorage.getItem('theme') || 'light'
+    document.documentElement.setAttribute('data-theme', currentTheme)
+    </script>
+
     <title><!-- uiengine:title --></title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="/css/dev.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+
+    <link rel="preload"
+          as="style"
+          href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat:wght@400;600&display=swap" />
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat:wght@400;600&display=swap"
+          media="print" onload="this.media='all'" />
+
+    <noscript>
+      <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat:wght@400;600&display=swap" />
+    </noscript>
   </head>
   <body>
     <!-- uiengine:content -->
@@ -13,36 +37,24 @@
     <script src="/scripts/my.js" defer></script>
     -->
 
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
+
+
     <script>
-    /* open/close mobile menu */
-    const checkbox = document.querySelector(".c-header__toggle");
+    /* ----------------------------
+      Open/Close mobile menu
+    ---------------------------- */
+    const checkbox = document.querySelector(".c-header__toggle")
     if (checkbox) {
       checkbox.addEventListener('change', function() {
         document.body.classList.toggle("is-menu-open")
       })
     }
 
-    /* switch theme (light/dark mode) */
-
-    const toggleSwitch = document.querySelector('.j-theme-switcher input[type="checkbox"]')
-    const currentTheme = localStorage.getItem('theme') || 'light'
-    document.documentElement.setAttribute('data-theme', currentTheme);
-
-    if (currentTheme === 'dark') {
-      toggleSwitch.checked = true;
-    }
-
-    const switchTheme = (e) => {
-      const theme = e.target.checked ? 'dark' : 'light'
-      document.documentElement.setAttribute('data-theme', theme);
-      localStorage.setItem('theme', theme);
-    }
-
-    toggleSwitch.addEventListener('change', switchTheme, false);
-
-    /* Add copy button in snippets using PrismJS */
-    // https://www.tomspencer.dev/blog/2018/09/14/adding-click-to-copy-buttons-to-a-hugo-powered-blog/
-
+    /* ----------------------------
+      Add copy button in snippets using PrismJS
+      https://www.tomspencer.dev/blog/2018/09/14/adding-click-to-copy-buttons-to-a-hugo-powered-blog/
+    ---------------------------- */
     (function() {
       'use strict'
 
@@ -103,7 +115,51 @@
       }
 
       Array.prototype.forEach.call(highlightBlocks, addCopyButton)
-    })();
+    })()
+
+    /* ----------------------------
+      Reading progress in article content
+    ---------------------------- */
+
+    const progressEl = document.querySelector('.j-reading-progress')
+    const progressValueEl = document.querySelector('.j-reading-progress__value')
+    const articleEl = document.querySelector('.j-article-section__content')
+    const articleHeight = articleEl ? articleEl.clientHeight : undefined
+    const offset = 0;
+
+    function updateProgress() {
+      const scrollTop = document.documentElement.scrollTop;
+      const scrollPercent = Math.round((scrollTop - offset) / articleHeight * 100);
+
+      progressValueEl.style.width = `${scrollPercent}%`
+      progressEl.classList.toggle('is-sticky-on-top', articleEl.getBoundingClientRect().top < 0)
+      // console.log('scrollPercent ', scrollPercent)
+    }
+
+    if (articleEl) {
+      document.addEventListener('scroll', _.debounce(updateProgress, 400))
+    }
+
+    /* ----------------------------
+      Switch theme (light/dark mode)
+    ---------------------------- */
+    const switchTheme = (e) => {
+      const theme = e.target.checked ? 'dark' : 'light'
+      document.documentElement.setAttribute('data-theme', theme)
+      localStorage.setItem('theme', theme)
+    }
+
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const toggleSwitch = document.querySelector('.j-theme-switcher input[type="checkbox"]')
+
+      if (currentTheme === 'dark') {
+        toggleSwitch.checked = true
+      }
+
+      if(toggleSwitch) {
+        toggleSwitch.addEventListener('change', switchTheme, false)
+      }
+    })
 
     </script>
 

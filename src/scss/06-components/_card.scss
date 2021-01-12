@@ -55,11 +55,11 @@ $sp_card-border-radius: rem(2);
   }
 
   .c-card--squared-image & {
-    @include mq($until: tablet) {
+    @include mq($until: desktop) {
       display: none;
     }
 
-    @include mq(tablet) {
+    @include mq(desktop) {
       @include aspect-ratio;
       @include image-padding(1, 1); // square
     }
@@ -112,13 +112,33 @@ $sp_card-border-radius: rem(2);
   }
 
   .c-card--squared-image & { // Image does not fit in mobile viewport
-    @include mq($until: tablet) {
+    @include mq($until: desktop) {
       @include card-highlight-left;
     }
   }
 }
 
-// .c-card__title {}
+.c-card__title {
+  /* stylelint-disable */
+  // This is necessary because with this structure <a><h2>title</h2></a> both link and heading are display inline, so we have double underline on hover
+  // check <a> title in projects external link.
+  &:hover {
+    text-decoration: none;
+
+    h2 {
+      text-decoration: underline;
+    }
+  }
+
+  h2 {
+    display: inline;
+  }
+  /* stylelint-enable */
+
+  & ~ .icon--external-link {
+    height: rem(20);
+  }
+}
 
 .c-card__title-heading {
   @include ty-heading--m;
@@ -134,6 +154,15 @@ $sp_card-border-radius: rem(2);
   }
 }
 
+.c-card__external-icon {
+  margin-left: $sp_variable-xs;
+  vertical-align: top;
+
+  &:hover {
+    color: var(--co_palette);
+  }
+}
+
 .c-card__abstract {
   margin-top: 0;
 }
@@ -143,10 +172,15 @@ $sp_card-border-radius: rem(2);
   position: absolute;
   right: $sp_variable-m;
   text-align: right;
+
+  // useful to set tags overflow
+  /* stylelint-disable */
+  max-width: calc(100% - #{$sp_variable-m * 2});
+  /* stylelint-enable */
 }
 
 .c-card__date {
-  color: $co_color-light-gray;
+  color: $co_color-medium-gray;
   display: block;
   font-size: $ty_font-size-small;
   margin-bottom: $sp_variable-xs;
@@ -169,6 +203,9 @@ $sp_card-border-radius: rem(2);
 }
 
 .c-card__tags {
+  overflow-x: auto;
+  white-space: nowrap;
+
   .c-label {
     display: inline-block;
     margin-top: rem(5);
@@ -217,11 +254,21 @@ $sp_card-border-radius: rem(2);
 
   a {
     text-decoration: underline;
+
+    &:hover {
+      color: var(--co_palette);
+    }
   }
 
   // img styles
 
   .c-article__img--shadow {
     @include element-shadow;
+  }
+
+  // markdown it anchor
+
+  .j-header-anchor {
+    display: none; // ex. projects
   }
 }

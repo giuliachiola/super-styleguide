@@ -1,0 +1,36 @@
+/**
+ * READING PROGRESS
+ */
+
+.c-reading-progress {
+  @include element-shadow;
+
+  background-color: rgba($co_color-light-gray, 0.2);
+  opacity: 0;
+  position: sticky;
+  scroll-margin-top: 10px;
+  top: 0;
+  transition: all 0.6s ease;
+  width: 100%;
+  z-index: 200;
+
+  // escape from margins
+  // @include mq($until: desktop) {
+  //   margin: 0 rem(-20);
+  //   width: calc(100% + #{rem(40)});
+  // }
+
+  &.is-sticky-on-top {
+    background-color: rgba($co_color-light-gray, 0.5);
+    opacity: 1;
+    transition: all 0.6s ease;
+  }
+}
+
+.c-reading-progress__value {
+  background: var(--co_palette--lighten);
+  display: block;
+  height: 10px;
+  max-width: 100%;
+  transition: width 0.3s ease-out;
+}

@@ -34,19 +34,20 @@ code[class*= 'language-'] {
     @include button-reset;
     @include element-shadow;
 
-    background: var(--co_palette);
-    color: var(--co_background);
-    font-size: 12px;
+    background: lighten($co_palette-code-snippets, 10%);
+    color: $co_color-light;
+    font-size: rem(12);
+    letter-spacing: rem(1);
     line-height: 1.2;
-    padding: 2px 10px;
+    padding: rem(2) rem(10);
     position: absolute;
-    right: 10px;
+    right: rem(10);
     text-transform: uppercase;
-    top: 10px;
+    top: rem(10);
 
     &:hover,
     &:focus {
-      background: var(--co_palette--lighten);
+      background: lighten($co_palette-code-snippets, 20%);
       cursor: pointer;
     }
 

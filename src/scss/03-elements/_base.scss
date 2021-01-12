@@ -44,8 +44,7 @@ a {
   // -webkit-tap-highlight-color: transparent; // Chrome on Android: remove blue highlight on all the clickable area
   text-decoration: none;
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: var(--co_text-tint-10);
     text-decoration: underline;
   }
@@ -147,15 +146,11 @@ body {
 }
 
 .l-wrapper {
-  @include mq(desktop) {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-}
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
-.c-footer {
-  @include mq(desktop) {
-    margin-top:auto;
+  .c-footer { // it works just if <footer> is inside .l-wrapper
+    margin-top: auto;
   }
 }

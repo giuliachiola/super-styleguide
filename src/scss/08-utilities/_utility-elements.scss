@@ -1,0 +1,23 @@
+/* ==========================================================================
+  UTILITY ELEMENTS
+========================================================================== */
+
+// Shadow
+
+.u-shadow {
+  @include element-shadow;
+}
+
+// Max width
+
+.s-img--medium-d {
+  @include mq(desktop) {
+    max-width: 70%;
+  }
+}
+
+.s-img--small-d {
+  @include mq(desktop) {
+    max-width: 50%;
+  }
+}
