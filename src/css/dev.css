@@ -986,11 +986,11 @@ code[class*='language-'] {
   }
 }
 
-.c-article-section__bottom-links > a {
+.c-article-section__bottom-links a {
   text-decoration: underline;
 }
 
-.c-article-section__bottom-links > a:hover {
+.c-article-section__bottom-links a:hover {
   color: var(--co_palette);
 }
 

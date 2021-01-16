@@ -181,7 +181,7 @@
   }
 
   /* stylelint-disable */
-  > a {
+  a { // link to crossposts for comments
     text-decoration: underline;
 
     &:hover {
