@@ -2,13 +2,15 @@
   CODE
 ========================================================================== */
 
+$s-code-button-margin: rem(10);
+
 /**
  * Inline code
  */
 
 :not(pre) > code:not([class^= 'language-']) {
   background: $co_color-concrete;
-  padding: 3px; // improve readability
+  padding: rem(3); // improve readability
 
   [data-theme= 'dark'] & {
     background: $co_palette-code-snippets; // same as code snippets
@@ -41,9 +43,9 @@ code[class*= 'language-'] {
     line-height: 1.2;
     padding: rem(2) rem(10);
     position: absolute;
-    right: rem(10);
+    right: $s-code-button-margin;
     text-transform: uppercase;
-    top: rem(10);
+    top: $s-code-button-margin;
 
     &:hover,
     &:focus {
@@ -59,14 +61,14 @@ code[class*= 'language-'] {
   // Language
 
   .c-code__lang { // Added via JS, example: twig
-    bottom: rem(10);
+    bottom: $s-code-button-margin;
     font-size: rem(12);
     letter-spacing: rem(1);
     line-height: 1.2;
     margin: 0;
     opacity: 0.5;
     position: absolute;
-    right: rem(10);
+    right: $s-code-button-margin;
     text-transform: uppercase;
   }
 }

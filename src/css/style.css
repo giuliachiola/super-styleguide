@@ -416,7 +416,7 @@ body {
  */
 :not(pre) > code:not([class^='language-']) {
   background: #f3f3f3;
-  padding: 3px;
+  padding: 0.1875rem;
 }
 
 [data-theme='dark'] :not(pre) > code:not([class^='language-']) {
