@@ -1069,6 +1069,10 @@ code[class*='language-'] {
   position: relative;
 }
 
+.c-card.j-card:hover {
+  cursor: pointer;
+}
+
 .c-card--horizontal {
   display: flex;
 }

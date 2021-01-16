@@ -12,6 +12,10 @@ $sp_card-border-radius: rem(2);
   border-radius: $sp_card-border-radius;
   overflow: hidden;
   position: relative;
+
+  &.j-card:hover { // all cards have .j-card, "til" and "projects" (expanded cards) excluded
+    cursor: pointer;
+  }
 }
 
 .c-card--horizontal {
