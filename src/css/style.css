@@ -460,6 +460,18 @@ code[class*='language-'] {
   outline: 0;
 }
 
+.c-code .c-code__lang {
+  bottom: 0.625rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.0625rem;
+  line-height: 1.2;
+  margin: 0;
+  opacity: 0.5;
+  position: absolute;
+  right: 0.625rem;
+  text-transform: uppercase;
+}
+
 /* ==========================================================================
   MAIN BORDER
 ========================================================================== */

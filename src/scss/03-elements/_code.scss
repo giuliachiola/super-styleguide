@@ -24,11 +24,11 @@ code[class*= 'language-'] {
   font-size: inherit; // inherit the block font-size, to be large as the text around it
 }
 
-// Copy button
-// https://www.tomspencer.dev/blog/2018/09/14/adding-click-to-copy-buttons-to-a-hugo-powered-blog/
-
 .c-code {
   position: relative;
+
+  // Copy button
+  // https://www.tomspencer.dev/blog/2018/09/14/adding-click-to-copy-buttons-to-a-hugo-powered-blog/
 
   .c-code__copy-button {
     @include button-reset;
@@ -54,5 +54,19 @@ code[class*= 'language-'] {
     &:focus {
       outline:0;
     }
+  }
+
+  // Language
+
+  .c-code__lang { // Added via JS, example: twig
+    bottom: rem(10);
+    font-size: rem(12);
+    letter-spacing: rem(1);
+    line-height: 1.2;
+    margin: 0;
+    opacity: 0.5;
+    position: absolute;
+    right: rem(10);
+    text-transform: uppercase;
   }
 }
