@@ -975,6 +975,7 @@ code[class*='language-'] {
 }
 
 .c-article-section__bottom-links {
+  margin-bottom: 1.25rem;
   /* stylelint-disable */
   /* stylelint-enable */
 }
@@ -2099,10 +2100,6 @@ code[class*='language-'] {
   .u-ty-break-t {
     display: none;
   }
-}
-
-.u-link-remove-underline {
-  text-decoration: none !important;
 }
 
 /* ==========================================================================

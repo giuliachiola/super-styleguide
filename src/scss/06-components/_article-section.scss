@@ -175,6 +175,8 @@
 }
 
 .c-article-section__bottom-links {
+  margin-bottom: rem(20);
+
   @include mq(tablet) {
     display: flex;
     justify-content: space-between;
