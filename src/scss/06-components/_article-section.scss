@@ -173,3 +173,24 @@
     }
   }
 }
+
+.c-article-section__bottom-links {
+  @include mq(tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* stylelint-disable */
+  > a {
+    text-decoration: underline;
+
+    &:hover {
+      color: var(--co_palette);
+    }
+  }
+  /* stylelint-enable */
+
+  p {
+    margin: 0;
+  }
+}

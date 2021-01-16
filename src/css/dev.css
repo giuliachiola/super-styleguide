@@ -974,6 +974,30 @@ code[class*='language-'] {
   }
 }
 
+.c-article-section__bottom-links {
+  /* stylelint-disable */
+  /* stylelint-enable */
+}
+
+@media (min-width: 48em) {
+  .c-article-section__bottom-links {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.c-article-section__bottom-links > a {
+  text-decoration: underline;
+}
+
+.c-article-section__bottom-links > a:hover {
+  color: var(--co_palette);
+}
+
+.c-article-section__bottom-links p {
+  margin: 0;
+}
+
 /* ==========================================================================
   BUTTON
 ========================================================================== */
