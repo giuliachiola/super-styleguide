@@ -775,7 +775,7 @@ code[class*='language-'] {
 }
 
 .c-article-section__bottom-links {
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.625rem;
   /* stylelint-disable */
   /* stylelint-enable */
 }
