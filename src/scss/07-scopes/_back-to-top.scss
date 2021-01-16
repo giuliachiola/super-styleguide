@@ -11,9 +11,6 @@
   right: 0;
   transition: opacity 0.6s ease;
 
-  // @media (pointer: fine) { // computer ex. mouse pointer
-  // }
-
   @include mq($until: desktop) {
     display: none;
   }
@@ -22,7 +19,8 @@
     color: var(--co_palette--lighten);
   }
 
-  &.is-active {
+  &.is-active,
+  .no-js & {
     opacity: 1;
     transition: opacity 0.6s ease;
   }

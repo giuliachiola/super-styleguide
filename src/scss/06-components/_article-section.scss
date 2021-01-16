@@ -173,3 +173,26 @@
     }
   }
 }
+
+.c-article-section__bottom-links {
+  margin-bottom: rem(10);
+
+  @include mq(tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* stylelint-disable */
+  a { // link to crossposts for comments
+    text-decoration: underline;
+
+    &:hover {
+      color: var(--co_palette);
+    }
+  }
+  /* stylelint-enable */
+
+  p {
+    margin: 0;
+  }
+}

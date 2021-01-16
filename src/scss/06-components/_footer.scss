@@ -73,6 +73,10 @@
   @include mq(tablet) {
     margin-right: auto;
   }
+
+  .no-js & {
+    display: none;
+  }
 }
 
 .c-footer__socials {
