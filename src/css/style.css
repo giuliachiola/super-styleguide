@@ -1283,6 +1283,10 @@ code[class*='language-'] {
   }
 }
 
+.no-js .c-footer__theme-switcher {
+  display: none;
+}
+
 .c-footer__socials {
   display: flex;
 }
@@ -1827,7 +1831,8 @@ code[class*='language-'] {
   color: var(--co_palette--lighten);
 }
 
-.s-back-to-top.is-active {
+.s-back-to-top.is-active,
+.no-js .s-back-to-top {
   opacity: 1;
   transition: opacity 0.6s ease;
 }
