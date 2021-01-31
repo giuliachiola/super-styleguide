@@ -82,6 +82,14 @@
     color: var(--co_text);
     margin-bottom: 0;
     padding-inline-start: rem(20);
+
+    li {
+      list-style: disc;
+
+      li { // second level
+        list-style: circle;
+      }
+    }
   }
 
   nav {
