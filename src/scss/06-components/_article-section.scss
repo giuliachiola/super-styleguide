@@ -85,6 +85,7 @@
 
     li {
       list-style: disc;
+      list-style-position: inside; // both 1st and 2nd level
 
       li { // second level
         list-style: circle;

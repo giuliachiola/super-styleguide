@@ -663,6 +663,7 @@ code[class*='language-'] {
 
 .c-article-section__toc ol li {
   list-style: disc;
+  list-style-position: inside;
 }
 
 .c-article-section__toc ol li li {
