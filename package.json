@@ -10,6 +10,7 @@
     "css:to:postcss:dev": "postcss src/css --dir dist/css",
     "styles:dev": "npm run stylelint && npm run scss:to:css:dev && npm run css:to:postcss:dev",
     "_____________________________SVG_____________________________": "",
+    "rimraf": "./node_modules/rimraf/bin.js",
     "clean:svgo": "rimraf src/svg/svgo/*",
     "svg:optimize": "npm run clean:svgo && node scripts/svgo.js",
     "_____________________________Dev_______________________________": "",
