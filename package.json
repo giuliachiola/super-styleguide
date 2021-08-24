@@ -18,8 +18,9 @@
     "build": "npm run styles:dev && node ./scripts/uiengine build",
     "dev": "npm-run-all -l clean:dev --parallel build:serve watcher"
   },
-  "author": "",
+  "author": "Giulia Chiola",
   "license": "ISC",
+  "repository": "github:giuliachiola/super-styleguide",
   "devDependencies": {
     "@uiengine/adapter-ejs": "^3.1.5",
     "@uiengine/adapter-html": "^3.1.5",
