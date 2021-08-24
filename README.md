@@ -42,8 +42,7 @@ npm run build
 
 ### 🌿 Branches
 
-| Branch name  | Use              |
-|:-------------|:-----------------|
-| `main`       | production       |
-| `develop`    | staging          |
-| `feature/**` | feature branches |
+| Branch name | Use                                       |
+|:------------|:------------------------------------------|
+| `main`      | production (also used by super-blog-11ty) |
+| `develop`   | staging                                   |
