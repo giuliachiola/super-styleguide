@@ -12,12 +12,12 @@ This project is my tech blog styleguide.
 
 ## 🔥 Tech stack
 
-| Purpose            | Technology   |
-|--------------------|--------------|
-| Templating         | EJS          |
-| Styling            | SCSS + BEMIT |
-| Documentation      | Markdown     |
-| Presentation layer | UIengine     |
+| Purpose            | Technology                                            |
+|--------------------|-------------------------------------------------------|
+| Templating         | EJS                                                   |
+| Styling            | SCSS + BEMIT                                          |
+| Documentation      | Markdown                                              |
+| Presentation layer | [UIengine](https://github.com/dennisreimann/uiengine) |
 
 ## 🌊 Run development mode
 
@@ -36,7 +36,9 @@ npm run dev
 npm run build
 ```
 
+<!--
 ## 📚 Project documentation
+-->
 
 ### 🌿 Branches
 
@@ -45,4 +47,3 @@ npm run build
 | `main`       | production       |
 | `develop`    | staging          |
 | `feature/**` | feature branches |
-
