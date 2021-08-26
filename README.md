@@ -4,7 +4,7 @@ This project is my tech blog styleguide.
 
 | \                | \                                                                                                                                                                            |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Pipeline         | [![Netlify Status](https://api.netlify.com/api/v1/badges/ef4e02ee-909c-4030-906d-8e58c79a7695/deploy-status)](https://app.netlify.com/sites/styleguide-giuliachiola/deploys) |
+| Deploy status	         | [![Netlify Status](https://api.netlify.com/api/v1/badges/ef4e02ee-909c-4030-906d-8e58c79a7695/deploy-status)](https://app.netlify.com/sites/styleguide-giuliachiola/deploys) |
 | Deploy preview   | https://styleguide-giuliachiola.netlify.app/                                                                                                                                 |
 | Project typology | Personal                                                                                                                                                                     |
 
