@@ -13,8 +13,14 @@ $sp_card-border-radius: rem(2);
   overflow: hidden;
   position: relative;
 
-  &.j-card:hover { // all cards have .j-card, "til" and "projects" (expanded cards) excluded
-    cursor: pointer;
+  &.j-card { // all cards have .j-card, "til" and "projects" (expanded cards) excluded
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+      transition: box-shadow 0.3s ease-in-out;
+    }
   }
 }
 
@@ -126,12 +132,13 @@ $sp_card-border-radius: rem(2);
   /* stylelint-disable */
   // This is necessary because with this structure <a><h2>title</h2></a> both link and heading are display inline, so we have double underline on hover
   // check <a> title in projects external link.
-  &:hover {
+  &:hover,
+  .c-card:hover & {
     text-decoration: none;
 
-    h2 {
-      text-decoration: underline;
-    }
+    // h2 {
+    //   text-decoration: underline;
+    // }
   }
 
   h2 {

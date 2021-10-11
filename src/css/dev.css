@@ -1078,8 +1078,14 @@ code[class*='language-'] {
   position: relative;
 }
 
+.c-card.j-card {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
 .c-card.j-card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .c-card--horizontal {
@@ -1204,12 +1210,9 @@ code[class*='language-'] {
   /* stylelint-enable */
 }
 
-.c-card__title:hover {
+.c-card__title:hover,
+.c-card:hover .c-card__title {
   text-decoration: none;
-}
-
-.c-card__title:hover h2 {
-  text-decoration: underline;
 }
 
 .c-card__title h2 {
