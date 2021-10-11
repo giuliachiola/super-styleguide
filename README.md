@@ -21,6 +21,13 @@ This project is my tech blog styleguide.
 
 ## 🌊 Run development mode
 
+Note that this project do NOT build correctly with newer node versions, please use **nvm**:
+
+```shell
+# get supported node version from .nvmrc file
+nvm use
+```
+
 ```shell
 # install dependencies
 npm i
