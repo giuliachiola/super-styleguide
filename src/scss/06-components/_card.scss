@@ -17,7 +17,8 @@ $sp_card-border-radius: rem(2);
     transition: box-shadow 0.3s ease-in-out;
 
     &:hover {
-      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.15);
+      @include element-shadow(var(--co_shadow-intense));
+      
       cursor: pointer;
       transition: box-shadow 0.3s ease-in-out;
     }
@@ -198,7 +199,7 @@ $sp_card-border-radius: rem(2);
 }
 
 .c-card__number {
-  @include element-shadow($opacity: 0.3);
+  @include element-shadow;
 
   background-color: var(--co_palette--lighten);
   border-radius: $sp_card-border-radius;

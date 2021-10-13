@@ -24,7 +24,9 @@ $co_palette-5-light: #ffe3bd;
 
 $co_lighten: 10%;
 $co_shadow-default: 0.1;
+$co_shadow-default-intense: 0.4;
 $co_shadow-colored: 0.4;
+$co_shadow-colored-intense: 0.7;
 
 // Neutrals
 
@@ -54,6 +56,7 @@ $co_color-palette-dark-darken2: darken($co_palette-code-snippets, 5%);
   --co_text-tint-10: #{$co_color-main-tint-10};
   --co_background: #{$co_color-light};
   --co_shadow: #{rgba($co_color-solid-black, $co_shadow-default)};
+  --co_shadow-intense: #{rgba($co_color-solid-black, $co_shadow-default-intense)};
   --co_palette: #{$co_color-main};
   --co_palette--lighten: #{lighten($co_color-main, $co_lighten)};
   --co_palette--lighten-hard: #{lighten($co_color-main, 30%)};
@@ -74,6 +77,7 @@ $co_color-palette-dark-darken2: darken($co_palette-code-snippets, 5%);
 
   [data-theme= 'dark'] & {
     --co_shadow: #{rgba($co_palette-1, $co_shadow-colored)};
+    --co_shadow-intense: #{rgba($co_palette-1, $co_shadow-colored-intense)};
   }
 }
 
@@ -84,6 +88,7 @@ $co_color-palette-dark-darken2: darken($co_palette-code-snippets, 5%);
 
   [data-theme= 'dark'] & {
     --co_shadow: #{rgba($co_palette-2, $co_shadow-colored)};
+    --co_shadow-intense: #{rgba($co_palette-2, $co_shadow-colored-intense)};
   }
 }
 
@@ -94,6 +99,7 @@ $co_color-palette-dark-darken2: darken($co_palette-code-snippets, 5%);
 
   [data-theme= 'dark'] & {
     --co_shadow: #{rgba($co_palette-3, $co_shadow-colored)};
+    --co_shadow-intense: #{rgba($co_palette-3, $co_shadow-colored-intense)};
   }
 }
 
@@ -104,6 +110,7 @@ $co_color-palette-dark-darken2: darken($co_palette-code-snippets, 5%);
 
   [data-theme= 'dark'] & {
     --co_shadow: #{rgba($co_palette-4, $co_shadow-colored)};
+    --co_shadow-intense: #{rgba($co_palette-4, $co_shadow-colored-intense)};
   }
 }
 
@@ -114,11 +121,12 @@ $co_color-palette-dark-darken2: darken($co_palette-code-snippets, 5%);
 
   [data-theme= 'dark'] & {
     --co_shadow: #{rgba($co_palette-5, $co_shadow-colored)};
+    --co_shadow-intense: #{rgba($co_palette-5, $co_shadow-colored-intense)};
   }
 }
 
 // SHADOW
 
-@mixin element-shadow ($opacity: $co_shadow-default) {
-  box-shadow: 0 rem(10) rem(45) rem(-9) var(--co_shadow);
+@mixin element-shadow($color: var(--co_shadow)) {
+  box-shadow: 0 rem(10) rem(45) rem(-9) $color;
 }
