@@ -21,14 +21,16 @@
   <% if (hero.title && hero.subtitle) { %>
     <div class="l-main">
       <h1><%- hero.title %></h1>
-      <h2 class="c-hero__subtitle"><%= hero.subtitle %></h2>
+      < class="c-hero__subtitle"><%= hero.subtitle %></h2>
     </div>
   <% } %>
 
   <% if (hero.quote && hero.quoteAuthor) { %>
     <div class="l-main">
-      <h1><%- hero.quote %></h1>
-      <h2 class="c-hero__subtitle"><%= hero.quoteAuthor %></h2>
+      <blockquote class="c-hero__blockquote">
+        <span class="c-hero__quote"><%- hero.quote %></span>
+        <cite class="c-hero__subtitle"><%= hero.quoteAuthor %></cite>
+      </blockquote>
     </div>
   <% } %>
 

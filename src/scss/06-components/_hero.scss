@@ -34,7 +34,15 @@
   }
 }
 
+.c-hero__blockquote {
+  border-left: none;
+  padding-left: 0;
+}
+
 .c-hero__quote { // quote but not author
+  @include ty-heading--l; // same as h2
+
+  display: block; // span has display: inline
   margin: 0 auto;
 
   @include mq(tablet) {
