@@ -18,7 +18,7 @@ $sp_card-border-radius: rem(2);
 
     &:hover {
       @include element-shadow(var(--co_shadow-intense));
-      
+
       cursor: pointer;
       transition: box-shadow 0.3s ease-in-out;
     }
