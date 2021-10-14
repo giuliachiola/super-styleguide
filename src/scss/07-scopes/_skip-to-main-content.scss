@@ -1,0 +1,39 @@
+/* ==========================================================================
+  SKIP TO MAIN CONTENT
+========================================================================== */
+
+.s-skip-to-content-link {
+  background: $co_color-light;
+  border: rem(1) solid var(--co_palette);
+  border-radius: $sp_main-border-radius;
+  padding: $sp_variable-s;
+  position: absolute; // relative to .c-header
+  transition: transform 0.3s;
+  z-index: 300;
+
+  @include mq($until:desktop) {
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -100%);
+
+    &:focus {
+      transform: translate(-50%, 0%);
+    }
+  }
+
+  @include mq(desktop) {
+    left: 0;
+    top: 50%;
+    transform: translate(-100%, -50%);
+
+    &:focus {
+      transform: translate(0, -50%);
+    }
+  }
+
+  // hide when mobile menu is open
+
+  .is-menu-open & {
+    display: none;
+  }
+}
