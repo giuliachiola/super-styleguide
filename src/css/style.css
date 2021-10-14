@@ -672,6 +672,10 @@ code[class*='language-'] {
   list-style-position: inside;
 }
 
+.c-article-section__toc ol li ol {
+  padding-inline-start: 2.5rem;
+}
+
 .c-article-section__toc ol li li {
   list-style: circle;
 }
