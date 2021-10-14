@@ -1936,7 +1936,6 @@ code[class*='language-'] {
 ========================================================================== */
 .s-skip-to-content-link {
   background: #fff;
-  border: 0.0625rem solid var(--co_palette);
   border-radius: 2px;
   padding: 0.625rem;
   position: absolute;
