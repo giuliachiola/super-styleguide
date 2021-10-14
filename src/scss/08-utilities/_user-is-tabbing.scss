@@ -10,7 +10,7 @@
     select:focus,
     textarea:focus,
     summary:focus {
-      outline-color: var(--co_palette);
+      outline: rem(2) solid var(--co_palette);
     }
   }
 

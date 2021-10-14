@@ -672,6 +672,10 @@ code[class*='language-'] {
   list-style-position: inside;
 }
 
+.c-article-section__toc ol li ol {
+  padding-inline-start: 2.5rem;
+}
+
 .c-article-section__toc ol li li {
   list-style: circle;
 }
@@ -1347,6 +1351,12 @@ code[class*='language-'] {
 /* ==========================================================================
   HEADER
   ========================================================================== */
+@media (min-width: 64em) {
+  .c-header {
+    position: relative;
+  }
+}
+
 @media (max-width: 63.99em) {
   .is-menu-open .c-header {
     height: 100vh;
@@ -1689,6 +1699,7 @@ code[class*='language-'] {
 
 .c-hero--quote .c-hero__subtitle {
   font-style: normal;
+  margin-top: 1.25rem;
 }
 
 /* ==========================================================================
@@ -1921,6 +1932,45 @@ code[class*='language-'] {
 }
 
 /* ==========================================================================
+  SKIP TO MAIN CONTENT
+========================================================================== */
+.s-skip-to-content-link {
+  background: #fff;
+  border: 0.0625rem solid var(--co_palette);
+  border-radius: 2px;
+  padding: 0.625rem;
+  position: absolute;
+  transition: transform 0.3s;
+  z-index: 300;
+}
+
+@media (max-width: 63.99em) {
+  .s-skip-to-content-link {
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -100%);
+  }
+  .s-skip-to-content-link:focus {
+    transform: translate(-50%, 0%);
+  }
+}
+
+@media (min-width: 64em) {
+  .s-skip-to-content-link {
+    left: 0;
+    top: 50%;
+    transform: translate(-100%, -50%);
+  }
+  .s-skip-to-content-link:focus {
+    transform: translate(0, -50%);
+  }
+}
+
+.is-menu-open .s-skip-to-content-link {
+  display: none;
+}
+
+/* ==========================================================================
   08 - UTILITY
 ========================================================================== */
 /**
@@ -1933,7 +1983,7 @@ code[class*='language-'] {
   body.user-is-tabbing select:focus,
   body.user-is-tabbing textarea:focus,
   body.user-is-tabbing summary:focus {
-    outline-color: var(--co_palette);
+    outline: 0.125rem solid var(--co_palette);
   }
   body:not(.user-is-tabbing) a:focus,
   body:not(.user-is-tabbing) button:focus,

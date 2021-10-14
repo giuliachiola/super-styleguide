@@ -81,11 +81,15 @@
   ol {
     color: var(--co_text);
     margin-bottom: 0;
-    padding-inline-start: rem(20);
+    padding-inline-start: $sp_variable-m;
 
     li {
       list-style: disc;
       list-style-position: inside; // both 1st and 2nd level
+
+      ol { // second level
+        padding-inline-start: $sp_variable-l;
+      }
 
       li { // second level
         list-style: circle;

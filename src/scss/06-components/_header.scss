@@ -10,6 +10,10 @@ $sp_header-z-index-m: 10;
 $sp_header-hamburger-z-index-m: $sp_header-z-index-m + 1;
 
 .c-header {
+  @include mq(desktop) {
+    position: relative; // skip to content is absolutely positioned
+  }
+
   .is-menu-open & {
     @include mq($until: desktop) {
       height: 100vh;
