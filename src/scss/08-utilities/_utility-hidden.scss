@@ -8,3 +8,15 @@
 .u-hidden-m { @include mq($until: tablet) { display: none !important; } }
 .u-hidden-t { @include mq(tablet, desktop) { display: none !important; } }
 .u-hidden-d { @include mq(desktop) { display: none !important; } }
+
+.u-hidden-theme-dark {
+  [data-theme= 'dark'] & {
+    display: none;
+  }
+}
+
+.u-hidden-theme-light {
+  [data-theme= 'light'] & {
+    display: none;
+  }
+}

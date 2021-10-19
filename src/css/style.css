@@ -2080,6 +2080,14 @@ code[class*='language-'] {
   }
 }
 
+[data-theme='dark'] .u-hidden-theme-dark {
+  display: none;
+}
+
+[data-theme='light'] .u-hidden-theme-light {
+  display: none;
+}
+
 /* ==========================================================================
   UTILITY ELEMENTS
 ========================================================================== */
