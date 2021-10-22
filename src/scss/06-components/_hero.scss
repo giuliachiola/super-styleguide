@@ -90,6 +90,7 @@
   margin-bottom: 0;
 
   .c-hero--quote & { // quote author
+    display: block; // <cite> is inline
     font-style: normal;
     margin-top: $sp_variable-m; // force margin-top, as it is not an h2
   }

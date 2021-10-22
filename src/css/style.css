@@ -1698,6 +1698,7 @@ code[class*='language-'] {
 }
 
 .c-hero--quote .c-hero__subtitle {
+  display: block;
   font-style: normal;
   margin-top: 1.25rem;
 }
