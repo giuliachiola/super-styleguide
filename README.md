@@ -43,9 +43,9 @@ npm run dev
 npm run build
 ```
 
-<!--
 ## 📚 Project documentation
--->
+
+- [issues with node-sass](./docs/node-sass.md)
 
 ### 🌿 Branches
 
