@@ -40,6 +40,7 @@
   @include main-border('bottom');
 
   position: relative; // tweet button is in absolute
+  padding-bottom: $sp_variable-s; // override of main-border padding-bottom (m)
 }
 
 // Twitter share button
@@ -74,6 +75,12 @@
 .c-article-section__toc {
   color: $co_color-medium-gray;
 
+  &[open] {
+    span {
+      text-decoration: underline dotted;
+    }
+  }
+
   summary {
     &:hover {
       cursor: pointer;
@@ -84,6 +91,7 @@
     color: var(--co_text);
     margin-bottom: 0;
     padding-inline-start: $sp_variable-m;
+    margin-top: $sp_variable-xs;
 
     li {
       list-style: disc;
