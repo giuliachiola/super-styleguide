@@ -3,19 +3,11 @@
 ========================================================================== */
 
 .c-article-section__top {
-  @include main-border('bottom');
-
   display: grid;
   gap: $sp_variable-xs;
   grid-template-areas:
-    'info tweet'
-    'tags tags';
-
-  @include mq(tablet) {
-    grid-template-areas:
-      'info .'
-      'tags tweet';
-  }
+    'info .'
+    'tags .';
 
   .c-article-section--custom & {
     margin-bottom: rem(40); // same as <h1> margin-bottom
@@ -42,12 +34,22 @@
   }
 }
 
+// Wrapper toc+share
+
+.c-article-section__toc-share {
+  @include main-border('bottom');
+
+  position: relative; // tweet button is in absolute
+}
+
 // Twitter share button
 
 .c-article-section__share {
-  grid-area: tweet;
   height: rem(20); // hotfix because embedded <iframe> for sharing is not perfectly aligne
+  position: absolute;
+  right: 0;
   text-align: right;
+  top: rem(5); // visually aligned
 
   @include mq(tablet) {
     margin-top: auto;
@@ -95,10 +97,6 @@
         list-style: circle;
       }
     }
-  }
-
-  nav {
-    @include main-border('bottom');
   }
 }
 

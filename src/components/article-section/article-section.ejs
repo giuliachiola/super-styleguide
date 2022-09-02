@@ -7,13 +7,6 @@
       <span class="c-article-section__reading-time">1 min read</span>
     </p>
 
-    <!-- twitter share -->
-    <div class="c-article-section__share">
-      <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
-        data-show-count="false">Tweet</a>
-      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
-
     <!-- tags -->
     <ul class="c-article-section__tags">
       <% articleSection.tags.forEach(function(tag){ %>
@@ -24,7 +17,8 @@
     </ul>
   </div>
 
-  <aside>
+  <aside class="c-article-section__toc-share">
+    <!-- tags -->
     <details class="c-article-section__toc">
       <summary><span>📚</span>Table of contents</summary>
       <nav class="toc">
@@ -39,6 +33,13 @@
         </ol>
       </nav>
     </details>
+
+    <!-- twitter share -->
+    <div class="c-article-section__share">
+      <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+        data-show-count="false">Tweet</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
   </aside>
 
   <div class="c-reading-progress j-reading-progress"><span class="c-reading-progress__value j-reading-progress__value"></span></div>
