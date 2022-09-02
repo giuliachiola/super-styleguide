@@ -797,17 +797,9 @@ code[class*='language-'] {
   ARTICLE SECTION
 ========================================================================== */
 .c-article-section__top {
-  border-bottom: 0.0625rem solid rgba(172, 179, 194, 0.5);
-  padding-bottom: 1.25rem;
   display: grid;
   gap: 0.3125rem;
-  grid-template-areas: 'info tweet' 'tags tags';
-}
-
-@media (min-width: 48em) {
-  .c-article-section__top {
-    grid-template-areas: 'info .' 'tags tweet';
-  }
+  grid-template-areas: 'info .' 'tags .';
 }
 
 .c-article-section--custom .c-article-section__top {
@@ -826,10 +818,18 @@ code[class*='language-'] {
   margin-left: 0.3125rem;
 }
 
+.c-article-section__toc-share {
+  border-bottom: 0.0625rem solid rgba(172, 179, 194, 0.5);
+  padding-bottom: 1.25rem;
+  position: relative;
+}
+
 .c-article-section__share {
-  grid-area: tweet;
   height: 1.25rem;
+  position: absolute;
+  right: 0;
   text-align: right;
+  top: 0.3125rem;
 }
 
 @media (min-width: 48em) {
@@ -878,11 +878,6 @@ code[class*='language-'] {
 
 .c-article-section__toc ol li li {
   list-style: circle;
-}
-
-.c-article-section__toc nav {
-  border-bottom: 0.0625rem solid rgba(172, 179, 194, 0.5);
-  padding-bottom: 1.25rem;
 }
 
 .c-article-section__reading-time {
