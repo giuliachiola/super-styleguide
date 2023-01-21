@@ -11,12 +11,12 @@
   z-index: 300;
 
   @include mq($until:desktop) {
-    left: 50%;
+    left: 0;
     top: 0;
-    transform: translate(-50%, -100%);
+    transform: translateX(-100%);
 
     &:focus {
-      transform: translate(-50%, 0%);
+      transform: translateX(0);
     }
   }
 

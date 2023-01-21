@@ -39,8 +39,8 @@
 .c-article-section__toc-share {
   @include main-border('bottom');
 
-  position: relative; // tweet button is in absolute
   padding-bottom: $sp_variable-s; // override of main-border padding-bottom (m)
+  position: relative; // tweet button is in absolute
 }
 
 // Twitter share button
@@ -90,8 +90,8 @@
   ol {
     color: var(--co_text);
     margin-bottom: 0;
-    padding-inline-start: $sp_variable-m;
     margin-top: $sp_variable-xs;
+    padding-inline-start: $sp_variable-m;
 
     li {
       list-style: disc;
