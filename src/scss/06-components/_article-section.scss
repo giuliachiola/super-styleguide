@@ -46,11 +46,11 @@
 // Twitter share button
 
 .c-article-section__share {
-  height: rem(20); // hotfix because embedded <iframe> for sharing is not perfectly aligne
+  bottom: rem(10);
+  height: rem(20); // hotfix because embedded <iframe> for sharing is not perfectly aligned
   position: absolute;
   right: 0;
   text-align: right;
-  top: rem(5); // visually aligned
 
   @include mq(tablet) {
     margin-top: auto;

@@ -826,11 +826,11 @@ code[class*='language-'] {
 }
 
 .c-article-section__share {
+  bottom: 0.625rem;
   height: 1.25rem;
   position: absolute;
   right: 0;
   text-align: right;
-  top: 0.3125rem;
 }
 
 @media (min-width: 48em) {
